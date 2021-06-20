@@ -22,6 +22,12 @@ The following languages are not yet supported but are under development:
 
 ### SOUNDS
 
+This folder has the audio files already processed and separated by language.
+
+To use them, the language folder (for example, `en`) must be under the `SOUNDS` folder of your `SDCARD`. With the folder added, go to the EdgeTX settings menu and select the language of the audio language that will be used (eg English).
+
+To use any audio on your switches, first copy the file you want to use to your language folder, then you can use this file in your `Global functions` by selecting a switch for the function and choosing the `Play track` option.
+
 ### voices
 
 ## Contributing
