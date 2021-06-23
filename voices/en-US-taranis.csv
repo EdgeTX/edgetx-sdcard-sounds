@@ -255,7 +255,7 @@ SOUNDS/en;fm-png.wav;flight mode ping
 SOUNDS/en;fm-thm.wav;flight mode thermal
 SOUNDS/en;fm-thl.wav;flight mode thermal left
 SOUNDS/en;fm-thr.wav;flight mode thermal right
-SOUNDS/en;fm-stb.wav;flight mode stabilize
+SOUNDS/en;fm-stb.wav;flight mode stabilise
 SOUNDS/en;fm-hor.wav;flight mode horizon
 SOUNDS/en;fm-ang.wav;flight mode angle
 SOUNDS/en;fm-id1.wav;flight mode idle up 1
