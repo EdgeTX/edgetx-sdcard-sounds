@@ -1,6 +1,6 @@
 #!/bin/bash
 
-version=2.4.1
+version=2.4.0-rc3
 
 # make normalized folders
 find SOUNDS -type d | xargs -I % mkdir -p normalized/%
