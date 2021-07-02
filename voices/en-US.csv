@@ -263,3 +263,8 @@ SOUNDS/en;fm-id2.wav;flight mode idle up 2
 SOUNDS/en;ratlow.wav;low rate
 SOUNDS/en;ratmed.wav;medium rate
 SOUNDS/en;rathi.wav;high rate
+SOUNDS/en;takeoff.wav;take off
+SOUNDS/en;sport.wav;sport
+SOUNDS/en;pattern.wav;pattern
+SOUNDS/en;3d.wav;3D
+SOUNDS/en;landing.wav;landing
