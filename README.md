@@ -11,6 +11,7 @@ The currently supported languages are:
 * Italian
 * Portuguese
 * Russian
+* Chinese
 
 The following languages are not yet supported but are under development:
 * Hungarian
