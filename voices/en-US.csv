@@ -268,3 +268,14 @@ SOUNDS/en;sport.wav;sport
 SOUNDS/en;pattern.wav;pattern
 SOUNDS/en;3d.wav;3D
 SOUNDS/en;landing.wav;landing
+SOUNDS/en;idle-up-1.wav;idle up 1
+SOUNDS/en;idle-up-2.wav;idle up 2
+SOUNDS/en;normal-mode.wav;normal mode
+SOUNDS/en;bank-0.wav;bank 0
+SOUNDS/en;bank-1.wav;bank 1
+SOUNDS/en;bank-2.wav;bank 2
+SOUNDS/en;bank-3.wav;bank 3
+SOUNDS/en;headling-lock.wav;headling lock
+SOUNDS/en;rate-mode.wav;rate mode
+SOUNDS/en;3d-mode.wav;3D Mode
+SOUNDS/en;stabilize-mode.wav;Stabilize Mode
