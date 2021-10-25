@@ -204,8 +204,8 @@ SOUNDS/cn/SYSTEM;sensorko.wav;传感器丢失
 SOUNDS/cn/SYSTEM;servoko.wav;舵机过载
 SOUNDS/cn/SYSTEM;rxko.wav;功率过载
 SOUNDS/cn/SYSTEM;modelpwr.wav;接收机未关闭
-SOUNDS/cn;armed.wav;已锁定
-SOUNDS/cn;disarm.wav;已解锁
+SOUNDS/cn;armed.wav;已解锁
+SOUNDS/cn;disarm.wav;已锁定
 SOUNDS/cn;thrcut.wav;关断油门
 SOUNDS/cn;thract.wav;开启油门
 SOUNDS/cn;gearup.wav;收起起落架
