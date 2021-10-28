@@ -281,4 +281,8 @@ SOUNDS/en;3d-mod.wav;3D Mode
 SOUNDS/en;stabmo.wav;Stabilize Mode
 SOUNDS/en;on.wav;on
 SOUNDS/en;off.wav;off
-
+SOUNDS/en;buzact.wav;buzzer active
+SOUNDS/en;crfact.wav;crash-flip active
+SOUNDS/en;blkact.wav;blackbox active
+SOUNDS/en;preact.wav;pre-arm active
+SOUNDS/en;stbmod.wav;stable mode
