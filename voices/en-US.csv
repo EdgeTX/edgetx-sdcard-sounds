@@ -286,3 +286,15 @@ SOUNDS/en;crfact.wav;crash-flip active
 SOUNDS/en;blkact.wav;blackbox active
 SOUNDS/en;preact.wav;pre-arm active
 SOUNDS/en;stbmod.wav;stable mode
+SOUNDS/en;brakon.wav;brakes on
+SOUNDS/en;brakof.wav;brakes off
+SOUNDS/en;btfon.wav;butterfly on
+SOUNDS/en;btfoff.wav;butterfly off
+SOUNDS/en;flp1.wav;flaps one
+SOUNDS/en;flp2.wav;flaps two
+SOUNDS/en;flp3.wav;flaps three
+SOUNDS/en;flp4.wav;flaps four
+SOUNDS/en;flp5.wav;flaps five
+SOUNDS/en;wngswp.wav;wingsweep
+SOUNDS/en;whlbro.wav;wheelbrakes on
+SOUNDS/en;whlbrf.wav;wheelbrakes off
