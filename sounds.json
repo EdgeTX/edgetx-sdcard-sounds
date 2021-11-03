@@ -1,0 +1,68 @@
+[
+    {
+        "language": "cs_CZ",
+        "name": "Czech Female",
+        "description": "Czech Female Voice (cs-CZ-Vlasta)",
+        "directory": "cz"
+    },
+    {
+        "language": "de-DE",
+        "name": "German Female",
+        "description": "German Female Voice (de-DE-Katja)",
+        "directory": "de"
+    },
+    {
+        "language": "en-GB",
+        "name": "British English Female",
+        "description": "British English Female Voice (en-GB-Libby)",
+        "directory": "en_gb-libby"
+    },
+    {
+        "language": "en-GB",
+        "name": "British English Male",
+        "description": "British English Male Voice (en-GB-Ryan)",
+        "directory": "en_gb-ryan"
+    },
+    {
+        "language": "en-US",
+        "name": "American English",
+        "description": "American English Female Voice (en-IE-Emily)",
+        "directory": "en"
+    },
+    {
+        "language": "es-ES",
+        "name": "Spanish Female",
+        "description": "Spanish Female Voice (es-ES-Elvira)",
+        "directory": "es"
+    },
+    {
+        "language": "fr-FR",
+        "name": "French Female",
+        "description": "French Female Voice (fr-FR-Denise)",
+        "directory": "fr"
+    },
+    {
+        "language": "it-IT",
+        "name": "Italian Female",
+        "description": "Italian Female Voice (it-IT-Elsa)",
+        "directory": "it"
+    },
+    {
+        "language": "pt-BR",
+        "name": "Brazilian Portuguese Female",
+        "description": "Brazilian Portuguese Female Voice (pt-BR-Francisca)",
+        "directory": "pt"
+    },
+    {
+        "language": "ru-RU",
+        "name": "Russian Female",
+        "description": "Russian Female Voice (ru-RU-Svetlana)",
+        "directory": "ru"
+    },
+    {
+        "language": "zh_CN",
+        "name": "Chinese Female",
+        "description": "Chinese Female Voice",
+        "directory": "cn"
+    }
+]
