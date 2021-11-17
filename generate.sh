@@ -11,3 +11,5 @@ generate_lang voices/de-DE.csv de-DE-KatjaNeural de
 generate_lang voices/fr-FR.csv fr-FR-DeniseNeural fr
 generate_lang voices/ru-RU.csv ru-RU-SvetlanaNeural ru
 generate_lang voices/cs-CZ.csv cs-CZ-VlastaNeural cz
+generate_lang voices/en-GB-Libby.csv en-GB-LibbyNeural en_gb-libby
+generate_lang voices/en-GB-Ryan.csv en-GB-RyanNeural en_gb-ryan
