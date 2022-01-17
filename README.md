@@ -1,36 +1,88 @@
 # EdgeTX - Sound packs
 
-This repository contains the files needed to generate the voice packages used in EdgeTX.
+This is a new workflow to create EdgeTX (and untested OpenTX) Soundpackages and custom sounds for your Radio. This repository used the free google Text to speach API from google Translate.
 
-The currently supported languages are:
-* Czech
-* Deutsch
-* English
-* Spanish
-* French
-* Italian
-* Portuguese
-* Russian
-* Chinese Mandarin
+You can use the Custom Sound Generator to create your own soundfiles with the same voice.
 
-The following languages are not yet supported but are under development:
-* Hungarian
-* Dutch
-* Swedish
-* Slovak
+In order to create a complete language Pack you can submit a new CSV File as a pull request to this repository. Please follow the following standard for creating the CSV.
 
-## Directory structure
+ 
 
-### SOUNDS
+## CSV File Name labeling:
 
-This folder has the audio files already processed and separated by language.
+  
+**aa-BB-c-Dddd.csv**
 
-To use them, the language folder (for example, `en`) must be under the `SOUNDS` folder of your `SDCARD`. With the folder added, go to the EdgeTX settings menu and select the language of the audio language that will be used (eg English).
+**aa** = 2 small letters for languge
 
-To use any audio on your switches, first copy the file you want to use to your language folder, then you can use this file in your `Global functions` by selecting a switch for the function and choosing the `Play track` option.
+Followed by „-“
 
-### voices
+**BB** = 2 capital letter country code in [Alpha 2-code](https://www.iban.com/country-codes) 
 
-## Contributing
+Followed by „-“
 
-See [CONTRIBUTING.md](CONTRIBUTING.md)
+**c** = m for male and f for femal
+
+_if applicable:_ Followed by „-“
+
+**Dddd** = Name of language Starting with a capital Letter.
+
+  
+Example:
+
+de-DE-m.csv for German language and German accent with a male voice.
+
+de-AT-f-Gabi.csv for German language and Austrian accent with a female voice named Gabi.
+
+en-GB-m-Ryan.csv for English langauge and British accent with a male voice named Ryan.
+
+  
+
+  
+
+## CSV File Layout:
+
+  
+
+The CSV file needs to have a semicolon as a seperator between each field. It needs to have the following 7 fields:
+
+  
+
+Example SOUNDS/it-IT-f/SYSTEM;0010.wav;10;it;IT
+
+SOUNDS/en-GB-m/SYSTEM/;0010.wav;10;en;GB;m;Ryan
+
+  
+
+Field 1:
+
+File location on SD Card.
+
+Subfolder SOUNDS/ langauge in small letters „-“ followed by gender followed by „-“ followed by country code in Alpha 2 letter Capital followed „-“ followed by Name of voice with starting with capital Letter + if applicable: subfolder SYSTEMS
+
+  
+
+Field 2:
+
+Filename ( No longer than 6 Characters + .wav)
+
+Field 3:
+
+Spoken Text
+
+Field 4:
+
+Lanuage in small letters
+
+Field 5:
+
+Accent in [Alpha 2-code](https://www.iban.com/country-codes)  as Capital letters
+
+Field 6:
+
+Gender of voice either m or f
+
+Field 7:
+
+Name of voice with starting with Capital letter.
+
