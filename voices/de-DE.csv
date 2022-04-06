@@ -161,7 +161,7 @@ SOUNDS/de/SYSTEM;inactiv.wav;Inaktivitätsalarm
 SOUNDS/de/SYSTEM;thralert.wav;Gaskanal nicht Null, bitte prüfen
 SOUNDS/de/SYSTEM;swalert.wav;Schalter fehlpositioniert, bitte prüfen
 SOUNDS/de/SYSTEM;eebad.wav;EEPROM fehlerhaft
-SOUNDS/de/SYSTEM;hello.wav;Willkommen bei edge t x
+SOUNDS/de/SYSTEM;hello.wav;Willkommen bei etsch tie ex
 SOUNDS/de/SYSTEM;rssi_org.wav;Funksignal schwach
 SOUNDS/de/SYSTEM;rssi_red.wav;Funksignal kritisch
 SOUNDS/de/SYSTEM;swr_red.wav;Senderantenne fehlerhaft
@@ -171,7 +171,7 @@ SOUNDS/de/SYSTEM;trainko.wav;Schülersignal verloren
 SOUNDS/de/SYSTEM;trainok.wav;Schülersignal wiederhergestellt
 SOUNDS/de/SYSTEM;sensorko.wav;Sensor verloren
 SOUNDS/de/SYSTEM;servoko.wav;servo Überlast
-SOUNDS/de/SYSTEM;rxko.wav;Power überlastet
+SOUNDS/de/SYSTEM;rxko.wav;Leistungs Überlast
 SOUNDS/de/SYSTEM;modelpwr.wav;Empfänger noch verbunden
 SOUNDS/de/SYSTEM;error.wav;Fehler
 SOUNDS/de/SYSTEM;highmah.wav;Senderstrom zu hoch

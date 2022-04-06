@@ -4,7 +4,7 @@ This repository contains the files needed to generate the voice packages used in
 
 The currently supported languages are:
 * Czech
-* Deutsch
+* German
 * English
 * Spanish
 * French
