@@ -304,9 +304,20 @@ SOUNDS/en_gb-libby;angmod.wav;angle mode
 SOUNDS/en_gb-libby;hznmod.wav;horizon mode
 SOUNDS/en_gb-libby;laumod.wav;launch mode
 SOUNDS/en_gb-libby;airmod.wav;air mode
+SOUNDS/en_gb-libby;pitmod.wav;pit mode
 SOUNDS/en_gb-libby;navcrs.wav;navigation cruise
 SOUNDS/en_gb-libby;navcsh.wav;navigation course hold
 SOUNDS/en_gb-libby;navalh.wav;navigation altitude hold
 SOUNDS/en_gb-libby;navpos.wav;navigation position hold
 SOUNDS/en_gb-libby;navrth.wav;navigation return to home
 SOUNDS/en_gb-libby;navwp.wav;navigation waypoint
+SOUNDS/en_gb-libby;cruise.wav;cruise
+SOUNDS/en_gb-libby;crshld.wav;course hold
+SOUNDS/en_gb-libby;althld.wav;altitude hold
+SOUNDS/en_gb-libby;poshld.wav;position hold
+SOUNDS/en_gb-libby;rth.wav;return to home
+SOUNDS/en_gb-libby;waypnt.wav;waypoint
+SOUNDS/en_gb-libby;manual.wav;manual
+SOUNDS/en_gb-libby;auto.wav;auto
+SOUNDS/en_gb-libby;osd.wav;O S D
+SOUNDS/en_gb-libby;osdprf.wav;O S D profile

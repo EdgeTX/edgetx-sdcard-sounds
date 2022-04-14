@@ -304,9 +304,20 @@ SOUNDS/en;angmod.wav;angle mode
 SOUNDS/en;hznmod.wav;horizon mode
 SOUNDS/en;lncmod.wav;launch mode
 SOUNDS/en;airmod.wav;air mode
+SOUNDS/en;pitmod.wav;pit mode
 SOUNDS/en;navcrs.wav;navigation cruise
 SOUNDS/en;navcsh.wav;navigation course hold
 SOUNDS/en;navalh.wav;navigation altitude hold
 SOUNDS/en;navpos.wav;navigation position hold
 SOUNDS/en;navrth.wav;navigation return to home
 SOUNDS/en;navwp.wav;navigation waypoint
+SOUNDS/en;cruise.wav;cruise
+SOUNDS/en;crshld.wav;course hold
+SOUNDS/en;althld.wav;altitude hold
+SOUNDS/en;poshld.wav;position hold
+SOUNDS/en;rth.wav;return to home
+SOUNDS/en;waypnt.wav;waypoint
+SOUNDS/en;manual.wav;manual
+SOUNDS/en;auto.wav;auto
+SOUNDS/en;osd.wav;O S D
+SOUNDS/en;osdprf.wav;O S D profile
