@@ -298,7 +298,7 @@ SOUNDS/en;flp5.wav;flaps five
 SOUNDS/en;wngswp.wav;wingsweep
 SOUNDS/en;whlbro.wav;wheelbrakes on
 SOUNDS/en;whlbrf.wav;wheelbrakes off
-SOUNDS/en;modman.wav;manual mode
+SOUNDS/en;manmod.wav;manual mode
 SOUNDS/en;acrmod.wav;acro mode
 SOUNDS/en;angmod.wav;angle mode
 SOUNDS/en;hznmod.wav;horizon mode
