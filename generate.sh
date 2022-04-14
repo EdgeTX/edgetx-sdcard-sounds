@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # include voice generator script
-. $(dirname "$0")/voice-gen.sh
+. "$(dirname "$0")/voice-gen.sh"
 
 generate_lang voices/en-US.csv en-IE-EmilyNeural en
 generate_lang voices/pt-PT.csv pt-BR-FranciscaNeural pt

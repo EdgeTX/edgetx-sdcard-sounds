@@ -1,17 +1,17 @@
 #!/bin/bash
 
 generate_lang () {
-  while read line
+  while read -r line
   do
-      destination=`echo -n $line | awk -F ';' '{print $1}'`
-      filename=`echo -n $line | awk -F ';' '{print $2}'`
-      text=`echo -n $line | awk -F ';' '{print $3}'`
-      if test -f $destination/$filename; then
+      destination=$(echo -n "$line" | awk -F ';' '{print $1}')
+      filename=$(echo -n "$line" | awk -F ';' '{print $2}')
+      text=$(echo -n "$line" | awk -F ';' '{print $3}')
+      if test -f "$destination/$filename"; then
           echo "File $filename already exists. Skipping."
       else
           echo "File $filename does not exists. Creating."
-          spx synthesize --text \""$text"\" --voice $2 --audio output $destination/$filename || break
+          spx synthesize --text \""$text"\" --voice "$2" --audio output "$destination/$filename" || break
           sleep 3
       fi
-  done < $1
+  done < "$1"
 }
