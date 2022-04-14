@@ -3,4 +3,4 @@ region
 log-*
 exception-*
 *.zip
-normalized/
+release/
