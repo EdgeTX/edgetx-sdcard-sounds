@@ -298,3 +298,16 @@ SOUNDS/en_gb-ryan;flp5.wav;flaps five
 SOUNDS/en_gb-ryan;wngswp.wav;wingsweep
 SOUNDS/en_gb-ryan;whlbro.wav;wheelbrakes on
 SOUNDS/en_gb-ryan;whlbrf.wav;wheelbrakes off
+SOUNDS/en_gb-ryan;modman.wav;manual mode
+SOUNDS/en_gb-ryan;modacr.wav;acro mode
+SOUNDS/en_gb-ryan;modang.wav;angle mode
+SOUNDS/en_gb-ryan;modhzn.wav;horizon mode
+SOUNDS/en_gb-ryan;modlau.wav;launch mode
+SOUNDS/en_gb-ryan;modair.wav;air mode
+SOUNDS/en_gb-ryan;modrat.wav;rate mode
+SOUNDS/en_gb-ryan;navcrs.wav;navigation cruise
+SOUNDS/en_gb-ryan;navcsh.wav;navigation course hold
+SOUNDS/en_gb-ryan;navalh.wav;navigation altitude hold
+SOUNDS/en_gb-ryan;navpos.wav;navigation position hold
+SOUNDS/en_gb-ryan;navrth.wav;navigation return to home
+SOUNDS/en_gb-ryan;navwp.wav;navigation waypoint

@@ -298,3 +298,16 @@ SOUNDS/en_gb-libby;flp5.wav;flaps five
 SOUNDS/en_gb-libby;wngswp.wav;wingsweep
 SOUNDS/en_gb-libby;whlbro.wav;wheelbrakes on
 SOUNDS/en_gb-libby;whlbrf.wav;wheelbrakes off
+SOUNDS/en_gb-libby;modman.wav;manual mode
+SOUNDS/en_gb-libby;modacr.wav;acro mode
+SOUNDS/en_gb-libby;modang.wav;angle mode
+SOUNDS/en_gb-libby;modhzn.wav;horizon mode
+SOUNDS/en_gb-libby;modlau.wav;launch mode
+SOUNDS/en_gb-libby;modair.wav;air mode
+SOUNDS/en_gb-libby;modrat.wav;rate mode
+SOUNDS/en_gb-libby;navcrs.wav;navigation cruise
+SOUNDS/en_gb-libby;navcsh.wav;navigation course hold
+SOUNDS/en_gb-libby;navalh.wav;navigation altitude hold
+SOUNDS/en_gb-libby;navpos.wav;navigation position hold
+SOUNDS/en_gb-libby;navrth.wav;navigation return to home
+SOUNDS/en_gb-libby;navwp.wav;navigation waypoint

@@ -298,3 +298,16 @@ SOUNDS/en;flp5.wav;flaps five
 SOUNDS/en;wngswp.wav;wingsweep
 SOUNDS/en;whlbro.wav;wheelbrakes on
 SOUNDS/en;whlbrf.wav;wheelbrakes off
+SOUNDS/en;modman.wav;manual mode
+SOUNDS/en;modacr.wav;acro mode
+SOUNDS/en;modang.wav;angle mode
+SOUNDS/en;modhzn.wav;horizon mode
+SOUNDS/en;modlau.wav;launch mode
+SOUNDS/en;modair.wav;air mode
+SOUNDS/en;modrat.wav;rate mode
+SOUNDS/en;navcrs.wav;navigation cruise
+SOUNDS/en;navcsh.wav;navigation course hold
+SOUNDS/en;navalh.wav;navigation altitude hold
+SOUNDS/en;navpos.wav;navigation position hold
+SOUNDS/en;navrth.wav;navigation return to home
+SOUNDS/en;navwp.wav;navigation waypoint
