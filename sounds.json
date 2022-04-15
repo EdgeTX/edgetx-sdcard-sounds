@@ -24,10 +24,22 @@
         "directory": "en_gb-ryan"
     },
     {
-        "language": "en-US",
-        "name": "American English",
-        "description": "American English Female Voice (en-IE-Emily)",
+        "language": "en-IE",
+        "name": "Irish English",
+        "description": "Irish English Female Voice (en-IE-Emily)",
         "directory": "en"
+    },
+    {
+        "language": "en-US",
+        "name": "US English",
+        "description": "US English Female Voice (en-US-Sara)",
+        "directory": "en_us-sara"
+    },
+    {
+        "language": "en-US",
+        "name": "US English",
+        "description": "US English Male Voice (en-US-Guy)",
+        "directory": "en_us-guy"
     },
     {
         "language": "es-ES",
