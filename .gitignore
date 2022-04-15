@@ -1,6 +1,6 @@
 key
 region
 log-*
-exception-*
+exception*
 *.zip
 release/
