@@ -153,16 +153,16 @@ SOUNDS/en_gb-ryan/SYSTEM;degree0.wav;degree
 SOUNDS/en_gb-ryan/SYSTEM;degree1.wav;degrees
 SOUNDS/en_gb-ryan/SYSTEM;rad0.wav;radian
 SOUNDS/en_gb-ryan/SYSTEM;rad1.wav;radians
-SOUNDS/en_gb-ryan/SYSTEM;ml0.wav;milliliter
-SOUNDS/en_gb-ryan/SYSTEM;ml1.wav;milliliters
+SOUNDS/en_gb-ryan/SYSTEM;ml0.wav;milli-liter
+SOUNDS/en_gb-ryan/SYSTEM;ml1.wav;milli-liters
 SOUNDS/en_gb-ryan/SYSTEM;founce0.wav;fluid ounce
 SOUNDS/en_gb-ryan/SYSTEM;founce1.wav;fluid ounces
-SOUNDS/en_gb-ryan/SYSTEM;mlpm0.wav;milliliter per minute
-SOUNDS/en_gb-ryan/SYSTEM;mlpm1.wav;milliliters per minute
+SOUNDS/en_gb-ryan/SYSTEM;mlpm0.wav;milli-liter per minute
+SOUNDS/en_gb-ryan/SYSTEM;mlpm1.wav;milli-liters per minute
 SOUNDS/en_gb-ryan/SYSTEM;hertz0.wav;hertz
 SOUNDS/en_gb-ryan/SYSTEM;hertz1.wav;hertz
-SOUNDS/en_gb-ryan/SYSTEM;ms0.wav;milisecond
-SOUNDS/en_gb-ryan/SYSTEM;ms1.wav;miliseconds
+SOUNDS/en_gb-ryan/SYSTEM;ms0.wav;milli-second
+SOUNDS/en_gb-ryan/SYSTEM;ms1.wav;milli-seconds
 SOUNDS/en_gb-ryan/SYSTEM;us0.wav;microsecond
 SOUNDS/en_gb-ryan/SYSTEM;us1.wav;microseconds
 SOUNDS/en_gb-ryan/SYSTEM;hour0.wav;hour

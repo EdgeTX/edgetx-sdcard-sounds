@@ -161,8 +161,8 @@ SOUNDS/en_us-sara/SYSTEM;mlpm0.wav;milliliter per minute
 SOUNDS/en_us-sara/SYSTEM;mlpm1.wav;milliliters per minute
 SOUNDS/en_us-sara/SYSTEM;hertz0.wav;hertz
 SOUNDS/en_us-sara/SYSTEM;hertz1.wav;hertz
-SOUNDS/en_us-sara/SYSTEM;ms0.wav;milisecond
-SOUNDS/en_us-sara/SYSTEM;ms1.wav;miliseconds
+SOUNDS/en_us-sara/SYSTEM;ms0.wav;millisecond
+SOUNDS/en_us-sara/SYSTEM;ms1.wav;milliseconds
 SOUNDS/en_us-sara/SYSTEM;us0.wav;microsecond
 SOUNDS/en_us-sara/SYSTEM;us1.wav;microseconds
 SOUNDS/en_us-sara/SYSTEM;hour0.wav;hour
