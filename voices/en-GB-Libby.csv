@@ -153,12 +153,12 @@ SOUNDS/en_gb-libby/SYSTEM;degree0.wav;degree
 SOUNDS/en_gb-libby/SYSTEM;degree1.wav;degrees
 SOUNDS/en_gb-libby/SYSTEM;rad0.wav;radian
 SOUNDS/en_gb-libby/SYSTEM;rad1.wav;radians
-SOUNDS/en_gb-libby/SYSTEM;ml0.wav;milli-liter
-SOUNDS/en_gb-libby/SYSTEM;ml1.wav;milli-liters
+SOUNDS/en_gb-libby/SYSTEM;ml0.wav;millilitre
+SOUNDS/en_gb-libby/SYSTEM;ml1.wav;millilitres
 SOUNDS/en_gb-libby/SYSTEM;founce0.wav;fluid ounce
 SOUNDS/en_gb-libby/SYSTEM;founce1.wav;fluid ounces
-SOUNDS/en_gb-libby/SYSTEM;mlpm0.wav;milli-liter per minute
-SOUNDS/en_gb-libby/SYSTEM;mlpm1.wav;milli-liters per minute
+SOUNDS/en_gb-libby/SYSTEM;mlpm0.wav;millilitre per minute
+SOUNDS/en_gb-libby/SYSTEM;mlpm1.wav;millilitres per minute
 SOUNDS/en_gb-libby/SYSTEM;hertz0.wav;hertz
 SOUNDS/en_gb-libby/SYSTEM;hertz1.wav;hertz
 SOUNDS/en_gb-libby/SYSTEM;ms0.wav;milli-second

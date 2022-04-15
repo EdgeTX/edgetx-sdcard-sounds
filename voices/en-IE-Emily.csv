@@ -153,12 +153,12 @@ SOUNDS/en/SYSTEM;degree0.wav;degree
 SOUNDS/en/SYSTEM;degree1.wav;degrees
 SOUNDS/en/SYSTEM;rad0.wav;radian
 SOUNDS/en/SYSTEM;rad1.wav;radians
-SOUNDS/en/SYSTEM;ml0.wav;milli-liter
-SOUNDS/en/SYSTEM;ml1.wav;milli-liters
+SOUNDS/en/SYSTEM;ml0.wav;millilitre
+SOUNDS/en/SYSTEM;ml1.wav;millilitres
 SOUNDS/en/SYSTEM;founce0.wav;fluid ounce
 SOUNDS/en/SYSTEM;founce1.wav;fluid ounces
-SOUNDS/en/SYSTEM;mlpm0.wav;milli-liter per minute
-SOUNDS/en/SYSTEM;mlpm1.wav;milli-liters per minute
+SOUNDS/en/SYSTEM;mlpm0.wav;millilitre per minute
+SOUNDS/en/SYSTEM;mlpm1.wav;millilitres per minute
 SOUNDS/en/SYSTEM;hertz0.wav;hertz
 SOUNDS/en/SYSTEM;hertz1.wav;hertz
 SOUNDS/en/SYSTEM;ms0.wav;milli-second
