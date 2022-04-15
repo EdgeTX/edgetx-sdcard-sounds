@@ -6,6 +6,7 @@ generate_lang () {
       destination=$(echo -n "$line" | awk -F ';' '{print $1}')
       filename=$(echo -n "$line" | awk -F ';' '{print $2}')
       text=$(echo -n "$line" | awk -F ';' '{print $3}')
+      [ ! -d "$destination" ] && mkdir -p "$destination"
       if test -f "$destination/$filename"; then
           echo "File $filename already exists. Skipping."
       else
