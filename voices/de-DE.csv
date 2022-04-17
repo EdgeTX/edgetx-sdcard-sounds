@@ -214,7 +214,7 @@ SOUNDS/de;engoff.wav;Motor aus
 SOUNDS/de;engon.wav;Motor an
 SOUNDS/de;tohigh.wav;zu hoch
 SOUNDS/de;tolow.wav;zu niedrig
-SOUNDS/de;lowbatt.wav;Batterie schwach
+SOUNDS/de;lowbat.wav;Batterie schwach
 SOUNDS/de;crowon.wav;Butterfly ein
 SOUNDS/de;crowof.wav;Butterfly aus
 SOUNDS/de;fm-spd.wav;Geschwindigkeits-Modus ist aktiviert
