@@ -31,7 +31,7 @@ To use any audio on your switches, first copy the file you want to use to your l
 
 ## Voices
 
-All of the voices used in the EdgeTX voice packs have been picked from the neural voices offered by Microsft Azure text to speech service, in order to get as close as possible to humanlike voices. If you want to see what voices are available, and try different phrases, [check out the online demo generator](https://azure.microsoft.com/en-us/services/cognitive-services/text-to-speech/#features). Using some recording software, you could even save your own phrases and use them in the voice packs.
+All of the voices used in the EdgeTX voice packs have been picked from the [neural voices](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support?tabs=speechtotext#prebuilt-neural-voices) offered by Microsft Azure text to speech service, in order to get as close as possible to humanlike voices. If you want to see what voices are available, and try different phrases, [check out the online demo generator](https://azure.microsoft.com/en-us/services/cognitive-services/text-to-speech/#features). Using some recording software, you could even save your own phrases and use them in the voice packs.
 
 ## How to build yourself
 
