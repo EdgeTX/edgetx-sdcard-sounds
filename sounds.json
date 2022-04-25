@@ -48,6 +48,12 @@
         "directory": "es"
     },
     {
+        "language": "es-CL",
+        "name": "Chilean Female",
+        "description": "Chilean Female Voice (es-CL-Catalina)",
+        "directory": "es_cl-catalina"
+    },
+    {
         "language": "fr-FR",
         "name": "French Female",
         "description": "French Female Voice (fr-FR-Denise)",
