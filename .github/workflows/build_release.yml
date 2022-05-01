@@ -1,13 +1,14 @@
 name: Generate release zips
 
 on:
-  push:
-    branches: [ main ]
-    paths-ignore:
-      - '**.md'
-  pull_request:
-    paths-ignore:
-      - '**.md'
+  workflow_dispatch:
+  # push:
+  #   branches: [ main ]
+  #   paths-ignore:
+  #     - '**.md'
+  # pull_request:
+  #   paths-ignore:
+  #     - '**.md'
 
 jobs:
   package:
