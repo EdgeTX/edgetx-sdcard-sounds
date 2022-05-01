@@ -26,11 +26,16 @@ jobs:
       - name: Check out the repo
         uses: actions/checkout@v3
 
+      # - name: Verify the package before building
+      #   run: ./build-checks.sh
+
       - name: Build the release zip packages
+        if: github.event_name != 'pull_request'
         run: ./release.sh
 
       - name: Upload binaries to release
         uses: marvinpinto/action-automatic-releases@latest
+        if: github.event_name != 'pull_request'
         with:
           title: "Latest Voice Pack"
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
