@@ -1,0 +1,324 @@
+path;filename;word or phrase to speak
+SYSTEM;0000.wav;0
+SYSTEM;0001.wav;1
+SYSTEM;0002.wav;2
+SYSTEM;0003.wav;3
+SYSTEM;0004.wav;4
+SYSTEM;0005.wav;5
+SYSTEM;0006.wav;6
+SYSTEM;0007.wav;7
+SYSTEM;0008.wav;8
+SYSTEM;0009.wav;9
+SYSTEM;0010.wav;10
+SYSTEM;0011.wav;11
+SYSTEM;0012.wav;12
+SYSTEM;0013.wav;13
+SYSTEM;0014.wav;14
+SYSTEM;0015.wav;15
+SYSTEM;0016.wav;16
+SYSTEM;0017.wav;17
+SYSTEM;0018.wav;18
+SYSTEM;0019.wav;19
+SYSTEM;0020.wav;20
+SYSTEM;0021.wav;21
+SYSTEM;0022.wav;22
+SYSTEM;0023.wav;23
+SYSTEM;0024.wav;24
+SYSTEM;0025.wav;25
+SYSTEM;0026.wav;26
+SYSTEM;0027.wav;27
+SYSTEM;0028.wav;28
+SYSTEM;0029.wav;29
+SYSTEM;0030.wav;30
+SYSTEM;0031.wav;31
+SYSTEM;0032.wav;32
+SYSTEM;0033.wav;33
+SYSTEM;0034.wav;34
+SYSTEM;0035.wav;35
+SYSTEM;0036.wav;36
+SYSTEM;0037.wav;37
+SYSTEM;0038.wav;38
+SYSTEM;0039.wav;39
+SYSTEM;0040.wav;40
+SYSTEM;0041.wav;41
+SYSTEM;0042.wav;42
+SYSTEM;0043.wav;43
+SYSTEM;0044.wav;44
+SYSTEM;0045.wav;45
+SYSTEM;0046.wav;46
+SYSTEM;0047.wav;47
+SYSTEM;0048.wav;48
+SYSTEM;0049.wav;49
+SYSTEM;0050.wav;50
+SYSTEM;0051.wav;51
+SYSTEM;0052.wav;52
+SYSTEM;0053.wav;53
+SYSTEM;0054.wav;54
+SYSTEM;0055.wav;55
+SYSTEM;0056.wav;56
+SYSTEM;0057.wav;57
+SYSTEM;0058.wav;58
+SYSTEM;0059.wav;59
+SYSTEM;0060.wav;60
+SYSTEM;0061.wav;61
+SYSTEM;0062.wav;62
+SYSTEM;0063.wav;63
+SYSTEM;0064.wav;64
+SYSTEM;0065.wav;65
+SYSTEM;0066.wav;66
+SYSTEM;0067.wav;67
+SYSTEM;0068.wav;68
+SYSTEM;0069.wav;69
+SYSTEM;0070.wav;70
+SYSTEM;0071.wav;71
+SYSTEM;0072.wav;72
+SYSTEM;0073.wav;73
+SYSTEM;0074.wav;74
+SYSTEM;0075.wav;75
+SYSTEM;0076.wav;76
+SYSTEM;0077.wav;77
+SYSTEM;0078.wav;78
+SYSTEM;0079.wav;79
+SYSTEM;0080.wav;80
+SYSTEM;0081.wav;81
+SYSTEM;0082.wav;82
+SYSTEM;0083.wav;83
+SYSTEM;0084.wav;84
+SYSTEM;0085.wav;85
+SYSTEM;0086.wav;86
+SYSTEM;0087.wav;87
+SYSTEM;0088.wav;88
+SYSTEM;0089.wav;89
+SYSTEM;0090.wav;90
+SYSTEM;0091.wav;91
+SYSTEM;0092.wav;92
+SYSTEM;0093.wav;93
+SYSTEM;0094.wav;94
+SYSTEM;0095.wav;95
+SYSTEM;0096.wav;96
+SYSTEM;0097.wav;97
+SYSTEM;0098.wav;98
+SYSTEM;0099.wav;99
+SYSTEM;0100.wav;100
+SYSTEM;0101.wav;200
+SYSTEM;0102.wav;300
+SYSTEM;0103.wav;400
+SYSTEM;0104.wav;500
+SYSTEM;0105.wav;600
+SYSTEM;0106.wav;700
+SYSTEM;0107.wav;800
+SYSTEM;0108.wav;900
+SYSTEM;0109.wav;thousand
+SYSTEM;0110.wav;and
+SYSTEM;0111.wav;minus
+SYSTEM;0112.wav;point
+SYSTEM;volt0.wav;volt
+SYSTEM;volt1.wav;volts
+SYSTEM;amp0.wav;amp
+SYSTEM;amp1.wav;amps
+SYSTEM;mamp0.wav;milliamp
+SYSTEM;mamp1.wav;milliamps
+SYSTEM;knot0.wav;knot
+SYSTEM;knot1.wav;knots
+SYSTEM;mps0.wav;meter per second
+SYSTEM;mps1.wav;meters per second
+SYSTEM;fps0.wav;foot per second
+SYSTEM;fps1.wav;feet per second
+SYSTEM;kph0.wav;kilometer per hour
+SYSTEM;kph1.wav;kilometers per hour
+SYSTEM;mph0.wav;mile per hour
+SYSTEM;mph1.wav;miles per hour
+SYSTEM;meter0.wav;meter
+SYSTEM;meter1.wav;meters
+SYSTEM;foot0.wav;foot
+SYSTEM;foot1.wav;feet
+SYSTEM;celsius0.wav;degree celsius
+SYSTEM;celsius1.wav;degrees celsius
+SYSTEM;fahr0.wav;degree fahrenheit
+SYSTEM;fahr1.wav;degrees fahrenheit
+SYSTEM;percent0.wav;percent
+SYSTEM;percent1.wav;percent
+SYSTEM;mamph0.wav;milliamp-hour
+SYSTEM;mamph1.wav;milliamp-hours
+SYSTEM;watt0.wav;watt
+SYSTEM;watt1.wav;watts
+SYSTEM;mwatt0.wav;milli-watt
+SYSTEM;mwatt1.wav;milli-watts
+SYSTEM;db0.wav;D B
+SYSTEM;db1.wav;D B
+SYSTEM;rpm0.wav;r p m
+SYSTEM;rpm1.wav;r p m
+SYSTEM;g0.wav;g
+SYSTEM;g1.wav;g
+SYSTEM;degree0.wav;degree
+SYSTEM;degree1.wav;degrees
+SYSTEM;rad0.wav;radian
+SYSTEM;rad1.wav;radians
+SYSTEM;ml0.wav;milliliter
+SYSTEM;ml1.wav;milliliters
+SYSTEM;founce0.wav;fluid ounce
+SYSTEM;founce1.wav;fluid ounces
+SYSTEM;mlpm0.wav;milliliter per minute
+SYSTEM;mlpm1.wav;milliliters per minute
+SYSTEM;hertz0.wav;hertz
+SYSTEM;hertz1.wav;hertz
+SYSTEM;ms0.wav;millisecond
+SYSTEM;ms1.wav;milliseconds
+SYSTEM;us0.wav;microsecond
+SYSTEM;us1.wav;microseconds
+SYSTEM;hour0.wav;hour
+SYSTEM;hour1.wav;hours
+SYSTEM;minute0.wav;minute
+SYSTEM;minute1.wav;minutes
+SYSTEM;second0.wav;second
+SYSTEM;second1.wav;seconds
+SYSTEM;0167.wav;point zero
+SYSTEM;0168.wav;point one
+SYSTEM;0169.wav;point two
+SYSTEM;0170.wav;point three
+SYSTEM;0171.wav;point four
+SYSTEM;0172.wav;point five
+SYSTEM;0173.wav;point six
+SYSTEM;0174.wav;point seven
+SYSTEM;0175.wav;point eight
+SYSTEM;0176.wav;point nine
+SYSTEM;midtrim.wav;trim center
+SYSTEM;maxtrim.wav;maximum trim reached
+SYSTEM;mintrim.wav;minimum trim reached
+SYSTEM;timovr1.wav;timer 1 elapsed
+SYSTEM;timovr2.wav;timer 2 elapsed
+SYSTEM;timovr3.wav;timer 3 elapsed
+SYSTEM;lowbatt.wav;transmitter battery low
+SYSTEM;inactiv.wav;inactivity alarm
+SYSTEM;thralert.wav;throttle warning
+SYSTEM;swalert.wav;switch warning
+SYSTEM;eebad.wav;bad eeprom
+SYSTEM;hello.wav;Welcome to edge tea ex
+SYSTEM;rssi_org.wav;RF signal low
+SYSTEM;rssi_red.wav;RF signal critical
+SYSTEM;swr_red.wav;radio antenna defective
+SYSTEM;telemko.wav;telemetry lost
+SYSTEM;telemok.wav;telemetry recovered
+SYSTEM;trainko.wav;trainer signal lost
+SYSTEM;trainok.wav;trainer signal recovered
+SYSTEM;sensorko.wav;sensor lost
+SYSTEM;servoko.wav;servo overload
+SYSTEM;rxko.wav;power overload
+SYSTEM;modelpwr.wav;receiver still connected
+;armed.wav;armed
+;disarm.wav;disarmed
+;thrcut.wav;throttle cut
+;thract.wav;throttle active
+;gearup.wav;gear up
+;geardn.wav;gear down
+;flapup.wav;flaps up
+;flapdn.wav;flaps down
+;splrup.wav;spoiler up
+;splrdn.wav;spoiler down
+;trnon.wav;trainer on
+;trnoff.wav;trainer off
+;engoff.wav;engine off
+;tohigh.wav;too high
+;tolow.wav;too low
+;lowbat.wav;low battery
+;crowon.wav;crow on
+;crowof.wav;crow off
+;siglow.wav;rf signal low
+;sigcrt.wav;rf signal critical
+;lq.wav;LQ
+;rfmode.wav;RF mode
+;spdmod.wav;high speed mode active
+;thmmod.wav;thermal mode on
+;nrmmod.wav;normal mode on
+;lnding.wav;landing mode on
+;acro.wav;acro mode on
+;fm-1.wav;flight mode one
+;fm-2.wav;flight mode two
+;fm-3.wav;flight mode three
+;fm-4.wav;flight mode four
+;fm-5.wav;flight mode five
+;fm-6.wav;flight mode six
+;fm-7.wav;flight mode seven
+;fm-8.wav;flight mode eight
+;vrion.wav;vario on
+;vrioff.wav;vario off
+;fm-pwr.wav;flight mode power
+;fm-lnd.wav;flight mode land
+;fm-flt.wav;flight mode float
+;fm-spd.wav;flight mode speed
+;fm-fst.wav;flight mode fast
+;fm-nrm.wav;flight mode normal
+;fm-crs.wav;flight mode cruise
+;fm-acr.wav;flight mode acro
+;fm-rce.wav;flight mode race
+;fm-lch.wav;flight mode launch
+;fm-png.wav;flight mode ping
+;fm-thm.wav;flight mode thermal
+;fm-thl.wav;flight mode thermal left
+;fm-thr.wav;flight mode thermal right
+;fm-stb.wav;flight mode stabilize
+;fm-hor.wav;flight mode horizon
+;fm-ang.wav;flight mode angle
+;fm-id1.wav;flight mode idle up 1
+;fm-id2.wav;flight mode idle up 2
+;ratlow.wav;low rate
+;ratmed.wav;medium rate
+;rathi.wav;high rate
+;takeoff.wav;take off
+;sport.wav;sport
+;pattern.wav;pattern
+;3d.wav;3D
+;landin.wav;landing
+;idleu1.wav;idle up 1
+;idleu2.wav;idle up 2
+;normod.wav;normal mode
+;bank-0.wav;bank 0
+;bank-1.wav;bank 1
+;bank-2.wav;bank 2
+;bank-3.wav;bank 3
+;headlo.wav;heading lock
+;ratmod.wav;rate mode
+;3d-mod.wav;3D Mode
+;stabmo.wav;Stabilize Mode
+;on.wav;on
+;off.wav;off
+;buzact.wav;buzzer active
+;crfact.wav;crash-flip active
+;blkact.wav;blackbox active
+;preact.wav;pre-arm active
+;stbmod.wav;stable mode
+;brakon.wav;brakes on
+;brakof.wav;brakes off
+;btfon.wav;butterfly on
+;btfoff.wav;butterfly off
+;flp1.wav;flaps one
+;flp2.wav;flaps two
+;flp3.wav;flaps three
+;flp4.wav;flaps four
+;flp5.wav;flaps five
+;wngswp.wav;wingsweep
+;whlbro.wav;wheelbrakes on
+;whlbrf.wav;wheelbrakes off
+;manmod.wav;manual mode
+;acrmod.wav;acro mode
+;angmod.wav;angle mode
+;hznmod.wav;horizon mode
+;lncmod.wav;launch mode
+;airmod.wav;air mode
+;pitmod.wav;pit mode
+;navcrs.wav;navigation cruise
+;navcsh.wav;navigation course hold
+;navalh.wav;navigation altitude hold
+;navpos.wav;navigation position hold
+;navrth.wav;navigation return to home
+;navwp.wav;navigation waypoint
+;cruise.wav;cruise
+;crshld.wav;course hold
+;althld.wav;altitude hold
+;poshld.wav;position hold
+;rth.wav;return to home
+;waypnt.wav;waypoint
+;manual.wav;manual
+;auto.wav;auto
+;osd.wav;O S D
+;osdprf.wav;O S D profile
