@@ -1,0 +1,38 @@
+name: Generate voice wavs
+on:
+  workflow_dispatch:
+
+env:
+  SPX_VERSION: "1.0.0"
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install and configure Speech CLI
+        run: |
+          dotnet tool install -g Microsoft.CognitiveServices.Speech.CLI --version ${{ env.SPX_VERSION }}
+          spx config @key --set ${{ secrets.SPEECH_SUBSCRIPTION_KEY }} 
+          spx config @region --set ${{ secrets.SPEECH_RESOURCE_REGION }}
+
+      - name: Check out the repo
+        uses: actions/checkout@v3
+
+      # - name: Verify the package before building
+      #   run: ./build-checks.sh
+
+      - name: Generate the voice files
+        run: ./generate.sh
+
+      # Delete all potentially sensitive config variables from build machine
+      - name: Delete configuration 
+        run: |
+          spx config @spx.defaults --set @@none
+          echo CONFIGURATION DELETED
+
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          default_author: github_actions
+          message: 'Generated voice files'
+          add: 'SOUNDS/\*.wav'
