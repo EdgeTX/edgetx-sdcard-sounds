@@ -27,7 +27,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Build the release zip packages
-        run: ./generate.sh
+        run: ./release.sh
 
       - name: Upload binaries to release
         uses: marvinpinto/action-automatic-releases@latest
