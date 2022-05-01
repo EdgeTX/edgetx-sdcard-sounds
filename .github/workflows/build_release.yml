@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: Install Dependencies
         run: |
-          apt-get update && apt-get install --yes --no-install-recommends ffmpeg
+          sudo apt-get update && sudo apt-get install --yes --no-install-recommends ffmpeg
           pip install ffmpeg-normalise
 
       - name: Check out the repo
