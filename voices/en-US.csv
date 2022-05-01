@@ -328,3 +328,6 @@ SYSTEM;modelpwr.wav;receiver still connected
 ;sxrsof.wav;stabilizer off
 ;sxrstb.wav;stabilizer on
 ;sxrwr.wav;wind rejection mode
+;turton.wav;turtle mode on
+;turtof.wav;turtle mode off
+;flip.wav;flip
