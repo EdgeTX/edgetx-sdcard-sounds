@@ -322,3 +322,9 @@ SYSTEM;modelpwr.wav;receiver still connected
 ;auto.wav;auto
 ;osd.wav;O S D
 ;osdprf.wav;O S D profile
+;sxrahd.wav;attitude hold mode
+;sxrman.wav;manual mode
+;sxrsmd.wav;stabiliser mode
+;sxrsof.wav;stabiliser off
+;sxrstb.wav;stabiliser on
+;sxrwr.wav;wind rejection mode
