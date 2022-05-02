@@ -1,279 +1,279 @@
-path;filename;word or phrase to speak
-SYSTEM;0000.wav;nula
-SYSTEM;0001.wav;jedna
-SYSTEM;0002.wav;dva
-SYSTEM;0003.wav;3
-SYSTEM;0004.wav;4
-SYSTEM;0005.wav;5
-SYSTEM;0006.wav;6
-SYSTEM;0007.wav;7
-SYSTEM;0008.wav;8
-SYSTEM;0009.wav;9
-SYSTEM;0010.wav;10
-SYSTEM;0011.wav;11
-SYSTEM;0012.wav;12
-SYSTEM;0013.wav;13
-SYSTEM;0014.wav;14
-SYSTEM;0015.wav;15
-SYSTEM;0016.wav;16
-SYSTEM;0017.wav;17
-SYSTEM;0018.wav;18
-SYSTEM;0019.wav;19
-SYSTEM;0020.wav;20
-SYSTEM;0021.wav;21
-SYSTEM;0022.wav;22
-SYSTEM;0023.wav;23
-SYSTEM;0024.wav;24
-SYSTEM;0025.wav;25
-SYSTEM;0026.wav;26
-SYSTEM;0027.wav;27
-SYSTEM;0028.wav;28
-SYSTEM;0029.wav;29
-SYSTEM;0030.wav;30
-SYSTEM;0031.wav;31
-SYSTEM;0032.wav;32
-SYSTEM;0033.wav;33
-SYSTEM;0034.wav;34
-SYSTEM;0035.wav;35
-SYSTEM;0036.wav;36
-SYSTEM;0037.wav;37
-SYSTEM;0038.wav;38
-SYSTEM;0039.wav;39
-SYSTEM;0040.wav;40
-SYSTEM;0041.wav;41
-SYSTEM;0042.wav;42
-SYSTEM;0043.wav;43
-SYSTEM;0044.wav;44
-SYSTEM;0045.wav;45
-SYSTEM;0046.wav;46
-SYSTEM;0047.wav;47
-SYSTEM;0048.wav;48
-SYSTEM;0049.wav;49
-SYSTEM;0050.wav;50
-SYSTEM;0051.wav;51
-SYSTEM;0052.wav;52
-SYSTEM;0053.wav;53
-SYSTEM;0054.wav;54
-SYSTEM;0055.wav;55
-SYSTEM;0056.wav;56
-SYSTEM;0057.wav;57
-SYSTEM;0058.wav;58
-SYSTEM;0059.wav;59
-SYSTEM;0060.wav;60
-SYSTEM;0061.wav;61
-SYSTEM;0062.wav;62
-SYSTEM;0063.wav;63
-SYSTEM;0064.wav;64
-SYSTEM;0065.wav;65
-SYSTEM;0066.wav;66
-SYSTEM;0067.wav;67
-SYSTEM;0068.wav;68
-SYSTEM;0069.wav;69
-SYSTEM;0070.wav;70
-SYSTEM;0071.wav;71
-SYSTEM;0072.wav;72
-SYSTEM;0073.wav;73
-SYSTEM;0074.wav;74
-SYSTEM;0075.wav;75
-SYSTEM;0076.wav;76
-SYSTEM;0077.wav;77
-SYSTEM;0078.wav;78
-SYSTEM;0079.wav;79
-SYSTEM;0080.wav;80
-SYSTEM;0081.wav;81
-SYSTEM;0082.wav;82
-SYSTEM;0083.wav;83
-SYSTEM;0084.wav;84
-SYSTEM;0085.wav;85
-SYSTEM;0086.wav;86
-SYSTEM;0087.wav;87
-SYSTEM;0088.wav;88
-SYSTEM;0089.wav;89
-SYSTEM;0090.wav;90
-SYSTEM;0091.wav;91
-SYSTEM;0092.wav;92
-SYSTEM;0093.wav;93
-SYSTEM;0094.wav;94
-SYSTEM;0095.wav;95
-SYSTEM;0096.wav;96
-SYSTEM;0097.wav;97
-SYSTEM;0098.wav;98
-SYSTEM;0099.wav;99
-SYSTEM;0100.wav;sto
-SYSTEM;0101.wav;dvěsta
-SYSTEM;0102.wav;třista
-SYSTEM;0103.wav;čtyřista
-SYSTEM;0104.wav;pětset
-SYSTEM;0105.wav;šestset
-SYSTEM;0106.wav;sedmset
-SYSTEM;0107.wav;osmset
-SYSTEM;0108.wav;devětset
-SYSTEM;0109.wav;tisíc
-SYSTEM;0110.wav;tisíce
-SYSTEM;0111.wav;jeden
-SYSTEM;0112.wav;jedno
-SYSTEM;0113.wav;dvě
-SYSTEM;0114.wav;celá
-SYSTEM;0115.wav;celé
-SYSTEM;0116.wav;celých
-SYSTEM;0117.wav;mínus
-SYSTEM;volt0.wav;volt
-SYSTEM;volt1.wav;volty
-SYSTEM;volt2.wav;voltů
-SYSTEM;volt3.wav;voltu
-SYSTEM;amp0.wav;ampér
-SYSTEM;amp1.wav;ampéry
-SYSTEM;amp2.wav;ampérů
-SYSTEM;amp3.wav;ampéru
-SYSTEM;mamp0.wav;miliampér
-SYSTEM;mamp1.wav;miliampéry
-SYSTEM;mamp2.wav;miliampérů
-SYSTEM;mamp3.wav;miliampéru
-SYSTEM;knot0.wav;uzel
-SYSTEM;knot1.wav;uzly
-SYSTEM;knot2.wav;uzlů
-SYSTEM;knot3.wav;uzlu
-SYSTEM;mps0.wav;metr za sekundu
-SYSTEM;mps1.wav;metry za sekundu
-SYSTEM;mps2.wav;metrů za sekundu
-SYSTEM;mps3.wav;metru za sekundu
-SYSTEM;fps0.wav;stopa za sekundu
-SYSTEM;fps1.wav;stopy za sekundu
-SYSTEM;fps2.wav;stop za sekundu
-SYSTEM;fps3.wav;stopy za sekundu
-SYSTEM;kph0.wav;kilometr za hodinu
-SYSTEM;kph1.wav;kilometry za hodinu
-SYSTEM;kph2.wav;kilometrů za hodinu
-SYSTEM;kph3.wav;kilometru za hodinu
-SYSTEM;mph0.wav;míle za hodinu
-SYSTEM;mph1.wav;míle za hodinu
-SYSTEM;mph2.wav;mil za hodinu
-SYSTEM;mph3.wav;míle za hodinu
-SYSTEM;meter0.wav;metr
-SYSTEM;meter1.wav;metry
-SYSTEM;meter2.wav;metrů
-SYSTEM;meter3.wav;metru
-SYSTEM;foot0.wav;stopa
-SYSTEM;foot1.wav;stopy
-SYSTEM;foot2.wav;stop
-SYSTEM;foot3.wav;stopy
-SYSTEM;celsius0.wav;stupeň celsia
-SYSTEM;celsius1.wav;stupně celsia
-SYSTEM;celsius2.wav;stupňů celsia
-SYSTEM;celsius3.wav;stupně celsia
-SYSTEM;fahr0.wav;stupeň fahrenheita
-SYSTEM;fahr1.wav;stupně fahrenheita
-SYSTEM;fahr2.wav;stupňů fahrenheita
-SYSTEM;fahr3.wav;stupně fahrenheita
-SYSTEM;percent0.wav;procento
-SYSTEM;percent1.wav;procenta
-SYSTEM;percent2.wav;procent
-SYSTEM;percent3.wav;procenta
-SYSTEM;mamph0.wav;miliampérhodina
-SYSTEM;mamph1.wav;miliampérhodiny
-SYSTEM;mamph2.wav;miliampérhodin
-SYSTEM;mamph3.wav;miliampérhodiny
-SYSTEM;watt0.wav;vat
-SYSTEM;watt1.wav;vaty
-SYSTEM;watt2.wav;vatů
-SYSTEM;watt3.wav;vatu
-SYSTEM;mwatt0.wav;milivat
-SYSTEM;mwatt1.wav;milivaty
-SYSTEM;mwatt2.wav;milivatů
-SYSTEM;mwatt3.wav;milivatu
-SYSTEM;db0.wav;decibel
-SYSTEM;db1.wav;decibely
-SYSTEM;db2.wav;decibelů
-SYSTEM;db3.wav;decibelu
-SYSTEM;rpm0.wav;otáčka za minutu
-SYSTEM;rpm1.wav;otáčky za minutu
-SYSTEM;rpm2.wav;otáček za minutu
-SYSTEM;rpm3.wav;otáčky za minutu
-SYSTEM;g0.wav;gé
-SYSTEM;g1.wav;gé
-SYSTEM;g2.wav;gé
-SYSTEM;g3.wav;gé
-SYSTEM;degree0.wav;stupeň
-SYSTEM;degree1.wav;stupně
-SYSTEM;degree2.wav;stupňů
-SYSTEM;degree3.wav;stupně
-SYSTEM;rad0.wav;radián
-SYSTEM;rad1.wav;radiány
-SYSTEM;rad2.wav;radiánů
-SYSTEM;rad3.wav;radiánu
-SYSTEM;ml0.wav;mililitr
-SYSTEM;ml1.wav;mililitry
-SYSTEM;ml2.wav;mililitrů
-SYSTEM;ml3.wav;mililitru
-SYSTEM;founce0.wav;dutá unce
-SYSTEM;founce1.wav;duté unce
-SYSTEM;founce2.wav;dutých uncí
-SYSTEM;founce3.wav;duté unce
-SYSTEM;mlpm0.wav;milliliter per minute
-SYSTEM;mlpm1.wav;milliliters per minute
-SYSTEM;hour0.wav;hodina
-SYSTEM;hour1.wav;hodiny
-SYSTEM;hour2.wav;hodin
-SYSTEM;hour3.wav;hodiny
-SYSTEM;minute0.wav;minuta
-SYSTEM;minute1.wav;minuty
-SYSTEM;minute2.wav;minut
-SYSTEM;minute3.wav;minuty
-SYSTEM;second0.wav;sekunda
-SYSTEM;second1.wav;sekundy
-SYSTEM;second2.wav;sekund
-SYSTEM;second3.wav;sekundy
-SYSTEM;midtrim.wav;střed trimu
-SYSTEM;maxtrim.wav;maximum trimu
-SYSTEM;mintrim.wav;minimum trimu
-SYSTEM;timovr1.wav;stopky 1 doběhly
-SYSTEM;timovr2.wav;stopky 2 doběhly
-SYSTEM;timovr3.wav;stopky 3 doběhly
-SYSTEM;lowbatt.wav;baterie rádia je vybitá
-SYSTEM;inactiv.wav;zapoměl jsi na mě
-SYSTEM;thralert.wav;plyn není na nule
-SYSTEM;swalert.wav;přepínače nejsou ve výchozí poloze
-SYSTEM;eebad.wav;neplatná eeprom
-SYSTEM;hello.wav;Žádám o povolení ke startu.
-SYSTEM;bye.wav;Tak zase příště
-SYSTEM;rssi_org.wav;nízký RF signál
-SYSTEM;rssi_red.wav;kritický RF signál
-SYSTEM;swr_red.wav;problém s anténou rádia
-SYSTEM;telemko.wav;telemetrie ztracena
-SYSTEM;telemok.wav;telemetrie je funkční
-SYSTEM;trainko.wav;trenér port odpojen
-SYSTEM;trainok.wav;trenér port připojen
-SYSTEM;sensorko.wav;senzor ztracen
-SYSTEM;servoko.wav;servo přetíženo
-SYSTEM;rxko.wav;r f přebuzeno
-SYSTEM;modelpwr.wav;receiver still connected
-;podvo0.wav;podvozek je zasunut
-;podvo1.wav;podvozek je vysunut
-;klapk1.wav;klapky jsou zapnuty
-;klapk0.wav;klapky jsou vypnuty
-;trene1.wav;trenér je zapnut
-;trene0.wav;trenér je vypnutý
-;motor0.wav;motor je vypnut
-;motor1.wav;motor je aktivován
-;vysoko.wav;jsi příliš vysoko
-;nizko.wav;jsi příliš nízko
-;bat0.wav;baterie modelu je vybitá
-;palivo.wav;dochází palivo
-;nsigna.wav;nízký signál
-;ksigna.wav;kritický signál
-;rrychl.wav;rychlý režim aktivován
-;rtermi.wav;termický režim aktivován
-;rnorm.wav;normální režim aktivován
-;rstart.wav;režim start aktivován
-;prista.wav;režim přistání aktivován
-;vario0.wav;vario je zapnuto
-;vario1.wav;vario je vypnuto
-;start1.wav;start povolen
-;fm-1.wav;letový režim jedna
-;fm-2.wav;letový režim dva
-;fm-3.wav;letový režim tři
-;fm-4.wav;letový režim čtyři
-;fm-5.wav;letový režim pět
-;fm-6.wav;letový režim šest
-;fm-7.wav;letový režim sedm
-;fm-8.wav;letový režim osm
+"String ID","Source text","Translation","Context","Path","Filename"
+"1","0","nula","","SYSTEM","0000.wav"
+"2","1","jedna","","SYSTEM","0001.wav"
+"3","2","dva","","SYSTEM","0002.wav"
+"4","3","3","","SYSTEM","0003.wav"
+"5","4","4","","SYSTEM","0004.wav"
+"6","5","5","","SYSTEM","0005.wav"
+"7","6","6","","SYSTEM","0006.wav"
+"8","7","7","","SYSTEM","0007.wav"
+"9","8","8","","SYSTEM","0008.wav"
+"10","9","9","","SYSTEM","0009.wav"
+"11","10","10","","SYSTEM","0010.wav"
+"12","11","11","","SYSTEM","0011.wav"
+"13","12","12","","SYSTEM","0012.wav"
+"14","13","13","","SYSTEM","0013.wav"
+"15","14","14","","SYSTEM","0014.wav"
+"16","15","15","","SYSTEM","0015.wav"
+"17","16","16","","SYSTEM","0016.wav"
+"18","17","17","","SYSTEM","0017.wav"
+"19","18","18","","SYSTEM","0018.wav"
+"20","19","19","","SYSTEM","0019.wav"
+"21","20","20","","SYSTEM","0020.wav"
+"22","21","21","","SYSTEM","0021.wav"
+"23","22","22","","SYSTEM","0022.wav"
+"24","23","23","","SYSTEM","0023.wav"
+"25","24","24","","SYSTEM","0024.wav"
+"26","25","25","","SYSTEM","0025.wav"
+"27","26","26","","SYSTEM","0026.wav"
+"28","27","27","","SYSTEM","0027.wav"
+"29","28","28","","SYSTEM","0028.wav"
+"30","29","29","","SYSTEM","0029.wav"
+"31","30","30","","SYSTEM","0030.wav"
+"32","31","31","","SYSTEM","0031.wav"
+"33","32","32","","SYSTEM","0032.wav"
+"34","33","33","","SYSTEM","0033.wav"
+"35","34","34","","SYSTEM","0034.wav"
+"36","35","35","","SYSTEM","0035.wav"
+"37","36","36","","SYSTEM","0036.wav"
+"38","37","37","","SYSTEM","0037.wav"
+"39","38","38","","SYSTEM","0038.wav"
+"40","39","39","","SYSTEM","0039.wav"
+"41","40","40","","SYSTEM","0040.wav"
+"42","41","41","","SYSTEM","0041.wav"
+"43","42","42","","SYSTEM","0042.wav"
+"44","43","43","","SYSTEM","0043.wav"
+"45","44","44","","SYSTEM","0044.wav"
+"46","45","45","","SYSTEM","0045.wav"
+"47","46","46","","SYSTEM","0046.wav"
+"48","47","47","","SYSTEM","0047.wav"
+"49","48","48","","SYSTEM","0048.wav"
+"50","49","49","","SYSTEM","0049.wav"
+"51","50","50","","SYSTEM","0050.wav"
+"52","51","51","","SYSTEM","0051.wav"
+"53","52","52","","SYSTEM","0052.wav"
+"54","53","53","","SYSTEM","0053.wav"
+"55","54","54","","SYSTEM","0054.wav"
+"56","55","55","","SYSTEM","0055.wav"
+"57","56","56","","SYSTEM","0056.wav"
+"58","57","57","","SYSTEM","0057.wav"
+"59","58","58","","SYSTEM","0058.wav"
+"60","59","59","","SYSTEM","0059.wav"
+"61","60","60","","SYSTEM","0060.wav"
+"62","61","61","","SYSTEM","0061.wav"
+"63","62","62","","SYSTEM","0062.wav"
+"64","63","63","","SYSTEM","0063.wav"
+"65","64","64","","SYSTEM","0064.wav"
+"66","65","65","","SYSTEM","0065.wav"
+"67","66","66","","SYSTEM","0066.wav"
+"68","67","67","","SYSTEM","0067.wav"
+"69","68","68","","SYSTEM","0068.wav"
+"70","69","69","","SYSTEM","0069.wav"
+"71","70","70","","SYSTEM","0070.wav"
+"72","71","71","","SYSTEM","0071.wav"
+"73","72","72","","SYSTEM","0072.wav"
+"74","73","73","","SYSTEM","0073.wav"
+"75","74","74","","SYSTEM","0074.wav"
+"76","75","75","","SYSTEM","0075.wav"
+"77","76","76","","SYSTEM","0076.wav"
+"78","77","77","","SYSTEM","0077.wav"
+"79","78","78","","SYSTEM","0078.wav"
+"80","79","79","","SYSTEM","0079.wav"
+"81","80","80","","SYSTEM","0080.wav"
+"82","81","81","","SYSTEM","0081.wav"
+"83","82","82","","SYSTEM","0082.wav"
+"84","83","83","","SYSTEM","0083.wav"
+"85","84","84","","SYSTEM","0084.wav"
+"86","85","85","","SYSTEM","0085.wav"
+"87","86","86","","SYSTEM","0086.wav"
+"88","87","87","","SYSTEM","0087.wav"
+"89","88","88","","SYSTEM","0088.wav"
+"90","89","89","","SYSTEM","0089.wav"
+"91","90","90","","SYSTEM","0090.wav"
+"92","91","91","","SYSTEM","0091.wav"
+"93","92","92","","SYSTEM","0092.wav"
+"94","93","93","","SYSTEM","0093.wav"
+"95","94","94","","SYSTEM","0094.wav"
+"96","95","95","","SYSTEM","0095.wav"
+"97","96","96","","SYSTEM","0096.wav"
+"98","97","97","","SYSTEM","0097.wav"
+"99","98","98","","SYSTEM","0098.wav"
+"100","99","99","","SYSTEM","0099.wav"
+"101","sto","sto","","SYSTEM","0100.wav"
+"102","dvěsta","dvěsta","","SYSTEM","0101.wav"
+"103","třista","třista","","SYSTEM","0102.wav"
+"104","čtyřista","čtyřista","","SYSTEM","0103.wav"
+"105","pětset","pětset","","SYSTEM","0104.wav"
+"106","šestset","šestset","","SYSTEM","0105.wav"
+"107","sedmset","sedmset","","SYSTEM","0106.wav"
+"108","osmset","osmset","","SYSTEM","0107.wav"
+"109","devětset","devětset","","SYSTEM","0108.wav"
+"110","tisíc","tisíc","","SYSTEM","0109.wav"
+"111","tisíce","tisíce","","SYSTEM","0110.wav"
+"112","jeden","jeden","","SYSTEM","0111.wav"
+"113","jedno","jedno","","SYSTEM","0112.wav"
+"114","dvě","dvě","","SYSTEM","0113.wav"
+"115","celá","celá","","SYSTEM","0114.wav"
+"116","celé","celé","","SYSTEM","0115.wav"
+"117","celých","celých","","SYSTEM","0116.wav"
+"118","mínus","mínus","","SYSTEM","0117.wav"
+"119","volt","volt","","SYSTEM","volt0.wav"
+"120","volty","volty","","SYSTEM","volt1.wav"
+"121","voltů","voltů","","SYSTEM","volt2.wav"
+"122","voltu","voltu","","SYSTEM","volt3.wav"
+"123","ampér","ampér","","SYSTEM","amp0.wav"
+"124","ampéry","ampéry","","SYSTEM","amp1.wav"
+"125","ampérů","ampérů","","SYSTEM","amp2.wav"
+"126","ampéru","ampéru","","SYSTEM","amp3.wav"
+"127","miliampér","miliampér","","SYSTEM","mamp0.wav"
+"128","miliampéry","miliampéry","","SYSTEM","mamp1.wav"
+"129","miliampérů","miliampérů","","SYSTEM","mamp2.wav"
+"130","miliampéru","miliampéru","","SYSTEM","mamp3.wav"
+"131","uzel","uzel","","SYSTEM","knot0.wav"
+"132","uzly","uzly","","SYSTEM","knot1.wav"
+"133","uzlů","uzlů","","SYSTEM","knot2.wav"
+"134","uzlu","uzlu","","SYSTEM","knot3.wav"
+"135","metr za sekundu","metr za sekundu","","SYSTEM","mps0.wav"
+"136","metry za sekundu","metry za sekundu","","SYSTEM","mps1.wav"
+"137","metrů za sekundu","metrů za sekundu","","SYSTEM","mps2.wav"
+"138","metru za sekundu","metru za sekundu","","SYSTEM","mps3.wav"
+"139","stopa za sekundu","stopa za sekundu","","SYSTEM","fps0.wav"
+"140","stopy za sekundu","stopy za sekundu","","SYSTEM","fps1.wav"
+"141","stop za sekundu","stop za sekundu","","SYSTEM","fps2.wav"
+"142","stopy za sekundu","stopy za sekundu","","SYSTEM","fps3.wav"
+"143","kilometr za hodinu","kilometr za hodinu","","SYSTEM","kph0.wav"
+"144","kilometry za hodinu","kilometry za hodinu","","SYSTEM","kph1.wav"
+"145","kilometrů za hodinu","kilometrů za hodinu","","SYSTEM","kph2.wav"
+"146","kilometru za hodinu","kilometru za hodinu","","SYSTEM","kph3.wav"
+"147","míle za hodinu","míle za hodinu","","SYSTEM","mph0.wav"
+"148","míle za hodinu","míle za hodinu","","SYSTEM","mph1.wav"
+"149","mil za hodinu","mil za hodinu","","SYSTEM","mph2.wav"
+"150","míle za hodinu","míle za hodinu","","SYSTEM","mph3.wav"
+"151","metr","metr","","SYSTEM","meter0.wav"
+"152","metry","metry","","SYSTEM","meter1.wav"
+"153","metrů","metrů","","SYSTEM","meter2.wav"
+"154","metru","metru","","SYSTEM","meter3.wav"
+"155","stopa","stopa","","SYSTEM","foot0.wav"
+"156","stopy","stopy","","SYSTEM","foot1.wav"
+"157","stop","stop","","SYSTEM","foot2.wav"
+"158","stopy","stopy","","SYSTEM","foot3.wav"
+"159","stupeň celsia","stupeň celsia","","SYSTEM","celsius0.wav"
+"160","stupně celsia","stupně celsia","","SYSTEM","celsius1.wav"
+"161","stupňů celsia","stupňů celsia","","SYSTEM","celsius2.wav"
+"162","stupně celsia","stupně celsia","","SYSTEM","celsius3.wav"
+"163","stupeň fahrenheita","stupeň fahrenheita","","SYSTEM","fahr0.wav"
+"164","stupně fahrenheita","stupně fahrenheita","","SYSTEM","fahr1.wav"
+"165","stupňů fahrenheita","stupňů fahrenheita","","SYSTEM","fahr2.wav"
+"166","stupně fahrenheita","stupně fahrenheita","","SYSTEM","fahr3.wav"
+"167","procento","procento","","SYSTEM","percent0.wav"
+"168","procenta","procenta","","SYSTEM","percent1.wav"
+"169","procent","procent","","SYSTEM","percent2.wav"
+"170","procenta","procenta","","SYSTEM","percent3.wav"
+"171","miliampérhodina","miliampérhodina","","SYSTEM","mamph0.wav"
+"172","miliampérhodiny","miliampérhodiny","","SYSTEM","mamph1.wav"
+"173","miliampérhodin","miliampérhodin","","SYSTEM","mamph2.wav"
+"174","miliampérhodiny","miliampérhodiny","","SYSTEM","mamph3.wav"
+"175","vat","vat","","SYSTEM","watt0.wav"
+"176","vaty","vaty","","SYSTEM","watt1.wav"
+"177","vatů","vatů","","SYSTEM","watt2.wav"
+"178","vatu","vatu","","SYSTEM","watt3.wav"
+"179","milivat","milivat","","SYSTEM","mwatt0.wav"
+"180","milivaty","milivaty","","SYSTEM","mwatt1.wav"
+"181","milivatů","milivatů","","SYSTEM","mwatt2.wav"
+"182","milivatu","milivatu","","SYSTEM","mwatt3.wav"
+"183","decibel","decibel","","SYSTEM","db0.wav"
+"184","decibely","decibely","","SYSTEM","db1.wav"
+"185","decibelů","decibelů","","SYSTEM","db2.wav"
+"186","decibelu","decibelu","","SYSTEM","db3.wav"
+"187","otáčka za minutu","otáčka za minutu","","SYSTEM","rpm0.wav"
+"188","otáčky za minutu","otáčky za minutu","","SYSTEM","rpm1.wav"
+"189","otáček za minutu","otáček za minutu","","SYSTEM","rpm2.wav"
+"190","otáčky za minutu","otáčky za minutu","","SYSTEM","rpm3.wav"
+"191","gé","gé","","SYSTEM","g0.wav"
+"192","gé","gé","","SYSTEM","g1.wav"
+"193","gé","gé","","SYSTEM","g2.wav"
+"194","gé","gé","","SYSTEM","g3.wav"
+"195","stupeň","stupeň","","SYSTEM","degree0.wav"
+"196","stupně","stupně","","SYSTEM","degree1.wav"
+"197","stupňů","stupňů","","SYSTEM","degree2.wav"
+"198","stupně","stupně","","SYSTEM","degree3.wav"
+"199","radián","radián","","SYSTEM","rad0.wav"
+"200","radiány","radiány","","SYSTEM","rad1.wav"
+"201","radiánů","radiánů","","SYSTEM","rad2.wav"
+"202","radiánu","radiánu","","SYSTEM","rad3.wav"
+"203","mililitr","mililitr","","SYSTEM","ml0.wav"
+"204","mililitry","mililitry","","SYSTEM","ml1.wav"
+"205","mililitrů","mililitrů","","SYSTEM","ml2.wav"
+"206","mililitru","mililitru","","SYSTEM","ml3.wav"
+"207","dutá unce","dutá unce","","SYSTEM","founce0.wav"
+"208","duté unce","duté unce","","SYSTEM","founce1.wav"
+"209","dutých uncí","dutých uncí","","SYSTEM","founce2.wav"
+"210","duté unce","duté unce","","SYSTEM","founce3.wav"
+"211","milliliter per minute","milliliter per minute","","SYSTEM","mlpm0.wav"
+"212","milliliters per minute","milliliters per minute","","SYSTEM","mlpm1.wav"
+"213","hodina","hodina","","SYSTEM","hour0.wav"
+"214","hodiny","hodiny","","SYSTEM","hour1.wav"
+"215","hodin","hodin","","SYSTEM","hour2.wav"
+"216","hodiny","hodiny","","SYSTEM","hour3.wav"
+"217","minuta","minuta","","SYSTEM","minute0.wav"
+"218","minuty","minuty","","SYSTEM","minute1.wav"
+"219","minut","minut","","SYSTEM","minute2.wav"
+"220","minuty","minuty","","SYSTEM","minute3.wav"
+"221","sekunda","sekunda","","SYSTEM","second0.wav"
+"222","sekundy","sekundy","","SYSTEM","second1.wav"
+"223","sekund","sekund","","SYSTEM","second2.wav"
+"224","sekundy","sekundy","","SYSTEM","second3.wav"
+"225","střed trimu","střed trimu","","SYSTEM","midtrim.wav"
+"226","maximum trimu","maximum trimu","","SYSTEM","maxtrim.wav"
+"227","minimum trimu","minimum trimu","","SYSTEM","mintrim.wav"
+"228","stopky 1 doběhly","stopky 1 doběhly","","SYSTEM","timovr1.wav"
+"229","stopky 2 doběhly","stopky 2 doběhly","","SYSTEM","timovr2.wav"
+"230","stopky 3 doběhly","stopky 3 doběhly","","SYSTEM","timovr3.wav"
+"231","baterie rádia je vybitá","baterie rádia je vybitá","","SYSTEM","lowbatt.wav"
+"232","zapoměl jsi na mě","zapoměl jsi na mě","","SYSTEM","inactiv.wav"
+"233","plyn není na nule","plyn není na nule","","SYSTEM","thralert.wav"
+"234","přepínače nejsou ve výchozí poloze","přepínače nejsou ve výchozí poloze","","SYSTEM","swalert.wav"
+"235","neplatná eeprom","neplatná eeprom","","SYSTEM","eebad.wav"
+"236","Žádám o povolení ke startu.","Žádám o povolení ke startu.","","SYSTEM","hello.wav"
+"237","Tak zase příště","Tak zase příště","","SYSTEM","bye.wav"
+"238","nízký RF signál","nízký RF signál","","SYSTEM","rssi_org.wav"
+"239","kritický RF signál","kritický RF signál","","SYSTEM","rssi_red.wav"
+"240","problém s anténou rádia","problém s anténou rádia","","SYSTEM","swr_red.wav"
+"241","telemetrie ztracena","telemetrie ztracena","","SYSTEM","telemko.wav"
+"242","telemetrie je funkční","telemetrie je funkční","","SYSTEM","telemok.wav"
+"243","trenér port odpojen","trenér port odpojen","","SYSTEM","trainko.wav"
+"244","trenér port připojen","trenér port připojen","","SYSTEM","trainok.wav"
+"245","senzor ztracen","senzor ztracen","","SYSTEM","sensorko.wav"
+"246","servo přetíženo","servo přetíženo","","SYSTEM","servoko.wav"
+"247","r f přebuzeno","r f přebuzeno","","SYSTEM","rxko.wav"
+"248","receiver still connected","receiver still connected","","SYSTEM","modelpwr.wav"
+"249","podvozek je zasunut","podvozek je zasunut","","","podvo0.wav"
+"250","podvozek je vysunut","podvozek je vysunut","","","podvo1.wav"
+"251","klapky jsou zapnuty","klapky jsou zapnuty","","","klapk1.wav"
+"252","klapky jsou vypnuty","klapky jsou vypnuty","","","klapk0.wav"
+"253","trenér je zapnut","trenér je zapnut","","","trene1.wav"
+"254","trenér je vypnutý","trenér je vypnutý","","","trene0.wav"
+"255","motor je vypnut","motor je vypnut","","","motor0.wav"
+"256","motor je aktivován","motor je aktivován","","","motor1.wav"
+"257","jsi příliš vysoko","jsi příliš vysoko","","","vysoko.wav"
+"258","jsi příliš nízko","jsi příliš nízko","","","nizko.wav"
+"259","baterie modelu je vybitá","baterie modelu je vybitá","","","bat0.wav"
+"260","dochází palivo","dochází palivo","","","palivo.wav"
+"261","nízký signál","nízký signál","","","nsigna.wav"
+"262","kritický signál","kritický signál","","","ksigna.wav"
+"263","rychlý režim aktivován","rychlý režim aktivován","","","rrychl.wav"
+"264","termický režim aktivován","termický režim aktivován","","","rtermi.wav"
+"265","normální režim aktivován","normální režim aktivován","","","rnorm.wav"
+"266","režim start aktivován","režim start aktivován","","","rstart.wav"
+"267","režim přistání aktivován","režim přistání aktivován","","","prista.wav"
+"268","vario je zapnuto","vario je zapnuto","","","vario0.wav"
+"269","vario je vypnuto","vario je vypnuto","","","vario1.wav"
+"270","start povolen","start povolen","","","start1.wav"
+"271","letový režim jedna","letový režim jedna","","","fm-1.wav"
+"272","letový režim dva","letový režim dva","","","fm-2.wav"
+"273","letový režim tři","letový režim tři","","","fm-3.wav"
+"274","letový režim čtyři","letový režim čtyři","","","fm-4.wav"
+"275","letový režim pět","letový režim pět","","","fm-5.wav"
+"276","letový režim šest","letový režim šest","","","fm-6.wav"
+"277","letový režim sedm","letový režim sedm","","","fm-7.wav"
+"278","letový režim osm","letový režim osm","","","fm-8.wav"

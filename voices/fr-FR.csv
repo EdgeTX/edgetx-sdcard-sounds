@@ -1,227 +1,227 @@
-path;filename;word or phrase to speak
-SYSTEM;0000.wav;0
-SYSTEM;0001.wav;1
-SYSTEM;0002.wav;2
-SYSTEM;0003.wav;3
-SYSTEM;0004.wav;4
-SYSTEM;0005.wav;5
-SYSTEM;0006.wav;6
-SYSTEM;0007.wav;7
-SYSTEM;0008.wav;8
-SYSTEM;0009.wav;9
-SYSTEM;0010.wav;10
-SYSTEM;0011.wav;11
-SYSTEM;0012.wav;12
-SYSTEM;0013.wav;13
-SYSTEM;0014.wav;14
-SYSTEM;0015.wav;15
-SYSTEM;0016.wav;16
-SYSTEM;0017.wav;17
-SYSTEM;0018.wav;18
-SYSTEM;0019.wav;19
-SYSTEM;0020.wav;20
-SYSTEM;0021.wav;21
-SYSTEM;0022.wav;22
-SYSTEM;0023.wav;23
-SYSTEM;0024.wav;24
-SYSTEM;0025.wav;25
-SYSTEM;0026.wav;26
-SYSTEM;0027.wav;27
-SYSTEM;0028.wav;28
-SYSTEM;0029.wav;29
-SYSTEM;0030.wav;30
-SYSTEM;0031.wav;31
-SYSTEM;0032.wav;32
-SYSTEM;0033.wav;33
-SYSTEM;0034.wav;34
-SYSTEM;0035.wav;35
-SYSTEM;0036.wav;36
-SYSTEM;0037.wav;37
-SYSTEM;0038.wav;38
-SYSTEM;0039.wav;39
-SYSTEM;0040.wav;40
-SYSTEM;0041.wav;41
-SYSTEM;0042.wav;42
-SYSTEM;0043.wav;43
-SYSTEM;0044.wav;44
-SYSTEM;0045.wav;45
-SYSTEM;0046.wav;46
-SYSTEM;0047.wav;47
-SYSTEM;0048.wav;48
-SYSTEM;0049.wav;49
-SYSTEM;0050.wav;50
-SYSTEM;0051.wav;51
-SYSTEM;0052.wav;52
-SYSTEM;0053.wav;53
-SYSTEM;0054.wav;54
-SYSTEM;0055.wav;55
-SYSTEM;0056.wav;56
-SYSTEM;0057.wav;57
-SYSTEM;0058.wav;58
-SYSTEM;0059.wav;59
-SYSTEM;0060.wav;60
-SYSTEM;0061.wav;61
-SYSTEM;0062.wav;62
-SYSTEM;0063.wav;63
-SYSTEM;0064.wav;64
-SYSTEM;0065.wav;65
-SYSTEM;0066.wav;66
-SYSTEM;0067.wav;67
-SYSTEM;0068.wav;68
-SYSTEM;0069.wav;69
-SYSTEM;0070.wav;70
-SYSTEM;0071.wav;71
-SYSTEM;0072.wav;72
-SYSTEM;0073.wav;73
-SYSTEM;0074.wav;74
-SYSTEM;0075.wav;75
-SYSTEM;0076.wav;76
-SYSTEM;0077.wav;77
-SYSTEM;0078.wav;78
-SYSTEM;0079.wav;79
-SYSTEM;0080.wav;80
-SYSTEM;0081.wav;81
-SYSTEM;0082.wav;82
-SYSTEM;0083.wav;83
-SYSTEM;0084.wav;84
-SYSTEM;0085.wav;85
-SYSTEM;0086.wav;86
-SYSTEM;0087.wav;87
-SYSTEM;0088.wav;88
-SYSTEM;0089.wav;89
-SYSTEM;0090.wav;90
-SYSTEM;0091.wav;91
-SYSTEM;0092.wav;92
-SYSTEM;0093.wav;93
-SYSTEM;0094.wav;94
-SYSTEM;0095.wav;95
-SYSTEM;0096.wav;96
-SYSTEM;0097.wav;97
-SYSTEM;0098.wav;98
-SYSTEM;0099.wav;99
-SYSTEM;0100.wav;100
-SYSTEM;0101.wav;200
-SYSTEM;0102.wav;300
-SYSTEM;0103.wav;400
-SYSTEM;0104.wav;500
-SYSTEM;0105.wav;600
-SYSTEM;0106.wav;700
-SYSTEM;0107.wav;800
-SYSTEM;0108.wav;900
-SYSTEM;0109.wav;1000
-SYSTEM;0110.wav;une
-SYSTEM;0111.wav;onze
-SYSTEM;0112.wav;vingt et une
-SYSTEM;0113.wav;trente et une
-SYSTEM;0114.wav;quarante et une
-SYSTEM;0115.wav;cinquante et une
-SYSTEM;0116.wav;soixante et une
-SYSTEM;0117.wav;soixante et onze
-SYSTEM;0118.wav;quatre vingt une
-SYSTEM;0119.wav;virgule
-SYSTEM;0120.wav;et
-SYSTEM;0121.wav;moins
-SYSTEM;0122.wav;minuit
-SYSTEM;0123.wav;midi
-SYSTEM;volt0.wav;volts
-SYSTEM;amp0.wav;ampères
-SYSTEM;mamp0.wav;milli ampères
-SYSTEM;knot0.wav;noeud
-SYSTEM;mps0.wav;mètres seconde
-SYSTEM;fps0.wav;pieds par seconde
-SYSTEM;kph0.wav;kilomètre heure
-SYSTEM;mph0.wav;miles par heure
-SYSTEM;meter0.wav;mètres
-SYSTEM;foot0.wav;pieds
-SYSTEM;celsius0.wav;degrés
-SYSTEM;degf0.wav;degrés fahrenheit
-SYSTEM;percent0.wav;pourcents
-SYSTEM;mamph0.wav;milli ampères heure
-SYSTEM;watt0.wav;watt
-SYSTEM;mwatt0.wav;milli watt
-SYSTEM;db0.wav;d b
-SYSTEM;rpm0.wav;tours minute
-SYSTEM;g0.wav;g
-SYSTEM;degree0.wav;degrés
-SYSTEM;rad0.wav;radians
-SYSTEM;ml0.wav;millilitres
-SYSTEM;founce0.wav;onces
-SYSTEM;mlpm0.wav;millilitre minute
-SYSTEM;hour0.wav;heure
-SYSTEM;minute0.wav;minute
-SYSTEM;second0.wav;seconde
-SYSTEM;0180.wav;virgule 0
-SYSTEM;0181.wav;virgule 1
-SYSTEM;0182.wav;virgule 2
-SYSTEM;0183.wav;virgule 3
-SYSTEM;0184.wav;virgule 4
-SYSTEM;0185.wav;virgule 5
-SYSTEM;0186.wav;virgule 6
-SYSTEM;0187.wav;virgule 7
-SYSTEM;0188.wav;virgule 8
-SYSTEM;0189.wav;virgule 9
-SYSTEM;midtrim.wav;Trim centré
-SYSTEM;maxtrim.wav;Trim maximum atteint
-SYSTEM;mintrim.wav;Trim minimum atteint
-SYSTEM;timovr1.wav;Chrono 1 à 0
-SYSTEM;timovr2.wav;Chrono 2 à 0
-SYSTEM;timovr3.wav;Chrono 3 à 0
-SYSTEM;lowbatt.wav;Batterie radio faible
-SYSTEM;inactiv.wav;Radio inactive
-SYSTEM;thralert.wav;Alerte manche des gaz
-SYSTEM;swalert.wav;Alerte inters
-SYSTEM;eebad.wav;éprome corrompue
-SYSTEM;hello.wav;Bienvenue sur edge t x
-SYSTEM;rssi_org.wav;Signal RF, faible
-SYSTEM;rssi_red.wav;Signal RF, critique
-SYSTEM;swr_red.wav;Antenne défectueuse
-SYSTEM;telemko.wav;Télémétrie perdue
-SYSTEM;telemok.wav;Télémétrie retrouvée
-SYSTEM;trainko.wav;Signal écolage perdu
-SYSTEM;trainok.wav;Signal écolage retrouvé
-SYSTEM;sensorko.wav;Sonde de télémétrie perdue
-SYSTEM;servoko.wav;Servo en surcharge
-SYSTEM;rxko.wav;Surcharge réception
-SYSTEM;modelpwr.wav;Récepteur encore sous tension
-;armed.wav;armé
-;disarm.wav;désarmé
-;alt.wav;altitude
-;moteur.wav;température moteur
-;tctrl.wav;température contrôleur
-;gearup.wav;train rentré
-;geardn.wav;train sorti
-;flapup.wav;volets rentrés
-;flapdn.wav;volets sortis
-;attero.wav;atterrissage
-;trnon.wav;écolage
-;trnoff.wav;fin écolage
-;engoff.wav;moteur coupé
-;spdmod.wav;high. speed. mode, active
-;thmmod.wav;thermal. mode, on
-;nrmmod.wav;normal. mode, on
-;lnding.wav;landing. mode, on
-;acro.wav;mode acro
-;fm-1.wav;mode de vol un
-;fm-2.wav;mode de vol deux
-;fm-3.wav;mode de vol trois
-;fm-4.wav;mode de vol quatre
-;fm-5.wav;mode de vol 5
-;fm-6.wav;mode de vol 6
-;fm-7.wav;mode de vol sept
-;fm-8.wav;mode de vol 8
-;vrion.wav;vario activé
-;vrioff.wav;vario désactivé
-;fm-pwr.wav;mode de vol puissance
-;fm-lnd.wav;mode de vol attérissage
-;fm-flt.wav;mode de vol amérissage
-;fm-spd.wav;mode de vol vitesse
-;fm-fst.wav;mode de vol rapide
-;fm-nrm.wav;mode de vol normal
-;fm-crs.wav;mode de vol de croisière
-;fm-acr.wav;mode de vol acro
-;fm-rce.wav;mode de vol course
-;fm-lch.wav;mode de vol lancé
-;fm-png.wav;mode de vol ping
-;fm-thm.wav;mode de vol thermique
-;fm-thl.wav;mode de vol thermique gauche
-;fm-thr.wav;mode de vol thermique droit
+"String ID","Source text","Translation","Context","Path","Filename"
+"1","0","0","","SYSTEM","0000.wav"
+"2","1","1","","SYSTEM","0001.wav"
+"3","2","2","","SYSTEM","0002.wav"
+"4","3","3","","SYSTEM","0003.wav"
+"5","4","4","","SYSTEM","0004.wav"
+"6","5","5","","SYSTEM","0005.wav"
+"7","6","6","","SYSTEM","0006.wav"
+"8","7","7","","SYSTEM","0007.wav"
+"9","8","8","","SYSTEM","0008.wav"
+"10","9","9","","SYSTEM","0009.wav"
+"11","10","10","","SYSTEM","0010.wav"
+"12","11","11","","SYSTEM","0011.wav"
+"13","12","12","","SYSTEM","0012.wav"
+"14","13","13","","SYSTEM","0013.wav"
+"15","14","14","","SYSTEM","0014.wav"
+"16","15","15","","SYSTEM","0015.wav"
+"17","16","16","","SYSTEM","0016.wav"
+"18","17","17","","SYSTEM","0017.wav"
+"19","18","18","","SYSTEM","0018.wav"
+"20","19","19","","SYSTEM","0019.wav"
+"21","20","20","","SYSTEM","0020.wav"
+"22","21","21","","SYSTEM","0021.wav"
+"23","22","22","","SYSTEM","0022.wav"
+"24","23","23","","SYSTEM","0023.wav"
+"25","24","24","","SYSTEM","0024.wav"
+"26","25","25","","SYSTEM","0025.wav"
+"27","26","26","","SYSTEM","0026.wav"
+"28","27","27","","SYSTEM","0027.wav"
+"29","28","28","","SYSTEM","0028.wav"
+"30","29","29","","SYSTEM","0029.wav"
+"31","30","30","","SYSTEM","0030.wav"
+"32","31","31","","SYSTEM","0031.wav"
+"33","32","32","","SYSTEM","0032.wav"
+"34","33","33","","SYSTEM","0033.wav"
+"35","34","34","","SYSTEM","0034.wav"
+"36","35","35","","SYSTEM","0035.wav"
+"37","36","36","","SYSTEM","0036.wav"
+"38","37","37","","SYSTEM","0037.wav"
+"39","38","38","","SYSTEM","0038.wav"
+"40","39","39","","SYSTEM","0039.wav"
+"41","40","40","","SYSTEM","0040.wav"
+"42","41","41","","SYSTEM","0041.wav"
+"43","42","42","","SYSTEM","0042.wav"
+"44","43","43","","SYSTEM","0043.wav"
+"45","44","44","","SYSTEM","0044.wav"
+"46","45","45","","SYSTEM","0045.wav"
+"47","46","46","","SYSTEM","0046.wav"
+"48","47","47","","SYSTEM","0047.wav"
+"49","48","48","","SYSTEM","0048.wav"
+"50","49","49","","SYSTEM","0049.wav"
+"51","50","50","","SYSTEM","0050.wav"
+"52","51","51","","SYSTEM","0051.wav"
+"53","52","52","","SYSTEM","0052.wav"
+"54","53","53","","SYSTEM","0053.wav"
+"55","54","54","","SYSTEM","0054.wav"
+"56","55","55","","SYSTEM","0055.wav"
+"57","56","56","","SYSTEM","0056.wav"
+"58","57","57","","SYSTEM","0057.wav"
+"59","58","58","","SYSTEM","0058.wav"
+"60","59","59","","SYSTEM","0059.wav"
+"61","60","60","","SYSTEM","0060.wav"
+"62","61","61","","SYSTEM","0061.wav"
+"63","62","62","","SYSTEM","0062.wav"
+"64","63","63","","SYSTEM","0063.wav"
+"65","64","64","","SYSTEM","0064.wav"
+"66","65","65","","SYSTEM","0065.wav"
+"67","66","66","","SYSTEM","0066.wav"
+"68","67","67","","SYSTEM","0067.wav"
+"69","68","68","","SYSTEM","0068.wav"
+"70","69","69","","SYSTEM","0069.wav"
+"71","70","70","","SYSTEM","0070.wav"
+"72","71","71","","SYSTEM","0071.wav"
+"73","72","72","","SYSTEM","0072.wav"
+"74","73","73","","SYSTEM","0073.wav"
+"75","74","74","","SYSTEM","0074.wav"
+"76","75","75","","SYSTEM","0075.wav"
+"77","76","76","","SYSTEM","0076.wav"
+"78","77","77","","SYSTEM","0077.wav"
+"79","78","78","","SYSTEM","0078.wav"
+"80","79","79","","SYSTEM","0079.wav"
+"81","80","80","","SYSTEM","0080.wav"
+"82","81","81","","SYSTEM","0081.wav"
+"83","82","82","","SYSTEM","0082.wav"
+"84","83","83","","SYSTEM","0083.wav"
+"85","84","84","","SYSTEM","0084.wav"
+"86","85","85","","SYSTEM","0085.wav"
+"87","86","86","","SYSTEM","0086.wav"
+"88","87","87","","SYSTEM","0087.wav"
+"89","88","88","","SYSTEM","0088.wav"
+"90","89","89","","SYSTEM","0089.wav"
+"91","90","90","","SYSTEM","0090.wav"
+"92","91","91","","SYSTEM","0091.wav"
+"93","92","92","","SYSTEM","0092.wav"
+"94","93","93","","SYSTEM","0093.wav"
+"95","94","94","","SYSTEM","0094.wav"
+"96","95","95","","SYSTEM","0095.wav"
+"97","96","96","","SYSTEM","0096.wav"
+"98","97","97","","SYSTEM","0097.wav"
+"99","98","98","","SYSTEM","0098.wav"
+"100","99","99","","SYSTEM","0099.wav"
+"101","100","100","","SYSTEM","0100.wav"
+"102","200","200","","SYSTEM","0101.wav"
+"103","300","300","","SYSTEM","0102.wav"
+"104","400","400","","SYSTEM","0103.wav"
+"105","500","500","","SYSTEM","0104.wav"
+"106","600","600","","SYSTEM","0105.wav"
+"107","700","700","","SYSTEM","0106.wav"
+"108","800","800","","SYSTEM","0107.wav"
+"109","900","900","","SYSTEM","0108.wav"
+"110","1000","1000","","SYSTEM","0109.wav"
+"111","une","une","","SYSTEM","0110.wav"
+"112","onze","onze","","SYSTEM","0111.wav"
+"113","vingt et une","vingt et une","","SYSTEM","0112.wav"
+"114","trente et une","trente et une","","SYSTEM","0113.wav"
+"115","quarante et une","quarante et une","","SYSTEM","0114.wav"
+"116","cinquante et une","cinquante et une","","SYSTEM","0115.wav"
+"117","soixante et une","soixante et une","","SYSTEM","0116.wav"
+"118","soixante et onze","soixante et onze","","SYSTEM","0117.wav"
+"119","quatre vingt une","quatre vingt une","","SYSTEM","0118.wav"
+"120","virgule","virgule","","SYSTEM","0119.wav"
+"121","et","et","","SYSTEM","0120.wav"
+"122","moins","moins","","SYSTEM","0121.wav"
+"123","minuit","minuit","","SYSTEM","0122.wav"
+"124","midi","midi","","SYSTEM","0123.wav"
+"125","volts","volts","","SYSTEM","volt0.wav"
+"126","ampères","ampères","","SYSTEM","amp0.wav"
+"127","milli ampères","milli ampères","","SYSTEM","mamp0.wav"
+"128","noeud","noeud","","SYSTEM","knot0.wav"
+"129","mètres seconde","mètres seconde","","SYSTEM","mps0.wav"
+"130","pieds par seconde","pieds par seconde","","SYSTEM","fps0.wav"
+"131","kilomètre heure","kilomètre heure","","SYSTEM","kph0.wav"
+"132","miles par heure","miles par heure","","SYSTEM","mph0.wav"
+"133","mètres","mètres","","SYSTEM","meter0.wav"
+"134","pieds","pieds","","SYSTEM","foot0.wav"
+"135","degrés","degrés","","SYSTEM","celsius0.wav"
+"136","degrés fahrenheit","degrés fahrenheit","","SYSTEM","degf0.wav"
+"137","pourcents","pourcents","","SYSTEM","percent0.wav"
+"138","milli ampères heure","milli ampères heure","","SYSTEM","mamph0.wav"
+"139","watt","watt","","SYSTEM","watt0.wav"
+"140","milli watt","milli watt","","SYSTEM","mwatt0.wav"
+"141","d b","d b","","SYSTEM","db0.wav"
+"142","tours minute","tours minute","","SYSTEM","rpm0.wav"
+"143","g","g","","SYSTEM","g0.wav"
+"144","degrés","degrés","","SYSTEM","degree0.wav"
+"145","radians","radians","","SYSTEM","rad0.wav"
+"146","millilitres","millilitres","","SYSTEM","ml0.wav"
+"147","onces","onces","","SYSTEM","founce0.wav"
+"148","millilitre minute","millilitre minute","","SYSTEM","mlpm0.wav"
+"149","heure","heure","","SYSTEM","hour0.wav"
+"150","minute","minute","","SYSTEM","minute0.wav"
+"151","seconde","seconde","","SYSTEM","second0.wav"
+"152","virgule 0","virgule 0","","SYSTEM","0180.wav"
+"153","virgule 1","virgule 1","","SYSTEM","0181.wav"
+"154","virgule 2","virgule 2","","SYSTEM","0182.wav"
+"155","virgule 3","virgule 3","","SYSTEM","0183.wav"
+"156","virgule 4","virgule 4","","SYSTEM","0184.wav"
+"157","virgule 5","virgule 5","","SYSTEM","0185.wav"
+"158","virgule 6","virgule 6","","SYSTEM","0186.wav"
+"159","virgule 7","virgule 7","","SYSTEM","0187.wav"
+"160","virgule 8","virgule 8","","SYSTEM","0188.wav"
+"161","virgule 9","virgule 9","","SYSTEM","0189.wav"
+"162","Trim centré","Trim centré","","SYSTEM","midtrim.wav"
+"163","Trim maximum atteint","Trim maximum atteint","","SYSTEM","maxtrim.wav"
+"164","Trim minimum atteint","Trim minimum atteint","","SYSTEM","mintrim.wav"
+"165","Chrono 1 à 0","Chrono 1 à 0","","SYSTEM","timovr1.wav"
+"166","Chrono 2 à 0","Chrono 2 à 0","","SYSTEM","timovr2.wav"
+"167","Chrono 3 à 0","Chrono 3 à 0","","SYSTEM","timovr3.wav"
+"168","Batterie radio faible","Batterie radio faible","","SYSTEM","lowbatt.wav"
+"169","Radio inactive","Radio inactive","","SYSTEM","inactiv.wav"
+"170","Alerte manche des gaz","Alerte manche des gaz","","SYSTEM","thralert.wav"
+"171","Alerte inters","Alerte inters","","SYSTEM","swalert.wav"
+"172","éprome corrompue","éprome corrompue","","SYSTEM","eebad.wav"
+"173","Bienvenue sur edge t x","Bienvenue sur edge t x","","SYSTEM","hello.wav"
+"174","Signal RF, faible","Signal RF, faible","","SYSTEM","rssi_org.wav"
+"175","Signal RF, critique","Signal RF, critique","","SYSTEM","rssi_red.wav"
+"176","Antenne défectueuse","Antenne défectueuse","","SYSTEM","swr_red.wav"
+"177","Télémétrie perdue","Télémétrie perdue","","SYSTEM","telemko.wav"
+"178","Télémétrie retrouvée","Télémétrie retrouvée","","SYSTEM","telemok.wav"
+"179","Signal écolage perdu","Signal écolage perdu","","SYSTEM","trainko.wav"
+"180","Signal écolage retrouvé","Signal écolage retrouvé","","SYSTEM","trainok.wav"
+"181","Sonde de télémétrie perdue","Sonde de télémétrie perdue","","SYSTEM","sensorko.wav"
+"182","Servo en surcharge","Servo en surcharge","","SYSTEM","servoko.wav"
+"183","Surcharge réception","Surcharge réception","","SYSTEM","rxko.wav"
+"184","Récepteur encore sous tension","Récepteur encore sous tension","","SYSTEM","modelpwr.wav"
+"185","armé","armé","","","armed.wav"
+"186","désarmé","désarmé","","","disarm.wav"
+"187","altitude","altitude","","","alt.wav"
+"188","température moteur","température moteur","","","moteur.wav"
+"189","température contrôleur","température contrôleur","","","tctrl.wav"
+"190","train rentré","train rentré","","","gearup.wav"
+"191","train sorti","train sorti","","","geardn.wav"
+"192","volets rentrés","volets rentrés","","","flapup.wav"
+"193","volets sortis","volets sortis","","","flapdn.wav"
+"194","atterrissage","atterrissage","","","attero.wav"
+"195","écolage","écolage","","","trnon.wav"
+"196","fin écolage","fin écolage","","","trnoff.wav"
+"197","moteur coupé","moteur coupé","","","engoff.wav"
+"198","high. speed. mode, active","high. speed. mode, active","","","spdmod.wav"
+"199","thermal. mode, on","thermal. mode, on","","","thmmod.wav"
+"200","normal. mode, on","normal. mode, on","","","nrmmod.wav"
+"201","landing. mode, on","landing. mode, on","","","lnding.wav"
+"202","mode acro","mode acro","","","acro.wav"
+"203","mode de vol un","mode de vol un","","","fm-1.wav"
+"204","mode de vol deux","mode de vol deux","","","fm-2.wav"
+"205","mode de vol trois","mode de vol trois","","","fm-3.wav"
+"206","mode de vol quatre","mode de vol quatre","","","fm-4.wav"
+"207","mode de vol 5","mode de vol 5","","","fm-5.wav"
+"208","mode de vol 6","mode de vol 6","","","fm-6.wav"
+"209","mode de vol sept","mode de vol sept","","","fm-7.wav"
+"210","mode de vol 8","mode de vol 8","","","fm-8.wav"
+"211","vario activé","vario activé","","","vrion.wav"
+"212","vario désactivé","vario désactivé","","","vrioff.wav"
+"213","mode de vol puissance","mode de vol puissance","","","fm-pwr.wav"
+"214","mode de vol attérissage","mode de vol attérissage","","","fm-lnd.wav"
+"215","mode de vol amérissage","mode de vol amérissage","","","fm-flt.wav"
+"216","mode de vol vitesse","mode de vol vitesse","","","fm-spd.wav"
+"217","mode de vol rapide","mode de vol rapide","","","fm-fst.wav"
+"218","mode de vol normal","mode de vol normal","","","fm-nrm.wav"
+"219","mode de vol de croisière","mode de vol de croisière","","","fm-crs.wav"
+"220","mode de vol acro","mode de vol acro","","","fm-acr.wav"
+"221","mode de vol course","mode de vol course","","","fm-rce.wav"
+"222","mode de vol lancé","mode de vol lancé","","","fm-lch.wav"
+"223","mode de vol ping","mode de vol ping","","","fm-png.wav"
+"224","mode de vol thermique","mode de vol thermique","","","fm-thm.wav"
+"225","mode de vol thermique gauche","mode de vol thermique gauche","","","fm-thl.wav"
+"226","mode de vol thermique droit","mode de vol thermique droit","","","fm-thr.wav"
