@@ -19,7 +19,7 @@
 *.hh text
 *.lua text
 *.pxd text
-*.py text
+*.py text eol=lf
 *.py3 text
 *.pyw text
 *.pyx text

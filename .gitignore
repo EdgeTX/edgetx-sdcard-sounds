@@ -4,3 +4,4 @@ log-*
 exception*
 *.zip
 release/
+*.pyc
