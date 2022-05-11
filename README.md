@@ -1,4 +1,4 @@
-# EdgeTX - Sound packs
+# EdgeTX - Voice packs
 
 This repository contains the files needed to generate the voice packages used in EdgeTX.
 
