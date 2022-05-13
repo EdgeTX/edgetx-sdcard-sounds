@@ -100,6 +100,10 @@ def main() -> None:
                 if not os.path.exists(outdir):
                     os.makedirs(outdir)
 
+                if text is None or text == "":
+                    print(f'[{line_count}/{csv_rows}] Skipping as no text to translate')
+                    continue
+
                 if not os.path.isfile(outfile):
                     print(
                         f'[{line_count}/{csv_rows}] Translate "{en_text}" to "{text}", save as "{outdir}/{filename}".')
