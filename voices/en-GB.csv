@@ -193,7 +193,7 @@
 "192","throttle warning","throttle warning","","SYSTEM","thralert.wav"
 "193","switch warning","switch warning","","SYSTEM","swalert.wav"
 "194","bad eeprom","bad eeprom","","SYSTEM","eebad.wav"
-"195","Welcome to edge tea ex","Welcome to edge tea ex","","SYSTEM","hello.wav"
+"195","Welcome to EdgeTX","Welcome to edge tea ex","","SYSTEM","hello.wav"
 "196","RF signal low","RF signal low","","SYSTEM","rssi_org.wav"
 "197","RF signal critical","RF signal critical","","SYSTEM","rssi_red.wav"
 "198","radio antenna defective","radio antenna defective","","SYSTEM","swr_red.wav"
