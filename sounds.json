@@ -82,5 +82,11 @@
         "name": "Chinese Female",
         "description": "Chinese Female Voice",
         "directory": "cn"
+    },
+    {
+        "language": "ja_JP",
+        "name": "Japanese Female",
+        "description": "Japanese Female Voice (ja-JP-NanamiNeural)",
+        "directory": "ja"
     }
 ]
