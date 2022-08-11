@@ -40,6 +40,8 @@ jobs:
         with:
           title: "Latest Voice Pack"
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          files: release/edgetx-sdcard-sounds-*.zip
+          files: |
+            release/edgetx-sdcard-sounds-*.zip
+            sounds.json
           automatic_release_tag: 'latest'
           prerelease: true
