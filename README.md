@@ -30,6 +30,22 @@ To use them, the language folder (for example, `en`) must be under the `SOUNDS` 
 
 To use any audio on your switches, first copy the file you want to use to your language folder, then you can use this file in your `Global Functions` or `Special Functions` by selecting a switch for the function and choosing the `Play track` option.
 
+#### SCRIPTS
+
+Inside the language folder (only in `en` for now) there is a folder called `SCRIPTS`, which has audio files for commonly used LUA scripts. These audio files are generated with the same voice as the other audio files of their language pack. Each script has their own folder.
+
+##### BETAFLIGHT
+
+Audio files for [Betaflight TX Lua Scripts](https://github.com/betaflight/betaflight-tx-lua-scripts). Copy the WAV files from `SOUNDS/<lang>/SCRIPTS/BETAFLIGHT/` to `SOUNDS/en/` to overwrite the original audio files of the script.
+
+##### INAV
+
+Audio files for [iNav Lua Telemetry Flight Status](https://github.com/iNavFlight/OpenTX-Telemetry-Widget). Copy the WAV files from `SOUNDS/<lang>/SCRIPTS/INAV/` to `SCRIPTS/TELEMETRY/iNav/<lang>/` to overwrite the original audio files of the script.
+
+##### YAAPU
+
+Audio files for [Yaapu Telemetry Script and Widget](https://github.com/yaapu/FrskyTelemetryScript). Copy the WAV files from `SOUNDS/<lang>/SCRIPTS/YAAPU/` to `SOUNDS/yaapu0/<lang>/` to overwrite the original audio files of the script.
+
 ## Voices
 
 All of the voices used in the EdgeTX voice packs have been picked from the [neural voices](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support?tabs=speechtotext#prebuilt-neural-voices) offered by Microsft Azure text to speech service, in order to get as close as possible to humanlike voices. If you want to see what voices are available, and try different phrases, [check out the online demo generator](https://azure.microsoft.com/en-us/services/cognitive-services/text-to-speech/#features). Using some recording software, you could even save your own phrases and use them in the voice packs.
