@@ -4,10 +4,15 @@
 find "$(dirname "$0")" -name "*.log" -delete
 
 ./voice-gen.py voices/en-GB.csv en-IE-EmilyNeural en
+./voice-gen.py voices/en-GB_scripts.csv en-IE-EmilyNeural en/SCRIPTS
 ./voice-gen.py voices/en-GB.csv en-GB-LibbyNeural en_gb-libby
+./voice-gen.py voices/en-GB_scripts.csv en-GB-LibbyNeural en_gb-libby/SCRIPTS
 ./voice-gen.py voices/en-GB.csv en-GB-RyanNeural en_gb-ryan
+./voice-gen.py voices/en-GB_scripts.csv en-GB-RyanNeural en_gb-ryan/SCRIPTS
 ./voice-gen.py voices/en-US.csv en-US-SaraNeural en_us-sara
+./voice-gen.py voices/en-US_scripts.csv en-US-SaraNeural en_us-sara/SCRIPTS
 ./voice-gen.py voices/en-US.csv en-US-GuyNeural en_us-guy
+./voice-gen.py voices/en-US_scripts.csv en-US-GuyNeural en_us-guy/SCRIPTS
 ./voice-gen.py voices/pt-PT.csv pt-BR-FranciscaNeural pt
 ./voice-gen.py voices/es-ES.csv es-ES-ElviraNeural es
 ./voice-gen.py voices/es-CL.csv es-CL-CatalinaNeural es_cl-catalina
