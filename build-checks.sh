@@ -11,7 +11,8 @@ do
     dir=$(dirname "$file")
     dir=$(basename "$dir")
 
-    if [ "$dir" == "YAAPU" ] || [ "$dir" == "INAV" ] || [ "$dir" == "BETAFLIGHT" ]; then
+    if [ "$dir" == "YAAPU" ] || [ "$dir" == "INAV" ] ||
+       [ "$dir" == "BETAFLIGHT" ]; then
         continue
     fi
 
@@ -25,6 +26,5 @@ do
             echo "Filename is too long: $file"
             continue
         fi
-
     fi
 done
