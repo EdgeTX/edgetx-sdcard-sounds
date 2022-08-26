@@ -1,6 +1,6 @@
 [
     {
-        "language": "cs_CZ",
+        "language": "cs-CZ",
         "name": "Czech Female",
         "description": "Czech Female Voice (cs-CZ-Vlasta)",
         "directory": "cz"
@@ -78,13 +78,13 @@
         "directory": "ru"
     },
     {
-        "language": "zh_CN",
+        "language": "zh-CN",
         "name": "Chinese Female",
         "description": "Chinese Female Voice",
         "directory": "cn"
     },
     {
-        "language": "ja_JP",
+        "language": "ja-JP",
         "name": "Japanese Female",
         "description": "Japanese Female Voice (ja-JP-NanamiNeural)",
         "directory": "ja"
