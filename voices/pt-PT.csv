@@ -138,7 +138,7 @@
 "137","watt","watt","","SYSTEM","watt0.wav"
 "138","milli-watt","milli-watt","","SYSTEM","mwatt0.wav"
 "139","db","db","","SYSTEM","db0.wav"
-"140","r p m","r p m","","SYSTEM","rpm0.wav"
+"140","RPM","RPM","","SYSTEM","rpm0.wav"
 "141","g","g","","SYSTEM","g0.wav"
 "142","degree","degree","","SYSTEM","degree0.wav"
 "143","radian","radian","","SYSTEM","rad0.wav"

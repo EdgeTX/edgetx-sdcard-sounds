@@ -130,7 +130,7 @@
 "129","Milliampärstunden","Milliampärstunden","","SYSTEM","mamph1.wav"
 "130","Watt","Watt","","SYSTEM","watt0.wav"
 "131","Milli Watt","Milli Watt","","SYSTEM","mwatt0.wav"
-"132","D B","D B","","SYSTEM","db0.wav"
+"132","DB","DB","","SYSTEM","db0.wav"
 "133","Umdrehungen pro Minute","Umdrehungen pro Minute","","SYSTEM","rpm0.wav"
 "134","g","g","","SYSTEM","g0.wav"
 "135","Grad","Grad","","SYSTEM","degree0.wav"
