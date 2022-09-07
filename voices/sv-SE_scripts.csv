@@ -1,37 +1,37 @@
-"String ID","Source text","Translation","Context","Path","Filename"
-"1","P","P","","BETAFLIGHT","p.wav"
-"2","I","I","","BETAFLIGHT","i.wav"
-"3","D","D","","BETAFLIGHT","d.wav"
-"4","D setpoint","D setpoint","","BETAFLIGHT","dsetpt.wav"
-"5","acro läge","acro läge","","INAV","acromd.wav"
-"6","aktiv","aktiv","","INAV","active.wav"
-"7","håll altitud","håll altitud","","INAV","althld.wav"
-"8","ä nggel läge","ä nggel läge","","INAV","anglmd.wav"
-"9","batteri kritiskt","batteri kritiskt","","INAV","batcrt.wav"
-"10","lågt batteri","lågt batteri","","INAV","batlow.wav"
-"11","batteri","batteri","","INAV","battry.wav"
-"12","planflyktsläge","planflyktsläge","","INAV","cruzmd.wav"
-"13","fara","fara","","INAV","danger.wav"
-"14","motorerna påslagna","motorerna påslagna","","INAV","engarm.wav"
-"15","motorerna avslagna","motorerna avslagna","","INAV","engdrm.wav"
-"16","fejlsejf av","fejlsejf av","","INAV","fsoff.wav"
-"17","fejlsejf på","fejlsejf på","","INAV","fson.wav"
-"18","god","god","","INAV","good.wav"
-"19","GPS","GPS","","INAV","gps.wav"
-"20","håll riktning, aktiv","håll riktning, aktiv","","INAV","hedhlda.wav"
-"21","håll riktning","håll riktning","","INAV","hedhld.wav"
-"22","heddfri aktiv","heddfri aktiv","","INAV","hfact.wav"
-"23","heddfri av","heddfri av","","INAV","hfoff.wav"
-"24","hemposition återställd","hemposition återställd","","INAV","homrst.wav"
-"25","horizon läge","horizon läge","","INAV","hrznmd.wav"
-"26","tappad","tappad","","INAV","lost.wav"
-"27","manuellt läge","manuellt läge","","INAV","manmd.wav"
-"28","normal","normal","","INAV","normal.wav"
-"29","av","av","","INAV","off.wav"
-"30","på","på","","INAV","on.wav"
-"31","håll position","håll position","","INAV","poshld.wav"
-"32","klar att flyga","klar att flyga","","INAV","ready.wav"
-"33","återvänd till startplats","återvänd till startplats","","INAV","rtl.wav"
-"34","för hög","för hög","","INAV","toohgh.wav"
-"35","varning","varning","","INAV","warnng.wav"
-"36","vägpunkt","vägpunkt","","INAV","waypt.wav"
+String ID,Source text,Translation,Context,Path,Filename
+1,P,P,,BETAFLIGHT,p.wav
+2,I,I,,BETAFLIGHT,i.wav
+3,D,Dee,,BETAFLIGHT,d.wav
+4,D setpoint,Dee sättpunkt,,BETAFLIGHT,dsetpt.wav
+5,acro mode,acro läge,,INAV,acromd.wav
+6,active,aktiv,,INAV,active.wav
+7,altitude hold,håll altitud,,INAV,althld.wav
+8,angle mode,ä nggel läge,,INAV,anglmd.wav
+9,battery critical,batteri kritiskt,,INAV,batcrt.wav
+10,Low battery,lågt batteri,,INAV,batlow.wav
+11,battery,batteri,,INAV,battry.wav
+12,cruise mode,planflyktsläge,,INAV,cruzmd.wav
+13,danger,fara,,INAV,danger.wav
+14,engines armed,motorerna påslagna,,INAV,engarm.wav
+15,engines disarmed,motorerna avslagna,,INAV,engdrm.wav
+16,failsafe off,fejlsejf av,,INAV,fsoff.wav
+17,failsafe on,fejlsejf på,,INAV,fson.wav
+18,good,god,,INAV,good.wav
+19,GPS,GPS,,INAV,gps.wav
+20,heading hold active,"håll riktning, aktiv",,INAV,hedhlda.wav
+21,heading hold,håll riktning,,INAV,hedhld.wav
+22,headfree active,heddfri aktiv,,INAV,hfact.wav
+23,headfree off,heddfri av,,INAV,hfoff.wav
+24,home reset,hemposition återställd,,INAV,homrst.wav
+25,horizon mode,horizon läge,,INAV,hrznmd.wav
+26,lost,tappad,,INAV,lost.wav
+27,manual mode,manuellt läge,,INAV,manmd.wav
+28,normal,normal,,INAV,normal.wav
+29,off,av,,INAV,off.wav
+30,on,på,,INAV,on.wav
+31,position hold,håll position,,INAV,poshld.wav
+32,ready to fly,klar att flyga,,INAV,ready.wav
+33,return to launch,återvänd till startplats,,INAV,rtl.wav
+34,too high,för hög,,INAV,toohgh.wav
+35,warning,varning,,INAV,warnng.wav
+36,waypoint,vägpunkt,,INAV,waypt.wav
