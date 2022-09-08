@@ -1,5 +1,16 @@
 #!/bin/bash
 
+working_dir=$(pwd)
+
+check_dependencies() {
+    if [ ! -f "${working_dir}/voice-gen.py" ]; then
+        echo "Script halt: voice-gen.py not found in '${working_dir}'"
+        exit 1
+    fi
+}
+
+check_dependencies
+
 # delete logs from previous pass
 find "$(dirname "$0")" -name "*.log" -delete
 
