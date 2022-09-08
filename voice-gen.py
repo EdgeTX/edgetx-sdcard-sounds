@@ -7,7 +7,17 @@ import time
 import subprocess
 from pathlib import Path
 
-import azure.cognitiveservices.speech as speechsdk
+try:
+    import azure.cognitiveservices.speech as speechsdk
+except ImportError:
+    print("""
+    Importing the Speech SDK for Python failed.
+    Refer to
+    https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstart-text-to-speech-python for
+    installation instructions.
+    """)
+    import sys
+    sys.exit(1)
 
 
 def init_argparse() -> argparse.ArgumentParser:
@@ -120,14 +130,26 @@ def main() -> None:
 
                 if not os.path.isfile(outfile):
                     print(
-                        f'[{line_count}/{csv_rows}] Translate "{en_text}" to "{text}", save as "{outdir}/{filename}".')
+                        f'[{line_count}/{csv_rows}] Translate "{en_text}" to "{text}", save as "{outdir}{os.sep}{filename}".')
                     speech_config.speech_synthesis_voice_name = voice
                     audio_config = speechsdk.audio.AudioOutputConfig(
                         filename=outfile)
                     synthesizer = speechsdk.SpeechSynthesizer(
                         speech_config=speech_config, audio_config=audio_config)
-                    synthesizer.speak_text_async(text)
+                    result = synthesizer.speak_text_async(text).get()
+
+                    # If failed, show error, remove empty/corrupt file and halt
+                    if result.reason == speechsdk.ResultReason.Canceled:
+                        cancellation_details = result.cancellation_details
+                        print("Speech synthesis canceled: {}".format(cancellation_details.reason))
+                        if cancellation_details.reason == speechsdk.CancellationReason.Error:
+                            print("Error details: {}".format(cancellation_details.error_details))
+                        if os.path.isfile(outdir + os.sep + filename):
+                            os.remove(outdir + os.sep + filename) 
+                        sys.exit(1)
+
                     time.sleep(delay_time)
+
                 else:
                     print(
                         f'[{line_count}/{csv_rows}] Skipping "{filename}" as already exists.')
