@@ -63,11 +63,25 @@ def main() -> None:
         speech_key = os.environ['COGNITIVE_SERVICE_API_KEY']
         service_region = os.environ['SERVICE_REGION']
     except KeyError:
-        print("ERROR: Please set the environment variables for Speech and Service Region")
-        sys.exit(1)
+            key_file = Path('key')
+            region_file = Path('region')
 
-    speech_config = speechsdk.SpeechConfig(
-        subscription=speech_key, region=service_region)
+            try:
+                if key_file.is_file() and region_file.is_file():
+                    with open('key', 'r') as f:
+                        speech_key = f.read().strip()
+                    
+                    with open('region', 'r') as f:
+                        service_region = f.read().strip()
+                else:
+                    print("ERROR: Please set the environment variables for Speech and Service Region or create key and region config files.")
+                    sys.exit(1)
+            except Exception as e:
+                print(e)
+                sys.exit(1)
+    finally:
+        speech_config = speechsdk.SpeechConfig(
+            subscription=speech_key, region=service_region)
 
     if not(os.path.isfile(csv_file)):
         print("Error: voice file not found")
