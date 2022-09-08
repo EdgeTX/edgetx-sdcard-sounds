@@ -22,4 +22,6 @@ find "$(dirname "$0")" -name "*.log" -delete
 ./voice-gen.py voices/ja-JP.csv ja-JP-NanamiNeural ja
 ./voice-gen.py voices/pt-PT.csv pt-BR-FranciscaNeural pt
 ./voice-gen.py voices/ru-RU.csv ru-RU-SvetlanaNeural ru
+./voice-gen.py voices/sv-SE.csv sv-SE-SofieNeural sv
+./voice-gen.py voices/sv-SE_scripts.csv sv-SE-SofieNeural sv/SCRIPTS
 # ./voice-gen.py voices/zh-CN.csv
