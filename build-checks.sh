@@ -28,3 +28,6 @@ do
         fi
     fi
 done
+
+# Check for zero byte sound files
+find "SOUNDS" -size 0 -print
