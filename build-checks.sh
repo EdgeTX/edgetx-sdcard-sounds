@@ -29,5 +29,5 @@ do
     fi
 done
 
-# Check for zero byte sound files
+echo "Check for zero byte sound files ..."
 find "SOUNDS" -size 0 -print
