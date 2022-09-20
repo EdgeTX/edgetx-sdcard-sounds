@@ -188,7 +188,7 @@
 "187","timer 1 elapsed","一号计时器已超时","","SYSTEM","timovr1.wav"
 "188","timer 2 elapsed","二号计时器已超时","","SYSTEM","timovr2.wav"
 "189","timer 3 elapsed","三号计时器已超时","","SYSTEM","timovr3.wav"
-"190","transmitter battery low","遥控器电压低","SYSTEM","lowbatt.wav"
+"190","transmitter battery low","遥控器电压低","","SYSTEM","lowbatt.wav"
 "191","inactivity alarm","警告 长时间无操作","","SYSTEM","inactiv.wav"
 "192","throttle warning","警告 油门摇杆不在最低","","SYSTEM","thralert.wav"
 "193","switch warning","警告 开关不在初始位置","","SYSTEM","swalert.wav"
