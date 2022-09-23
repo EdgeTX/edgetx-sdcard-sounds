@@ -66,6 +66,12 @@
         "directory": "it"
     },
     {
+        "language": "ja-JP",
+        "name": "Japanese Female",
+        "description": "Japanese Female Voice (ja-JP-NanamiNeural)",
+        "directory": "ja"
+    },
+    {
         "language": "pt-BR",
         "name": "Brazilian Portuguese Female",
         "description": "Brazilian Portuguese Female Voice (pt-BR-Francisca)",
@@ -78,15 +84,15 @@
         "directory": "ru"
     },
     {
+        "language": "sv-SE",
+        "name": "Swedish Female",
+        "description": "Swedish Female Voice (sv-SE-SofieNeural)",
+        "directory": "sv"
+    },
+    {
         "language": "zh-CN",
         "name": "Chinese Female",
         "description": "Chinese Female Voice",
         "directory": "cn"
-    },
-    {
-        "language": "ja-JP",
-        "name": "Japanese Female",
-        "description": "Japanese Female Voice (ja-JP-NanamiNeural)",
-        "directory": "ja"
     }
 ]
