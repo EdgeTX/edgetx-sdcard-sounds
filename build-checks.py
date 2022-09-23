@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
 
 import csv
+import json
 import os
 import sys
 
 csv_directory = 'voices'
 sound_directory = 'SOUNDS'
 
-## TODO: Check for duplicate filenames in CSV files
-## TODO: Check for files in SOUNDS that are not in CSV files
-## TODO: Check CSV for correct row indexes
+# TODO: Check for duplicate filenames in CSV files
+# TODO: Check for files in SOUNDS that are not in CSV files
+# TODO: Check CSV for correct row indexes
 
 
 def checkCSVcolumnCount():
@@ -48,7 +49,18 @@ def checkNoZeroByteFiles():
                 print("Zero byte file: {}".format(path))
 
 
+def validateSoundsJson():
+    print("SOUNDS: Validating sounds.json ...")
+    f = open("sounds.json")
+    try:
+        json.load(f)
+    except ValueError as err:
+        print("JSON not valid: {}".format(str(err)))
+    return True
+
+
 if __name__ == "__main__":
     checkCSVcolumnCount()
     checkFilenameLengths()
     checkNoZeroByteFiles()
+    validateSoundsJson()
