@@ -9,13 +9,7 @@
         "language": "da-DK",
         "name": "Danish Female",
         "description": "Danish Female Voice (da-DK-ChristelNeural)",
-        "directory": "dk-kvinde"
-    },
-    {
-        "language": "da-DK",
-        "name": "Danish Male",
-        "description": "Danish Male Voice (da-DK-JeppeNeural)",
-        "directory": "dk-mand"
+        "directory": "dk"
     },
     {
         "language": "de-DE",
