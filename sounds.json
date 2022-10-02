@@ -6,6 +6,18 @@
         "directory": "cz"
     },
     {
+        "language": "da-DK",
+        "name": "Danish Female",
+        "description": "Danish Female Voice (da-DK-ChristelNeural)",
+        "directory": "dk-kvinde"
+    },
+    {
+        "language": "da-DK",
+        "name": "Danish Male",
+        "description": "Danish Male Voice (da-DK-JeppeNeural)",
+        "directory": "dk-mand"
+    },
+    {
         "language": "de-DE",
         "name": "German Female",
         "description": "German Female Voice (de-DE-Katja)",
