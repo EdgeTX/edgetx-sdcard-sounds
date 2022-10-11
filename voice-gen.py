@@ -73,22 +73,22 @@ def main() -> None:
         speech_key = os.environ['COGNITIVE_SERVICE_API_KEY']
         service_region = os.environ['SERVICE_REGION']
     except KeyError:
-            key_file = Path('key')
-            region_file = Path('region')
+        key_file = Path('key')
+        region_file = Path('region')
 
-            try:
-                if key_file.is_file() and region_file.is_file():
-                    with open('key', 'r') as f:
-                        speech_key = f.read().strip()
-                    
-                    with open('region', 'r') as f:
-                        service_region = f.read().strip()
-                else:
-                    print("ERROR: Please set the environment variables for Speech and Service Region or create key and region config files.")
-                    sys.exit(1)
-            except Exception as e:
-                print(e)
+        try:
+            if key_file.is_file() and region_file.is_file():
+                with open('key', 'r') as f:
+                    speech_key = f.read().strip()
+
+                with open('region', 'r') as f:
+                    service_region = f.read().strip()
+            else:
+                print("ERROR: Please set the environment variables for Speech and Service Region or create key and region config files.")
                 sys.exit(1)
+        except Exception as e:
+            print(e)
+            sys.exit(1)
     finally:
         speech_config = speechsdk.SpeechConfig(
             subscription=speech_key, region=service_region)
@@ -125,7 +125,8 @@ def main() -> None:
                     os.makedirs(outdir)
 
                 if text is None or text == "":
-                    print(f'[{line_count}/{csv_rows}] Skipping as no text to translate')
+                    print(
+                        f'[{line_count}/{csv_rows}] Skipping as no text to translate')
                     continue
 
                 if not os.path.isfile(outfile):
@@ -141,11 +142,13 @@ def main() -> None:
                     # If failed, show error, remove empty/corrupt file and halt
                     if result.reason == speechsdk.ResultReason.Canceled:
                         cancellation_details = result.cancellation_details
-                        print("Speech synthesis canceled: {}".format(cancellation_details.reason))
+                        print("Speech synthesis canceled: {}".format(
+                            cancellation_details.reason))
                         if cancellation_details.reason == speechsdk.CancellationReason.Error:
-                            print("Error details: {}".format(cancellation_details.error_details))
+                            print("Error details: {}".format(
+                                cancellation_details.error_details))
                         if os.path.isfile(outdir + os.sep + filename):
-                            os.remove(outdir + os.sep + filename) 
+                            os.remove(outdir + os.sep + filename)
                         sys.exit(1)
 
                     time.sleep(delay_time)
