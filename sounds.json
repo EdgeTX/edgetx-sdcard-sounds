@@ -32,14 +32,20 @@
     {
         "language": "en-US",
         "name": "US English",
-        "description": "US English Female Voice (en-US-Sara)",
-        "directory": "en_us-sara"
+        "description": "US English Male Voice (en-US-Guy)",
+        "directory": "en_us-guy"
     },
     {
         "language": "en-US",
         "name": "US English",
-        "description": "US English Male Voice (en-US-Guy)",
-        "directory": "en_us-guy"
+        "description": "US English Female Voice (en-US-Michelle)",
+        "directory": "en_us-michelle"
+    },
+    {
+        "language": "en-US",
+        "name": "US English",
+        "description": "US English Female Voice (en-US-Sara)",
+        "directory": "en_us-sara"
     },
     {
         "language": "es-ES",
