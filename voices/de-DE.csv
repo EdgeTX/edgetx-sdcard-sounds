@@ -162,7 +162,7 @@
 "161","Gaskanal nicht Null, bitte prüfen","Gaskanal nicht Null, bitte prüfen","","SYSTEM","thralert.wav"
 "162","Schalter fehlpositioniert, bitte prüfen","Schalter fehlpositioniert, bitte prüfen","","SYSTEM","swalert.wav"
 "163","EEPROM fehlerhaft","EEPROM fehlerhaft","","SYSTEM","eebad.wav"
-"164","Willkommen bei etsch tie ex","Willkommen bei etsch tie ex","","SYSTEM","hello.wav"
+"164","Willkommen bei etsch tee ex","Willkommen bei etsch tee ex","","SYSTEM","hello.wav"
 "165","Funksignal schwach","Funksignal schwach","","SYSTEM","rssi_org.wav"
 "166","Funksignal kritisch","Funksignal kritisch","","SYSTEM","rssi_red.wav"
 "167","Senderantenne fehlerhaft","Senderantenne fehlerhaft","","SYSTEM","swr_red.wav"
