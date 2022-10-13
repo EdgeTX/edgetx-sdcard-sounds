@@ -4,6 +4,7 @@ This repository contains the files needed to generate the voice packages used in
 
 The currently supported languages are:
 * Czech
+* Danish
 * German
 * English
 * Spanish
@@ -32,7 +33,7 @@ To use any audio on your switches, first copy the file you want to use to your l
 
 #### SCRIPTS
 
-Inside the language folder (only in `en` for now) there is a folder called `SCRIPTS`, which has audio files for commonly used LUA scripts. These audio files are generated with the same voice as the other audio files of their language pack. Each script has their own folder.
+Inside the language folder there is a folder called `SCRIPTS`, which has audio files for commonly used LUA scripts. These audio files are generated with the same voice as the other audio files of their language pack. Each script has their own folder.
 
 ##### BETAFLIGHT
 
