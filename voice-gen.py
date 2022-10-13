@@ -2,6 +2,7 @@
 import argparse
 import csv
 import os
+import re
 import sys
 import time
 import subprocess
@@ -41,10 +42,29 @@ def init_argparse() -> argparse.ArgumentParser:
                         help="Voice to use"
                         )
 
+    parser.add_argument('-l',
+                        '--locale',
+                        type=str,
+                        help="Language locale",
+                        required=False,
+                        )
+
     parser.add_argument('langdir',
                         type=str,
                         help="Language subfolder"
                         )
+
+    parser.add_argument('-p',
+                        '--pitch',
+                        help="Pitch adjustment",
+                        type=str,
+                        default="default")
+
+    parser.add_argument('-r',
+                        '--rate',
+                        help="Rate adjustment",
+                        type=str,
+                        default="default")
 
     parser.add_argument('-s',
                         '--delay',
@@ -67,7 +87,14 @@ def main() -> None:
     langdir = args.langdir
     basedir = os.path.dirname(os.path.abspath(__file__))
     outdir = ""
+    pitch = args.pitch
+    rate = args.rate
     delay_time = args.delay
+
+    if args.locale is not None:
+        locale = args.locale
+    else:
+        locale = re.split('([a-z]{2}-[A-Z]{2})', voice)[1]
 
     try:
         speech_key = os.environ['COGNITIVE_SERVICE_API_KEY']
@@ -132,12 +159,19 @@ def main() -> None:
                 if not os.path.isfile(outfile):
                     print(
                         f'[{line_count}/{csv_rows}] Translate "{en_text}" to "{text}", save as "{outdir}{os.sep}{filename}".')
-                    speech_config.speech_synthesis_voice_name = voice
                     audio_config = speechsdk.audio.AudioOutputConfig(
                         filename=outfile)
                     synthesizer = speechsdk.SpeechSynthesizer(
                         speech_config=speech_config, audio_config=audio_config)
-                    result = synthesizer.speak_text_async(text).get()
+
+                    ssml_text = f"""
+                        <speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="https://www.w3.org/2001/mstts" xml:lang="{locale}">
+                            <voice name="{voice}">
+                                <prosody pitch="{pitch}" rate="{rate}">{text}</prosody>
+                            </voice>
+                        </speak>"""
+
+                    result = synthesizer.speak_ssml_async(ssml=ssml_text).get()
 
                     # If failed, show error, remove empty/corrupt file and halt
                     if result.reason == speechsdk.ResultReason.Canceled:
