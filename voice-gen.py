@@ -96,6 +96,12 @@ def main() -> None:
     else:
         locale = re.split('([a-z]{2}-[A-Z]{2})', voice)[1]
 
+    if pitch != "default":
+        pitch = pitch.replace("dn", "-").replace("up", "+")
+
+    if rate != "default":
+        rate = rate.replace("dn", "-").replace("up", "+")
+
     try:
         speech_key = os.environ['COGNITIVE_SERVICE_API_KEY']
         service_region = os.environ['SERVICE_REGION']
