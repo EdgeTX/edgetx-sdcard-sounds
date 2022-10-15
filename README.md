@@ -51,6 +51,25 @@ Audio files for [Yaapu Telemetry Script and Widget](https://github.com/yaapu/Frs
 
 All of the voices used in the EdgeTX voice packs have been picked from the [neural voices](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support?tabs=speechtotext#prebuilt-neural-voices) offered by Microsft Azure text to speech service, in order to get as close as possible to humanlike voices. If you want to see what voices are available, and try different phrases, [check out the online demo generator](https://azure.microsoft.com/en-us/services/cognitive-services/text-to-speech/#features). Using some recording software, you could even save your own phrases and use them in the voice packs.
 
+### Generating custom phrases
+Phrases can be generated with `curl` or `http` client like `postman`.  
+After building a text to speech resource in `Azure` you can use it by `REST` calls (`http` requests).  
+The request url is:
+`https://<YOUR_RESOURCE_REGION>.tts.speech.microsoft.com/cognitiveservices/v1`
+You should add the following headers to your request: (EdgeTX supposed to support up to 32khz `.wav` file but in that range 8khz is the highest value supported by the conversion service. It's possible to select higher quality like `riff-48khz-16bit-mono-pcm` and convert to 32khz afterwards with another tool),
+```
+Ocp-Apim-Subscription-Key: <YOUR_RESOURCE_KEY>
+Content-Type: application/ssml+xml
+X-Microsoft-OutputFormat: riff-8khz-16bit-mono-pcm
+```
+And in the request body (raw) place your `ssml` (Change the voice name according to your preference, the full list is: `tts.speech.microsoft.com/cognitiveservices/voices/list`):  
+
+```
+<speak version='1.0' xml:lang='en-US'>
+    <voice xml:lang='en-US' xml:gender='Female' name='en-US-MichelleNeural'>YOUR_PHRASE_HERE</voice>
+</speak>
+```
+
 ## How to build yourself
 
 In order to generate the voice packages and do the release processing, you will need a Linux environment to run in.
