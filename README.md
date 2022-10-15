@@ -57,7 +57,7 @@ If you have a [Azure Speech Services subscription](https://azure.microsoft.com/p
 The request url is:
 `https://<YOUR_RESOURCE_REGION>.tts.speech.microsoft.com/cognitiveservices/v1`
 
-You should add the following headers to your request (EdgeTX supports up to 32khz `.wav` file but in that range 8khz is the highest value supported by the conversion service. However, it is possible to select higher quality like `riff-48khz-16bit-mono-pcm` and convert to 32khz afterwards with another tool):
+You should add the following headers to your request:
 
 ```
 Ocp-Apim-Subscription-Key: <YOUR_RESOURCE_KEY>
@@ -65,7 +65,9 @@ Content-Type: application/ssml+xml
 X-Microsoft-OutputFormat: riff-8khz-16bit-mono-pcm
 ```
 
-And in the request body (raw) place your `ssml` (change the voice name according to your preference, the full list is: `tts.speech.microsoft.com/cognitiveservices/voices/list`):
+**Note:** EdgeTX supports up to 32khz `.wav` file but in that range 8khz is the highest value supported by the conversion service. However, it is possible to select higher quality like `riff-48khz-16bit-mono-pcm` and convert to 32khz afterwards with another tool (i.e. `ffmpeg -i input.wav -ar 32000 output.wav`) if you want the best possible audio quality.
+
+And in the request body (raw) place your `ssml` (change the voice name according to your preference, the full list is [here](https://learn.microsoft.com/azure/cognitive-services/speech-service/language-support?tabs=stt-tts)):
 
 ```
 <speak version='1.0' xml:lang='en-US'>
