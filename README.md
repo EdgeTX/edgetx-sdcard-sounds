@@ -49,20 +49,23 @@ Audio files for [Yaapu Telemetry Script and Widget](https://github.com/yaapu/Frs
 
 ## Voices
 
-All of the voices used in the EdgeTX voice packs have been picked from the [neural voices](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support?tabs=speechtotext#prebuilt-neural-voices) offered by Microsft Azure text to speech service, in order to get as close as possible to humanlike voices. If you want to see what voices are available, and try different phrases, [check out the online demo generator](https://azure.microsoft.com/en-us/services/cognitive-services/text-to-speech/#features). Using some recording software, you could even save your own phrases and use them in the voice packs.
+All of the voices used in the EdgeTX voice packs have been picked from the [neural voices](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support?tabs=speechtotext#prebuilt-neural-voices) offered by Microsoft Azure text to speech service, in order to get as close as possible to human-like voices. If you want to see what voices are available, and try different phrases, [check out the online demo generator](https://azure.microsoft.com/en-us/services/cognitive-services/text-to-speech/#features). Using some recording software, you could even save your own phrases and use them in the voice packs.
 
 ### Generating custom phrases
-Phrases can be generated with `curl` or `http` client like `postman`.  
-After building a text to speech resource in `Azure` you can use it by `REST` calls (`http` requests).  
+If you have a [Azure Speech Services subscription](https://azure.microsoft.com/pricing/details/cognitive-services/speech-services/) (there is a free usage tier), phrases can be generated with `curl` or `http` client like `postman`.After building a text to speech resource in `Azure` you can use it by `REST` calls (`http` requests).
+
 The request url is:
 `https://<YOUR_RESOURCE_REGION>.tts.speech.microsoft.com/cognitiveservices/v1`
-You should add the following headers to your request: (EdgeTX supposed to support up to 32khz `.wav` file but in that range 8khz is the highest value supported by the conversion service. It's possible to select higher quality like `riff-48khz-16bit-mono-pcm` and convert to 32khz afterwards with another tool),
+
+You should add the following headers to your request: (EdgeTX supports up to 32khz `.wav` file but in that range 8khz is the highest value supported by the conversion service. However, it is possible to select higher quality like `riff-48khz-16bit-mono-pcm` and convert to 32khz afterwards with another tool),
+
 ```
 Ocp-Apim-Subscription-Key: <YOUR_RESOURCE_KEY>
 Content-Type: application/ssml+xml
 X-Microsoft-OutputFormat: riff-8khz-16bit-mono-pcm
 ```
-And in the request body (raw) place your `ssml` (Change the voice name according to your preference, the full list is: `tts.speech.microsoft.com/cognitiveservices/voices/list`):  
+
+And in the request body (raw) place your `ssml` (Change the voice name according to your preference, the full list is: `tts.speech.microsoft.com/cognitiveservices/voices/list`):
 
 ```
 <speak version='1.0' xml:lang='en-US'>
@@ -97,7 +100,7 @@ After you have installed SPX, you will also need to [create a Microsoft Azure ac
 
 ## Alternatives
 - Mike has created a python script that can be used to generate the audio using Googles Text to Speech service - https://github.com/xsnoopy/edgetx-sdcard-sounds
-- The OpenTX Speaker voice generator (Windows only) uses the built in text to speech engine of Microsoft Windows, andcan be used to generate new audio also. https://www.open-tx.org/2014/03/15/opentx-speaker
+- The OpenTX Speaker voice generator (Windows only) uses the built in text to speech engine of Microsoft Windows, and can be used to generate new audio also. https://www.open-tx.org/2014/03/15/opentx-speaker
 
 
 
