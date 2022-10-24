@@ -12,13 +12,13 @@ The currently supported languages are:
 * Italian
 * Portuguese
 * Russian
+* Swedish
 * Chinese Mandarin
 * Chilean Spanish
 
 The following languages are not yet supported but are under development:
 * Hungarian
 * Dutch
-* Swedish
 * Slovak
 
 ## Directory structure
