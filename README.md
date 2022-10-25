@@ -13,6 +13,7 @@ The currently supported languages are:
 * Portuguese
 * Russian
 * Chinese Mandarin
+* Chinese Taiwan Mandarin
 * Chilean Spanish
 
 The following languages are not yet supported but are under development:
