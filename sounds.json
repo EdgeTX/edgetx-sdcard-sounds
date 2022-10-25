@@ -107,4 +107,10 @@
         "description": "Chinese Female Voice",
         "directory": "cn"
     }
+    {
+        "language": "zh-TW",
+        "name": "Chinese Taiwan Female",
+        "description": "Chinese Taiwan Female Voice",
+        "directory": "tw"
+    }
 ]
