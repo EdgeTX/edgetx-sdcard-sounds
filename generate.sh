@@ -15,8 +15,8 @@ check_dependencies
 find "$(dirname "$0")" -name "*.log" -delete
 
 ./voice-gen.py voices/cs-CZ.csv cs-CZ-VlastaNeural cz || exit 1
-./voice-gen.py voices/da_DK.csv da-DK-ChristelNeural dk || exit 1
-./voice-gen.py voices/da_DK_scripts.csv da-DK-ChristelNeural dk/SCRIPTS || exit 1
+./voice-gen.py voices/da_DK.csv da-DK-ChristelNeural da || exit 1
+./voice-gen.py voices/da_DK_scripts.csv da-DK-ChristelNeural da/SCRIPTS || exit 1
 ./voice-gen.py voices/de-DE.csv de-DE-KatjaNeural de || exit 1
 ./voice-gen.py voices/en-GB.csv en-IE-EmilyNeural en || exit 1
 ./voice-gen.py voices/en-GB_scripts.csv en-IE-EmilyNeural en/SCRIPTS || exit 1
