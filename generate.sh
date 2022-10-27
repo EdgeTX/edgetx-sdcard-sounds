@@ -40,3 +40,4 @@ find "$(dirname "$0")" -name "*.log" -delete
 ./voice-gen.py voices/sv-SE.csv sv-SE-SofieNeural sv --pitch "dn10%" --rate "dn0.9" || exit 1
 ./voice-gen.py voices/sv-SE_scripts.csv sv-SE-SofieNeural sv/SCRIPTS --pitch "dn10%" --rate "dn0.9" || exit 1
 ./voice-gen.py voices/zh-CN.csv zh-CN-XiaoxiaoNeural cn || exit 1
+./voice-gen.py voices/zh-TW.csv zh-TW-HsiaoChenNeural tw || exit 1
