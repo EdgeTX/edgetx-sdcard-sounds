@@ -3,23 +3,24 @@
 This repository contains the files needed to generate the voice packages used in EdgeTX.
 
 The currently supported languages are:
-* Czech
-* Danish
-* German
-* English
-* Spanish
-* French
-* Italian
-* Portuguese
-* Russian
-* Swedish
 * Chinese Mandarin
 * Chinese Taiwan Mandarin
 * Chilean Spanish
+* Czech
+* Danish
+* English
+* French
+* German
+* Italian
+* Japanese
+* Portuguese
+* Russian
+* Spanish
+* Swedish
 
-The following languages are not yet supported but are under development:
-* Hungarian
+The following languages are not yet supported:
 * Dutch
+* Hungarian
 * Slovak
 
 ## Directory structure
