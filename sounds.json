@@ -112,5 +112,11 @@
         "name": "Chinese Taiwan Female",
         "description": "Chinese Taiwan Female Voice",
         "directory": "tw"
+    },
+    {
+        "language": "zh-HK",
+        "name": "Chinese Hongkong Female",
+        "description": "Chinese Hongkong Female Voice",
+        "directory": "hk"
     }
 ]
