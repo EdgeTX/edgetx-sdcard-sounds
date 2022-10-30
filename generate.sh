@@ -34,7 +34,7 @@ find "$(dirname "$0")" -name "*.log" -delete
 ./voice-gen.py voices/es-ES.csv es-ES-ElviraNeural es || exit 1
 ./voice-gen.py voices/fr-FR.csv fr-FR-DeniseNeural fr || exit 1
 ./voice-gen.py voices/it-IT.csv it-IT-ElsaNeural it || exit 1
-./voice-gen.py voices/ja-JP.csv ja-JP-NanamiNeural ja || exit 1
+./voice-gen.py voices/ja-JP.csv ja-JP-NanamiNeural jp || exit 1
 ./voice-gen.py voices/pt-PT.csv pt-BR-FranciscaNeural pt || exit 1
 ./voice-gen.py voices/ru-RU.csv ru-RU-SvetlanaNeural ru || exit 1
 ./voice-gen.py voices/sv-SE.csv sv-SE-SofieNeural sv --pitch "dn10%" --rate "dn0.9" || exit 1
