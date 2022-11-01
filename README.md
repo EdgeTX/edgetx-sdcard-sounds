@@ -5,6 +5,7 @@ This repository contains the files needed to generate the voice packages used in
 The currently supported languages are:
 * Chinese Mandarin
 * Chinese Taiwan Mandarin
+* Chinese Hongkong Cantonese
 * Chilean Spanish
 * Czech
 * Danish
