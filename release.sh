@@ -1,6 +1,6 @@
 #!/bin/bash
 
-: "${VERSION:=2.7.0}"
+: "${VERSION:=latest}"
 FFMPEG_FLAGS=(-hide_banner -loglevel error)
 : "${FFMPEG_AF_FLAGS:=silenceremove=start_periods=1:start_silence=0.1:start_threshold=-50dB,areverse,silenceremove=start_periods=1:start_silence=0.1:start_threshold=-50dB,areverse}"
 
