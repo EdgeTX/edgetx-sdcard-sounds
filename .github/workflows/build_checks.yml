@@ -1,0 +1,26 @@
+name: Build checks
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths-ignore:
+      - '**.md'
+  pull_request:
+    paths-ignore:
+      - '**.md'
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.8'
+
+      - name: Check out the repo
+        uses: actions/checkout@v3
+
+      - name: Run build checks
+        run: ./build-checks.py
