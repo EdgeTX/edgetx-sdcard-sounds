@@ -27,8 +27,8 @@ jobs:
       - name: Check out the repo
         uses: actions/checkout@v3
 
-      # - name: Verify the package before building
-      #   run: ./build-checks.sh
+      - name: Run build checks
+        run: ./build-checks.py
 
       - name: Build the release zip packages
         if: github.event_name != 'pull_request'
