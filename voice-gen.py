@@ -122,9 +122,8 @@ def main() -> None:
         except Exception as e:
             print(e)
             sys.exit(1)
-    finally:
-        speech_config = speechsdk.SpeechConfig(
-            subscription=speech_key, region=service_region)
+
+    speech_config = speechsdk.SpeechConfig(subscription=speech_key, region=service_region)
 
     if not(os.path.isfile(csv_file)):
         print("Error: voice file not found")
