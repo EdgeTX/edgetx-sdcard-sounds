@@ -24,11 +24,42 @@ for file in SOUNDS/**/*.wav; do
     ffmpeg-normalize "release/$file" -o "release/$file" -f -nt peak -t 0
 done
 
+# Move processed files into variant folders
+for dir in release/SOUNDS/*/; do
+    if [ -d "$dir" ]; then
+      dir=${dir%*/} 
+      variant=$(basename "$dir")
+      mkdir -p "release/${variant}/SOUNDS"
+      mv "${dir}" "release/${variant}/SOUNDS"
+    fi
+done
+
+# Trim release folder names to expected two characters
+for dir in release/**/SOUNDS/*/; do
+    if [ -d "$dir" ]; then
+      dir=${dir%*/} 
+      variant=$(basename "$dir")
+      twoLetterVariant=${variant:0:2}
+      if [[ "${variant}" != "${twoLetterVariant}" ]]; then
+        echo "${variant} => ${twoLetterVariant}"
+        mv "release/${variant}/SOUNDS/${variant}" "release/${variant}/SOUNDS/${twoLetterVariant}"
+      fi
+    fi
+done
+
+# Remove leftover parent SOUNDS directory
+if [ -d release/SOUNDS ]; then
+  rmdir "release/SOUNDS"
+fi
+
 echo "Preparing release zip files..."
 cd release || exit
-for lang in SOUNDS/*/; do
-    ZIPLANG=$(basename "$lang")
-    [[ -e "$lang" ]] || break  # handle the case of no *.wav files
-    echo Creating "edgetx-sdcard-sounds-$ZIPLANG-$VERSION.zip"
-    find "$lang" -type f | zip -q -@ "edgetx-sdcard-sounds-$ZIPLANG-$VERSION.zip"
+
+for d in */ ; do
+    for lang in "$d"/SOUNDS/*/; do
+        ZIPLANG=$(basename "$d")
+        [[ -e "$lang" ]] || break  # handle the case of no *.wav files
+        echo Creating "edgetx-sdcard-sounds-$ZIPLANG-$VERSION.zip"
+        find "$lang" -type f | zip -q -@ "edgetx-sdcard-sounds-$ZIPLANG-$VERSION.zip"
+    done
 done

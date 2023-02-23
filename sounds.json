@@ -21,13 +21,13 @@
         "language": "en-GB",
         "name": "British English Female",
         "description": "British English Female Voice (en-GB-Libby)",
-        "directory": "en_gb-libby"
+        "directory": "en"
     },
     {
         "language": "en-GB",
         "name": "British English Male",
         "description": "British English Male Voice (en-GB-Ryan)",
-        "directory": "en_gb-ryan"
+        "directory": "en"
     },
     {
         "language": "en-IE",
@@ -39,19 +39,19 @@
         "language": "en-US",
         "name": "US English",
         "description": "US English Male Voice (en-US-Guy)",
-        "directory": "en_us-guy"
+        "directory": "en"
     },
     {
         "language": "en-US",
         "name": "US English",
         "description": "US English Female Voice (en-US-Michelle)",
-        "directory": "en_us-michelle"
+        "directory": "en"
     },
     {
         "language": "en-US",
         "name": "US English",
         "description": "US English Female Voice (en-US-Sara)",
-        "directory": "en_us-sara"
+        "directory": "en"
     },
     {
         "language": "es-ES",
@@ -63,7 +63,7 @@
         "language": "es-CL",
         "name": "Chilean Female",
         "description": "Chilean Female Voice (es-CL-Catalina)",
-        "directory": "es_cl-catalina"
+        "directory": "es"
     },
     {
         "language": "fr-FR",
