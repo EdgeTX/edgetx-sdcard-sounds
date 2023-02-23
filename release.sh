@@ -53,13 +53,14 @@ if [ -d release/SOUNDS ]; then
 fi
 
 echo "Preparing release zip files..."
-cd release || exit
-
-for d in */ ; do
-    for lang in "$d"/SOUNDS/*/; do
+WORKDIR=$(pwd)
+for d in release/*/ ; do
+    cd "$WORKDIR/${d}" || exit
+    for lang in SOUNDS/*/ ; do
         ZIPLANG=$(basename "$d")
         [[ -e "$lang" ]] || break  # handle the case of no *.wav files
         echo Creating "edgetx-sdcard-sounds-$ZIPLANG-$VERSION.zip"
-        find "$lang" -type f | zip -q -@ "edgetx-sdcard-sounds-$ZIPLANG-$VERSION.zip"
+        find "$lang" -type f | zip -q -@ "$WORKDIR/release/edgetx-sdcard-sounds-$ZIPLANG-$VERSION.zip"
     done
+    cd "$WORKDIR/release" || exit
 done
