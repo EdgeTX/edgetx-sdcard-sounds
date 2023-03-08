@@ -102,6 +102,18 @@
         "directory": "se"
     },
     {
+        "language": "uk-UA",
+        "name": "Ukrainian Male",
+        "description": "Ukrainian Male Voice (uk-UA-OstapNeural)",
+        "directory": "ua"
+    },
+    {
+        "language": "uk-UA",
+        "name": "Ukrainian Female",
+        "description": "Ukrainian Female Voice (uk-UA-PolinaNeural)",
+        "directory": "ua"
+    },
+    {
         "language": "zh-CN",
         "name": "Chinese Female",
         "description": "Chinese Female Voice",
