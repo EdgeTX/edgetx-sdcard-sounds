@@ -18,6 +18,7 @@ The currently supported languages are:
 * Russian
 * Spanish
 * Swedish
+* Ukrainian
 
 The following languages are not yet supported:
 * Dutch
