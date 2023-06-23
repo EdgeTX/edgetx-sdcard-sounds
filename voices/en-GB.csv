@@ -440,7 +440,7 @@
 "439","VTX Frequency R8","VTX Frequency R8","video","","vtxfr8.wav"
 "440","VTX Maximum Power","VTX Maximum Power","video","","vtxmax.wav"
 "441","blackbox erase","blackbox erase","","","blkers.wav"
-"442","acro trainer mode","acro trainer mode","camera","","actnmd.wav"
+"442","acro trainer mode","acro trainer mode","","","actnmd.wav"
 "443","Camera wifi button","Camera wifi button","camera","","cwifi.wav"
 "444","Camera power button","Camera power button","camera","","cpower.wav"
 "445","Camera change mode","Camera change mode","camera","","cmode.wav"
