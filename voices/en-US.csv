@@ -448,3 +448,5 @@
 "445","Camera stop","Camera stop","camera","","cstop.wav"
 "446","Recording start","Recording start","","","recsrt.wav"
 "447","Recording stop","Recording stop","","","recstp.wav"
+"448","Start recording","Start recording","","","strtrc.wav"
+"449","Stop recording","Stop recording","","","stoprc.wav"
