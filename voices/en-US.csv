@@ -450,3 +450,5 @@
 "449","Recording stop","Recording stop","","","recstp.wav"
 "450","Start recording","Start recording","","","strtrc.wav"
 "451","Stop recording","Stop recording","","","stoprc.wav"
+"452","DBM","DBM","","SYSTEM","dbm0.wav"
+"453","DBM","DBM","","SYSTEM","dbm1.wav"
