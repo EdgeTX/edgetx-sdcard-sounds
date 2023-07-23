@@ -42,7 +42,7 @@ jobs:
         uses: marvinpinto/action-automatic-releases@latest
         if: github.event_name != 'pull_request'
         with:
-          title: "Latest Voice Pack"
+          title: "Latest"
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           files: |
             release/edgetx-sdcard-sounds-*.zip
