@@ -452,5 +452,5 @@
 "451","Stop recording","parada gravação",,,"stoprc.wav"
 "452","DBM","DBM",,"SYSTEM","dbm0.wav"
 "453","DBM","DBM",,"SYSTEM","dbm1.wav"
-"454","kilometer","kilometer",,"SYSTEM","km0.wav"
-"455","kilometers","kilometers",,"SYSTEM","km1.wav"
+"454","kilometer","quilômetro",,"SYSTEM","km0.wav"
+"455","kilometers","quilômetros",,"SYSTEM","km1.wav"
