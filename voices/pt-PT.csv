@@ -442,3 +442,8 @@
 "453","DBM","DBM",,"SYSTEM","dbm1.wav"
 "454","kilometer","quilômetro",,"SYSTEM","km0.wav"
 "455","kilometers","quilômetros",,"SYSTEM","km1.wav"
+"456","Reverse Thrust","Empuxo reverso","plane","","revthr.wav"
+"457","Reverse Thrust On","Empuxo reverso ligado","plane","","revon.wav"
+"458","Reverse Thrust Off","Empuxo reverso desligado","plane","","revoff.wav"
+"459","Reverse Thrust Idle","Empuxo reverso baixo","plane","","revid.wav"
+"460","Forward Thrust","Empuxo frente","plane","","revfwd.wav"
