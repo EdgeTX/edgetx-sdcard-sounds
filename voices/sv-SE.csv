@@ -289,7 +289,7 @@
 "288","pre-arm active","förarmering aktiv","","","preact.wav"
 "289","stable mode","stabilt läge","","","stbmod.wav"
 "290","brakes on","bromsar på","plane","","brakon.wav"
-"291","brakes off","bromsar på","plane","","brakof.wav"
+"291","brakes off","bromsar av","plane","","brakof.wav"
 "292","butterfly on","fjäril på","","","btfon.wav"
 "293","butterfly off","fjäril av","","","btfoff.wav"
 "294","flaps one","vingklaffar ett","plane","","flp1.wav"
