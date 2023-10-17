@@ -447,3 +447,4 @@
 "458","Reverse Thrust Off","Empuxo reverso desligado","plane","","revoff.wav"
 "459","Reverse Thrust Idle","Empuxo reverso em lento","plane","","revid.wav"
 "460","Forward Thrust","Empuxo frente","plane","","revfwd.wav"
+"461","Telemetry connected","Telemetria ligada","","SYSTEM","telemco.wav"

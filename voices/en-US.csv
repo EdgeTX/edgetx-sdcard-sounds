@@ -459,3 +459,4 @@
 "458","Reverse Thrust Off","Reverse Thrust Off","plane","","revoff.wav"
 "459","Reverse Thrust Idle","Reverse Thrust Idle","plane","","revid.wav"
 "460","Forward Thrust","Forward Thrust","plane","","revfwd.wav"
+"461","telemetry connected","telemetry conected","","SYSTEM","telemco.wav"

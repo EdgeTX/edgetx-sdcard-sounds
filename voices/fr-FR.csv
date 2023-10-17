@@ -228,3 +228,4 @@
 "227","mode de vol thermique gauche","mode de vol thermique gauche","","","fm-thl.wav"
 "228","mode de vol thermique droit","mode de vol thermique droit","","","fm-thr.wav"
 "229","autorotation","","heli","","auro.wav"
+"230","Telemetry connected","Télémétrie connectée","","SYSTEM","telemco.wav"
