@@ -233,3 +233,4 @@
 "232","flight mode 8","Flugmodus 8","","","fm-8.wav"
 "233","flight mode 9","Flugmodus 9","","","fm-9.wav"
 "234","Autorotation","Autorotation","heli","","auro.wav"
+"235","Telemetry connected","Telemetrie angeschlossen","","SYSTEM","telemco.wav"

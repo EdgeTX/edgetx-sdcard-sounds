@@ -286,3 +286,4 @@
 "285","flight mode 8","letový režim osm","","","fm-8.wav"
 "286","flight mode 9","letový režim devět","","","fm-9.wav"
 "287","Autorotation","autorotace","","","auro.wav"
+"288","Telemetry connected","Připojená telemetrie","","SYSTEM","telemco.wav"
