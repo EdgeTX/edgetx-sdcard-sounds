@@ -335,3 +335,4 @@
 "334","flip","翻滚","","","flip.wav"
 "335","Autorotation","自旋降落","heli","","auro.wav"
 "336","Telemetry connected","遥测连接","","SYSTEM","telemco.wav"
+"337","level mode","水平模式","flight controller","","lvlmod.wav"

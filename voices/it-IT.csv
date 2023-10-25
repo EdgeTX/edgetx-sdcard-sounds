@@ -265,3 +265,4 @@
 "264","fase di volo termica destra","fase di volo termica destra","","","fm-thr.wav"
 "265","autorotation","","heli","","auro.wav"
 "266","Telemetry connected","Telemetria collegata","","SYSTEM","telemco.wav"
+"267","level mode","modalità livello","flight controller","","lvlmod.wav"

@@ -440,3 +440,4 @@
 "439","VTX Frequency R7","Videofrekvens R 7","video","","vtxfr7.wav"
 "440","VTX Frequency R8","Videofrekvens R 8","video","","vtxfr8.wav"
 "441","Telemetry connected","Telemetri tilsluttet","","SYSTEM","telemco.wav"
+"442","level mode","Niveau-tilstand","flight controller","","lvlmod.wav"

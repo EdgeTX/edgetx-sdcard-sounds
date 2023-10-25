@@ -229,3 +229,4 @@
 "228","mode de vol thermique droit","mode de vol thermique droit","","","fm-thr.wav"
 "229","autorotation","","heli","","auro.wav"
 "230","Telemetry connected","Télémétrie connectée","","SYSTEM","telemco.wav"
+"231","level mode","mode niveau","flight controller","","lvlmod.wav"

@@ -460,3 +460,4 @@
 "459","Reverse Thrust Idle","Omvänd drivkraft på tomgång","plane","","revid.wav"
 "460","Forward Thrust","Drivkraft framåt","plane","","revfwd.wav"
 "461","Telemetry connected","Telemetri ansluten","","SYSTEM","telemco.wav"
+"462","level mode","nivå-läge","flight controller","","lvlmod.wav"

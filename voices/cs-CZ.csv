@@ -287,3 +287,4 @@
 "286","flight mode 9","letový režim devět","","","fm-9.wav"
 "287","Autorotation","autorotace","","","auro.wav"
 "288","Telemetry connected","Připojená telemetrie","","SYSTEM","telemco.wav"
+"289","level mode","režim úrovně","flight controller","","lvlmod.wav"

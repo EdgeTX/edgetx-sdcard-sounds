@@ -439,3 +439,4 @@
 "438","VTX Frequency R7","VTX 周波数、R7","video","","vtxfr7.wav"
 "439","VTX Frequency R8","VTX 周波数、R8","video","","vtxfr8.wav"
 "440","Telemetry connected","テレメトリー接続","","SYSTEM","telemco.wav"
+"441","level mode","レベルモード","flight controller","","lvlmod.wav"

@@ -229,3 +229,4 @@
 "228","flight mode 9","modo de vuelo 9","","","fltmd9.wav"
 "229","Autorotation","","heli","","auro.wav"
 "230","Telemetry connected","Telemetría conectada","","SYSTEM","telemco.wav"
+"231","level mode","modo de nivel","flight controller","","lvlmod.wav"

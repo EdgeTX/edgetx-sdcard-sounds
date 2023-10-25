@@ -320,3 +320,4 @@
 "321","Супутники втрачені","Супутники втрачені","","","satlst.wav"
 "324","Авторотація","Авторотація","heli","","auro.wav"
 "325","Telemetry connected","Телеметрію підключено","","SYSTEM","telemco.wav"
+"326","level mode","режим рівня","flight controller","","lvlmod.wav"

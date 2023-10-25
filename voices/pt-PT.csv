@@ -448,3 +448,4 @@
 "459","Reverse Thrust Idle","Empuxo reverso em lento","plane","","revid.wav"
 "460","Forward Thrust","Empuxo frente","plane","","revfwd.wav"
 "461","Telemetry connected","Telemetria ligada","","SYSTEM","telemco.wav"
+"462","level mode","modo de nível","flight controller","","lvlmod.wav"

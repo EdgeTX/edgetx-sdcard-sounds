@@ -324,3 +324,4 @@
 "323","Бортовые огни включены","Бортовые огни включены","","","ledon.wav"
 "324","autorotation","","heli","","auro.wav"
 "325","Telemetry connected","Телеметрия подключена","","SYSTEM","telemco.wav"
+"326","level mode","режим уровня","flight controller","","lvlmod.wav"

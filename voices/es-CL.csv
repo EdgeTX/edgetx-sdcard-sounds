@@ -325,3 +325,4 @@
 "324","Perfil OSD","Perfil OSD","","","osdprf.wav"
 "325","Autorotation","","heli","","auro.wav"
 "326","Telemetry connected","Telemetría conectada","","SYSTEM","telemco.wav"
+"327","level mode","modo de nivel","flight controller","","lvlmod.wav"
