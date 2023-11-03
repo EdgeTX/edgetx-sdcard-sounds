@@ -233,7 +233,7 @@
 "232","flight mode 8","Flugmodus 8","","","fm-8.wav"
 "233","flight mode 9","Flugmodus 9","","","fm-9.wav"
 "234","Autorotation","Autorotation","heli","","auro.wav"
-"235","Telemetry connected","Telemetrie angeschlossen","","SYSTEM","telemco.wav"
+"235","Telemetry connected","Telemetrie verbunden","","SYSTEM","telemco.wav"
 "236","level mode","level mode","flight controller","","lvlmod.wav"
 "237","kilometer","Kilometer","","SYSTEM","km0.wav"
 "238","DBM","DBM","","SYSTEM","dbm0.wav"
