@@ -260,7 +260,7 @@
 "259","flight mode stabilise","flyve tilstand stabiliseret","","","fm-stb.wav"
 "260","flight mode horizon","flyve tilstand horisont","","","fm-hor.wav"
 "261","flight mode angle","flyve tilstand vinkel","","","fm-ang.wav"
-"262","flight mode idle up en","flyve tilstand tomgang op en","","","fm-id1.wav"
+"262","flight mode idle up 1","flyve tilstand tomgang op en","","","fm-id1.wav"
 "263","flight mode idle up 2","flyve tilstand tomgang op 2","","","fm-id2.wav"
 "264","low rate","lav hastighed","","","ratlow.wav"
 "265","medium rate","medium hastighed","","","ratmed.wav"
