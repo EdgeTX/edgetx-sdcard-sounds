@@ -5,7 +5,6 @@ import os
 import re
 import sys
 import time
-import subprocess
 from pathlib import Path
 
 try:
@@ -17,7 +16,6 @@ except ImportError:
     https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstart-text-to-speech-python for
     installation instructions.
     """)
-    import sys
     sys.exit(1)
 
 
