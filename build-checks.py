@@ -21,7 +21,7 @@ def checkCSVcolumnCount():
             reader = csv.reader(open(f, "r"))
             for row in reader:
                 if not len(row) == 6:
-                    print("{}: Insufficient columns of data - {}".format(filename, row))
+                    print(f"{filename}: Insufficient columns of data - {row}")
                     missing_csv_field = True
                     continue
 
@@ -29,6 +29,7 @@ def checkCSVcolumnCount():
         return 1
     else:
         return 0
+
 
 def checkFilenameLengths():
     print("SOUNDS: Checking file name lengths ...")
@@ -38,12 +39,12 @@ def checkFilenameLengths():
             path = os.path.join(dirpath, fn)
             if path.split(os.path.sep)[2] == "SYSTEM":
                 if len(os.path.splitext(fn)[0]) > 8:
-                    print("Filename too long for a SYSTEM file: {}".format(path))
+                    print(f"Filename too long for a SYSTEM file: {path}")
                     invalid_filename_found = True
             elif path.split(os.path.sep)[2] == "SCRIPTS":
                 continue
             elif len(os.path.splitext(fn)[0]) > 6:
-                print("Filename too long for a non-SYSTEM file: {}".format(path))
+                print(f"Filename too long for a non-SYSTEM file: {path}")
                 invalid_filename_found = True
 
     if invalid_filename_found:
@@ -60,7 +61,7 @@ def checkNoZeroByteFiles():
         for fn in files:
             path = os.path.join(root, fn)
             if os.stat(path).st_size == 0:
-                print("Zero byte file: {}".format(path))
+                print(f"Zero byte file: {path}")
                 zero_byte_file_found = True
 
     if zero_byte_file_found:
@@ -76,13 +77,14 @@ def validateSoundsJson():
     try:
         json.load(f)
     except ValueError as err:
-        print("JSON not valid: {}".format(str(err)))
+        print(f"JSON not valid: {str(err)}")
         invalid_json_found = True
 
     if invalid_json_found:
         return 1
     else:
         return 0
+
 
 def checkForDuplicateStringID():
     print("VOICES: Check for duplicate StringIDs ...")
@@ -111,7 +113,7 @@ def checkForDuplicateStringID():
                     else:
                         StringID = row[0]
                         if StringID in StringID_count.keys():
-                            print('{}: {} is duplicated'.format(f, StringID))
+                            print(f'{f}: {StringID} is duplicated')
                             StringID_count[StringID] = StringID_count[StringID] + 1
                             duplicate_found = True
                         else:

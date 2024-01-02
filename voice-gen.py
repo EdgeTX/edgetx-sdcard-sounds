@@ -179,11 +179,9 @@ def main() -> None:
                     # If failed, show error, remove empty/corrupt file and halt
                     if result.reason == speechsdk.ResultReason.Canceled:
                         cancellation_details = result.cancellation_details
-                        print("Speech synthesis canceled: {}".format(
-                            cancellation_details.reason))
+                        print(f"Speech synthesis canceled: {cancellation_details.reason}")
                         if cancellation_details.reason == speechsdk.CancellationReason.Error:
-                            print("Error details: {}".format(
-                                cancellation_details.error_details))
+                            print(f"Error details: {cancellation_details.error_details}")
                         if os.path.isfile(outdir + os.sep + filename):
                             os.remove(outdir + os.sep + filename)
                         sys.exit(1)
