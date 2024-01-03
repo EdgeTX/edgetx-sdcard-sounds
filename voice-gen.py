@@ -5,7 +5,6 @@ import os
 import re
 import sys
 import time
-import subprocess
 from pathlib import Path
 
 try:
@@ -17,7 +16,6 @@ except ImportError:
     https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstart-text-to-speech-python for
     installation instructions.
     """)
-    import sys
     sys.exit(1)
 
 
@@ -125,7 +123,7 @@ def main() -> None:
 
     speech_config = speechsdk.SpeechConfig(subscription=speech_key, region=service_region)
 
-    if not(os.path.isfile(csv_file)):
+    if not os.path.isfile(csv_file):
         print("Error: voice file not found")
         sys.exit(1)
 
@@ -181,11 +179,9 @@ def main() -> None:
                     # If failed, show error, remove empty/corrupt file and halt
                     if result.reason == speechsdk.ResultReason.Canceled:
                         cancellation_details = result.cancellation_details
-                        print("Speech synthesis canceled: {}".format(
-                            cancellation_details.reason))
+                        print(f"Speech synthesis canceled: {cancellation_details.reason}")
                         if cancellation_details.reason == speechsdk.CancellationReason.Error:
-                            print("Error details: {}".format(
-                                cancellation_details.error_details))
+                            print(f"Error details: {cancellation_details.error_details}")
                         if os.path.isfile(outdir + os.sep + filename):
                             os.remove(outdir + os.sep + filename)
                         sys.exit(1)
