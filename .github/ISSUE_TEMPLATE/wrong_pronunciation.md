@@ -1,0 +1,21 @@
+---
+name: "Wrong pronunciation"
+about: "A phrase is correctly translated but sounds wrong in my language or locale."
+title: "Wrong pronunciation in [YOUR LANGUAGE OR LOCALE]"
+---
+
+## Description
+
+<!-- Please specify the language or locale that you're using, and the terms that are incorrectly pronounced. Don't forget to add the language or locale in the title of the issue as well.  -->
+
+The following sounds are incorrectly pronounced:
+
+- Language or locale: `fr_FR` <!-- for example -->
+- Incorrectly sounds like: "mode pi"
+- Should sound like: "mode pite"
+
+## Help make EdgeTX better!
+
+<!-- You'll be able to check these boxes once the issue is created. -->
+
+- [ ] (optional) I can help reviewing the new sounds once they're generated.
