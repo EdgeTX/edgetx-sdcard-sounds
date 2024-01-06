@@ -32,7 +32,7 @@ jobs:
 
       - name: Set VERSION if tagged build
         if: startsWith(github.event.ref, 'refs/tags/v')
-        run: echo "VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
+        run: echo "VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_ENV
 
       - name: Build the release zip packages
         if: github.event_name != 'pull_request'
