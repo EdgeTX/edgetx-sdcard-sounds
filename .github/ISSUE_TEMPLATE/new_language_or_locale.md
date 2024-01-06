@@ -8,7 +8,7 @@ title: "Add language/locale: [YOUR LANGUAGE OR LOCALE]"
 
 I'd like to be able to download voice packs in the following language(s) and locale(s):
 
-<!-- Please list the languages or locales that you'd like to use. Example: `fr_BE`, Japanese, Spanish (Colombia) and add them to the issue title as well. You can find the (BCP-47) code for many locales in https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-support?tabs=tts#supported-languages. But using words if fine as well. -->
+<!-- Please list the languages or locales that you'd like to use. Example: `fr_BE`, Japanese, Spanish (Colombia) and add them to the issue title as well. You can find the (BCP-47) code for many locales in https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-support?tabs=tts#supported-languages. But using words is fine as well. -->
 
 - `en_US` <!-- for example -->
 
