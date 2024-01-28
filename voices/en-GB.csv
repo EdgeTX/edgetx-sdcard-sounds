@@ -475,3 +475,8 @@
 "474","Four wheel drive","Four wheel drive","car","","4wd.wav"
 "475","Winch in","Winch in","car","","wchin.wav"
 "476","Winch out","Winch out","car","","wchout.wav"
+"477","Front Steer","Front Steer","car","","str-f.wav"
+"478","Rear Steer","Rear Steer","car","","str-r.wav"
+"479","Four Wheel Steer","Four Wheel Steer","car","","str-4w.wav"
+"480","Mirror Steer","Mirror Steer","car","","str-mr.wav"
+"481","Crab Steer","Crab Steer","car","","str-cr.wav"
