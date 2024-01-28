@@ -13,7 +13,7 @@ except ImportError:
     print("""
     Importing the Speech SDK for Python failed.
     Refer to
-    https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstart-text-to-speech-python for
+    https://learn.microsoft.com/en-us/azure/ai-services/speech-service/get-started-text-to-speech for
     installation instructions.
     """)
     sys.exit(1)
