@@ -475,3 +475,8 @@
 "474","Four wheel drive","Fire hjul drev","car","","4wd.wav"
 "475","Winch in","Spil inde","car","","wchin.wav"
 "476","Winch out","Spil ude","car","","wchout.wav"
+"477","Front Steer","Styring forhjul","car","","str-f.wav"
+"478","Rear Steer","Styring baghjul","car","","str-r.wav"
+"479","Four Wheel Steer","Styring fire hjul","car","","str-4w.wav"
+"480","Mirror Steer","Styring spejlet","car","","str-mr.wav"
+"481","Crab Steer","Styring Crab","car","","str-cr.wav"
