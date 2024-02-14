@@ -10,5 +10,13 @@
 	"remoteEnv": {
 		"PATH": "${containerEnv:PATH}:/home/vscode/.dotnet/tools",
 		"SSL_CERT_DIR": "/etc/ssl/certs"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"mechatroner.rainbow-csv",
+				"eamodio.gitlens"
+			]
+		}
 	}
 }
