@@ -8,6 +8,7 @@
 	},
 	"postCreateCommand": "./.devcontainer/post-create.sh",
 	"remoteEnv": {
-		"PATH": "${containerEnv:PATH}:/home/vscode/.dotnet/tools"
+		"PATH": "${containerEnv:PATH}:/home/vscode/.dotnet/tools",
+		"SSL_CERT_DIR": "/etc/ssl/certs"
 	}
 }
