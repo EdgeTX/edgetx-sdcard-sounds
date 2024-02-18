@@ -480,3 +480,8 @@
 "479","Four Wheel Steer","Four Wheel Steer","car","","str-4w.wav"
 "480","Mirror Steer","Mirror Steer","car","","str-mr.wav"
 "481","Crab Steer","Crab Steer","car","","str-cr.wav"
+"482","Motor armed","Motor armed","soaretx","","motarm.wav"
+"483","Launch","Launch","soaretx","","launch.wav"
+"484","Power","Power","soaretx","","power.wav"
+"485","Speed","Speed","soaretx","","speed.wav"
+"486","Thermal","Thermal","soaretx","","therml.wav"
