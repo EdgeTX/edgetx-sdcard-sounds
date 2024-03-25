@@ -39,7 +39,7 @@ jobs:
         run: ./release.sh
 
       - name: Upload binaries to release
-        uses: marvinpinto/action-automatic-releases@latest
+        uses: crowbarmaster/GH-Automatic-Releases@latest
         if: github.event_name != 'pull_request'
         with:
           title: "Latest"
