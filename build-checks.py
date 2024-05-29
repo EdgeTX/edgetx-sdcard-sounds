@@ -30,6 +30,30 @@ def checkCSVcolumnCount():
     else:
         return 0
 
+def checkFilenameLengthsInCSV():
+    print("VOICES: Checking filename lengths in CSV files ...")
+    invalid_filename_found = False
+    for filename in os.listdir(csv_directory):
+        if filename.endswith('_scripts.csv'):
+            continue
+        f = os.path.join(csv_directory, filename)
+        if os.path.isfile(f) and filename.endswith('.csv'):
+            reader = csv.reader(open(f, "r"))
+            next(reader)  # Skip the header row
+            for row in reader:
+                if len(row) == 6:
+                    filename_in_csv = row[5]
+                    path_in_csv = row[4]
+                    if path_in_csv == "SYSTEM" and len(os.path.splitext(filename_in_csv)[0]) > 8:
+                        print(f"{filename}: Filename too long - {filename_in_csv}")
+                        invalid_filename_found = True
+                    elif path_in_csv != "SYSTEM" and len(os.path.splitext(filename_in_csv)[0]) > 6:
+                        print(f"{filename}: Filename too long - {filename_in_csv}")
+                        invalid_filename_found = True
+    if invalid_filename_found:
+        return 1
+    else:
+        return 0
 
 def checkFilenameLengths():
     print("SOUNDS: Checking file name lengths ...")
@@ -128,6 +152,7 @@ def checkForDuplicateStringID():
 if __name__ == "__main__":
     error_count = 0
     error_count += checkCSVcolumnCount()
+    error_count += checkFilenameLengthsInCSV()
     error_count += checkFilenameLengths()
     error_count += checkNoZeroByteFiles()
     error_count += validateSoundsJson()
