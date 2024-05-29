@@ -148,6 +148,22 @@ def checkForDuplicateStringID():
     else:
         return 0
 
+def checkCSVNewline():
+    print("VOICES: Checking CSV files for newline at the end of file ...")
+    missing_newline = False
+    for filename in os.listdir(csv_directory):
+        f = os.path.join(csv_directory, filename)
+        if os.path.isfile(f) and filename.endswith('.csv'):
+            with open(f, 'r') as file:
+                lines = file.readlines()
+                if lines and not lines[-1].endswith('\n'):
+                    print(f"{filename}: Missing newline at end of file")
+                    missing_newline = True
+    if missing_newline:
+        return 1
+    else:
+        return 0
+
 
 if __name__ == "__main__":
     error_count = 0
@@ -157,6 +173,7 @@ if __name__ == "__main__":
     error_count += checkNoZeroByteFiles()
     error_count += validateSoundsJson()
     error_count += checkForDuplicateStringID()
+    error_count += checkCSVNewline()
 
     if error_count > 0:
         sys.exit(os.EX_DATAERR)
