@@ -66,6 +66,18 @@
         "directory": "es"
     },
     {
+        "language": "fr-BE",
+        "name": "French (BE)",
+        "description": "French Male Voice (fr-BE-GerardNeural)",
+        "directory": "fr"
+    },
+    {
+        "language": "fr-CH",
+        "name": "French (CH)",
+        "description": "French Female Voice (fr-CH-ArianeNeural)",
+        "directory": "fr"
+    },
+    {
         "language": "fr-FR",
         "name": "French Female",
         "description": "French Female Voice (fr-FR-Denise)",
