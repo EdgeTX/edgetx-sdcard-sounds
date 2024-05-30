@@ -350,7 +350,7 @@
 "349","telemetry logging on","telemetri logning","","","tlogon.wav"
 "350","telemetry logging off","telemetri logning afkoblet","","","tlogof.wav"
 "351","VTX","videosender","video","","vtx.wav"
-"352","VTX on","videosender","video","","vtxon.wav"
+"352","VTX on","videosender tændt","video","","vtxon.wav"
 "353","VTX off","videosender afkoblet","video","","vtxoff.wav"
 "354","VTX 25 milliwatts","videosender 25 milliwatt","video","","vtx25.wav"
 "355","VTX 50 milliwatts","videosender 50 milliwatt","video","","vtx50.wav"
