@@ -499,3 +499,5 @@
 "498","Wet mode enabled","Wet mode enabled","","","wetmde.wav"
 "500","Max gyro","Max gyro","","","maxgyr.wav"
 "501","Max assistance","Max assistance","","","maxast.wav"
+"502","Overheating","Overheating","","","overht.wav"
+"503","Motor overheating","Motor overheating","","","mothot.wav"
