@@ -5,8 +5,8 @@ import json
 import os
 import sys
 
-csv_directory = 'voices'
-sound_directory = 'SOUNDS'
+csv_directory = "voices"
+sound_directory = "SOUNDS"
 
 # TODO: Check for duplicate filenames in CSV files
 # TODO: Check for files in SOUNDS that are not in CSV files
@@ -17,7 +17,7 @@ def checkCSVcolumnCount():
     missing_csv_field = False
     for filename in os.listdir(csv_directory):
         f = os.path.join(csv_directory, filename)
-        if os.path.isfile(f) and filename.endswith('.csv'):
+        if os.path.isfile(f) and filename.endswith(".csv"):
             reader = csv.reader(open(f, "r"))
             for row in reader:
                 if not len(row) == 6:
@@ -26,6 +26,38 @@ def checkCSVcolumnCount():
                     continue
 
     if missing_csv_field:
+        return 1
+    else:
+        return 0
+
+
+def checkFilenameLengthsInCSV():
+    print("VOICES: Checking filename lengths in CSV files ...")
+    invalid_filename_found = False
+    for filename in os.listdir(csv_directory):
+        if filename.endswith("_scripts.csv"):
+            continue
+        f = os.path.join(csv_directory, filename)
+        if os.path.isfile(f) and filename.endswith(".csv"):
+            reader = csv.reader(open(f, "r"))
+            next(reader)  # Skip the header row
+            for row in reader:
+                if len(row) == 6:
+                    filename_in_csv = row[5]
+                    path_in_csv = row[4]
+                    if (
+                        path_in_csv == "SYSTEM"
+                        and len(os.path.splitext(filename_in_csv)[0]) > 8
+                    ):
+                        print(f"{filename}: Filename too long - {filename_in_csv}")
+                        invalid_filename_found = True
+                    elif (
+                        path_in_csv != "SYSTEM"
+                        and len(os.path.splitext(filename_in_csv)[0]) > 6
+                    ):
+                        print(f"{filename}: Filename too long - {filename_in_csv}")
+                        invalid_filename_found = True
+    if invalid_filename_found:
         return 1
     else:
         return 0
@@ -102,8 +134,8 @@ def checkForDuplicateStringID():
     for filename in voiceFiles:
         f = os.path.join(csv_directory, filename)
         if os.path.isfile(f):
-            with open(f, 'rt') as csvfile:
-                reader = csv.reader(csvfile, delimiter=',', quotechar='"')
+            with open(f, "rt") as csvfile:
+                reader = csv.reader(csvfile, delimiter=",", quotechar='"')
                 line_count = 0
                 StringID_count = {}
                 for row in reader:
@@ -113,7 +145,7 @@ def checkForDuplicateStringID():
                     else:
                         StringID = row[0]
                         if StringID in StringID_count.keys():
-                            print(f'{f}: {StringID} is duplicated')
+                            print(f"{f}: {StringID} is duplicated")
                             StringID_count[StringID] = StringID_count[StringID] + 1
                             duplicate_found = True
                         else:
@@ -125,13 +157,32 @@ def checkForDuplicateStringID():
         return 0
 
 
+def checkCSVNewline():
+    print("VOICES: Checking CSV files for newline at the end of file ...")
+    missing_newline = False
+    for filename in os.listdir(csv_directory):
+        f = os.path.join(csv_directory, filename)
+        if os.path.isfile(f) and filename.endswith(".csv"):
+            with open(f, "r") as file:
+                lines = file.readlines()
+                if lines and not lines[-1].endswith("\n"):
+                    print(f"{filename}: Missing newline at end of file")
+                    missing_newline = True
+    if missing_newline:
+        return 1
+    else:
+        return 0
+
+
 if __name__ == "__main__":
     error_count = 0
     error_count += checkCSVcolumnCount()
+    error_count += checkFilenameLengthsInCSV()
     error_count += checkFilenameLengths()
     error_count += checkNoZeroByteFiles()
     error_count += validateSoundsJson()
     error_count += checkForDuplicateStringID()
+    error_count += checkCSVNewline()
 
     if error_count > 0:
         sys.exit(os.EX_DATAERR)
