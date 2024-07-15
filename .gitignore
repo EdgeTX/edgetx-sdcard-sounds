@@ -5,3 +5,6 @@ exception*
 *.zip
 release/
 *.pyc
+
+# MacOS
+.DS_Store
