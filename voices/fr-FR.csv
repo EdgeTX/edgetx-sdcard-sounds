@@ -230,3 +230,4 @@
 "229","autorotation","","heli","","auro.wav"
 "230","Telemetry connected","Télémétrie connectée","","SYSTEM","telemco.wav"
 "231","level mode","mode niveau","flight controller","","lvlmod.wav"
+"308","pit mode","mode fosse","","","pitmod.wav"
