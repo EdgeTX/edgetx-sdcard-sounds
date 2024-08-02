@@ -515,7 +515,7 @@
 "515","Stability Control Disabled","Stability Control Disabled","","","sbctdb.wav"
 "516","Thermal Warning","Thermal Warning","","","thmwrn.wav"
 "517","Servo Overload","Servo Overload","","","srvovl.wav"
-"518","BEEC Overload","BEEC Overload","","","becovl.wav"
+"518","BEC Overload","BEC Overload","","","becovl.wav"
 "519","Stability Control","Stability Control","","","sbct.wav"
 "520","Stability Control - Standard","Stability Control - Standard","","","sbctst.wav"
 "521","Gyro","Gyro","","","gyro.wav"
