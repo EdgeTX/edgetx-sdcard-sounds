@@ -17,7 +17,7 @@ jobs:
       - name: Install Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.8'
+          python-version: "3.8"
 
       - name: Install Dependencies
         run: |
@@ -38,14 +38,25 @@ jobs:
         if: github.event_name != 'pull_request'
         run: ./release.sh
 
-      - name: Upload binaries to release
+      - name: Auto Release to Latest
         uses: crowbarmaster/GH-Automatic-Releases@latest
         if: github.event_name != 'pull_request'
         with:
-          title: "Latest"
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          title: "Latest"
+          automatic_release_tag: "latest"
+          prerelease: true
           files: |
             release/edgetx-sdcard-sounds-*.zip
             sounds.json
-          automatic_release_tag: 'latest'
-          prerelease: true
+
+      - name: Auto Create Draft Release
+        uses: crowbarmaster/GH-Automatic-Releases@latest
+        if: ${{ startsWith(github.event.ref, 'refs/tags/v') && github.event_name != 'pull_request' }}
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          draft: true
+          prerelease: false
+          files: |
+            release/edgetx-sdcard-sounds-*.zip
+            sounds.json
