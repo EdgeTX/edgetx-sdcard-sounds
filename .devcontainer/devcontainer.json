@@ -2,14 +2,10 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
 {
 	"name": "Ubuntu",
-	"image": "mcr.microsoft.com/devcontainers/base:jammy",
-	"features": {
-		"ghcr.io/devcontainers/features/python:1": {}
-	},
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu24.04",
 	"postCreateCommand": "./.devcontainer/post-create.sh",
 	"remoteEnv": {
-		"PATH": "${containerEnv:PATH}:/home/vscode/.dotnet/tools",
-		"SSL_CERT_DIR": "/etc/ssl/certs"
+		"PATH": "${containerEnv:PATH}:/home/vscode/.dotnet/tools"
 	},
 	"customizations": {
 		"vscode": {

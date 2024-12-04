@@ -8,3 +8,6 @@ release/
 
 # MacOS
 .DS_Store
+
+# Python 
+.venv
