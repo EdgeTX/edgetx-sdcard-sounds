@@ -230,4 +230,6 @@
 "229","autorotation","","heli","","auro.wav"
 "230","Telemetry connected","Télémétrie connectée","","SYSTEM","telemco.wav"
 "231","level mode","mode niveau","flight controller","","lvlmod.wav"
+"285","buzzer active","Buzzer activé","","","buzact.wav"
+"287","blackbox active","Blackbox activée","","","blkact.wav"
 "308","pit mode","mode fosse","","","pitmod.wav"
