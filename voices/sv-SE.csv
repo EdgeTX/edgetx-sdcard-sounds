@@ -1,486 +1,545 @@
-"String ID","Source text","Translation","Context","Path","Filename"
-"1","0","0","","SYSTEM","0000.wav"
-"2","1","1","","SYSTEM","0001.wav"
-"3","2","2","","SYSTEM","0002.wav"
-"4","3","3","","SYSTEM","0003.wav"
-"5","4","4","","SYSTEM","0004.wav"
-"6","5","5","","SYSTEM","0005.wav"
-"7","6","6","","SYSTEM","0006.wav"
-"8","7","7","","SYSTEM","0007.wav"
-"9","8","8","","SYSTEM","0008.wav"
-"10","9","9","","SYSTEM","0009.wav"
-"11","10","10","","SYSTEM","0010.wav"
-"12","11","11","","SYSTEM","0011.wav"
-"13","12","12","","SYSTEM","0012.wav"
-"14","13","13","","SYSTEM","0013.wav"
-"15","14","14","","SYSTEM","0014.wav"
-"16","15","15","","SYSTEM","0015.wav"
-"17","16","16","","SYSTEM","0016.wav"
-"18","17","17","","SYSTEM","0017.wav"
-"19","18","18","","SYSTEM","0018.wav"
-"20","19","19","","SYSTEM","0019.wav"
-"21","20","20","","SYSTEM","0020.wav"
-"22","21","21","","SYSTEM","0021.wav"
-"23","22","22","","SYSTEM","0022.wav"
-"24","23","23","","SYSTEM","0023.wav"
-"25","24","24","","SYSTEM","0024.wav"
-"26","25","25","","SYSTEM","0025.wav"
-"27","26","26","","SYSTEM","0026.wav"
-"28","27","27","","SYSTEM","0027.wav"
-"29","28","28","","SYSTEM","0028.wav"
-"30","29","29","","SYSTEM","0029.wav"
-"31","30","30","","SYSTEM","0030.wav"
-"32","31","31","","SYSTEM","0031.wav"
-"33","32","32","","SYSTEM","0032.wav"
-"34","33","33","","SYSTEM","0033.wav"
-"35","34","34","","SYSTEM","0034.wav"
-"36","35","35","","SYSTEM","0035.wav"
-"37","36","36","","SYSTEM","0036.wav"
-"38","37","37","","SYSTEM","0037.wav"
-"39","38","38","","SYSTEM","0038.wav"
-"40","39","39","","SYSTEM","0039.wav"
-"41","40","40","","SYSTEM","0040.wav"
-"42","41","41","","SYSTEM","0041.wav"
-"43","42","42","","SYSTEM","0042.wav"
-"44","43","43","","SYSTEM","0043.wav"
-"45","44","44","","SYSTEM","0044.wav"
-"46","45","45","","SYSTEM","0045.wav"
-"47","46","46","","SYSTEM","0046.wav"
-"48","47","47","","SYSTEM","0047.wav"
-"49","48","48","","SYSTEM","0048.wav"
-"50","49","49","","SYSTEM","0049.wav"
-"51","50","50","","SYSTEM","0050.wav"
-"52","51","51","","SYSTEM","0051.wav"
-"53","52","52","","SYSTEM","0052.wav"
-"54","53","53","","SYSTEM","0053.wav"
-"55","54","54","","SYSTEM","0054.wav"
-"56","55","55","","SYSTEM","0055.wav"
-"57","56","56","","SYSTEM","0056.wav"
-"58","57","57","","SYSTEM","0057.wav"
-"59","58","58","","SYSTEM","0058.wav"
-"60","59","59","","SYSTEM","0059.wav"
-"61","60","60","","SYSTEM","0060.wav"
-"62","61","61","","SYSTEM","0061.wav"
-"63","62","62","","SYSTEM","0062.wav"
-"64","63","63","","SYSTEM","0063.wav"
-"65","64","64","","SYSTEM","0064.wav"
-"66","65","65","","SYSTEM","0065.wav"
-"67","66","66","","SYSTEM","0066.wav"
-"68","67","67","","SYSTEM","0067.wav"
-"69","68","68","","SYSTEM","0068.wav"
-"70","69","69","","SYSTEM","0069.wav"
-"71","70","70","","SYSTEM","0070.wav"
-"72","71","71","","SYSTEM","0071.wav"
-"73","72","72","","SYSTEM","0072.wav"
-"74","73","73","","SYSTEM","0073.wav"
-"75","74","74","","SYSTEM","0074.wav"
-"76","75","75","","SYSTEM","0075.wav"
-"77","76","76","","SYSTEM","0076.wav"
-"78","77","77","","SYSTEM","0077.wav"
-"79","78","78","","SYSTEM","0078.wav"
-"80","79","79","","SYSTEM","0079.wav"
-"81","80","80","","SYSTEM","0080.wav"
-"82","81","81","","SYSTEM","0081.wav"
-"83","82","82","","SYSTEM","0082.wav"
-"84","83","83","","SYSTEM","0083.wav"
-"85","84","84","","SYSTEM","0084.wav"
-"86","85","85","","SYSTEM","0085.wav"
-"87","86","86","","SYSTEM","0086.wav"
-"88","87","87","","SYSTEM","0087.wav"
-"89","88","88","","SYSTEM","0088.wav"
-"90","89","89","","SYSTEM","0089.wav"
-"91","90","90","","SYSTEM","0090.wav"
-"92","91","91","","SYSTEM","0091.wav"
-"93","92","92","","SYSTEM","0092.wav"
-"94","93","93","","SYSTEM","0093.wav"
-"95","94","94","","SYSTEM","0094.wav"
-"96","95","95","","SYSTEM","0095.wav"
-"97","96","96","","SYSTEM","0096.wav"
-"98","97","97","","SYSTEM","0097.wav"
-"99","98","98","","SYSTEM","0098.wav"
-"100","99","99","","SYSTEM","0099.wav"
-"101","100","100","","SYSTEM","0100.wav"
-"102","200","200","","SYSTEM","0101.wav"
-"103","300","300","","SYSTEM","0102.wav"
-"104","400","400","","SYSTEM","0103.wav"
-"105","500","500","","SYSTEM","0104.wav"
-"106","600","600","","SYSTEM","0105.wav"
-"107","700","700","","SYSTEM","0106.wav"
-"108","800","800","","SYSTEM","0107.wav"
-"109","900","900","","SYSTEM","0108.wav"
-"110","thousand","tusen","","SYSTEM","0109.wav"
-"111","and","och","","SYSTEM","0110.wav"
-"112","minus","minus","","SYSTEM","0111.wav"
-"113","point","punkt","","SYSTEM","0112.wav"
-"114","volt","volt","","SYSTEM","volt0.wav"
-"115","volts","volt","","SYSTEM","volt1.wav"
-"116","amp","amp","","SYSTEM","amp0.wav"
-"117","amps","ampär","","SYSTEM","amp1.wav"
-"118","milliamp","milliamp","","SYSTEM","mamp0.wav"
-"119","milliamps","milliampär","","SYSTEM","mamp1.wav"
-"120","knot","knop","","SYSTEM","knot0.wav"
-"121","knots","knop","","SYSTEM","knot1.wav"
-"122","meter per second","meter pär sekund","","SYSTEM","mps0.wav"
-"123","meters per second","meter pär sekund","","SYSTEM","mps1.wav"
-"124","foot per second","fot pär sekund","","SYSTEM","fps0.wav"
-"125","feet per second","fot pär sekund","","SYSTEM","fps1.wav"
-"126","kilometer per hour","kilometer i timmen","","SYSTEM","kph0.wav"
-"127","kilometers per hour","kilometer i timmen","","SYSTEM","kph1.wav"
-"128","mile per hour","miles pär timme","","SYSTEM","mph0.wav"
-"129","miles per hour","miles pär timme","","SYSTEM","mph1.wav"
-"130","meter","meter","","SYSTEM","meter0.wav"
-"131","meters","meter","","SYSTEM","meter1.wav"
-"132","foot","fot","","SYSTEM","foot0.wav"
-"133","feet","fot","","SYSTEM","foot1.wav"
-"134","degree celsius","grader celsius","","SYSTEM","celsius0.wav"
-"135","degrees celsius","grader celsius","","SYSTEM","celsius1.wav"
-"136","degree fahrenheit","grader fahrenhajt","","SYSTEM","fahr0.wav"
-"137","degrees fahrenheit","grader fahrenhajt","","SYSTEM","fahr1.wav"
-"138","percent","procent","","SYSTEM","percent0.wav"
-"139","percent","procent","","SYSTEM","percent1.wav"
-"140","milliamp-hour","milliampär-timmar","","SYSTEM","mamph0.wav"
-"141","milliamp-hours","milliampär-timmar","","SYSTEM","mamph1.wav"
-"142","watt","watt","","SYSTEM","watt0.wav"
-"143","watts","watt","","SYSTEM","watt1.wav"
-"144","milli-watt","milli-watt","","SYSTEM","mwatt0.wav"
-"145","milli-watts","milli-watt","","SYSTEM","mwatt1.wav"
-"146","DB","decibell","","SYSTEM","db0.wav"
-"147","DB","decibell","","SYSTEM","db1.wav"
-"148","RPM","RPM","","SYSTEM","rpm0.wav"
-"149","RPM","RPM","","SYSTEM","rpm1.wav"
-"150","G","G","","SYSTEM","g0.wav"
-"151","G","G","","SYSTEM","g1.wav"
-"152","degree","grader","","SYSTEM","degree0.wav"
-"153","degrees","grader","","SYSTEM","degree1.wav"
-"154","radian","radijaan","","SYSTEM","rad0.wav"
-"155","radians","radijaner","","SYSTEM","rad1.wav"
-"156","millilitre","milliliter","","SYSTEM","ml0.wav"
-"157","millilitres","milliliter","","SYSTEM","ml1.wav"
-"158","fluid ounce","flytande uns","","SYSTEM","founce0.wav"
-"159","fluid ounces","flytande uns","","SYSTEM","founce1.wav"
-"160","millilitre per minute","milliliter pär minut","","SYSTEM","mlpm0.wav"
-"161","millilitres per minute","milliliter pär minut","","SYSTEM","mlpm1.wav"
-"162","hertz","hertz","","SYSTEM","hertz0.wav"
-"163","hertz","hertz","","SYSTEM","hertz1.wav"
-"164","milli-second","milli-sekund","","SYSTEM","ms0.wav"
-"165","milli-seconds","milli-sekunder","","SYSTEM","ms1.wav"
-"166","microsecond","mikrosekund","","SYSTEM","us0.wav"
-"167","microseconds","mikrosekunder","","SYSTEM","us1.wav"
-"168","hour","timme","","SYSTEM","hour0.wav"
-"169","hours","timmar","","SYSTEM","hour1.wav"
-"170","minute","minut","","SYSTEM","minute0.wav"
-"171","minutes","minuter","","SYSTEM","minute1.wav"
-"172","second","sekund","","SYSTEM","second0.wav"
-"173","seconds","sekunder","","SYSTEM","second1.wav"
-"174","point zero","komma noll","","SYSTEM","0167.wav"
-"175","point one","komma ett","","SYSTEM","0168.wav"
-"176","point two","komma två","","SYSTEM","0169.wav"
-"177","point three","komma tre","","SYSTEM","0170.wav"
-"178","point four","komma fyra","","SYSTEM","0171.wav"
-"179","point five","komma fem","","SYSTEM","0172.wav"
-"180","point six","komma sex","","SYSTEM","0173.wav"
-"181","point seven","komma sju","","SYSTEM","0174.wav"
-"182","point eight","komma åtta","","SYSTEM","0175.wav"
-"183","point nine","komma nio","","SYSTEM","0176.wav"
-"184","trim center","trim centrerad","","SYSTEM","midtrim.wav"
-"185","maximum trim reached","maximal trimm nodd","","SYSTEM","maxtrim.wav"
-"186","minimum trim reached","minimal trimm nodd","","SYSTEM","mintrim.wav"
-"187","timer 1 elapsed","tajmer 1 förfluten","","SYSTEM","timovr1.wav"
-"188","timer 2 elapsed","tajmer 2 förfluten","","SYSTEM","timovr2.wav"
-"189","timer 3 elapsed","tajmer 3 förfluten","","SYSTEM","timovr3.wav"
-"190","transmitter battery low","sändarens batteri lågt","","SYSTEM","lowbatt.wav"
-"191","inactivity alarm","inaktivitetsalarm","","SYSTEM","inactiv.wav"
-"192","throttle warning","gasvarning","","SYSTEM","thralert.wav"
-"193","switch warning","brytarvarning","","SYSTEM","swalert.wav"
-"194","bad eeprom","dålig eeprom","","SYSTEM","eebad.wav"
-"195","Welcome to EdgeTX","Välkommen till EdgeTX","","SYSTEM","hello.wav"
-"196","RF signal low","RF signal låg","","SYSTEM","rssi_org.wav"
-"197","RF signal critical","RF signal kritisk","","SYSTEM","rssi_red.wav"
-"198","radio antenna defective","radioantenn defekt","","SYSTEM","swr_red.wav"
-"199","telemetry lost","telemetri tappad","","SYSTEM","telemko.wav"
-"200","telemetry recovered","telemetri återställd","","SYSTEM","telemok.wav"
-"201","Trainer connected","Tränare ansluten","","SYSTEM","trainco.wav"
-"202","trainer signal lost","instruktörssignal tappad","","SYSTEM","trainko.wav"
-"203","trainer signal recovered","Instruktörssignal återställd","","SYSTEM","trainok.wav"
-"204","sensor lost","sensor tappad","","SYSTEM","sensorko.wav"
-"205","servo overload","servo överbelastat","","SYSTEM","servoko.wav"
-"206","power overload","strömöverbelastning","","SYSTEM","rxko.wav"
-"207","receiver still connected","mottagare fortfarande ansluten","","SYSTEM","modelpwr.wav"
-"208","armed","påslagen","","","armed.wav"
-"209","disarmed","avslagen","","","disarm.wav"
-"210","throttle cut","gas avstängd","","","thrcut.wav"
-"211","throttle active","gas aktiv","","","thract.wav"
-"212","gear up","landningsställ upp","plane","","gearup.wav"
-"213","gear down","landningsställ ner","plane","","geardn.wav"
-"214","flaps up","vingklaffar upp","plane","","flapup.wav"
-"215","flaps down","vingklaffar ner","plane","","flapdn.wav"
-"216","spoiler up","spoiler upp","","","splrup.wav"
-"217","spoiler down","spoiler ner","","","splrdn.wav"
-"218","trainer on","instruktör på","","","trnon.wav"
-"219","trainer off","instruktör av","","","trnoff.wav"
-"220","engine off","motor av","","","engoff.wav"
-"221","too high","för hög","","","tohigh.wav"
-"222","too low","för låg","","","tolow.wav"
-"223","low battery","lågt batteri","","","lowbat.wav"
-"224","crow on","kråkbroms på","","","crowon.wav"
-"225","crow off","kråkbroms av","","","crowof.wav"
-"226","RF signal low","RF signal låg","rc-link","","siglow.wav"
-"227","RF signal critical","RF signal kritisk","rc-link","","sigcrt.wav"
-"228","LQ","LQ","rc-link","","lq.wav"
-"229","RF mode","RF läge","rc-link","","rfmode.wav"
-"230","high speed mode active","högfartsläge aktiverat","rc-link","","spdmod.wav"
-"231","thermal mode on","termikläge på","","","thmmod.wav"
-"232","normal mode on","normalläge på","","","nrmmod.wav"
-"233","landing mode on","landningsläge på","","","lnding.wav"
-"234","acro mode on","acroläge på","","","acro.wav"
-"235","flight mode one","flygläge ett","","","fm-1.wav"
-"236","flight mode two","flygläge två","","","fm-2.wav"
-"237","flight mode three","flygläge tre","","","fm-3.wav"
-"238","flight mode four","flygläge fyra","","","fm-4.wav"
-"239","flight mode five","flygläge fem","","","fm-5.wav"
-"240","flight mode six","flygläge sex","","","fm-6.wav"
-"241","flight mode seven","flygläge sju","","","fm-7.wav"
-"242","flight mode eight","flygläge åtta","","","fm-8.wav"
-"243","vario on","vario på","","","vrion.wav"
-"244","vario off","vario av","","","vrioff.wav"
-"245","flight mode power","flygläge power","","","fm-pwr.wav"
-"246","flight mode land","flygläge landning","","","fm-lnd.wav"
-"247","flight mode float","flygläge flyt","","","fm-flt.wav"
-"248","flight mode speed","flygläge hastighet","","","fm-spd.wav"
-"249","flight mode fast","flygläge snabb","","","fm-fst.wav"
-"250","flight mode normal","flygläge normal","","","fm-nrm.wav"
-"251","flight mode cruise","flygläge planflykt","","","fm-crs.wav"
-"252","flight mode acro","flygläge acro","","","fm-acr.wav"
-"253","flight mode race","flygläge tävling","","","fm-rce.wav"
-"254","flight mode launch","flygläge start","","","fm-lch.wav"
-"255","flight mode ping","flygläge ping","","","fm-png.wav"
-"256","flight mode thermal","flygläge termik","","","fm-thm.wav"
-"257","flight mode thermal left","flygläge termik vänster","","","fm-thl.wav"
-"258","flight mode thermal right","flygläge termik höger","","","fm-thr.wav"
-"259","flight mode stabilise","flygläge stabilisera","","","fm-stb.wav"
-"260","flight mode horizon","flygläge horizon","","","fm-hor.wav"
-"261","flight mode angle","flygläge ä nggel","","","fm-ang.wav"
-"262","flight mode idle up 1","flygläge varva upp 1","","","fm-id1.wav"
-"263","flight mode idle up 2","flygläge varva upp 2","","","fm-id2.wav"
-"264","low rate","låg rejt","","","ratlow.wav"
-"265","medium rate","medium rejt","","","ratmed.wav"
-"266","high rate","hög rejt","","","rathi.wav"
-"267","take off","start","","","takeof.wav"
-"268","sport","sport","","","sport.wav"
-"269","pattern","mönster","","","pattrn.wav"
-"270","3D","3D","","","3d.wav"
-"271","landing","landning","","","landin.wav"
-"272","idle up 1","varva upp 1","","","idleu1.wav"
-"273","idle up 2","varva upp 2","","","idleu2.wav"
-"274","normal mode","normalläge","","","normod.wav"
-"275","bank 0","banka 0","","","bank-0.wav"
-"276","bank 1","banka 1","","","bank-1.wav"
-"277","bank 2","banka 2","","","bank-2.wav"
-"278","bank 3","banka 3","","","bank-3.wav"
-"279","heading lock","riktningslås","","","headlo.wav"
-"280","rate mode","rejtläge","","","ratmod.wav"
-"281","3D Mode","3D-läge","","","3d-mod.wav"
-"282","stabilise mode","stabiliseringsläge","","","stabmo.wav"
-"283","on","på","","","on.wav"
-"284","off","av","","","off.wav"
-"285","buzzer active","buzzer aktiv","","","buzact.wav"
-"286","crash-flip active","krash-flipp aktiv","multicopter","","crfact.wav"
-"287","blackbox active","svarta lådan aktiv","","","blkact.wav"
-"288","pre-arm active","förarmering aktiv","","","preact.wav"
-"289","stable mode","stabilt läge","","","stbmod.wav"
-"290","brakes on","bromsar på","plane","","brakon.wav"
-"291","brakes off","bromsar av","plane","","brakof.wav"
-"292","butterfly on","fjäril på","","","btfon.wav"
-"293","butterfly off","fjäril av","","","btfoff.wav"
-"294","flaps one","vingklaffar ett","plane","","flp1.wav"
-"295","flaps two","vingklaffar två","plane","","flp2.wav"
-"296","flaps three","vingklaffar tre","plane","","flp3.wav"
-"297","flaps four","vingklaffar fyra","plane","","flp4.wav"
-"298","flaps five","vingklaffar fem","plane","","flp5.wav"
-"299","wingsweep","vingsvepning","plane","","wngswp.wav"
-"300","wheelbrakes on","hjulbromsar på","plane","","whlbro.wav"
-"301","wheelbrakes off","hjulbromsar av","plane","","whlbrf.wav"
-"302","manual mode","manuellt läge","","","manmod.wav"
-"303","acro mode","akro läge","","","acrmod.wav"
-"304","angle mode","ä nggel läge","","","angmod.wav"
-"305","horizon mode","horizon läge","","","hznmod.wav"
-"306","launch mode","startläge","","","lncmod.wav"
-"307","air mode","ärläge","","","airmod.wav"
-"308","pit mode","depåläge","","","pitmod.wav"
-"309","navigation cruise","navigation planflykt","autopilot","","navcrs.wav"
-"310","navigation course hold","navigation håll kurs","autopilot","","navcsh.wav"
-"311","navigation altitude hold","navigation håll altitud","autopilot","","navalh.wav"
-"312","navigation position hold","navigation håll position","autopilot","","navpos.wav"
-"313","navigation return to home","navigation återvänd hem","autopilot","","navrth.wav"
-"314","navigation waypoint","navigation vägpunkt","autopilot","","navwp.wav"
-"315","cruise","planflykt","autopilot","","cruise.wav"
-"316","course hold","håll kurs","autopilot","","crshld.wav"
-"317","altitude hold","håll altitud","autopilot","","althld.wav"
-"318","position hold","håll position","autopilot","","poshld.wav"
-"319","return to home","återvänd hem","autopilot","","rth.wav"
-"320","waypoint","vägpunkt","autopilot","","waypnt.wav"
-"321","manual","manuell","","","manual.wav"
-"322","auto","auto","","","auto.wav"
-"323","OSD","OSDee","video","","osd.wav"
-"324","OSD profile","OSDee profil","video","","osdprf.wav"
-"325","attitude hold mode","attitydhållningslääääge","autopilot","","sxrahd.wav"
-"326","manual mode","manuellt läge","","","sxrman.wav"
-"327","stabiliser mode","stabiliseringsläge","","","sxrsmd.wav"
-"328","stabiliser off","stabilisering av","","","sxrsof.wav"
-"329","stabiliser on","stabilisering på","","","sxrstb.wav"
-"330","wind rejection mode","vindavvisningsläge","","","sxrwr.wav"
-"331","turtle mode on","sköldpaddsläääge på","multicopter","","turton.wav"
-"332","turtle mode off","sköldpaddsläääge av","multicopter","","turtof.wav"
-"333","flip","flipp","","","flip.wav"
-"334","autorotation","auto-rotation","heli","","auro.wav"
-"335","failsafe active","felsäker aktiv","","","fsact.wav"
-"336","failsafe off","felsäker av","","","fsoff.wav"
-"337","OSD Profile 1","OSDee profil - 1","video","","osd1.wav"
-"338","OSD Profile 2","OSDee profil - 2","video","","osd2.wav"
-"339","OSD Profile 3","OSDee profil - 3","video","","osd3.wav"
-"340","rate profile 1","rejtprofil - 1","","","rates1.wav"
-"341","rate profile 2","rejtprofil - 2","","","rates2.wav"
-"342","rate profile 3","rejtprofil - 3","","","rates3.wav"
-"343","rate profile 4","rejtprofil - 4","","","rates4.wav"
-"344","rate profile 5","rejtprofil - 5","","","rates5.wav"
-"345","rate profile 6","rejtprofil - 6","","","rates6.wav"
-"346","stick commands disabled","stick commands disabled","","","scmdof.wav"
-"347","stick commands enabled","stick commands enabled","","","scmdon.wav"
-"348","telemetry","telemetri","","","telem.wav"
-"349","telemetry logging on","telemetriloggning på","","","tlogon.wav"
-"350","telemetry logging off","telemetriloggning av","","","tlogof.wav"
-"351","VTX","videosändare","video","","vtx.wav"
-"352","VTX on","videosändare på","video","","vtxon.wav"
-"353","VTX off","videosändare av","video","","vtxoff.wav"
-"354","VTX 25 milliwatts","videosändare 25 milliwatt","video","","vtx25.wav"
-"355","VTX 50 milliwatts","videosändare 50 milliwatt","video","","vtx50.wav"
-"356","VTX 100 milliwatts","videosändare 100 milliwatt","video","","vtx100.wav"
-"357","VTX 200 milliwatts","videosändare 200 milliwatt","video","","vtx200.wav"
-"358","VTX 300 milliwatts","videosändare 300 milliwatt","video","","vtx300.wav"
-"359","VTX 400 milliwatts","videosändare 400 milliwatt","video","","vtx400.wav"
-"360","VTX 500 milliwatts","videosändare 500 milliwatt","video","","vtx500.wav"
-"361","VTX 600 milliwatts","videosändare 600 milliwatt","video","","vtx600.wav"
-"362","VTX 700 milliwatts","videosändare 700 milliwatt","video","","vtx700.wav"
-"363","VTX 800 milliwatts","videosändare 800 milliwatt","video","","vtx800.wav"
-"364","VTX 900 milliwatts","videosändare 900 milliwatt","video","","vtx900.wav"
-"365","VTX Pit Mode","videosändare lågeffektläge","video","","vtxpm.wav"
-"366","VTX Race Mode","videosändare tävlingsläge","video","","vtxrm.wav"
-"367","VTX 1 watt","videosändare 1 watt","video","","vtx1w.wav"
-"368","VTX 2 watts","videosändare 2 watt","video","","vtx2w.wav"
-"369","VTX 4 watts","videosändare 4 watt","video","","vtx4w.wav"
-"370","critical low battery","kritiskt lågt batteri","","","clobat.wav"
-"371","start","start","","","start.wav"
-"372","stop","stopp","","","stop.wav"
-"373","lights on","belysning på","","","lghton.wav"
-"374","lights off","belysning av","","","lghtof.wav"
-"375","buzzer off","buzzer på","","","buzoff.wav"
-"376","dynamic TX power","dynamisk sändareffekt","rc-link","","dyntxp.wav"
-"377","maximum TX power","maximal sändareffekt","rc-link","","maxtxp.wav"
-"378","throttle hold","håll gas","plane/heli","","thrhld.wav"
-"379","throttle idle","gas på tomgång","plane/heli","","thridl.wav"
-"380","throttle release","frigör gas","plane/heli","","thrrel.wav"
-"381","negative pitch allowed","negativ pitch tillåten","heli","","negpon.wav"
-"382","negative pitch disallowed","negativ pitch otillåten","heli","","negpof.wav"
-"383","autolaunch started","autostart startad","autopilot","","alnch.wav"
-"384","rescue mode active","räddningsläge aktivt","autopilot","","rscmon.wav"
-"385","rescue mode off","räddningsläge av","autopilot","","rscmof.wav"
-"386","headfree mode active","headfreeläge aktivt","multicopter","","hdfmon.wav"
-"387","headfree mode off","headfreeläge av","multicopter","","hdfmof.wav"
-"388","heading adjust","riktingsjustering","multicopter","","hdadj.wav"
-"389","FPV angle mix active","FPV ä nggel mix aktiverad","multicopter","","agmxon.wav"
-"390","FPV angle mix off","FPV angle mix av","multicopter","","agmxof.wav"
-"391","air mode on","air läge på","","","airmon.wav"
-"392","air mode off","air läge av","","","airmof.wav"
-"393","OSD on","OSD på","video","","osdon.wav"
-"394","OSD off","OSD av","video","","osdoff.wav"
-"395","return to home started","återvänd hem påbörjad","autopilot","","rthstr.wav"
-"396","return to home stopped","återvänd hem stoppad","autopilot","","rthstp.wav"
-"397","waypoint navigation started","vägpunktsnavigation startad","autopilot","","wpnstr.wav"
-"398","waypoint navigation stopped","vägpunktsnavigation stoppad","autopilot","","wpnstp.wav"
-"399","course hold active","håll kurs aktiv","autopilot","","crshon.wav"
-"400","course hold off","håll kurs av","autopilot","","crshof.wav"
-"401","position hold active","håll position aktiv","autopilot","","poshon.wav"
-"402","position hold off","håll position av","autopilot","","poshof.wav"
-"403","altitude hold active","håll altitud aktiv","autopilot","","althon.wav"
-"404","altitude hold off","håll altitud av","autopilot","","althof.wav"
-"405","loiter","häng","autopilot","","loiter.wav"
-"406","safety on","sejfti på","","","sftyon.wav"
-"407","safety off","sejfti av","","","sftyof.wav"
-"408","SAFE on","SEJF på","plane","","safeon.wav"
-"409","SAFE off","SEJF av","plane","","safeof.wav"
-"410","flight envelope protection active","flight envelope skydd aktiverat","plane","","fepact.wav"
-"411","flight envelope protection off","flight envelope skydd av","plane","","fepoff.wav"
-"412","timer 1 reset","timer 1 återställd","","","timrs1.wav"
-"413","timer 2 reset","timer 2 återställd","","","timrs2.wav"
-"414","timer 3 reset","timer 3 återställd","","","timrs3.wav"
-"415","expo 1","expo 1","","","expo1.wav"
-"416","expo 2","expo 2","","","expo2.wav"
-"417","expo 3","expo 3","","","expo3.wav"
-"418","active","aktiv","","","active.wav"
-"419","deactivated","avaktiverad","","","deact.wav"
-"420","enabled","aktiverad","","","enabl.wav"
-"421","disabled","inaktiverad","","","disabl.wav"
-"422","good","bra","","","good.wav"
-"423","bad","dålig","","","bad.wav"
-"424","normal","normal","","","normal.wav"
-"425","warning","varning","","","warnng.wav"
-"426","danger","fara","","","danger.wav"
-"427","ready to fly","klar att flyga","","","ready.wav"
-"428","home reset","hemposition återställd","","","homrst.wav"
-"429","GPS","GPS","","","gps.wav"
-"430","GPS on","GPS på","","","gpson.wav"
-"431","GPS off","GPS av","","","gpsoff.wav"
-"432","engine on","motor på","","","engon.wav"
-"433","VTX Frequency R1","Videofrekvens R 1","video","","vtxfr1.wav"
-"434","VTX Frequency R2","Videofrekvens R 2","video","","vtxfr2.wav"
-"435","VTX Frequency R3","Videofrekvens R 3","video","","vtxfr3.wav"
-"436","VTX Frequency R4","Videofrekvens R 4","video","","vtxfr4.wav"
-"437","VTX Frequency R5","Videofrekvens R 5","video","","vtxfr5.wav"
-"438","VTX Frequency R6","Videofrekvens R 6","video","","vtxfr6.wav"
-"439","VTX Frequency R7","Videofrekvens R 7","video","","vtxfr7.wav"
-"440","VTX Frequency R8","Videofrekvens R 8","video","","vtxfr8.wav"
-"441","blackbox erase","radera svarta lådan","","","blkers.wav"
-"442","acro trainer mode","acro lärarläge","","","actnmd.wav"
-"443","Camera wifi button","Kamera wifiknapp","camera","","cwifi.wav"
-"444","Camera power button","Kamera på knapp","camera","","cpower.wav"
-"445","Camera change mode","Kamera ändra läge","camera","","cmode.wav"
-"446","Camera start","Kamera start","camera","","cstart.wav"
-"447","Camera stop","Kamera stopp","camera","","cstop.wav"
-"448","Recording start","Inspelning start","","","recsrt.wav"
-"449","Recording stop","Inspelning stopp","","","recstp.wav"
-"450","Start recording","Starta inspelning","","","strtrc.wav"
-"451","Stop recording","Stoppa inspelning","","","stoprc.wav"
-"452","DBM","DBM","","SYSTEM","dbm0.wav"
-"453","DBM","DBM","","SYSTEM","dbm1.wav"
-"454","kilometer","kilometer","","SYSTEM","km0.wav"
-"455","kilometers","kilometer","","SYSTEM","km1.wav"
-"456","Reverse Thrust","Omvänd drivkraft","plane","","revthr.wav"
-"457","Reverse Thrust On","Omvänd drivkraft på","plane","","revon.wav"
-"458","Reverse Thrust Off","Omvänd drivkraft av","plane","","revoff.wav"
-"459","Reverse Thrust Idle","Omvänd drivkraft på tomgång","plane","","revid.wav"
-"460","Forward Thrust","Drivkraft framåt","plane","","revfwd.wav"
-"461","Telemetry connected","Telemetri ansluten","","SYSTEM","telemco.wav"
-"462","level mode","Nivåläge","flight controller","","lvlmod.wav"
-"463","diffs locked","Differential låst","car","","difloc.wav"
-"464","diffs unlocked","Differential upplåst","car","","difulc.wav"
-"465","engine start","Motor start","car","","engsrt.wav"
-"466","engine stop","Motor stopp","car","","engstp.wav"
-"467","engine on","Motor på","car","","engon.wav"
-"468","Turn signals on","Blinkers på","car","","turnon.wav"
-"469","Turn signals off","Blinkers av","car","","turnof.wav"
-"470","High gear","Hög växel","car","","highgr.wav"
-"471","Low gear","Låg växel","car","","lowgr.wav"
-"472","Dig mode","Grävläge","car","","digmod.wav"
-"473","Two wheel drive","Tvåhjulsdrift","car","","2wd.wav"
-"474","Four wheel drive","Fyrhjulsdrift","car","","4wd.wav"
-"475","Winch in","Winch in","car","","wchin.wav"
-"476","Winch out","Winch ut","car","","wchout.wav"
-"477","Front Steer","Framhjulsstyrning","car","","str-f.wav"
-"478","Rear Steer","Bakhjulsstyrning","car","","str-r.wav"
-"479","Four Wheel Steer","Fyrhjulsstyrning","car","","str-4w.wav"
-"480","Mirror Steer","Speglad styrning","car","","str-mr.wav"
-"481","Crab Steer","Krabbstyrning","car","","str-cr.wav"
-"482","Motor armed","Motorn påslagen","soaretx","","motarm.wav"
-"483","Power","Kraft","soaretx","","power.wav"
-"484","Speed","Högfart","soaretx","","speed.wav"
-"485","Thermal","Termik","soaretx","","therml.wav"
+String ID,Source text,Translation,Context,Path,Filename
+1,0,0,,SYSTEM,0000.wav
+2,1,1,,SYSTEM,0001.wav
+3,2,2,,SYSTEM,0002.wav
+4,3,3,,SYSTEM,0003.wav
+5,4,4,,SYSTEM,0004.wav
+6,5,5,,SYSTEM,0005.wav
+7,6,6,,SYSTEM,0006.wav
+8,7,7,,SYSTEM,0007.wav
+9,8,8,,SYSTEM,0008.wav
+10,9,9,,SYSTEM,0009.wav
+11,10,10,,SYSTEM,0010.wav
+12,11,11,,SYSTEM,0011.wav
+13,12,12,,SYSTEM,0012.wav
+14,13,13,,SYSTEM,0013.wav
+15,14,14,,SYSTEM,0014.wav
+16,15,15,,SYSTEM,0015.wav
+17,16,16,,SYSTEM,0016.wav
+18,17,17,,SYSTEM,0017.wav
+19,18,18,,SYSTEM,0018.wav
+20,19,19,,SYSTEM,0019.wav
+21,20,20,,SYSTEM,0020.wav
+22,21,21,,SYSTEM,0021.wav
+23,22,22,,SYSTEM,0022.wav
+24,23,23,,SYSTEM,0023.wav
+25,24,24,,SYSTEM,0024.wav
+26,25,25,,SYSTEM,0025.wav
+27,26,26,,SYSTEM,0026.wav
+28,27,27,,SYSTEM,0027.wav
+29,28,28,,SYSTEM,0028.wav
+30,29,29,,SYSTEM,0029.wav
+31,30,30,,SYSTEM,0030.wav
+32,31,31,,SYSTEM,0031.wav
+33,32,32,,SYSTEM,0032.wav
+34,33,33,,SYSTEM,0033.wav
+35,34,34,,SYSTEM,0034.wav
+36,35,35,,SYSTEM,0035.wav
+37,36,36,,SYSTEM,0036.wav
+38,37,37,,SYSTEM,0037.wav
+39,38,38,,SYSTEM,0038.wav
+40,39,39,,SYSTEM,0039.wav
+41,40,40,,SYSTEM,0040.wav
+42,41,41,,SYSTEM,0041.wav
+43,42,42,,SYSTEM,0042.wav
+44,43,43,,SYSTEM,0043.wav
+45,44,44,,SYSTEM,0044.wav
+46,45,45,,SYSTEM,0045.wav
+47,46,46,,SYSTEM,0046.wav
+48,47,47,,SYSTEM,0047.wav
+49,48,48,,SYSTEM,0048.wav
+50,49,49,,SYSTEM,0049.wav
+51,50,50,,SYSTEM,0050.wav
+52,51,51,,SYSTEM,0051.wav
+53,52,52,,SYSTEM,0052.wav
+54,53,53,,SYSTEM,0053.wav
+55,54,54,,SYSTEM,0054.wav
+56,55,55,,SYSTEM,0055.wav
+57,56,56,,SYSTEM,0056.wav
+58,57,57,,SYSTEM,0057.wav
+59,58,58,,SYSTEM,0058.wav
+60,59,59,,SYSTEM,0059.wav
+61,60,60,,SYSTEM,0060.wav
+62,61,61,,SYSTEM,0061.wav
+63,62,62,,SYSTEM,0062.wav
+64,63,63,,SYSTEM,0063.wav
+65,64,64,,SYSTEM,0064.wav
+66,65,65,,SYSTEM,0065.wav
+67,66,66,,SYSTEM,0066.wav
+68,67,67,,SYSTEM,0067.wav
+69,68,68,,SYSTEM,0068.wav
+70,69,69,,SYSTEM,0069.wav
+71,70,70,,SYSTEM,0070.wav
+72,71,71,,SYSTEM,0071.wav
+73,72,72,,SYSTEM,0072.wav
+74,73,73,,SYSTEM,0073.wav
+75,74,74,,SYSTEM,0074.wav
+76,75,75,,SYSTEM,0075.wav
+77,76,76,,SYSTEM,0076.wav
+78,77,77,,SYSTEM,0077.wav
+79,78,78,,SYSTEM,0078.wav
+80,79,79,,SYSTEM,0079.wav
+81,80,80,,SYSTEM,0080.wav
+82,81,81,,SYSTEM,0081.wav
+83,82,82,,SYSTEM,0082.wav
+84,83,83,,SYSTEM,0083.wav
+85,84,84,,SYSTEM,0084.wav
+86,85,85,,SYSTEM,0085.wav
+87,86,86,,SYSTEM,0086.wav
+88,87,87,,SYSTEM,0087.wav
+89,88,88,,SYSTEM,0088.wav
+90,89,89,,SYSTEM,0089.wav
+91,90,90,,SYSTEM,0090.wav
+92,91,91,,SYSTEM,0091.wav
+93,92,92,,SYSTEM,0092.wav
+94,93,93,,SYSTEM,0093.wav
+95,94,94,,SYSTEM,0094.wav
+96,95,95,,SYSTEM,0095.wav
+97,96,96,,SYSTEM,0096.wav
+98,97,97,,SYSTEM,0097.wav
+99,98,98,,SYSTEM,0098.wav
+100,99,99,,SYSTEM,0099.wav
+101,100,100,,SYSTEM,0100.wav
+102,200,200,,SYSTEM,0101.wav
+103,300,300,,SYSTEM,0102.wav
+104,400,400,,SYSTEM,0103.wav
+105,500,500,,SYSTEM,0104.wav
+106,600,600,,SYSTEM,0105.wav
+107,700,700,,SYSTEM,0106.wav
+108,800,800,,SYSTEM,0107.wav
+109,900,900,,SYSTEM,0108.wav
+110,thousand,tusen,,SYSTEM,0109.wav
+111,and,och,,SYSTEM,0110.wav
+112,minus,minus,,SYSTEM,0111.wav
+113,point,punkt,,SYSTEM,0112.wav
+114,volt,volt,,SYSTEM,volt0.wav
+115,volts,volt,,SYSTEM,volt1.wav
+116,amp,amp,,SYSTEM,amp0.wav
+117,amps,ampär,,SYSTEM,amp1.wav
+118,milliamp,milliamp,,SYSTEM,mamp0.wav
+119,milliamps,milliampär,,SYSTEM,mamp1.wav
+120,knot,knop,,SYSTEM,knot0.wav
+121,knots,knop,,SYSTEM,knot1.wav
+122,meter per second,meter pär sekund,,SYSTEM,mps0.wav
+123,meters per second,meter pär sekund,,SYSTEM,mps1.wav
+124,foot per second,fot pär sekund,,SYSTEM,fps0.wav
+125,feet per second,fot pär sekund,,SYSTEM,fps1.wav
+126,kilometer per hour,kilometer i timmen,,SYSTEM,kph0.wav
+127,kilometers per hour,kilometer i timmen,,SYSTEM,kph1.wav
+128,mile per hour,miles pär timme,,SYSTEM,mph0.wav
+129,miles per hour,miles pär timme,,SYSTEM,mph1.wav
+130,meter,meter,,SYSTEM,meter0.wav
+131,meters,meter,,SYSTEM,meter1.wav
+132,foot,fot,,SYSTEM,foot0.wav
+133,feet,fot,,SYSTEM,foot1.wav
+134,degree celsius,grader celsius,,SYSTEM,celsius0.wav
+135,degrees celsius,grader celsius,,SYSTEM,celsius1.wav
+136,degree fahrenheit,grader fahrenhajt,,SYSTEM,fahr0.wav
+137,degrees fahrenheit,grader fahrenhajt,,SYSTEM,fahr1.wav
+138,percent,procent,,SYSTEM,percent0.wav
+139,percent,procent,,SYSTEM,percent1.wav
+140,milliamp-hour,milliampär-timmar,,SYSTEM,mamph0.wav
+141,milliamp-hours,milliampär-timmar,,SYSTEM,mamph1.wav
+142,watt,watt,,SYSTEM,watt0.wav
+143,watts,watt,,SYSTEM,watt1.wav
+144,milli-watt,milli-watt,,SYSTEM,mwatt0.wav
+145,milli-watts,milli-watt,,SYSTEM,mwatt1.wav
+146,DB,decibell,,SYSTEM,db0.wav
+147,DB,decibell,,SYSTEM,db1.wav
+148,RPM,RPM,,SYSTEM,rpm0.wav
+149,RPM,RPM,,SYSTEM,rpm1.wav
+150,G,G,,SYSTEM,g0.wav
+151,G,G,,SYSTEM,g1.wav
+152,degree,grader,,SYSTEM,degree0.wav
+153,degrees,grader,,SYSTEM,degree1.wav
+154,radian,radijaan,,SYSTEM,rad0.wav
+155,radians,radijaner,,SYSTEM,rad1.wav
+156,millilitre,milliliter,,SYSTEM,ml0.wav
+157,millilitres,milliliter,,SYSTEM,ml1.wav
+158,fluid ounce,flytande uns,,SYSTEM,founce0.wav
+159,fluid ounces,flytande uns,,SYSTEM,founce1.wav
+160,millilitre per minute,milliliter pär minut,,SYSTEM,mlpm0.wav
+161,millilitres per minute,milliliter pär minut,,SYSTEM,mlpm1.wav
+162,hertz,hertz,,SYSTEM,hertz0.wav
+163,hertz,hertz,,SYSTEM,hertz1.wav
+164,milli-second,milli-sekund,,SYSTEM,ms0.wav
+165,milli-seconds,milli-sekunder,,SYSTEM,ms1.wav
+166,microsecond,mikrosekund,,SYSTEM,us0.wav
+167,microseconds,mikrosekunder,,SYSTEM,us1.wav
+168,hour,timme,,SYSTEM,hour0.wav
+169,hours,timmar,,SYSTEM,hour1.wav
+170,minute,minut,,SYSTEM,minute0.wav
+171,minutes,minuter,,SYSTEM,minute1.wav
+172,second,sekund,,SYSTEM,second0.wav
+173,seconds,sekunder,,SYSTEM,second1.wav
+174,point zero,komma noll,,SYSTEM,0167.wav
+175,point one,komma ett,,SYSTEM,0168.wav
+176,point two,komma två,,SYSTEM,0169.wav
+177,point three,komma tre,,SYSTEM,0170.wav
+178,point four,komma fyra,,SYSTEM,0171.wav
+179,point five,komma fem,,SYSTEM,0172.wav
+180,point six,komma sex,,SYSTEM,0173.wav
+181,point seven,komma sju,,SYSTEM,0174.wav
+182,point eight,komma åtta,,SYSTEM,0175.wav
+183,point nine,komma nio,,SYSTEM,0176.wav
+184,trim center,trim centrerad,,SYSTEM,midtrim.wav
+185,maximum trim reached,maximal trimm nodd,,SYSTEM,maxtrim.wav
+186,minimum trim reached,minimal trimm nodd,,SYSTEM,mintrim.wav
+187,timer 1 elapsed,tajmer 1 förfluten,,SYSTEM,timovr1.wav
+188,timer 2 elapsed,tajmer 2 förfluten,,SYSTEM,timovr2.wav
+189,timer 3 elapsed,tajmer 3 förfluten,,SYSTEM,timovr3.wav
+190,transmitter battery low,sändarens batteri lågt,,SYSTEM,lowbatt.wav
+191,inactivity alarm,inaktivitetsalarm,,SYSTEM,inactiv.wav
+192,throttle warning,gasvarning,,SYSTEM,thralert.wav
+193,switch warning,brytarvarning,,SYSTEM,swalert.wav
+194,bad eeprom,dålig eeprom,,SYSTEM,eebad.wav
+195,Welcome to EdgeTX,Välkommen till EdgeTX,,SYSTEM,hello.wav
+196,RF signal low,RF signal låg,,SYSTEM,rssi_org.wav
+197,RF signal critical,RF signal kritisk,,SYSTEM,rssi_red.wav
+198,radio antenna defective,radioantenn defekt,,SYSTEM,swr_red.wav
+199,telemetry lost,telemetri tappad,,SYSTEM,telemko.wav
+200,telemetry recovered,telemetri återställd,,SYSTEM,telemok.wav
+201,Trainer connected,Tränare ansluten,,SYSTEM,trainco.wav
+202,trainer signal lost,instruktörssignal tappad,,SYSTEM,trainko.wav
+203,trainer signal recovered,Instruktörssignal återställd,,SYSTEM,trainok.wav
+204,sensor lost,sensor tappad,,SYSTEM,sensorko.wav
+205,servo overload,servo överbelastat,,SYSTEM,servoko.wav
+206,power overload,strömöverbelastning,,SYSTEM,rxko.wav
+207,receiver still connected,mottagare fortfarande ansluten,,SYSTEM,modelpwr.wav
+208,armed,aktiverad,,,armed.wav
+209,disarmed,inaktiverad,,,disarm.wav
+210,throttle cut,gas avstängd,,,thrcut.wav
+211,throttle active,gas aktiv,,,thract.wav
+212,gear up,landningsställ upp,plane,,gearup.wav
+213,gear down,landningsställ ner,plane,,geardn.wav
+214,flaps up,vingklaffar upp,plane,,flapup.wav
+215,flaps down,vingklaffar ner,plane,,flapdn.wav
+216,spoiler up,spoiler upp,,,splrup.wav
+217,spoiler down,spoiler ner,,,splrdn.wav
+218,trainer on,instruktör på,,,trnon.wav
+219,trainer off,instruktör av,,,trnoff.wav
+220,engine off,motor av,,,engoff.wav
+221,too high,för hög,,,tohigh.wav
+222,too low,för låg,,,tolow.wav
+223,low battery,lågt batteri,,,lowbat.wav
+224,crow on,kråkbroms på,,,crowon.wav
+225,crow off,kråkbroms av,,,crowof.wav
+226,RF signal low,RF signal låg,rc-link,,siglow.wav
+227,RF signal critical,RF signal kritisk,rc-link,,sigcrt.wav
+228,LQ,LQ,rc-link,,lq.wav
+229,RF mode,RF läge,rc-link,,rfmode.wav
+230,high speed mode active,högfartsläge aktiverat,rc-link,,spdmod.wav
+231,thermal mode on,termikläge på,,,thmmod.wav
+232,normal mode on,normalläge på,,,nrmmod.wav
+233,landing mode on,landningsläge på,,,lnding.wav
+234,acro mode on,acroläge på,,,acro.wav
+235,flight mode one,flygläge ett,,,fm-1.wav
+236,flight mode two,flygläge två,,,fm-2.wav
+237,flight mode three,flygläge tre,,,fm-3.wav
+238,flight mode four,flygläge fyra,,,fm-4.wav
+239,flight mode five,flygläge fem,,,fm-5.wav
+240,flight mode six,flygläge sex,,,fm-6.wav
+241,flight mode seven,flygläge sju,,,fm-7.wav
+242,flight mode eight,flygläge åtta,,,fm-8.wav
+243,vario on,vario på,,,vrion.wav
+244,vario off,vario av,,,vrioff.wav
+245,flight mode power,flygläge power,,,fm-pwr.wav
+246,flight mode land,flygläge landning,,,fm-lnd.wav
+247,flight mode float,flygläge flyt,,,fm-flt.wav
+248,flight mode speed,flygläge hastighet,,,fm-spd.wav
+249,flight mode fast,flygläge snabb,,,fm-fst.wav
+250,flight mode normal,flygläge normal,,,fm-nrm.wav
+251,flight mode cruise,flygläge planflykt,,,fm-crs.wav
+252,flight mode acro,flygläge acro,,,fm-acr.wav
+253,flight mode race,flygläge tävling,,,fm-rce.wav
+254,flight mode launch,flygläge start,,,fm-lch.wav
+255,flight mode ping,flygläge ping,,,fm-png.wav
+256,flight mode thermal,flygläge termik,,,fm-thm.wav
+257,flight mode thermal left,flygläge termik vänster,,,fm-thl.wav
+258,flight mode thermal right,flygläge termik höger,,,fm-thr.wav
+259,flight mode stabilise,flygläge stabilisera,,,fm-stb.wav
+260,flight mode horizon,flygläge horizon,,,fm-hor.wav
+261,flight mode angle,flygläge ä nggel,,,fm-ang.wav
+262,flight mode idle up 1,flygläge varva upp 1,,,fm-id1.wav
+263,flight mode idle up 2,flygläge varva upp 2,,,fm-id2.wav
+264,low rate,låg rejt,,,ratlow.wav
+265,medium rate,medium rejt,,,ratmed.wav
+266,high rate,hög rejt,,,rathi.wav
+267,take off,start,,,takeof.wav
+268,sport,sport,,,sport.wav
+269,pattern,mönster,,,pattrn.wav
+270,3D,3D,,,3d.wav
+271,landing,landning,,,landin.wav
+272,idle up 1,varva upp 1,,,idleu1.wav
+273,idle up 2,varva upp 2,,,idleu2.wav
+274,normal mode,normalläge,,,normod.wav
+275,bank 0,banka 0,,,bank-0.wav
+276,bank 1,banka 1,,,bank-1.wav
+277,bank 2,banka 2,,,bank-2.wav
+278,bank 3,banka 3,,,bank-3.wav
+279,heading lock,riktningslås,,,headlo.wav
+280,rate mode,rejtläge,,,ratmod.wav
+281,3D Mode,3D-läge,,,3d-mod.wav
+282,stabilise mode,stabiliseringsläge,,,stabmo.wav
+283,on,på,,,on.wav
+284,off,av,,,off.wav
+285,buzzer active,buzzer aktiv,,,buzact.wav
+286,crash-flip active,krash-flipp aktiv,multicopter,,crfact.wav
+287,blackbox active,svarta lådan aktiv,,,blkact.wav
+288,pre-arm active,föraktivering på,,,preact.wav
+289,stable mode,stabilt läge,,,stbmod.wav
+290,brakes on,bromsar på,plane,,brakon.wav
+291,brakes off,bromsar av,plane,,brakof.wav
+292,butterfly on,fjäril på,,,btfon.wav
+293,butterfly off,fjäril av,,,btfoff.wav
+294,flaps one,vingklaffar ett,plane,,flp1.wav
+295,flaps two,vingklaffar två,plane,,flp2.wav
+296,flaps three,vingklaffar tre,plane,,flp3.wav
+297,flaps four,vingklaffar fyra,plane,,flp4.wav
+298,flaps five,vingklaffar fem,plane,,flp5.wav
+299,wingsweep,vingsvepning,plane,,wngswp.wav
+300,wheelbrakes on,hjulbromsar på,plane,,whlbro.wav
+301,wheelbrakes off,hjulbromsar av,plane,,whlbrf.wav
+302,manual mode,manuellt läge,,,manmod.wav
+303,acro mode,akro läge,,,acrmod.wav
+304,angle mode,ä nggel läge,,,angmod.wav
+305,horizon mode,horizon läge,,,hznmod.wav
+306,launch mode,startläge,,,lncmod.wav
+307,air mode,ärläge,,,airmod.wav
+308,pit mode,depåläge,,,pitmod.wav
+309,navigation cruise,navigation planflykt,autopilot,,navcrs.wav
+310,navigation course hold,navigation håll kurs,autopilot,,navcsh.wav
+311,navigation altitude hold,navigation håll altitud,autopilot,,navalh.wav
+312,navigation position hold,navigation håll position,autopilot,,navpos.wav
+313,navigation return to home,navigation återvänd hem,autopilot,,navrth.wav
+314,navigation waypoint,navigation vägpunkt,autopilot,,navwp.wav
+315,cruise,planflykt,autopilot,,cruise.wav
+316,course hold,håll kurs,autopilot,,crshld.wav
+317,altitude hold,håll altitud,autopilot,,althld.wav
+318,position hold,håll position,autopilot,,poshld.wav
+319,return to home,återvänd hem,autopilot,,rth.wav
+320,waypoint,vägpunkt,autopilot,,waypnt.wav
+321,manual,manuell,,,manual.wav
+322,auto,auto,,,auto.wav
+323,OSD,OSDee,video,,osd.wav
+324,OSD profile,OSDee profil,video,,osdprf.wav
+325,attitude hold mode,attitydhållningslääääge,autopilot,,sxrahd.wav
+326,manual mode,manuellt läge,,,sxrman.wav
+327,stabiliser mode,stabiliseringsläge,,,sxrsmd.wav
+328,stabiliser off,stabilisering av,,,sxrsof.wav
+329,stabiliser on,stabilisering på,,,sxrstb.wav
+330,wind rejection mode,vindavvisningsläge,,,sxrwr.wav
+331,turtle mode on,sköldpaddsläääge på,multicopter,,turton.wav
+332,turtle mode off,sköldpaddsläääge av,multicopter,,turtof.wav
+333,flip,flipp,,,flip.wav
+334,autorotation,auto-rotation,heli,,auro.wav
+335,failsafe active,felsäker aktiv,,,fsact.wav
+336,failsafe off,felsäker av,,,fsoff.wav
+337,OSD Profile 1,OSDee profil - 1,video,,osd1.wav
+338,OSD Profile 2,OSDee profil - 2,video,,osd2.wav
+339,OSD Profile 3,OSDee profil - 3,video,,osd3.wav
+340,rate profile 1,rejtprofil - 1,,,rates1.wav
+341,rate profile 2,rejtprofil - 2,,,rates2.wav
+342,rate profile 3,rejtprofil - 3,,,rates3.wav
+343,rate profile 4,rejtprofil - 4,,,rates4.wav
+344,rate profile 5,rejtprofil - 5,,,rates5.wav
+345,rate profile 6,rejtprofil - 6,,,rates6.wav
+346,stick commands disabled,stick commands disabled,,,scmdof.wav
+347,stick commands enabled,stick commands enabled,,,scmdon.wav
+348,telemetry,telemetri,,,telem.wav
+349,telemetry logging on,telemetriloggning på,,,tlogon.wav
+350,telemetry logging off,telemetriloggning av,,,tlogof.wav
+351,VTX,videosändare,video,,vtx.wav
+352,VTX on,videosändare på,video,,vtxon.wav
+353,VTX off,videosändare av,video,,vtxoff.wav
+354,VTX 25 milliwatts,videosändare 25 milliwatt,video,,vtx25.wav
+355,VTX 50 milliwatts,videosändare 50 milliwatt,video,,vtx50.wav
+356,VTX 100 milliwatts,videosändare 100 milliwatt,video,,vtx100.wav
+357,VTX 200 milliwatts,videosändare 200 milliwatt,video,,vtx200.wav
+358,VTX 300 milliwatts,videosändare 300 milliwatt,video,,vtx300.wav
+359,VTX 400 milliwatts,videosändare 400 milliwatt,video,,vtx400.wav
+360,VTX 500 milliwatts,videosändare 500 milliwatt,video,,vtx500.wav
+361,VTX 600 milliwatts,videosändare 600 milliwatt,video,,vtx600.wav
+362,VTX 700 milliwatts,videosändare 700 milliwatt,video,,vtx700.wav
+363,VTX 800 milliwatts,videosändare 800 milliwatt,video,,vtx800.wav
+364,VTX 900 milliwatts,videosändare 900 milliwatt,video,,vtx900.wav
+365,VTX Pit Mode,videosändare lågeffektläge,video,,vtxpm.wav
+366,VTX Race Mode,videosändare tävlingsläge,video,,vtxrm.wav
+367,VTX 1 watt,videosändare 1 watt,video,,vtx1w.wav
+368,VTX 2 watts,videosändare 2 watt,video,,vtx2w.wav
+369,VTX 4 watts,videosändare 4 watt,video,,vtx4w.wav
+370,critical low battery,kritiskt lågt batteri,,,clobat.wav
+371,start,start,,,start.wav
+372,stop,stopp,,,stop.wav
+373,lights on,belysning på,,,lghton.wav
+374,lights off,belysning av,,,lghtof.wav
+375,buzzer off,buzzer på,,,buzoff.wav
+376,dynamic TX power,dynamisk sändareffekt,rc-link,,dyntxp.wav
+377,maximum TX power,maximal sändareffekt,rc-link,,maxtxp.wav
+378,throttle hold,håll gas,plane/heli,,thrhld.wav
+379,throttle idle,gas på tomgång,plane/heli,,thridl.wav
+380,throttle release,frigör gas,plane/heli,,thrrel.wav
+381,negative pitch allowed,negativ pitch tillåten,heli,,negpon.wav
+382,negative pitch disallowed,negativ pitch otillåten,heli,,negpof.wav
+383,autolaunch started,autostart startad,autopilot,,alnch.wav
+384,rescue mode active,räddningsläge aktivt,autopilot,,rscmon.wav
+385,rescue mode off,räddningsläge av,autopilot,,rscmof.wav
+386,headfree mode active,headfreeläge aktivt,multicopter,,hdfmon.wav
+387,headfree mode off,headfreeläge av,multicopter,,hdfmof.wav
+388,heading adjust,riktingsjustering,multicopter,,hdadj.wav
+389,FPV angle mix active,FPV ä nggel mix aktiverad,multicopter,,agmxon.wav
+390,FPV angle mix off,FPV angle mix av,multicopter,,agmxof.wav
+391,air mode on,air läge på,,,airmon.wav
+392,air mode off,air läge av,,,airmof.wav
+393,OSD on,OSD på,video,,osdon.wav
+394,OSD off,OSD av,video,,osdoff.wav
+395,return to home started,återvänd hem påbörjad,autopilot,,rthstr.wav
+396,return to home stopped,återvänd hem stoppad,autopilot,,rthstp.wav
+397,waypoint navigation started,vägpunktsnavigation startad,autopilot,,wpnstr.wav
+398,waypoint navigation stopped,vägpunktsnavigation stoppad,autopilot,,wpnstp.wav
+399,course hold active,håll kurs aktiv,autopilot,,crshon.wav
+400,course hold off,håll kurs av,autopilot,,crshof.wav
+401,position hold active,håll position aktiv,autopilot,,poshon.wav
+402,position hold off,håll position av,autopilot,,poshof.wav
+403,altitude hold active,håll altitud aktiv,autopilot,,althon.wav
+404,altitude hold off,håll altitud av,autopilot,,althof.wav
+405,loiter,häng,autopilot,,loiter.wav
+406,safety on,sejfti på,,,sftyon.wav
+407,safety off,sejfti av,,,sftyof.wav
+408,SAFE on,SEJF på,plane,,safeon.wav
+409,SAFE off,SEJF av,plane,,safeof.wav
+410,flight envelope protection active,flight envelope skydd aktiverat,plane,,fepact.wav
+411,flight envelope protection off,flight envelope skydd av,plane,,fepoff.wav
+412,timer 1 reset,timer 1 återställd,,,timrs1.wav
+413,timer 2 reset,timer 2 återställd,,,timrs2.wav
+414,timer 3 reset,timer 3 återställd,,,timrs3.wav
+415,expo 1,expo 1,,,expo1.wav
+416,expo 2,expo 2,,,expo2.wav
+417,expo 3,expo 3,,,expo3.wav
+418,active,aktiv,,,active.wav
+419,deactivated,avaktiverad,,,deact.wav
+420,enabled,aktiverad,,,enabl.wav
+421,disabled,inaktiverad,,,disabl.wav
+422,good,bra,,,good.wav
+423,bad,dålig,,,bad.wav
+424,normal,normal,,,normal.wav
+425,warning,varning,,,warnng.wav
+426,danger,fara,,,danger.wav
+427,ready to fly,klar att flyga,,,ready.wav
+428,home reset,hemposition återställd,,,homrst.wav
+429,GPS,GPS,,,gps.wav
+430,GPS on,GPS på,,,gpson.wav
+431,GPS off,GPS av,,,gpsoff.wav
+432,engine on,motor på,,,engon.wav
+433,VTX Frequency R1,Videofrekvens R 1,video,,vtxfr1.wav
+434,VTX Frequency R2,Videofrekvens R 2,video,,vtxfr2.wav
+435,VTX Frequency R3,Videofrekvens R 3,video,,vtxfr3.wav
+436,VTX Frequency R4,Videofrekvens R 4,video,,vtxfr4.wav
+437,VTX Frequency R5,Videofrekvens R 5,video,,vtxfr5.wav
+438,VTX Frequency R6,Videofrekvens R 6,video,,vtxfr6.wav
+439,VTX Frequency R7,Videofrekvens R 7,video,,vtxfr7.wav
+440,VTX Frequency R8,Videofrekvens R 8,video,,vtxfr8.wav
+441,blackbox erase,radera svarta lådan,,,blkers.wav
+442,acro trainer mode,acro lärarläge,,,actnmd.wav
+443,Camera wifi button,Kamera wifiknapp,camera,,cwifi.wav
+444,Camera power button,Kamera på knapp,camera,,cpower.wav
+445,Camera change mode,Kamera ändra läge,camera,,cmode.wav
+446,Camera start,Kamera start,camera,,cstart.wav
+447,Camera stop,Kamera stopp,camera,,cstop.wav
+448,Recording start,Inspelning start,,,recsrt.wav
+449,Recording stop,Inspelning stopp,,,recstp.wav
+450,Start recording,Starta inspelning,,,strtrc.wav
+451,Stop recording,Stoppa inspelning,,,stoprc.wav
+452,DBM,DBM,,SYSTEM,dbm0.wav
+453,DBM,DBM,,SYSTEM,dbm1.wav
+454,kilometer,kilometer,,SYSTEM,km0.wav
+455,kilometers,kilometer,,SYSTEM,km1.wav
+456,Reverse Thrust,Omvänd drivkraft,plane,,revthr.wav
+457,Reverse Thrust On,Omvänd drivkraft på,plane,,revon.wav
+458,Reverse Thrust Off,Omvänd drivkraft av,plane,,revoff.wav
+459,Reverse Thrust Idle,Omvänd drivkraft på tomgång,plane,,revid.wav
+460,Forward Thrust,Drivkraft framåt,plane,,revfwd.wav
+461,Telemetry connected,Telemetri ansluten,,SYSTEM,telemco.wav
+462,level mode,Nivåläge,flight controller,,lvlmod.wav
+463,diffs locked,Differential låst,car,,difloc.wav
+464,diffs unlocked,Differential upplåst,car,,difulc.wav
+465,engine start,Motor start,car,,engsrt.wav
+466,engine stop,Motor stopp,car,,engstp.wav
+467,engine on,Motor på,car,,engon.wav
+468,Turn signals on,Blinkers på,car,,turnon.wav
+469,Turn signals off,Blinkers av,car,,turnof.wav
+470,High gear,Hög växel,car,,highgr.wav
+471,Low gear,Låg växel,car,,lowgr.wav
+472,Dig mode,Grävläge,car,,digmod.wav
+473,Two wheel drive,Tvåhjulsdrift,car,,2wd.wav
+474,Four wheel drive,Fyrhjulsdrift,car,,4wd.wav
+475,Winch in,Winch in,car,,wchin.wav
+476,Winch out,Winch ut,car,,wchout.wav
+477,Front Steer,Framhjulsstyrning,car,,str-f.wav
+478,Rear Steer,Bakhjulsstyrning,car,,str-r.wav
+479,Four Wheel Steer,Fyrhjulsstyrning,car,,str-4w.wav
+480,Mirror Steer,Speglad styrning,car,,str-mr.wav
+481,Crab Steer,Krabbstyrning,car,,str-cr.wav
+482,Motor armed,Motorn aktiverad,soaretx,,motarm.wav
+483,Power,Kraft,soaretx,,power.wav
+484,Speed,Högfart,soaretx,,speed.wav
+485,Thermal,Termik,soaretx,,therml.wav
+486,Front wheel drive,Framjulsdrift,car,,fwd.wav
+487,Rear wheel drive,Bakjulsdrift,car,,rwd.wav
+488,All wheel drive,Alljulsdrift,car,,awd.wav
+489,Throttle enabled,Gas aktiverad,car,,thren.wav
+490,Throttle disabled,Gas inaktiverad,car,,thrdis.wav
+491,Winch enabled,Vinsch aktiverad,car,,wchen.wav
+492,Winch disabled,Vinsch inaktiverad,car,,wchdis.wav
+493,Drift mode on,Driftläge på,car,,drifon.wav
+494,Drift mode off,Driftläge av,car,,drifof.wav
+495,Gyro enabled,Gyro aktiverat,,,gyroon.wav
+496,Gyro disabled,Gyro inaktiverat,,,gyroof.wav
+497,Launch control active,Startkontroll aktiverad,,,launch.wav
+498,Wet mode enabled,Blötläge aktiverat,,,wetmde.wav
+500,Max gyro,Max gyro,,,maxgyr.wav
+501,Max assistance,Max assistans,,,maxast.wav
+502,Overheating,Överhettning,,,overht.wav
+503,Motor overheating,Motor överhettad,,,mothot.wav
+504,Drift Mode Enabled,Driftläge aktiverat,,,drifen.wav
+505,Drift Mode Disabled,Driftläge inaktiverat,,,drifdb.wav
+506,Screenshot,Skärmbild,,,screns.wav
+507,Cell,Cell,,,cell.wav
+508,Transmitter Battery Low,Sändarbatteri lågt,,,txbatl.wav
+509,Left,Vänster,,,left.wav
+510,Right,Höger,,,right.wav
+511,Shift,Växla,,,shift.wav
+512,Stability Control On,Stabilitetskontroll på,,,sbcton.wav
+513,Stability Control Off,Stabilitetskontroll av,,,sbctof.wav
+514,Stability Control Enabled,Stabilitetskontroll aktiverad,,,sbcten.wav
+515,Stability Control Disabled,Stabilitetskontroll inaktiverad,,,sbctdb.wav
+516,Thermal Warning,Termikvarning,,,thmwrn.wav
+517,Servo Overload,Servo överansträngt,,,srvovl.wav
+518,BEC Overload,Beck överansträngd,,,becovl.wav
+519,Stability Control,Stabilitetskontroll ,,,sbct.wav
+520,Stability Control - Standard,Stabilitetskontroll - standard,,,sbctst.wav
+521,Gyro,Gyro,,,gyro.wav
+522,Low,Låg,,,low.wav
+523,Medium,Medium,,,medium.wav
+524,High,Hög,,,high.wav
+525,Standard,Standard,,,stanrd.wav
+526,Bash Mode,Busläge,car,,bashmd.wav
+527,Race Mode,Rejsläge,car,,racemd.wav
+528,Chill Mode,Chill läge,car,,chilmd.wav
+529,Trainer Mode,Elevläge,car,,trnmd.wav
+530,Speed Mode,Fartläge,car,,spdmd.wav
+531,City Mode,Stadsläge,car,,citymd.wav
+532,Cruise Mode,Cruiseläge,car,,crusmd.wav
+533,Flaps Middle,Klaff mitten,plane,,flapmd.wav
+534,Flaps Full,Full klaff,plane,,flapfl.wav
+535,Motor On,Motor på,,,moton.wav
+536,Motor Off,Motor av,,,motoff.wav
+537,Motor Idle,Motor tomgång,,,motidl.wav
+538,Autorotation,Autorotation,heli,,autor.wav
+539,Rescue On,Räddning på,,,reson.wav
+540,High Temperature,Hög temperatur,,,htemp.wav
+541,High Vibration,Hög vibration,,,hvibr.wav
+542,Glow On,Glöd på,,,glwon.wav
+543,Glow Off,Glöd av,,,glwoff.wav
+544,Glow Activated,Glöd aktiverad,,,glwact.wav
+545,Glow Deactivated,Glöd inaktiverad,,,glwdea.wav
