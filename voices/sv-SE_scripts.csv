@@ -1,176 +1,176 @@
-String ID,Source text,Translation,Context,Path,Filename
-1,P,P,,BETAFLIGHT,p.wav
-2,I,I,,BETAFLIGHT,i.wav
-3,D,Dee,,BETAFLIGHT,d.wav
-4,D setpoint,Dee sättpunkt,,BETAFLIGHT,dsetpt.wav
-5,acro mode,acro läge,,INAV,acromd.wav
-6,active,aktiv,,INAV,active.wav
-7,altitude hold,håll altitud,,INAV,althld.wav
-8,angle mode,ä nggel läge,,INAV,anglmd.wav
-9,battery critical,batteri kritiskt,,INAV,batcrt.wav
-10,Low battery,lågt batteri,,INAV,batlow.wav
-11,battery,batteri,,INAV,battry.wav
-12,cruise mode,planflyktsläge,,INAV,cruzmd.wav
-13,danger,fara,,INAV,danger.wav
-14,engines armed,motorerna aktiverade,,INAV,engarm.wav
-15,engines disarmed,motorerna inaktiverade,,INAV,engdrm.wav
-16,failsafe off,fejlsejf av,,INAV,fsoff.wav
-17,failsafe on,fejlsejf på,,INAV,fson.wav
-18,good,god,,INAV,good.wav
-19,GPS,GPS,,INAV,gps.wav
-20,heading hold active,"håll riktning, aktiv",,INAV,hedhlda.wav
-21,heading hold,håll riktning,,INAV,hedhld.wav
-22,headfree active,heddfri aktiv,,INAV,hfact.wav
-23,headfree off,heddfri av,,INAV,hfoff.wav
-24,home reset,hemposition återställd,,INAV,homrst.wav
-25,horizon mode,horizon läge,,INAV,hrznmd.wav
-26,lost,tappad,,INAV,lost.wav
-27,manual mode,manuellt läge,,INAV,manmd.wav
-28,normal,normal,,INAV,normal.wav
-29,off,av,,INAV,off.wav
-30,on,på,,INAV,on.wav
-31,position hold,håll position,,INAV,poshld.wav
-32,ready to fly,klar att flyga,,INAV,ready.wav
-33,return to launch,återvänd till startplats,,INAV,rtl.wav
-34,too high,för hög,,INAV,toohgh.wav
-35,warning,varning,,INAV,warnng.wav
-36,waypoint,waypoint,,INAV,waypt.wav
-37,Acro flight mode,Flygläge - acro,,YAAPU,acro.wav
-38,Acro mode,Acroläge,,YAAPU,acro_r.wav
-39,Altitude,Altitud,,YAAPU,alt.wav
-40,Altitude hold flight mode,Flygläge - håll altitud,,YAAPU,althold.wav
-41,Motors armed,Motorer aktiverade,,YAAPU,armed.wav
-42,Auto flight mode,Flygläge - auto,,YAAPU,auto.wav
-43,Auto mode,Autoläge,,YAAPU,auto_r.wav
-44,Auto RTL flight mode,Flygläge - auto återvänd hem,,YAAPU,autortl.wav
-45,Autotune enabled,Autotune aktiv,,YAAPU,autotune.wav
-46,Avoid A D S B flight mode,Undvik flygläge A D S B,,YAAPU,avoidadsb.wav
-47,Battery at 5 percent,Batteri på 5 procent,,YAAPU,bat5.wav
-48,Battery at 10 percent,Batteri på 10 procent,,YAAPU,bat10.wav
-49,Battery at 15 percent,Batteri på 15 procent,,YAAPU,bat15.wav
-50,Battery at 20 percent,Batteri på 20 procent,,YAAPU,bat20.wav
-51,Battery at 25 percent,Batteri på 25 procent,,YAAPU,bat25.wav
-52,Battery at 30 percent,Batteri på 30 procent,,YAAPU,bat30.wav
-53,Battery at 40 percent,Batteri på 40 procent,,YAAPU,bat40.wav
-54,Battery at 50 percent,Batteri på 50 procent,,YAAPU,bat50.wav
-55,Battery at 60 percent,Batteri på 60 procent,,YAAPU,bat60.wav
-56,Battery at 70 percent,Batteri på 70 procent,,YAAPU,bat70.wav
-57,Battery at 80 percent,Batteri på 80 procent,,YAAPU,bat80.wav
-58,Battery at 90 percent,Batteri på 90 procent,,YAAPU,bat90.wav
-59,Battery alert,Batterivarning,,YAAPU,batalert.wav
-60,Battery level 1 alert,Battervarning nivå 1,,YAAPU,batalert1.wav
-61,Battery level 2 alert,Batterivarning nivå 2,,YAAPU,batalert2.wav
-62,Brake flight mode,Flygläge - broms,,YAAPU,brake.wav
-63,Circle flight mode,Flygläge - cirkla,,YAAPU,circle.wav
-64,Cruise flight mode,Flygläge - planflykt,,YAAPU,cruise.wav
-65,Motors disarmed,Motorer inaktiverade,,YAAPU,disarmed.wav
-66,Distance,Distans,,YAAPU,dist.wav
-67,Drift flight mode,Flygläge - drift,,YAAPU,drift.wav
-68,E K F failsafe,E K F failsafe,,YAAPU,ekf.wav
-69,failsafe,failsafe,,YAAPU,failsafe.wav
-70,fence enabled,staket aktiverat,,YAAPU,fence.wav
-71,fence breach,staket genombrutet,,YAAPU,fencebreach.wav
-72,Flip flight mode,Flygläge - flippa,,YAAPU,flip.wav
-73,flow position hold flight mode,Flygläge - flow position hold,,YAAPU,flowhold.wav
-74,Fly by wire a flight mode,Flygläge - fly by wire - A,,YAAPU,flybywirea.wav
-75,Fly by wire b flight mode,Flygläge - fly by wire - B,,YAAPU,flybywireb.wav
-76,follow flight mode,Flygläge - följa,,YAAPU,follow.wav
-77,follow mode,Följaläge,,YAAPU,follow_r.wav
-78,GPS 3D fix lock,GPS 3D fix låst,,YAAPU,gpsfix.wav
-79,No gps,Ingen GPS,,YAAPU,gpsnofix.wav
-80,Guided flight mode,Flygläge - gajdad,,YAAPU,guided.wav
-81,Guided mode,Gajdläge,,YAAPU,guided_r.wav
-82,Guided no gps flight mode,Flygläge - gajdad ingen GPS,,YAAPU,guidednogps.wav
-83,Hold mode,Håll läge,,YAAPU,hold_r.wav
-84,Initializing,Initialiserar,,YAAPU,initializing.wav
-85,Initializing,Initialiserar,,YAAPU,initializing_r.wav
-86,Land flight mode,Flygläge - landa,,YAAPU,land.wav
-87,Landing complete,Landning komplett,,YAAPU,landing.wav
-88,Loiter flight mode,Flygläge - loiter,,YAAPU,loiter.wav
-89,Loiter mode,Loiterläge,,YAAPU,loiter_r.wav
-90,Low battery,Lågt batteri,,YAAPU,lowbat.wav
-91,Manual flight mode,Flygläge - manuellt,,YAAPU,manual.wav
-92,Manual mode,Manuellt läge,,YAAPU,manual_r.wav
-93,Max altitude alert,Max altitud alarm,,YAAPU,maxalt.wav
-94,Max distance alert,Max distans alarm,,YAAPU,maxdist.wav
-95,Low altitude alert,Låg altitud alarm,,YAAPU,minalt.wav
-96,Position hold flight mode,Flygläge - håll position,,YAAPU,poshold.wav
-97,Q acro flight mode,Flygläge - Q acro,,YAAPU,qacro.wav
-98,Q autotune flight mode,Flygläge - Q autotune,,YAAPU,qautotune.wav
-99,Q hover flight mode,Flygläge - Q hovra,,YAAPU,qhover.wav
-100,Q land flight mode,Flygläge - Q landa,,YAAPU,qland.wav
-101,Q loiter flight mode,Flygläge - Q loiter,,YAAPU,qloiter.wav
-102,Q return to home flight mode,Flygläge - Q återvänd hem,,YAAPU,qrtl.wav
-103,Q stabilize flight mode,Flygläge - Q stabilisera,,YAAPU,qstabilize.wav
-104,Return to home,Återvänd hem,,YAAPU,rtl.wav
-105,Return to home mode,Flygläge - återvänd hem,,YAAPU,rtl_r.wav
-106,simple mode,enkelt läge,,YAAPU,simple_r.wav
-107,simple mode disabled,enkelt läge inaktiverat,,YAAPU,simpleoff.wav
-108,simple mode enabled,enkelt läge aktiverat,,YAAPU,simpleon.wav
-109,Smart return to home flight mode,Flygläge - smart återvänd hem,,YAAPU,smartrtl.wav
-110,Smart return to home mode,Läge - smart återvänd hem,,YAAPU,smartrtl_r.wav
-111,Sport flight mode,Flygläge - sport,,YAAPU,sport.wav
-112,super simple mode disabled,superenkelt läge inaktiverat,,YAAPU,ssimpleoff.wav
-113,super simple mode enabled,superenkelt läge aktiverat,,YAAPU,ssimpleon.wav
-114,Stabilize flight mode,Flygläge - stabilisera,,YAAPU,stabilize.wav
-115,Steering mode,Styrläge,,YAAPU,steering_r.wav
-116,no terrain data,ingen terrängdata,,YAAPU,terrainko.wav
-117,Thermal flight mode,Flygläge - termik,,YAAPU,thermal.wav
-118,Throw flight mode,Flygläge - kasta,,YAAPU,throw.wav
-119,Timer alert,Timer alert,,YAAPU,timealert.wav
-120,Training flight mode,Flygläge - träning,,YAAPU,training.wav
-121,turtle mode,Sköldpaddsläge,,YAAPU,turtle.wav
-122,Zigzag flight mode,Flygläge - sick-sack,,YAAPU,zigzag.wav
-123,takeoff flight mode,Flygläge - takeoff,,YAAPU,takeofffm.wav
-124,System I D flight mode,Flygläge - System I D,,YAAPU,systemid.wav
-125,autorotate flight mode,Flygläge - autorotera,,YAAPU,autorotate.wav
-126,velocity flight mode,Flygläge - hastighet,,YAAPU,velocity.wav
-127,Yaa-pu telemetry ready,Yaa-pu telemetri redo,,YAAPU,yaapu.wav
-128,Altitude control mode,Kontrolläge - altitud,PX4,YAAPU,altctl.wav
-129,Position control mode,Kontrolläge - position,PX4,YAAPU,posctl.wav
-130,ready,Klar,PX4,YAAPU,ready.wav
-131,Auto takeoff mode,Auto takeoffläge,PX4,YAAPU,takeoff.wav
-132,Auto mission mode,Auto uppdragsläge,PX4,YAAPU,mission.wav
-133,link loss failsafe mode,Failsafeläge - länk förlorad,PX4,YAAPU,rtgs.wav
-134,Precision landing mode,Precisionslandingsläge,PX4,YAAPU,precland.wav
-135,Offboard mode,Offboard läge,PX4,YAAPU,offboard.wav
-136,rate attitude mode,rate attitude läge,PX4,YAAPU,rattitude.wav
-137,simple mode,enkelt läge,PX4,YAAPU,simple.wav
-138,PreArming: Need 3D Fix,PreArming: behöver 3D Fix,Msg-Hash,YAAPU,264977348.wav
-139,Smart RTL Unavailable,Smart RTL ej tillgängligt,Msg-Hash,YAAPU,1834616480.wav
-140,EKF variance,EKF varians,Msg-Hash,YAAPU,2386213680.wav
-141,GPS Glitch cleared,GPS Glitch rensad,Msg-Hash,YAAPU,2310179660.wav
-142,GPS Glitch,GPS Glitch,Msg-Hash,YAAPU,4137200300.wav
-143,Parachute: Released,Fallskärm: utfälld,Msg-Hash,YAAPU,2664106240.wav
-144,Flight plan received,Färdplan mottagen,Msg-Hash,YAAPU,656739232.wav
-145,Mission complete,Uppdrag komplett,Msg-Hash,YAAPU,3708582640.wav
-146,Geofence triggered,Geofence triggad,Msg-Hash,YAAPU,1809087708.wav
-147,Flight mode change failed,Flyglägesbyte misslyckades,Msg-Hash,YAAPU,116655276.wav
-148,AutoTune: Success,AutoTune: Lyckad,Msg-Hash,YAAPU,1008001424.wav
-149,AutoTune: Failed,AutoTune: Misslyckad,Msg-Hash,YAAPU,1396289024.wav
-150,Transition done,Förflyttning gjord,Msg-Hash,YAAPU,986165592.wav
-151,Transition started,Förflyttning startad,Msg-Hash,YAAPU,1249672288.wav
-152,Transition done,Förflyttning gjord,Msg-Hash,YAAPU,4019153925.wav
-153,Transition VTOL done,Förflyttning VTOL gjord,Msg-Hash,YAAPU,3417557720.wav
-154,Land descend started,Nerstigning landning påbörjad,Msg-Hash,YAAPU,1204090832.wav
-155,Land final started,Slutlig landning påbörjad,Msg-Hash,YAAPU,2890289840.wav
-156,Soaring: Outside max radius,Segelflygning: utanför maxradie,Msg-Hash,YAAPU,1883944664.wav
-157,Soaring: Disabled.,Segelflygning: inaktiverad.,Msg-Hash,YAAPU,4175833240.wav
-158,Soaring: not climbing,Segelflygning: stiger inte,Msg-Hash,YAAPU,2599859119.wav
-159,Soaring: drifted too far,Segelflygning: drivit för långt,Msg-Hash,YAAPU,636067590.wav
-160,Soaring: Too high,Segelflygning: för högt,Msg-Hash,YAAPU,2730864352.wav
-161,Soaring: Too low,Segelflygning: för lågt,Msg-Hash,YAAPU,1698465616.wav
-162,Soaring: Thermal ended,Segelflygning: termiken slutade,Msg-Hash,YAAPU,981284144.wav
-163,Soaring: Drifted too far,Segelflygning: drivit för långt,Msg-Hash,YAAPU,2913564252.wav
-164,Soaring: Exit via RC switch,Segelflygning: avsluta via RC brytare,Msg-Hash,YAAPU,1746499976.wav
-165,Soaring: Enabled.,Segelflygning: aktiverad.,Msg-Hash,YAAPU,883458048.wav
-166,Soaring: thermal weak,Segelflygning: termiken svag,Msg-Hash,YAAPU,2139150204.wav
-167,Soaring: reached upper altitude,Segelflygning: övre altitud nådd,Msg-Hash,YAAPU,1352994600.wav
-168,Soaring: reached lower altitude,Segelflygning: lägre altitud nådd,Msg-Hash,YAAPU,4026147344.wav
-169,reached command:,nått kommando:,Msg-Hash,YAAPU,4091124880.wav
-170,reached waypoint:,nått waypoint:,Msg-Hash,YAAPU,3311875476.wav
-171,Passed waypoint:,Passerat waypoint:,Msg-Hash,YAAPU,1997782032.wav
-172,Takeoff complete,Takeoff slutförd,Msg-Hash,YAAPU,554623408.wav
-173,Smart RTL deactivated,Smart RTL inaktiverad,Msg-Hash,YAAPU,3025044912.wav
-174,GPS home acquired,GPS hem erhållen,Msg-Hash,YAAPU,3956583920.wav
-175,GPS home acquired,GPS hem erhållen,Msg-Hash,YAAPU,1309405592.wav
+"String ID","Source text","Translation","Context","Path","Filename"
+"1","P","P","","BETAFLIGHT","p.wav"
+"2","I","I","","BETAFLIGHT","i.wav"
+"3","D","Dee","","BETAFLIGHT","d.wav"
+"4","D setpoint","Dee sättpunkt","","BETAFLIGHT","dsetpt.wav"
+"5","acro mode","acro läge","","INAV","acromd.wav"
+"6","active","aktiv","","INAV","active.wav"
+"7","altitude hold","håll altitud","","INAV","althld.wav"
+"8","angle mode","ä nggel läge","","INAV","anglmd.wav"
+"9","battery critical","batteri kritiskt","","INAV","batcrt.wav"
+"10","Low battery","lågt batteri","","INAV","batlow.wav"
+"11","battery","batteri","","INAV","battry.wav"
+"12","cruise mode","planflyktsläge","","INAV","cruzmd.wav"
+"13","danger","fara","","INAV","danger.wav"
+"14","engines armed","motorerna aktiverade","","INAV","engarm.wav"
+"15","engines disarmed","motorerna inaktiverade","","INAV","engdrm.wav"
+"16","failsafe off","fejlsejf av","","INAV","fsoff.wav"
+"17","failsafe on","fejlsejf på","","INAV","fson.wav"
+"18","good","god","","INAV","good.wav"
+"19","GPS","GPS","","INAV","gps.wav"
+"20","heading hold active","håll riktning, aktiv","","INAV","hedhlda.wav"
+"21","heading hold","håll riktning","","INAV","hedhld.wav"
+"22","headfree active","heddfri aktiv","","INAV","hfact.wav"
+"23","headfree off","heddfri av","","INAV","hfoff.wav"
+"24","home reset","hemposition återställd","","INAV","homrst.wav"
+"25","horizon mode","horizon läge","","INAV","hrznmd.wav"
+"26","lost","tappad","","INAV","lost.wav"
+"27","manual mode","manuellt läge","","INAV","manmd.wav"
+"28","normal","normal","","INAV","normal.wav"
+"29","off","av","","INAV","off.wav"
+"30","on","på","","INAV","on.wav"
+"31","position hold","håll position","","INAV","poshld.wav"
+"32","ready to fly","klar att flyga","","INAV","ready.wav"
+"33","return to launch","återvänd till startplats","","INAV","rtl.wav"
+"34","too high","för hög","","INAV","toohgh.wav"
+"35","warning","varning","","INAV","warnng.wav"
+"36","waypoint","waypoint","","INAV","waypt.wav"
+"37","Acro flight mode","Flygläge - acro","","YAAPU","acro.wav"
+"38","Acro mode","Acroläge","","YAAPU","acro_r.wav"
+"39","Altitude","Altitud","","YAAPU","alt.wav"
+"40","Altitude hold flight mode","Flygläge - håll altitud","","YAAPU","althold.wav"
+"41","Motors armed","Motorer aktiverade","","YAAPU","armed.wav"
+"42","Auto flight mode","Flygläge - auto","","YAAPU","auto.wav"
+"43","Auto mode","Autoläge","","YAAPU","auto_r.wav"
+"44","Auto RTL flight mode","Flygläge - auto återvänd hem","","YAAPU","autortl.wav"
+"45","Autotune enabled","Autotune aktiv","","YAAPU","autotune.wav"
+"46","Avoid A D S B flight mode","Undvik flygläge A D S B","","YAAPU","avoidadsb.wav"
+"47","Battery at 5 percent","Batteri på 5 procent","","YAAPU","bat5.wav"
+"48","Battery at 10 percent","Batteri på 10 procent","","YAAPU","bat10.wav"
+"49","Battery at 15 percent","Batteri på 15 procent","","YAAPU","bat15.wav"
+"50","Battery at 20 percent","Batteri på 20 procent","","YAAPU","bat20.wav"
+"51","Battery at 25 percent","Batteri på 25 procent","","YAAPU","bat25.wav"
+"52","Battery at 30 percent","Batteri på 30 procent","","YAAPU","bat30.wav"
+"53","Battery at 40 percent","Batteri på 40 procent","","YAAPU","bat40.wav"
+"54","Battery at 50 percent","Batteri på 50 procent","","YAAPU","bat50.wav"
+"55","Battery at 60 percent","Batteri på 60 procent","","YAAPU","bat60.wav"
+"56","Battery at 70 percent","Batteri på 70 procent","","YAAPU","bat70.wav"
+"57","Battery at 80 percent","Batteri på 80 procent","","YAAPU","bat80.wav"
+"58","Battery at 90 percent","Batteri på 90 procent","","YAAPU","bat90.wav"
+"59","Battery alert","Batterivarning","","YAAPU","batalert.wav"
+"60","Battery level 1 alert","Battervarning nivå 1","","YAAPU","batalert1.wav"
+"61","Battery level 2 alert","Batterivarning nivå 2","","YAAPU","batalert2.wav"
+"62","Brake flight mode","Flygläge - broms","","YAAPU","brake.wav"
+"63","Circle flight mode","Flygläge - cirkla","","YAAPU","circle.wav"
+"64","Cruise flight mode","Flygläge - planflykt","","YAAPU","cruise.wav"
+"65","Motors disarmed","Motorer inaktiverade","","YAAPU","disarmed.wav"
+"66","Distance","Distans","","YAAPU","dist.wav"
+"67","Drift flight mode","Flygläge - drift","","YAAPU","drift.wav"
+"68","E K F failsafe","E K F failsafe","","YAAPU","ekf.wav"
+"69","failsafe","failsafe","","YAAPU","failsafe.wav"
+"70","fence enabled","staket aktiverat","","YAAPU","fence.wav"
+"71","fence breach","staket genombrutet","","YAAPU","fencebreach.wav"
+"72","Flip flight mode","Flygläge - flippa","","YAAPU","flip.wav"
+"73","flow position hold flight mode","Flygläge - flow position hold","","YAAPU","flowhold.wav"
+"74","Fly by wire a flight mode","Flygläge - fly by wire - A","","YAAPU","flybywirea.wav"
+"75","Fly by wire b flight mode","Flygläge - fly by wire - B","","YAAPU","flybywireb.wav"
+"76","follow flight mode","Flygläge - följa","","YAAPU","follow.wav"
+"77","follow mode","Följaläge","","YAAPU","follow_r.wav"
+"78","GPS 3D fix lock","GPS 3D fix låst","","YAAPU","gpsfix.wav"
+"79","No gps","Ingen GPS","","YAAPU","gpsnofix.wav"
+"80","Guided flight mode","Flygläge - gajdad","","YAAPU","guided.wav"
+"81","Guided mode","Gajdläge","","YAAPU","guided_r.wav"
+"82","Guided no gps flight mode","Flygläge - gajdad ingen GPS","","YAAPU","guidednogps.wav"
+"83","Hold mode","Håll läge","","YAAPU","hold_r.wav"
+"84","Initializing","Initialiserar","","YAAPU","initializing.wav"
+"85","Initializing","Initialiserar","","YAAPU","initializing_r.wav"
+"86","Land flight mode","Flygläge - landa","","YAAPU","land.wav"
+"87","Landing complete","Landning komplett","","YAAPU","landing.wav"
+"88","Loiter flight mode","Flygläge - loiter","","YAAPU","loiter.wav"
+"89","Loiter mode","Loiterläge","","YAAPU","loiter_r.wav"
+"90","Low battery","Lågt batteri","","YAAPU","lowbat.wav"
+"91","Manual flight mode","Flygläge - manuellt","","YAAPU","manual.wav"
+"92","Manual mode","Manuellt läge","","YAAPU","manual_r.wav"
+"93","Max altitude alert","Max altitud alarm","","YAAPU","maxalt.wav"
+"94","Max distance alert","Max distans alarm","","YAAPU","maxdist.wav"
+"95","Low altitude alert","Låg altitud alarm","","YAAPU","minalt.wav"
+"96","Position hold flight mode","Flygläge - håll position","","YAAPU","poshold.wav"
+"97","Q acro flight mode","Flygläge - Q acro","","YAAPU","qacro.wav"
+"98","Q autotune flight mode","Flygläge - Q autotune","","YAAPU","qautotune.wav"
+"99","Q hover flight mode","Flygläge - Q hovra","","YAAPU","qhover.wav"
+"100","Q land flight mode","Flygläge - Q landa","","YAAPU","qland.wav"
+"101","Q loiter flight mode","Flygläge - Q loiter","","YAAPU","qloiter.wav"
+"102","Q return to home flight mode","Flygläge - Q återvänd hem","","YAAPU","qrtl.wav"
+"103","Q stabilize flight mode","Flygläge - Q stabilisera","","YAAPU","qstabilize.wav"
+"104","Return to home","Återvänd hem","","YAAPU","rtl.wav"
+"105","Return to home mode","Flygläge - återvänd hem","","YAAPU","rtl_r.wav"
+"106","simple mode","enkelt läge","","YAAPU","simple_r.wav"
+"107","simple mode disabled","enkelt läge inaktiverat","","YAAPU","simpleoff.wav"
+"108","simple mode enabled","enkelt läge aktiverat","","YAAPU","simpleon.wav"
+"109","Smart return to home flight mode","Flygläge - smart återvänd hem","","YAAPU","smartrtl.wav"
+"110","Smart return to home mode","Läge - smart återvänd hem","","YAAPU","smartrtl_r.wav"
+"111","Sport flight mode","Flygläge - sport","","YAAPU","sport.wav"
+"112","super simple mode disabled","superenkelt läge inaktiverat","","YAAPU","ssimpleoff.wav"
+"113","super simple mode enabled","superenkelt läge aktiverat","","YAAPU","ssimpleon.wav"
+"114","Stabilize flight mode","Flygläge - stabilisera","","YAAPU","stabilize.wav"
+"115","Steering mode","Styrläge","","YAAPU","steering_r.wav"
+"116","no terrain data","ingen terrängdata","","YAAPU","terrainko.wav"
+"117","Thermal flight mode","Flygläge - termik","","YAAPU","thermal.wav"
+"118","Throw flight mode","Flygläge - kasta","","YAAPU","throw.wav"
+"119","Timer alert","Timer alert","","YAAPU","timealert.wav"
+"120","Training flight mode","Flygläge - träning","","YAAPU","training.wav"
+"121","turtle mode","Sköldpaddsläge","","YAAPU","turtle.wav"
+"122","Zigzag flight mode","Flygläge - sick-sack","","YAAPU","zigzag.wav"
+"123","takeoff flight mode","Flygläge - takeoff","","YAAPU","takeofffm.wav"
+"124","System I D flight mode","Flygläge - System I D","","YAAPU","systemid.wav"
+"125","autorotate flight mode","Flygläge - autorotera","","YAAPU","autorotate.wav"
+"126","velocity flight mode","Flygläge - hastighet","","YAAPU","velocity.wav"
+"127","Yaa-pu telemetry ready","Yaa-pu telemetri redo","","YAAPU","yaapu.wav"
+"128","Altitude control mode","Kontrolläge - altitud","PX4","YAAPU","altctl.wav"
+"129","Position control mode","Kontrolläge - position","PX4","YAAPU","posctl.wav"
+"130","ready","Klar","PX4","YAAPU","ready.wav"
+"131","Auto takeoff mode","Auto takeoffläge","PX4","YAAPU","takeoff.wav"
+"132","Auto mission mode","Auto uppdragsläge","PX4","YAAPU","mission.wav"
+"133","link loss failsafe mode","Failsafeläge - länk förlorad","PX4","YAAPU","rtgs.wav"
+"134","Precision landing mode","Precisionslandingsläge","PX4","YAAPU","precland.wav"
+"135","Offboard mode","Offboard läge","PX4","YAAPU","offboard.wav"
+"136","rate attitude mode","rate attitude läge","PX4","YAAPU","rattitude.wav"
+"137","simple mode","enkelt läge","PX4","YAAPU","simple.wav"
+"138","PreArming: Need 3D Fix","PreArming: behöver 3D Fix","Msg-Hash","YAAPU","264977348.wav"
+"139","Smart RTL Unavailable","Smart RTL ej tillgängligt","Msg-Hash","YAAPU","1834616480.wav"
+"140","EKF variance","EKF varians","Msg-Hash","YAAPU","2386213680.wav"
+"141","GPS Glitch cleared","GPS Glitch rensad","Msg-Hash","YAAPU","2310179660.wav"
+"142","GPS Glitch","GPS Glitch","Msg-Hash","YAAPU","4137200300.wav"
+"143","Parachute: Released","Fallskärm: utfälld","Msg-Hash","YAAPU","2664106240.wav"
+"144","Flight plan received","Färdplan mottagen","Msg-Hash","YAAPU","656739232.wav"
+"145","Mission complete","Uppdrag komplett","Msg-Hash","YAAPU","3708582640.wav"
+"146","Geofence triggered","Geofence triggad","Msg-Hash","YAAPU","1809087708.wav"
+"147","Flight mode change failed","Flyglägesbyte misslyckades","Msg-Hash","YAAPU","116655276.wav"
+"148","AutoTune: Success","AutoTune: Lyckad","Msg-Hash","YAAPU","1008001424.wav"
+"149","AutoTune: Failed","AutoTune: Misslyckad","Msg-Hash","YAAPU","1396289024.wav"
+"150","Transition done","Förflyttning gjord","Msg-Hash","YAAPU","986165592.wav"
+"151","Transition started","Förflyttning startad","Msg-Hash","YAAPU","1249672288.wav"
+"152","Transition done","Förflyttning gjord","Msg-Hash","YAAPU","4019153925.wav"
+"153","Transition VTOL done","Förflyttning VTOL gjord","Msg-Hash","YAAPU","3417557720.wav"
+"154","Land descend started","Nerstigning landning påbörjad","Msg-Hash","YAAPU","1204090832.wav"
+"155","Land final started","Slutlig landning påbörjad","Msg-Hash","YAAPU","2890289840.wav"
+"156","Soaring: Outside max radius","Segelflygning: utanför maxradie","Msg-Hash","YAAPU","1883944664.wav"
+"157","Soaring: Disabled.","Segelflygning: inaktiverad.","Msg-Hash","YAAPU","4175833240.wav"
+"158","Soaring: not climbing","Segelflygning: stiger inte","Msg-Hash","YAAPU","2599859119.wav"
+"159","Soaring: drifted too far","Segelflygning: drivit för långt","Msg-Hash","YAAPU","636067590.wav"
+"160","Soaring: Too high","Segelflygning: för högt","Msg-Hash","YAAPU","2730864352.wav"
+"161","Soaring: Too low","Segelflygning: för lågt","Msg-Hash","YAAPU","1698465616.wav"
+"162","Soaring: Thermal ended","Segelflygning: termiken slutade","Msg-Hash","YAAPU","981284144.wav"
+"163","Soaring: Drifted too far","Segelflygning: drivit för långt","Msg-Hash","YAAPU","2913564252.wav"
+"164","Soaring: Exit via RC switch","Segelflygning: avsluta via RC brytare","Msg-Hash","YAAPU","1746499976.wav"
+"165","Soaring: Enabled.","Segelflygning: aktiverad.","Msg-Hash","YAAPU","883458048.wav"
+"166","Soaring: thermal weak","Segelflygning: termiken svag","Msg-Hash","YAAPU","2139150204.wav"
+"167","Soaring: reached upper altitude","Segelflygning: övre altitud nådd","Msg-Hash","YAAPU","1352994600.wav"
+"168","Soaring: reached lower altitude","Segelflygning: lägre altitud nådd","Msg-Hash","YAAPU","4026147344.wav"
+"169","reached command:","nått kommando:","Msg-Hash","YAAPU","4091124880.wav"
+"170","reached waypoint:","nått waypoint:","Msg-Hash","YAAPU","3311875476.wav"
+"171","Passed waypoint:","Passerat waypoint:","Msg-Hash","YAAPU","1997782032.wav"
+"172","Takeoff complete","Takeoff slutförd","Msg-Hash","YAAPU","554623408.wav"
+"173","Smart RTL deactivated","Smart RTL inaktiverad","Msg-Hash","YAAPU","3025044912.wav"
+"174","GPS home acquired","GPS hem erhållen","Msg-Hash","YAAPU","3956583920.wav"
+"175","GPS home acquired","GPS hem erhållen","Msg-Hash","YAAPU","1309405592.wav"
