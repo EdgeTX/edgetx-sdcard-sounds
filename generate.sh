@@ -13,7 +13,16 @@ check_dependencies() {
     fi
 }
 
+check_file_exists() {
+    if [ ! -f "$1" ]; then
+        echo "Error: File $1 not found!" >&2
+        exit 1
+    fi
+}
+
 check_dependencies
+check_file_exists "${script_dir}/voice-gen.py"
+check_file_exists "${script_dir}/voice-gen-glados.py"
 
 # Delete logs from previous pass
 find . -name "*.log" -delete
