@@ -14,4 +14,8 @@ sudo apt-get update && sudo apt-get install -y dotnet-sdk-6.0
 dotnet tool install --global Microsoft.CognitiveServices.Speech.CLI
 
 # Install the Azure Speech SDK for Python
-python -m pip install azure-cognitiveservices-speech
+python -m pip install azure-cognitiveservices-speech ffmpeg-normalize
+
+# Install ffmpeg for GLaDOS post-processing and release generation
+sudo apt-get install -y ffmpeg
+python -m pip install ffmpeg-normalize

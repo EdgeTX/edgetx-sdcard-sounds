@@ -15,7 +15,8 @@
 		"vscode": {
 			"extensions": [
 				"mechatroner.rainbow-csv",
-				"eamodio.gitlens"
+				"eamodio.gitlens",
+				"charliermarsh.ruff"
 			]
 		}
 	}

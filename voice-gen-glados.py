@@ -2,17 +2,16 @@
 import argparse
 import csv
 import os
-import re
 import sys
-import time
-from pathlib import Path
-import urllib.request
-import urllib.parse
 import tempfile
+import time
+import urllib.parse
+import urllib.request
+
 
 def init_argparse() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        usage="%(prog)s [FILE] [LANGDIR]",
+        usage="%(prog)s [FILE] [LANGDIR] [-s DELAY]",
         description="Generate voice packs from CSV list using https://glados.c-net.org/"
     )
 
@@ -34,9 +33,9 @@ def init_argparse() -> argparse.ArgumentParser:
     parser.add_argument('-s',
                         '--delay',
                         type=int,
-                        help="Sleep time processing each translation",
+                        help="Sleep time (in seconds) between processing each translation",
                         required=False,
-                        default='3'
+                        default=3
                         )
 
     return parser
@@ -51,7 +50,7 @@ def try_fetch_sample(req: urllib.request.Request, outfile_fd):
                     out.write(content)
                 return
             else:
-                raise ValueError(f"Content returned isn't a WAV file")
+                raise ValueError("Content returned isn't a WAV file!")
         raise ValueError(f"Speech synthesis failed with status code: {response.status}")
 
 def fetch_sample(text: str, outfile_fd, delay_time: int):
@@ -75,6 +74,9 @@ def process_sample(infile: str, outfile: str):
 def main() -> None:
     parser = init_argparse()
     args = parser.parse_args()
+
+    # Print which script is running and the file being processed
+    print(f"Running {os.path.basename(__file__)} to process file: {args.file}")
 
     csv_file = args.file
     csv_rows = 0
@@ -135,7 +137,7 @@ def main() -> None:
 
                 line_count += 1
 
-        print(f'Finished processing {csv_rows} entries from "{csv_file}".')
+        print(f'Finished processing {csv_rows} entries from "{csv_file}" using {os.path.basename(__file__)}.')
 
 
 if __name__ == "__main__":

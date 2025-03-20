@@ -21,7 +21,7 @@ except ImportError:
 
 def init_argparse() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        usage="%(prog)s [FILE] [VOICE] [LANGDIR]",
+        usage="%(prog)s [FILE] [VOICE] [LANGDIR] [-l LOCALE] [-p PITCH] [-r RATE] [-s DELAY]",
         description="Generate voice packs from CSV list."
     )
 
@@ -54,22 +54,22 @@ def init_argparse() -> argparse.ArgumentParser:
 
     parser.add_argument('-p',
                         '--pitch',
-                        help="Pitch adjustment",
+                        help="Pitch adjustment (e.g., 'up10%', 'dn5%')",
                         type=str,
                         default="default")
 
     parser.add_argument('-r',
                         '--rate',
-                        help="Rate adjustment",
+                        help="Rate adjustment (e.g., 'up10%', 'dn5%')",
                         type=str,
                         default="default")
 
     parser.add_argument('-s',
                         '--delay',
                         type=int,
-                        help="Sleep time processing each translation",
+                        help="Sleep time (in seconds) between processing each translation",
                         required=False,
-                        default='3'
+                        default=3
                         )
 
     return parser
@@ -78,6 +78,9 @@ def init_argparse() -> argparse.ArgumentParser:
 def main() -> None:
     parser = init_argparse()
     args = parser.parse_args()
+
+    # Print which script is running and the file being processed
+    print(f"Running {os.path.basename(__file__)} to process file: {args.file}")
 
     csv_file = args.file
     csv_rows = 0
@@ -194,7 +197,7 @@ def main() -> None:
 
                 line_count += 1
 
-        print(f'Finished processing {csv_rows} entries from "{csv_file}".')
+        print(f'Finished processing {csv_rows} entries from "{csv_file}" using {os.path.basename(__file__)}.')
 
 
 if __name__ == "__main__":
