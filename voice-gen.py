@@ -79,6 +79,9 @@ def main() -> None:
     parser = init_argparse()
     args = parser.parse_args()
 
+    # Print which script is running and the file being processed
+    print(f"Running {os.path.basename(__file__)} to process file: {args.file}")
+
     csv_file = args.file
     csv_rows = 0
     voice = args.voice
@@ -194,7 +197,7 @@ def main() -> None:
 
                 line_count += 1
 
-        print(f'Finished processing {csv_rows} entries from "{csv_file}".')
+        print(f'Finished processing {csv_rows} entries from "{csv_file}" using {os.path.basename(__file__)}.')
 
 
 if __name__ == "__main__":
