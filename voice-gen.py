@@ -21,7 +21,7 @@ except ImportError:
 
 def init_argparse() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        usage="%(prog)s [FILE] [VOICE] [LANGDIR]",
+        usage="%(prog)s [FILE] [VOICE] [LANGDIR] [-l LOCALE] [-p PITCH] [-r RATE] [-s DELAY]",
         description="Generate voice packs from CSV list."
     )
 
@@ -54,22 +54,22 @@ def init_argparse() -> argparse.ArgumentParser:
 
     parser.add_argument('-p',
                         '--pitch',
-                        help="Pitch adjustment",
+                        help="Pitch adjustment (e.g., 'up10%', 'dn5%')",
                         type=str,
                         default="default")
 
     parser.add_argument('-r',
                         '--rate',
-                        help="Rate adjustment",
+                        help="Rate adjustment (e.g., 'up10%', 'dn5%')",
                         type=str,
                         default="default")
 
     parser.add_argument('-s',
                         '--delay',
                         type=int,
-                        help="Sleep time processing each translation",
+                        help="Sleep time (in seconds) between processing each translation",
                         required=False,
-                        default='3'
+                        default=3
                         )
 
     return parser

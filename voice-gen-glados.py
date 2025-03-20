@@ -12,7 +12,7 @@ import tempfile
 
 def init_argparse() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        usage="%(prog)s [FILE] [LANGDIR]",
+        usage="%(prog)s [FILE] [LANGDIR] [-s DELAY]",
         description="Generate voice packs from CSV list using https://glados.c-net.org/"
     )
 
@@ -34,9 +34,9 @@ def init_argparse() -> argparse.ArgumentParser:
     parser.add_argument('-s',
                         '--delay',
                         type=int,
-                        help="Sleep time processing each translation",
+                        help="Sleep time (in seconds) between processing each translation",
                         required=False,
-                        default='3'
+                        default=3
                         )
 
     return parser
