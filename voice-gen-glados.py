@@ -2,13 +2,12 @@
 import argparse
 import csv
 import os
-import re
 import sys
-import time
-from pathlib import Path
-import urllib.request
-import urllib.parse
 import tempfile
+import time
+import urllib.parse
+import urllib.request
+
 
 def init_argparse() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
@@ -51,7 +50,7 @@ def try_fetch_sample(req: urllib.request.Request, outfile_fd):
                     out.write(content)
                 return
             else:
-                raise ValueError(f"Content returned isn't a WAV file")
+                raise ValueError("Content returned isn't a WAV file!")
         raise ValueError(f"Speech synthesis failed with status code: {response.status}")
 
 def fetch_sample(text: str, outfile_fd, delay_time: int):
