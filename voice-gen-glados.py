@@ -69,7 +69,7 @@ def fetch_sample(text: str, outfile_fd, delay_time: int):
             time.sleep(delay_time)
 
 def process_sample(infile: str, outfile: str):
-    os.system(f'ffmpeg -i {infile} -ar 32000 {outfile}')
+    os.system(f'ffmpeg -loglevel warning -i {infile} -ar 32000 {outfile}')
 
 def main() -> None:
     parser = init_argparse()
