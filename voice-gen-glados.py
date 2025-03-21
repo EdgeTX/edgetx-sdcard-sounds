@@ -69,7 +69,7 @@ def fetch_sample(text: str, outfile_fd, delay_time: int):
             time.sleep(delay_time)
 
 def process_sample(infile: str, outfile: str):
-    os.system(f'ffmpeg -i {infile} -ar 32000 {outfile}')
+    os.system(f'ffmpeg -loglevel warning -i {infile} -ar 32000 {outfile}')
 
 def main() -> None:
     parser = init_argparse()
@@ -92,13 +92,16 @@ def main() -> None:
     # Get number of rows in CSV file
     with open(csv_file) as csvfile:
         reader = csv.reader(csvfile, delimiter=",")
+        reader = ((field.strip().strip('"') for field in row) for row in reader)  # Strip spaces and quotes
         csv_rows = sum(1 for row in reader)
 
     # Process CSV file
     with open(csv_file, 'rt') as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quotechar='"')
+        reader = ((field.strip().strip('"') for field in row) for row in reader)  # Strip spaces and quotes
         line_count = 0
         for row in reader:
+            row = list(row)  # Convert the generator to a list
             if line_count == 0:
                 # print(f'Column names are {", ".join(row)}')
                 line_count += 1
