@@ -107,8 +107,15 @@ After you have installed SPX, you will also need to [create a Microsoft Azure ac
 ## Alternatives
 - Mike has created a python script that can be used to generate the audio using Googles Text to Speech service - https://github.com/xsnoopy/edgetx-sdcard-sounds
 - The OpenTX Speaker voice generator (Windows only) uses the built in text to speech engine of Microsoft Windows, and can be used to generate new audio also. https://www.open-tx.org/2014/03/15/opentx-speaker
-
-
+- Record your operating systems own text-to-speech narration capability
+- Get audio from Google Translate - as shown in #106
+- Google Docs - using text to speech addons
+- [TTSMAKER](https://ttsmaker.com/)
+- [NaturalReader](https://www.naturalreaders.com/)
+- [Speechify](https://speechify.com/)
+- [ReadSpeaker](https://www.readspeaker.com/)
+- [iSpeech](https://www.ispeech.org/)
+- [Amazon Polly](https://aws.amazon.com/polly/)
 
 ## Contributing
 
