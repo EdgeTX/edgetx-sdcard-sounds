@@ -138,8 +138,10 @@ def main() -> None:
     # Process CSV file
     with open(csv_file, 'rt') as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quotechar='"')
+        reader = ((field.strip() for field in row) for row in reader)  # Strip spaces
         line_count = 0
         for row in reader:
+            row = list(row)  # Convert the generator to a list
             if line_count == 0:
                 # print(f'Column names are {", ".join(row)}')
                 line_count += 1
