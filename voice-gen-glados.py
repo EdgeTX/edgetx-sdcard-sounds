@@ -92,12 +92,13 @@ def main() -> None:
     # Get number of rows in CSV file
     with open(csv_file) as csvfile:
         reader = csv.reader(csvfile, delimiter=",")
+        reader = ((field.strip().strip('"') for field in row) for row in reader)  # Strip spaces and quotes
         csv_rows = sum(1 for row in reader)
 
     # Process CSV file
     with open(csv_file, 'rt') as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quotechar='"')
-        reader = ((field.strip() for field in row) for row in reader)  # Strip spaces
+        reader = ((field.strip().strip('"') for field in row) for row in reader)  # Strip spaces and quotes
         line_count = 0
         for row in reader:
             row = list(row)  # Convert the generator to a list

@@ -19,7 +19,9 @@ def checkCSVcolumnCount():
         f = os.path.join(csv_directory, filename)
         if os.path.isfile(f) and filename.endswith(".csv"):
             reader = csv.reader(open(f, "r"))
+            reader = ((field.strip() for field in row) for row in reader)  # Strip spaces
             for row in reader:
+                row = list(row)  # Convert generator to list
                 if not len(row) == 6:
                     print(f"{filename}: Insufficient columns of data - {row}")
                     missing_csv_field = True
@@ -40,11 +42,13 @@ def checkFilenameLengthsInCSV():
         f = os.path.join(csv_directory, filename)
         if os.path.isfile(f) and filename.endswith(".csv"):
             reader = csv.reader(open(f, "r"))
+            reader = ((field.strip().strip('"') for field in row) for row in reader)  # Strip spaces and quotes
             next(reader)  # Skip the header row
             for row in reader:
+                row = list(row)  # Convert generator to list
                 if len(row) == 6:
-                    filename_in_csv = row[5]
-                    path_in_csv = row[4]
+                    filename_in_csv = row[5].strip()  # Ensure filename is stripped
+                    path_in_csv = row[4].strip()  # Ensure path is stripped
                     if (
                         path_in_csv == "SYSTEM"
                         and len(os.path.splitext(filename_in_csv)[0]) > 8
@@ -136,9 +140,11 @@ def checkForDuplicateStringID():
         if os.path.isfile(f):
             with open(f, "rt") as csvfile:
                 reader = csv.reader(csvfile, delimiter=",", quotechar='"')
+                reader = ((field.strip() for field in row) for row in reader)  # Strip spaces
                 line_count = 0
                 StringID_count = {}
                 for row in reader:
+                    row = list(row)  # Convert generator to list
                     if line_count == 0:
                         # absorb header row
                         line_count += 1
