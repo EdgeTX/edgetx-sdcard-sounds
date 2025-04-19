@@ -1,0 +1,176 @@
+Translation,Korean,Filename
+P,피,p.wav
+I,아이,i.wav
+D,디,d.wav
+D setpoint,디 설정값,dsetpt.wav
+acro mode,아크로 모드 (수동 3D 비행),acromd.wav
+active,활성화됨,active.wav
+altitude hold,고도 유지,althld.wav
+angle mode,앵글 모드 (수평 자동 조정 모드),anglmd.wav
+battery critical,배터리 심각,batcrt.wav
+Low battery,배터리 부족,batlow.wav
+battery,배터리,battry.wav
+cruise mode,크루즈 모드,cruzmd.wav
+danger,위험,danger.wav
+engines armed,모터 작동됨,engarm.wav
+engines disarmed,모터 정지됨,engdrm.wav
+failsafe off,비상 보호 기능 꺼짐,fsoff.wav
+failsafe on,비상 보호 기능 켜짐,fson.wav
+good,양호,good.wav
+GPS,GPS,gps.wav
+heading hold active,방향 유지 활성화,hedhlda.wav
+heading hold,방향 유지,hedhld.wav
+headfree active,방향 고정 모드 켜짐,hfact.wav
+headfree off,방향 고정 모드 꺼짐,hfoff.wav
+home reset,홈 위치 재설정,homrst.wav
+horizon mode,수평 유지 모드,hrznmd.wav
+lost,신호 손실,lost.wav
+manual mode,수동 모드,manmd.wav
+normal,일반,normal.wav
+off,꺼짐,off.wav
+on,켜짐,on.wav
+position hold,위치 유지,poshld.wav
+ready to fly,비행 준비 완료,ready.wav
+return to launch,출발 지점으로 복귀,rtl.wav
+too high,너무 높음,toohgh.wav
+warning,경고,warnng.wav
+waypoint,경유 지점,waypt.wav
+acro flight mode,곡예 비행 모드,acro.wav
+Acro mode,곡예 모드,acro_r.wav
+Altitude,고도,alt.wav
+Altitude hold flight mode,고도 유지 비행 모드,althold.wav
+Motors armed,모터 작동됨,armed.wav
+Auto flight mode,자동 비행 모드,auto.wav
+Auto mode,자동 모드,auto_r.wav
+Auto RTL flight mode,자동 복귀 비행 모드,autortl.wav
+Autotune enabled,자동 튜닝 활성화됨,autotune.wav
+Avoid A D S B flight mode,ADS-B 장애물 회피 모드,avoidadsb.wav
+Battery at 5 percent,배터리 5%,bat5.wav
+Battery at 10 percent,배터리 10%,bat10.wav
+Battery at 15 percent,배터리 15%,bat15.wav
+Battery at 20 percent,배터리 20%,bat20.wav
+Battery at 25 percent,배터리 25%,bat25.wav
+Battery at 30 percent,배터리 30%,bat30.wav
+Battery at 40 percent,배터리 40%,bat40.wav
+Battery at 50 percent,배터리 50%,bat50.wav
+Battery at 60 percent,배터리 60%,bat60.wav
+Battery at 70 percent,배터리 70%,bat70.wav
+Battery at 80 percent,배터리 80%,bat80.wav
+Battery at 90 percent,배터리 90%,bat90.wav
+Battery alert,배터리 경고,batalert.wav
+Battery level 1 alert,배터리 1단계 경고,batalert1.wav
+Battery level 2 alert,배터리 2단계 경고,batalert2.wav
+Brake flight mode,제동 비행 모드,brake.wav
+Circle flight mode,원형 비행 모드,circle.wav
+Cruise flight mode,순항 비행 모드,cruise.wav
+Motors disarmed,모터 정지됨,disarmed.wav
+Distance,거리,dist.wav
+Drift flight mode,드리프트 비행 모드,drift.wav
+E K F failsafe,EKF 페일세이프 (자세 추정 오류 시 보호 기능),ekf.wav
+failsafe,비상 보호 기능,failsafe.wav
+fence enabled,가상 울타리 활성화됨,fence.wav
+fence breach,가상 울타리 침범,fencebreach.wav
+Flip flight mode,플립(공중제비) 비행 모드,flip.wav
+flow position hold flight mode,흐름 기반 위치 유지 비행 모드,flowhold.wav
+Fly by wire - A - flight mode,플라이 바이 와이어 A 비행 모드,flybywirea.wav
+Fly by wire - B - flight mode,플라이 바이 와이어 B 비행 모드,flybywireb.wav
+follow flight mode,추적 비행 모드,follow.wav
+follow mode,추적 모드,follow_r.wav
+GPS 3D fix lock,GPS 3D 고정됨,gpsfix.wav
+No gps,GPS 없음,gpsnofix.wav
+Guided flight mode,유도 비행 모드 (지상국 명령에 따라 자동 비행),guided.wav
+Guided mode,유도 모드,guided_r.wav
+Guided no gps flight mode,GPS 미사용 유도 모드,guidednogps.wav
+Hold mode,고정 모드,hold_r.wav
+Initializing,초기화 중,initializing.wav
+Initializing,초기화 중,initializing_r.wav
+Land flight mode,착륙 비행 모드,land.wav
+Landing complete,착륙 완료,landing.wav
+Loiter flight mode,호버링 비행 모드,loiter.wav
+Loiter mode,호버링 모드,loiter_r.wav
+Low battery,배터리 부족,lowbat.wav
+Manual flight mode,수동 비행 모드,manual.wav
+Manual mode,수동 모드,manual_r.wav
+Max altitude alert,최대 고도 경고,maxalt.wav
+Max distance alert,최대 거리 경고,maxdist.wav
+Low altitude alert,고도 낮음 경고,minalt.wav
+Position hold flight mode,위치 유지 비행 모드,poshold.wav
+Q acro flight mode,Q 아크로 비행 모드 (VTOL 곡예 모드),qacro.wav
+Q autotune flight mode,Q 자동 튜닝 비행 모드,qautotune.wav
+Q hover flight mode,Q 호버링 비행 모드,qhover.wav
+Q land flight mode,Q 착륙 비행 모드,qland.wav
+Q loiter flight mode,Q 호버링 비행 모드,qloiter.wav
+Q return to home flight mode,Q 복귀 비행 모드,qrtl.wav
+Q stabilize flight mode,Q 안정화 비행 모드,qstabilize.wav
+Return to home,홈으로 복귀,rtl.wav
+Return to home mode,복귀 모드,rtl_r.wav
+simple mode,단순 모드 (기체 방향 관계없이 조작 가능),simple_r.wav
+simple mode disabled,단순 모드 비활성화됨,simpleoff.wav
+simple mode enabled,단순 모드 활성화됨,simpleon.wav
+Smart return to home flight mode,스마트 자동 복귀 비행 모드,smartrtl.wav
+Smart return to home mode,스마트 복귀 모드,smartrtl_r.wav
+Sport flight mode,스포츠 비행 모드,sport.wav
+super simple mode disabled,슈퍼 심플 모드 비활성화,ssimpleoff.wav
+super simple mode enabled,슈퍼 심플 모드 활성화,ssimpleon.wav
+Stabilize flight mode,안정화 비행 모드,stabilize.wav
+Steering mode,조향 모드,steering_r.wav
+no terrain data,지형 데이터 없음,terrainko.wav
+Thermal flight mode,상승기류 비행 모드,thermal.wav
+Throw flight mode,던지기 이륙 모드,throw.wav
+Timer alert,타이머 경고,timealert.wav
+Training flight mode,트레이닝 비행 모드,training.wav
+turtle mode,전복 복귀 모드,turtle.wav
+Zigzag flight mode,지그재그 비행 모드,zigzag.wav
+takeoff flight mode,이륙 비행 모드,takeofffm.wav
+System I D flight mode,시스템 ID 비행 모드,systemid.wav
+autorotate flight mode,자동 회전 착륙 모드,autorotate.wav
+velocity flight mode,속도 제어 비행 모드,velocity.wav
+Yaa-pu telemetry ready,야아푸 텔레메트리 준비됨,yaapu.wav
+Altitude control mode,고도 제어 모드,altctl.wav
+Position control mode,위치 제어 모드,posctl.wav
+ready,준비 완료,ready.wav
+Auto takeoff mode,자동 이륙 모드,takeoff.wav
+Auto mission mode,자동 임무 모드,mission.wav
+link loss failsafe mode,링크 손실 보호 모드,rtgs.wav
+Precision landing mode,정밀 착륙 모드,precland.wav
+Offboard mode,외부 제어 모드,offboard.wav
+rate attitude mode,자세 속도 제어 모드,rattitude.wav
+simple mode,단순 모드,simple.wav
+PreArming: Need 3D Fix,암 전: GPS 3D 고정 필요,264977348.wav
+Smart RTL Unavailable,스마트 RTL 사용 불가,1834616480.wav
+EKF variance,EKF 변동,2386213680.wav
+GPS Glitch cleared,GPS 오류 복구됨,2310179660.wav
+GPS Glitch,GPS 오류,4137200300.wav
+Parachute: Released,낙하산 전개됨,2664106240.wav
+Flight plan received,비행 계획 수신됨,656739232.wav
+Mission complete,임무 완료,3708582640.wav
+Geofence triggered,가상 경계선 초과 감지됨,1809087708.wav
+Flight mode change failed,비행 모드 변경 실패,116655276.wav
+AutoTune: Success,자동 튜닝 성공,1008001424.wav
+AutoTune: Failed,자동 튜닝 실패,1396289024.wav
+Transition done,전환 완료,986165592.wav
+Transition started,전환 시작됨,1249672288.wav
+Transition done,전환 완료,4019153925.wav
+Transition VTOL done,VTOL 전환 완료,3417557720.wav
+Land descend started,착륙 하강 시작,1204090832.wav
+Land final started,최종 착륙 단계 진입,2890289840.wav
+Soaring: Outside max radius,상승비행: 최대 반경 벗어남,1883944664.wav
+Soaring: Disabled.,상승비행: 비활성화됨,4175833240.wav
+Soaring: not climbing,상승비행: 상승 중 아님,2599859119.wav
+Soaring: drifted too far,상승비행: 너무 멀어짐,636067590.wav
+Soaring: Too high,상승비행: 너무 높음,2730864352.wav
+Soaring: Too low,상승비행: 너무 낮음,1698465616.wav
+Soaring: Thermal ended,상승비행: 상승기류 종료,981284144.wav
+Soaring: Drifted too far,상승비행: 너무 멀어짐,2913564252.wav
+Soaring: Exit via RC switch,상승비행: RC 스위치로 종료,1746499976.wav
+Soaring: Enabled.,상승비행: 활성화됨,883458048.wav
+Soaring: thermal weak,상승비행: 상승기류 약함,2139150204.wav
+Soaring: reached upper altitude,상승비행: 최대 고도 도달,1352994600.wav
+Soaring: reached lower altitude,상승비행: 최소 고도 도달,4026147344.wav
+reached command:,명령 지점 도달,4091124880.wav
+reached waypoint:,웨이포인트 도달,3311875476.wav
+Passed waypoint:,웨이포인트 통과,1997782032.wav
+Takeoff complete,이륙 완료,554623408.wav
+Smart RTL deactivated,스마트 RTL 비활성화됨,3025044912.wav
+GPS home acquired,GPS 홈 위치 확보됨,3956583920.wav
+GPS home acquired,GPS 홈 위치 확보됨,1309405592.wav
