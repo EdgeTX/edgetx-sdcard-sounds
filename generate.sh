@@ -54,13 +54,13 @@ voices=(
     "./voices/ja-JP_scripts.csv ja-JP-NanamiNeural jp/SCRIPTS"
     "./voices/pt-PT.csv pt-BR-FranciscaNeural pt"
     "./voices/ru-RU.csv ru-RU-SvetlanaNeural ru"
-    "./voices/sv-SE.csv sv-SE-SofieNeural se --pitch 'dn10%' --rate 'dn0.9'"
-    "./voices/sv-SE_scripts.csv sv-SE-SofieNeural se/SCRIPTS --pitch 'dn10%' --rate 'dn0.9'"
+    "./voices/sv-SE.csv sv-SE-SofieNeural se --pitch 'dn10%' --rate '0.9'"
+    "./voices/sv-SE_scripts.csv sv-SE-SofieNeural se/SCRIPTS --pitch 'dn10%' --rate '0.9'"
     "./voices/uk-UA.csv uk-UA-OstapNeural ua-ostap"
     "./voices/uk-UA.csv uk-UA-PolinaNeural ua-polina"
     "./voices/zh-CN.csv zh-CN-XiaoxiaoNeural cn"
     "./voices/zh-TW.csv zh-TW-HsiaoChenNeural tw"
-    "./voices/zh-HK.csv zh-HK-HiuGaaiNeural hk --rate 'dn1.2'"
+    "./voices/zh-HK.csv zh-HK-HiuGaaiNeural hk --rate '0.9'"
 )
 
 # Loop through the Azure TTS configurations

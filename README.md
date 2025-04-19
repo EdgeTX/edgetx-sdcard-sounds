@@ -79,6 +79,8 @@ And in the request body (raw) place your `ssml` (change the voice name according
 </speak>
 ```
 
+In order to tweak some parameters of voice generation (i.e. rate, pitch) refer to the [SSML markup documentation](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-synthesis-markup-voice) for values and the `generate.sh` script to see how they are applied. 
+
 ## How to build yourself
 
 In order to generate the voice packages and do the release processing, you will need a Linux environment to run in.
