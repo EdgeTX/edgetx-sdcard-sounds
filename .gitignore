@@ -8,3 +8,6 @@ release/
 
 # MacOS
 .DS_Store
+
+# Windows
+.Zone.Identifier

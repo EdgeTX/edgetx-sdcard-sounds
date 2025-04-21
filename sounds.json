@@ -84,6 +84,12 @@
         "directory": "jp"
     },
     {
+        "language": "ko-KR",
+        "name": "Korean Female",
+        "description": "Korean Female Voice (Google Cloud Text-to-Speech)",
+        "directory": "ko"
+    },
+    {
         "language": "pt-BR",
         "name": "Brazilian Portuguese Female",
         "description": "Brazilian Portuguese Female Voice (pt-BR-Francisca)",
