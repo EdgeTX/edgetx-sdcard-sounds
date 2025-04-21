@@ -3,27 +3,30 @@
 This repository contains the files needed to generate the voice packages used in EdgeTX.
 
 The currently supported languages are:
-* Chinese Mandarin
-* Chinese Taiwan Mandarin
-* Chinese Hongkong Cantonese
-* Chilean Spanish
-* Czech
-* Danish
-* English
-* French
-* German
-* Italian
-* Japanese
-* Portuguese
-* Russian
-* Spanish
-* Swedish
-* Ukrainian
+
+- Chinese Mandarin
+- Chinese Taiwan Mandarin
+- Chinese Hongkong Cantonese
+- Chilean Spanish
+- Czech
+- Danish
+- English
+- French
+- German
+- Italian
+- Japanese
+- Korean
+- Portuguese
+- Russian
+- Spanish
+- Swedish
+- Ukrainian
 
 The following languages are not yet supported:
-* Dutch
-* Hungarian
-* Slovak
+
+- Dutch
+- Hungarian
+- Slovak
 
 ## Directory structure
 
@@ -51,11 +54,26 @@ Audio files for [iNav Lua Telemetry Flight Status](https://github.com/iNavFlight
 
 Audio files for [Yaapu Telemetry Script and Widget](https://github.com/yaapu/FrskyTelemetryScript). Copy the WAV files from `SOUNDS/<lang>/SCRIPTS/YAAPU/` to `SOUNDS/yaapu0/<lang>/` to overwrite the original audio files of the script.
 
+### Korean (ko-KR)
+
+The Korean voice pack provides full support for native Korean speakers using EdgeTX.
+
+- Voice files were generated using **Google Cloud Text-to-Speech (Wavenet-B)**.
+- Generation activity can be traced via the public [Google Cloud Logs Console](https://console.cloud.google.com/logs/query?project=tx16s-korean-ver).
+- Format: **16-bit PCM WAV**, Mono, 32kHz – fully compatible with EdgeTX audio requirements.
+- Files are located in: `SOUNDS/ko`
+- Indexed and mapped using:
+  - `voices/ko-KR.csv` — main system phrases
+  - `voices/ko-KR_scripts.csv` — numeric and special script terms
+- This voice pack was personally developed and contributed by [@siyeongjang](https://github.com/siyeongjang), a Korean RC enthusiast, to improve accessibility and user experience for Korean-speaking pilots.
+- Feedback or improvement suggestions are welcome. Please feel free to open an issue or leave a comment in the Pull Request.
+
 ## Voices
 
 All of the voices used in the EdgeTX voice packs have been picked from the [neural voices](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support?tabs=speechtotext#prebuilt-neural-voices) offered by Microsoft Azure text to speech service, in order to get as close as possible to human-like voices. If you want to see what voices are available, and try different phrases, [check out the online demo generator](https://azure.microsoft.com/en-us/services/cognitive-services/text-to-speech/#features). Using some recording software, you could even save your own phrases and use them in the voice packs.
 
 ### Generating custom phrases
+
 If you have a [Azure Speech Services subscription](https://azure.microsoft.com/pricing/details/cognitive-services/speech-services/) (there is a free usage tier), phrases can be generated with `curl` or a `http` client like `postman`. After building a text to speech resource in `Azure` you can use it by `REST` calls (`http` requests).
 
 The request url is:
@@ -107,6 +125,7 @@ dotnet tool install --global Microsoft.CognitiveServices.Speech.CLI
 After you have installed SPX, you will also need to [create a Microsoft Azure account](https://azure.microsoft.com/en-us/services/cognitive-services/speech-to-text/) if you don't have one already. There are both free and paid options, but the free one is sufficient for this purpose - it is just rate limited. After you have done that, [follow the quick start guide](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/spx-basics) to configure the required region and subscription keys.
 
 ## Alternatives
+
 - Mike has created a python script that can be used to generate the audio using Googles Text to Speech service - https://github.com/xsnoopy/edgetx-sdcard-sounds
 - The OpenTX Speaker voice generator (Windows only) uses the built in text to speech engine of Microsoft Windows, and can be used to generate new audio also. https://www.open-tx.org/2014/03/15/opentx-speaker
 - Record your operating systems own text-to-speech narration capability
