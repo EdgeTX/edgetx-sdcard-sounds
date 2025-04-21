@@ -116,6 +116,7 @@ After you have installed SPX, you will also need to [create a Microsoft Azure ac
 - [ReadSpeaker](https://www.readspeaker.com/)
 - [iSpeech](https://www.ispeech.org/)
 - [Amazon Polly](https://aws.amazon.com/polly/)
+- macOS `say` command (with Siri voices) then add `-ar 16000 -ac 1 -sample_fmt s16` to ffmpeg
 
 ## Contributing
 
