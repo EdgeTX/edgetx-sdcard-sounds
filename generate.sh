@@ -33,8 +33,8 @@ voices=(
     "./voices/da_DK.csv da-DK-ChristelNeural da"
     "./voices/da_DK_scripts.csv da-DK-ChristelNeural da/SCRIPTS"
     "./voices/de-DE.csv de-DE-KatjaNeural de"
-    "./voices/en-GB.csv en-IE-EmilyNeural en"
-    "./voices/en-GB_scripts.csv en-IE-EmilyNeural en/SCRIPTS"
+    "./voices/en-GB.csv en-IE-EmilyNeural en --rate '1.25'"
+    "./voices/en-GB_scripts.csv en-IE-EmilyNeural en/SCRIPTS --rate '1.25'"
     "./voices/en-GB.csv en-GB-LibbyNeural en_gb-libby"
     "./voices/en-GB_scripts.csv en-GB-LibbyNeural en_gb-libby/SCRIPTS"
     "./voices/en-GB.csv en-GB-RyanNeural en_gb-ryan"
@@ -54,13 +54,13 @@ voices=(
     "./voices/ja-JP_scripts.csv ja-JP-NanamiNeural jp/SCRIPTS"
     "./voices/pt-PT.csv pt-BR-FranciscaNeural pt"
     "./voices/ru-RU.csv ru-RU-SvetlanaNeural ru"
-    "./voices/sv-SE.csv sv-SE-SofieNeural se --pitch 'dn10%' --rate 'dn0.9'"
-    "./voices/sv-SE_scripts.csv sv-SE-SofieNeural se/SCRIPTS --pitch 'dn10%' --rate 'dn0.9'"
+    "./voices/sv-SE.csv sv-SE-SofieNeural se --pitch 'dn10%' --rate '0.9'"
+    "./voices/sv-SE_scripts.csv sv-SE-SofieNeural se/SCRIPTS --pitch 'dn10%' --rate '0.9'"
     "./voices/uk-UA.csv uk-UA-OstapNeural ua-ostap"
     "./voices/uk-UA.csv uk-UA-PolinaNeural ua-polina"
     "./voices/zh-CN.csv zh-CN-XiaoxiaoNeural cn"
     "./voices/zh-TW.csv zh-TW-HsiaoChenNeural tw"
-    "./voices/zh-HK.csv zh-HK-HiuGaaiNeural hk --rate 'dn1.2'"
+    "./voices/zh-HK.csv zh-HK-HiuGaaiNeural hk --rate '0.9'"
 )
 
 # Loop through the Azure TTS configurations

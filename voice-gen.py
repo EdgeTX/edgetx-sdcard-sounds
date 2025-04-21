@@ -54,7 +54,7 @@ def init_argparse() -> argparse.ArgumentParser:
 
     parser.add_argument('-p',
                         '--pitch',
-                        help="Pitch adjustment (e.g., 'up10%', 'dn5%')",
+                        help="Pitch adjustment (e.g., 'up10%', 'dn5%', '0.9', '1.25')",
                         type=str,
                         default="default")
 
