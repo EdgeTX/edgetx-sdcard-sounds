@@ -550,3 +550,8 @@
 "550","Drag brake Low","Drag brake Low","Car","","dbrklw.wav"
 "551","Drag brake Medium","Drag brake Medium","Car","","dbrkmd.wav"
 "552","Drag brake High","Drag brake High","Car","","dbrkhi.wav"
+"553","open","open","","","open.wav"
+"554","close","close","","","close.wav"
+"555","locked","locked","","","locked.wav"
+"556","unlocked","unlocked","","","unlckd.wav"
+"557","canopy","canopy","","","canopy.wav"
