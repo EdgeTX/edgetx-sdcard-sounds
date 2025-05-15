@@ -557,3 +557,8 @@
 "557","Auto tune","Auto tune","Plane","","autotun.wav"
 "558","Auto level trim","Auto level trim","Plane","","alvltrim.wav"
 "559","Servo auto trim","Servo auto trim","Plane","","srvatrim.wav"
+"560","open","open","","","open.wav"
+"561","close","close","","","close.wav"
+"562","locked","locked","","","locked.wav"
+"563","unlocked","unlocked","","","unlckd.wav"
+"564","canopy","canopy","","","canopy.wav"
