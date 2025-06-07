@@ -44,6 +44,12 @@
     {
         "language": "en-US",
         "name": "US English",
+        "description": "US English Male Voice (en-US-Joshua-Bardwell)",
+        "directory": "en"
+    },
+    {
+        "language": "en-US",
+        "name": "US English",
         "description": "US English Female Voice (en-US-Michelle)",
         "directory": "en"
     },
