@@ -48,17 +48,7 @@ def checkFilenameLengthsInCSV():
                 row = list(row)  # Convert generator to list
                 if len(row) == 6:
                     filename_in_csv = row[5].strip()  # Ensure filename is stripped
-                    path_in_csv = row[4].strip()  # Ensure path is stripped
-                    if (
-                        path_in_csv == "SYSTEM"
-                        and len(os.path.splitext(filename_in_csv)[0]) > 8
-                    ):
-                        print(f"{filename}: Filename too long - {filename_in_csv}")
-                        invalid_filename_found = True
-                    elif (
-                        path_in_csv != "SYSTEM"
-                        and len(os.path.splitext(filename_in_csv)[0]) > 6
-                    ):
+                    if (len(os.path.splitext(filename_in_csv)[0]) > 8):
                         print(f"{filename}: Filename too long - {filename_in_csv}")
                         invalid_filename_found = True
     if invalid_filename_found:
