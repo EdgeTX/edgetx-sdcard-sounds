@@ -63,7 +63,10 @@ def checkFilenameLengths():
     for dirpath, dirnames, filenames in os.walk(sound_directory):
         for fn in filenames:
             path = os.path.join(dirpath, fn)
-            if len(os.path.splitext(fn)[0]) > 8:
+            # Don't check SCRIPTS length - not ours to manage
+            if path.split(os.path.sep)[2] == "SCRIPTS":
+                continue
+            elif len(os.path.splitext(fn)[0]) > 8:
                 print(f"Filename too long: {path}")
                 invalid_filename_found = True
 
