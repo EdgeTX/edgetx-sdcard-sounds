@@ -1,146 +1,152 @@
 [
-    {
-        "language": "cs-CZ",
-        "name": "Czech Female",
-        "description": "Czech Female Voice (cs-CZ-Vlasta)",
-        "directory": "cz"
-    },
-    {
-        "language": "da-DK",
-        "name": "Danish Female",
-        "description": "Danish Female Voice (da-DK-ChristelNeural)",
-        "directory": "da"
-    },
-    {
-        "language": "de-DE",
-        "name": "German Female",
-        "description": "German Female Voice (de-DE-Katja)",
-        "directory": "de"
-    },
-    {
-        "language": "en-GB",
-        "name": "British English Female",
-        "description": "British English Female Voice (en-GB-Libby)",
-        "directory": "en"
-    },
-    {
-        "language": "en-GB",
-        "name": "British English Male",
-        "description": "British English Male Voice (en-GB-Ryan)",
-        "directory": "en"
-    },
-    {
-        "language": "en-IE",
-        "name": "Irish English",
-        "description": "Irish English Female Voice (en-IE-Emily)",
-        "directory": "en"
-    },
-    {
-        "language": "en-US",
-        "name": "US English",
-        "description": "US English Male Voice (en-US-Guy)",
-        "directory": "en"
-    },
-    {
-        "language": "en-US",
-        "name": "US English",
-        "description": "US English Male Voice (en-US-Joshua-Bardwell)",
-        "directory": "en"
-    },
-    {
-        "language": "en-US",
-        "name": "US English",
-        "description": "US English Female Voice (en-US-Michelle)",
-        "directory": "en"
-    },
-    {
-        "language": "en-US",
-        "name": "US English",
-        "description": "US English Female Voice (en-US-Sara)",
-        "directory": "en"
-    },
-    {
-        "language": "es-ES",
-        "name": "Spanish Female",
-        "description": "Spanish Female Voice (es-ES-Elvira)",
-        "directory": "es"
-    },
-    {
-        "language": "es-CL",
-        "name": "Chilean Female",
-        "description": "Chilean Female Voice (es-CL-Catalina)",
-        "directory": "es"
-    },
-    {
-        "language": "fr-FR",
-        "name": "French Female",
-        "description": "French Female Voice (fr-FR-Denise)",
-        "directory": "fr"
-    },
-    {
-        "language": "it-IT",
-        "name": "Italian Female",
-        "description": "Italian Female Voice (it-IT-Elsa)",
-        "directory": "it"
-    },
-    {
-        "language": "ja-JP",
-        "name": "Japanese Female",
-        "description": "Japanese Female Voice (ja-JP-NanamiNeural)",
-        "directory": "jp"
-    },
-    {
-        "language": "ko-KR",
-        "name": "Korean Female",
-        "description": "Korean Female Voice (Google Cloud Text-to-Speech)",
-        "directory": "ko"
-    },
-    {
-        "language": "pt-BR",
-        "name": "Brazilian Portuguese Female",
-        "description": "Brazilian Portuguese Female Voice (pt-BR-Francisca)",
-        "directory": "pt"
-    },
-    {
-        "language": "ru-RU",
-        "name": "Russian Female",
-        "description": "Russian Female Voice (ru-RU-Svetlana)",
-        "directory": "ru"
-    },
-    {
-        "language": "sv-SE",
-        "name": "Swedish Female",
-        "description": "Swedish Female Voice (sv-SE-SofieNeural)",
-        "directory": "se"
-    },
-    {
-        "language": "uk-UA",
-        "name": "Ukrainian Male",
-        "description": "Ukrainian Male Voice (uk-UA-OstapNeural)",
-        "directory": "ua"
-    },
-    {
-        "language": "uk-UA",
-        "name": "Ukrainian Female",
-        "description": "Ukrainian Female Voice (uk-UA-PolinaNeural)",
-        "directory": "ua"
-    },
-    {
-        "language": "zh-CN",
-        "name": "Chinese Female",
-        "description": "Chinese Female Voice",
-        "directory": "cn"
-    },
-    {
-        "language": "zh-TW",
-        "name": "Chinese Taiwan Female",
-        "description": "Chinese Taiwan Female Voice",
-        "directory": "tw"
-    },
-    {
-        "language": "zh-HK",
-        "name": "Chinese Hongkong Female",
-        "description": "Chinese Hongkong Female Voice",
-        "directory": "hk"
-    }
+  {
+    "language": "cs-CZ",
+    "name": "Czech Female",
+    "description": "Czech Female Voice (cs-CZ-Vlasta)",
+    "directory": "cz"
+  },
+  {
+    "language": "da-DK",
+    "name": "Danish Female",
+    "description": "Danish Female Voice (da-DK-ChristelNeural)",
+    "directory": "da"
+  },
+  {
+    "language": "de-DE",
+    "name": "German Female",
+    "description": "German Female Voice (de-DE-Katja)",
+    "directory": "de"
+  },
+  {
+    "language": "en-GB",
+    "name": "British English Female",
+    "description": "British English Female Voice (en-GB-Libby)",
+    "directory": "en"
+  },
+  {
+    "language": "en-GB",
+    "name": "British English Male",
+    "description": "British English Male Voice (en-GB-Ryan)",
+    "directory": "en"
+  },
+  {
+    "language": "en-GB",
+    "name": "GLaDOS Voice Pack",
+    "description": "Synthesized GLaDOS-like Voice",
+    "directory": "en"
+  },
+  {
+    "language": "en-IE",
+    "name": "Irish English",
+    "description": "Irish English Female Voice (en-IE-Emily)",
+    "directory": "en"
+  },
+  {
+    "language": "en-US",
+    "name": "US English",
+    "description": "US English Male Voice (en-US-Guy)",
+    "directory": "en"
+  },
+  {
+    "language": "en-US",
+    "name": "US English",
+    "description": "US English Male Voice (en-US-Joshua-Bardwell)",
+    "directory": "en"
+  },
+  {
+    "language": "en-US",
+    "name": "US English",
+    "description": "US English Female Voice (en-US-Michelle)",
+    "directory": "en"
+  },
+  {
+    "language": "en-US",
+    "name": "US English",
+    "description": "US English Female Voice (en-US-Sara)",
+    "directory": "en"
+  },
+  {
+    "language": "es-ES",
+    "name": "Spanish Female",
+    "description": "Spanish Female Voice (es-ES-Elvira)",
+    "directory": "es"
+  },
+  {
+    "language": "es-CL",
+    "name": "Chilean Female",
+    "description": "Chilean Female Voice (es-CL-Catalina)",
+    "directory": "es"
+  },
+  {
+    "language": "fr-FR",
+    "name": "French Female",
+    "description": "French Female Voice (fr-FR-Denise)",
+    "directory": "fr"
+  },
+  {
+    "language": "it-IT",
+    "name": "Italian Female",
+    "description": "Italian Female Voice (it-IT-Elsa)",
+    "directory": "it"
+  },
+  {
+    "language": "ja-JP",
+    "name": "Japanese Female",
+    "description": "Japanese Female Voice (ja-JP-NanamiNeural)",
+    "directory": "jp"
+  },
+  {
+    "language": "ko-KR",
+    "name": "Korean Female",
+    "description": "Korean Female Voice (Google Cloud Text-to-Speech)",
+    "directory": "ko"
+  },
+  {
+    "language": "pt-BR",
+    "name": "Brazilian Portuguese Female",
+    "description": "Brazilian Portuguese Female Voice (pt-BR-Francisca)",
+    "directory": "pt"
+  },
+  {
+    "language": "ru-RU",
+    "name": "Russian Female",
+    "description": "Russian Female Voice (ru-RU-Svetlana)",
+    "directory": "ru"
+  },
+  {
+    "language": "sv-SE",
+    "name": "Swedish Female",
+    "description": "Swedish Female Voice (sv-SE-SofieNeural)",
+    "directory": "se"
+  },
+  {
+    "language": "uk-UA",
+    "name": "Ukrainian Male",
+    "description": "Ukrainian Male Voice (uk-UA-OstapNeural)",
+    "directory": "ua"
+  },
+  {
+    "language": "uk-UA",
+    "name": "Ukrainian Female",
+    "description": "Ukrainian Female Voice (uk-UA-PolinaNeural)",
+    "directory": "ua"
+  },
+  {
+    "language": "zh-CN",
+    "name": "Chinese Female",
+    "description": "Chinese Female Voice",
+    "directory": "cn"
+  },
+  {
+    "language": "zh-TW",
+    "name": "Chinese Taiwan Female",
+    "description": "Chinese Taiwan Female Voice",
+    "directory": "tw"
+  },
+  {
+    "language": "zh-HK",
+    "name": "Chinese Hongkong Female",
+    "description": "Chinese Hongkong Female Voice",
+    "directory": "hk"
+  }
 ]
