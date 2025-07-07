@@ -11,3 +11,7 @@ release/
 
 # Windows
 .Zone.Identifier
+
+# Python 
+.venv
+uv.lock

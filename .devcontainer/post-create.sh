@@ -1,17 +1,18 @@
 #!/bin/bash
 
-# Build and install OpenSSL 1.1.1u
-wget -O - https://www.openssl.org/source/openssl-1.1.1u.tar.gz | tar zxf -
-cd openssl-1.1.1u
-./config --prefix=/usr/local
-make -j $(nproc)
-sudo make install_sw install_ssldirs
-sudo ldconfig
-cd .. && sudo rm -R openssl-1.1.1u
+# Install required packages
+echo "Installing required packages..."
+sudo apt-get update &> /dev/null && sudo apt-get install --no-install-recommends -y python3 python-is-python3 dotnet-sdk-8.0 ffmpeg
 
-# Install .NET 6.0 SDK, Speech CLI tool & ffmpeg for GLaDOS 
-sudo apt-get update &> /dev/null && sudo apt-get install -y dotnet-sdk-6.0 ffmpeg
-dotnet tool install --global Microsoft.CognitiveServices.Speech.CLI --version 1.42.0
+# Install uv
+echo "Installing uv..."
+curl -LsSf https://astral.sh/uv/install.sh | sh
+export PATH="$HOME/.local/bin:$PATH"
 
-# Install the Azure Speech SDK for Python
-python -m pip install azure-cognitiveservices-speech==1.42.0 ffmpeg-normalize
+# Install Azure Speech CLI tool
+echo "Installing Azure Speech CLI tool..."
+dotnet tool install --global Microsoft.CognitiveServices.Speech.CLI --version 1.44.0
+
+# Install Python dependencies with uv
+echo "Installing Python dependencies with uv..."
+uv sync

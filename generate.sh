@@ -6,6 +6,13 @@ script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 # Change to the script's directory
 cd "${script_dir}" || exit 1
 
+if ! command -v ffmpeg-normalize >/dev/null 2>&1; then
+    if ! uv run --quiet ffmpeg-normalize --version >/dev/null 2>&1; then
+        echo "Error: ffmpeg-normalize not found in PATH or uv environment." >&2
+        exit 1
+    fi
+fi
+
 check_dependencies() {
     if [ ! -f "${script_dir}/voice-gen.py" ]; then
         echo "Script halt: voice-gen.py not found in '${script_dir}'"
@@ -66,7 +73,7 @@ voices=(
 # Loop through the Azure TTS configurations
 for voice in "${voices[@]}"; do
     # Use eval to handle parameters with spaces (e.g., --pitch and --rate)
-    eval "./voice-gen.py ${voice}" || exit 1
+    eval "uv run ./voice-gen.py ${voice}" || exit 1
 done
 
 # GLaDOS-specific configurations
@@ -77,5 +84,5 @@ glados_voices=(
 
 # Loop through the GLaDOS configurations
 for glados_voice in "${glados_voices[@]}"; do
-    eval "./voice-gen-glados.py ${glados_voice}" || exit 1
+    eval "uv run ./voice-gen-glados.py ${glados_voice}" || exit 1
 done
