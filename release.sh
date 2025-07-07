@@ -21,7 +21,7 @@ for file in SOUNDS/**/*.wav; do
     [[ -e "$file" ]] || break  # handle the case of no *.wav files
     echo "$file"
     ffmpeg "${FFMPEG_FLAGS[@]}" -i "$file" -af "$FFMPEG_AF_FLAGS" "release/$file"
-    ffmpeg-normalize "release/$file" -o "release/$file" -f -nt peak -t 0
+    uv run ffmpeg-normalize "release/$file" -o "release/$file" -f -nt peak -t 0
 done
 
 # Move processed files into variant folders
@@ -62,5 +62,6 @@ for d in release/*/ ; do
         echo Creating "edgetx-sdcard-sounds-$ZIPLANG-$VERSION.zip"
         find "$lang" -type f | zip -q -@ "$WORKDIR/release/edgetx-sdcard-sounds-$ZIPLANG-$VERSION.zip"
     done
-    cd "$WORKDIR/release" || exit
 done
+
+cd "$WORKDIR/release" || exit

@@ -14,3 +14,4 @@ release/
 
 # Python 
 .venv
+uv.lock
