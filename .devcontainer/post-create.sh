@@ -9,13 +9,9 @@ sudo make install_sw install_ssldirs
 sudo ldconfig
 cd .. && sudo rm -R openssl-1.1.1u
 
-# Install .NET 6.0 SDK and the Speech CLI tool
-sudo apt-get update && sudo apt-get install -y dotnet-sdk-6.0
+# Install .NET 6.0 SDK, Speech CLI tool & ffmpeg for GLaDOS 
+sudo apt-get update &> /dev/null && sudo apt-get install -y dotnet-sdk-6.0 ffmpeg
 dotnet tool install --global Microsoft.CognitiveServices.Speech.CLI --version 1.42.0
 
 # Install the Azure Speech SDK for Python
-python -m pip install azure-cognitiveservices-speech ffmpeg-normalize
-
-# Install ffmpeg for GLaDOS post-processing and release generation
-sudo apt-get install -y ffmpeg
-python -m pip install ffmpeg-normalize
+python -m pip install azure-cognitiveservices-speech==1.42.0 ffmpeg-normalize
