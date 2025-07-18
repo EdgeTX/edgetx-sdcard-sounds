@@ -550,3 +550,7 @@
 "550","Drag brake Low","Drag brake Low","Car","","dbrklw.wav"
 "551","Drag brake Medium","Drag brake Medium","Car","","dbrkmd.wav"
 "552","Drag brake High","Drag brake High","Car","","dbrkhi.wav"
+"553","Snapflap On","Snapflap On","Plane","","snapfon.wav"
+"554","Snapflap Off","Snapflap Off","Plane","","snapfof.wav"
+"555","Snapflap Low","Snapflap Low","Plane","","snapflo.wav"
+"556","Snapflap High","Snapflap High","Plane","","snapfhi.wav"
