@@ -550,3 +550,7 @@
 "550","Drag brake Low","拖煞低","Car","","dbrklw.wav"
 "551","Drag brake Medium","拖煞中","Car","","dbrkmd.wav"
 "552","Drag brake High","拖煞高","Car","","dbrkhi.wav"
+"553","Snapflap On","開啟升力輔助","Plane","","snapfon.wav"
+"554","Snapflap Off","關閉升力輔助","Plane","","snapfof.wav"
+"555","Snapflap Low","升力輔助低","Plane","","snapflo.wav"
+"556","Snapflap High","升力輔助高","Plane","","snapfhi.wav"
