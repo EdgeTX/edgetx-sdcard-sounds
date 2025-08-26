@@ -554,3 +554,6 @@
 "554","Snapflap Off","Snapflap Off","Plane","","snapfof.wav"
 "555","Snapflap Low","Snapflap Low","Plane","","snapflo.wav"
 "556","Snapflap High","Snapflap High","Plane","","snapfhi.wav"
+"557","Auto tune","Auto tune","Plane","","autotun.wav"
+"558","Auto level trim","Auto level trim","Plane","","alvltrim.wav"
+"559","Servo auto trim","Servo auto trim","Plane","","srvatrim.wav"
