@@ -79,7 +79,7 @@ ElevenMultilingual v2.
 
 Ubuntu commands to prepare wav file from mp3:
 - Normal way: 'ffmpeg -i ElevenLabs_2025-09-03T16_24_21_Sarah_pre_sp100_s50_sb75_se0_b_m2.mp3 -ar 32000 -ac 1 -sample_fmt s16 engstp.wav'
-- To cut out words added for correct accent (0.5sec from beggining): 'ffmpeg -ss 0.5 -i ElevenLabs_2025-09-03T16_24_21_Sarah_pre_sp100_s50_sb75_se0_b_m2.mp3 -ar 32000 -ac 1 -sample_fmt s16 engstp.wav'
+- To cut out words added for correct accent (0.5sec from beginning): 'ffmpeg -ss 0.5 -i ElevenLabs_2025-09-03T16_24_21_Sarah_pre_sp100_s50_sb75_se0_b_m2.mp3 -ar 32000 -ac 1 -sample_fmt s16 engstp.wav'
 
 ## Voices
 
