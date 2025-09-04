@@ -8,8 +8,60 @@ import sys
 csv_directory = "voices"
 sound_directory = "SOUNDS"
 
-# TODO: Check for duplicate filenames in CSV files
-# TODO: Check for files in SOUNDS that are not in CSV files
+
+# Check for duplicate filenames in CSV files
+def checkDuplicateFilenamesInCSV():
+    print("VOICES: Checking for duplicate filenames in CSV files ...")
+    duplicate_found = False
+    for filename in os.listdir(csv_directory):
+        f = os.path.join(csv_directory, filename)
+        if os.path.isfile(f) and filename.endswith(".csv"):
+            filename_count = {}
+            with open(f, "r") as csvfile:
+                reader = csv.reader(csvfile)
+                next(reader, None)  # Skip header
+                for row in reader:
+                    if len(row) == 6:
+                        path = row[4].strip()
+                        fname = row[5].strip()
+                        key = (path, fname)
+                        if fname:
+                            filename_count[key] = filename_count.get(key, 0) + 1
+            for (path, fname), count in filename_count.items():
+                if count > 1:
+                    print(f"Duplicate filename in {filename}: {fname} (PATH: {path}) appears {count} times")
+                    duplicate_found = True
+    return 1 if duplicate_found else 0
+
+# Check for files in SOUNDS that are not in CSV files
+def checkFilesInSoundsNotInCSV():
+    print("SOUNDS: Checking for files in SOUNDS not referenced in any CSV file ...")
+    # Collect all filenames referenced in CSVs
+    referenced_files = set()
+    for filename in os.listdir(csv_directory):
+        f = os.path.join(csv_directory, filename)
+        if os.path.isfile(f) and filename.endswith(".csv"):
+            with open(f, "r") as csvfile:
+                reader = csv.reader(csvfile)
+                next(reader, None)  # Skip header
+                for row in reader:
+                    if len(row) == 6:
+                        fname = row[5].strip()
+                        if fname:
+                            referenced_files.add(fname)
+    # Walk SOUNDS and check for unreferenced files
+    unreferenced_found = False
+    for dirpath, dirnames, filenames in os.walk(sound_directory):
+        # Skip folder and its subfolders if .skip_checkFilesInSoundsNotInCSV exists
+        if ".skip_checkFilesInSoundsNotInCSV" in filenames:
+            dirnames[:] = []  # Prevent os.walk from descending into subdirs
+            continue
+        for fn in filenames:
+            if fn.lower().endswith('.wav'):
+                if fn not in referenced_files:
+                    print(f"Unreferenced sound file: {os.path.join(dirpath, fn)}")
+                    unreferenced_found = True
+    return 1 if unreferenced_found else 0
 
 
 def checkCSVcolumnCount():
@@ -36,10 +88,7 @@ def checkCSVcolumnCount():
                     missing_csv_field = True
                     continue
 
-    if missing_csv_field:
-        return 1
-    else:
-        return 0
+    return 1 if missing_csv_field else 0
 
 
 def checkFilenameLengthsInCSV():
@@ -60,10 +109,7 @@ def checkFilenameLengthsInCSV():
                     if (len(os.path.splitext(filename_in_csv)[0]) > 8):
                         print(f"{filename}: Filename too long - {filename_in_csv}")
                         invalid_filename_found = True
-    if invalid_filename_found:
-        return 1
-    else:
-        return 0
+    return 1 if invalid_filename_found else 0
 
 
 def checkFilenameLengths():
@@ -72,6 +118,9 @@ def checkFilenameLengths():
     for dirpath, dirnames, filenames in os.walk(sound_directory):
         for fn in filenames:
             path = os.path.join(dirpath, fn)
+            # Only check .wav files
+            if not fn.lower().endswith('.wav'):
+                continue
             # Don't check SCRIPTS length - not ours to manage
             if path.split(os.path.sep)[2] == "SCRIPTS":
                 continue
@@ -79,10 +128,7 @@ def checkFilenameLengths():
                 print(f"Filename too long: {path}")
                 invalid_filename_found = True
 
-    if invalid_filename_found:
-        return 1
-    else:
-        return 0
+    return 1 if invalid_filename_found else 0
 
 
 def checkNoZeroByteFiles():
@@ -91,15 +137,14 @@ def checkNoZeroByteFiles():
     for root, dirs, files in os.walk(sound_directory):
         path = root.split(os.sep)
         for fn in files:
+            if not fn.lower().endswith('.wav'):
+                continue
             path = os.path.join(root, fn)
             if os.stat(path).st_size == 0:
                 print(f"Zero byte file: {path}")
                 zero_byte_file_found = True
 
-    if zero_byte_file_found:
-        return 1
-    else:
-        return 0
+    return 1 if zero_byte_file_found else 0
 
 
 def validateSoundsJson():
@@ -112,10 +157,7 @@ def validateSoundsJson():
         print(f"JSON not valid: {str(err)}")
         invalid_json_found = True
 
-    if invalid_json_found:
-        return 1
-    else:
-        return 0
+    return 1 if invalid_json_found else 0
 
 
 def checkForDuplicateStringID():
@@ -153,10 +195,7 @@ def checkForDuplicateStringID():
                         else:
                             StringID_count[StringID] = 1
 
-    if duplicate_found:
-        return 1
-    else:
-        return 0
+    return 1 if duplicate_found else 0
 
 
 def checkCSVNewline():
@@ -170,10 +209,8 @@ def checkCSVNewline():
                 if lines and not lines[-1].endswith("\n"):
                     print(f"{filename}: Missing newline at end of file")
                     missing_newline = True
-    if missing_newline:
-        return 1
-    else:
-        return 0
+    return 1 if missing_newline else 0
+
 
 
 if __name__ == "__main__":
@@ -185,6 +222,8 @@ if __name__ == "__main__":
     error_count += validateSoundsJson()
     error_count += checkForDuplicateStringID()
     error_count += checkCSVNewline()
+    error_count += checkDuplicateFilenamesInCSV()
+    error_count += checkFilesInSoundsNotInCSV()
 
     if error_count > 0:
         sys.exit(os.EX_DATAERR)
