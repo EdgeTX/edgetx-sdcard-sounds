@@ -77,6 +77,8 @@ Voice: Sarah
 
 ElevenMultilingual v2.
 
+#### One file at a time
+
 Ubuntu commands to prepare wav file from mp3:
 - Normal way: 
 ```
@@ -94,6 +96,9 @@ for f in *.mp3; do
   ffmpeg -i "$f" -ar 32000 -ac 1 -sample_fmt s16 "${f%.mp3}.wav"
 done
 ```
+
+
+
 
 ## Voices
 
