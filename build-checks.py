@@ -11,6 +11,7 @@ import logging
 # Optional: Use colorama for colored terminal output if available
 try:
     from colorama import Fore, Style, init as colorama_init
+
     colorama_init()
     ERROR_COLOR = Fore.RED + Style.BRIGHT
     RESET_COLOR = Style.RESET_ALL
@@ -66,9 +67,7 @@ def checkDuplicateFilenamesInCSV() -> int:
 
 def checkFilesInSoundsNotInCSV() -> int:
     """Check for .wav files in SOUNDS not referenced in any CSV file, skipping ignored folders."""
-    logging.info(
-        "SOUNDS: Checking for files in SOUNDS not referenced in any CSV file ..."
-    )
+    logging.info("SOUNDS: Checking for files in SOUNDS not referenced in any CSV file ...")
     referenced_files = set()
     for f in csv_directory.glob("*.csv"):
         for row in read_csv_rows(str(f)):
@@ -138,9 +137,7 @@ def checkFilenameLengthsInCSV() -> int:
             if len(row) == 6:
                 filename_in_csv = row[5].strip()
                 if len(Path(filename_in_csv).stem) > 8:
-                    logging.error(
-                        f"{ERROR_COLOR}[ERROR] {f.name}: Filename too long - {filename_in_csv}{RESET_COLOR}"
-                    )
+                    logging.error(f"{ERROR_COLOR}[ERROR] {f.name}: Filename too long - {filename_in_csv}{RESET_COLOR}")
                     invalid_filename_found = True
     return 1 if invalid_filename_found else 0
 
@@ -193,9 +190,7 @@ def checkForDuplicateStringID() -> int:
     for f in csv_directory.glob("*.csv"):
         with open(f, "rt") as csvfile:
             reader = csv.reader(csvfile, delimiter=",", quotechar='"')
-            reader = (
-                (field.strip() for field in row) for row in reader
-            )  # Strip spaces
+            reader = ((field.strip() for field in row) for row in reader)  # Strip spaces
             line_count = 0
             StringID_count = {}
             for row in reader:
