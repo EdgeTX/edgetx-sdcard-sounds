@@ -120,7 +120,9 @@ languages = [
 ```
 
 And finally run script to generate all the files. Script is smart and skips already generated files to don't use tokens from ElevenLabs.
-`ython3 generate-elevenlabs.py`
+```
+python3 generate-elevenlabs.py
+```
 
 ## Voices
 
