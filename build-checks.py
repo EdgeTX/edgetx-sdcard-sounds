@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-
+from typing import Iterator, List
 
 import csv
 import json
 import os
 import sys
+import logging
 import logging
 
 
@@ -16,6 +17,15 @@ IGNORE_FILE: str = ".skip_checkFilesInSoundsNotInCSV"
 logging.basicConfig(level=logging.INFO, format="%(message)s")
 
 
+# Helper function to read CSV rows (skipping header)
+def read_csv_rows(filepath: str) -> Iterator[List[str]]:
+    with open(filepath, "r") as csvfile:
+        reader = csv.reader(csvfile)
+        next(reader, None)  # Skip header
+        for row in reader:
+            yield row
+
+
 # Check for duplicate filenames in CSV files
 def checkDuplicateFilenamesInCSV() -> int:
     logging.info("VOICES: Checking for duplicate filenames in CSV files ...")
@@ -23,39 +33,41 @@ def checkDuplicateFilenamesInCSV() -> int:
     for filename in os.listdir(csv_directory):
         f = os.path.join(csv_directory, filename)
         if os.path.isfile(f) and filename.endswith(".csv"):
-            filename_count = {}
-            with open(f, "r") as csvfile:
-                reader = csv.reader(csvfile)
-                next(reader, None)  # Skip header
-                for row in reader:
-                    if len(row) == 6:
-                        path = row[4].strip()
-                        fname = row[5].strip()
-                        key = (path, fname)
-                        if fname:
-                            filename_count[key] = filename_count.get(key, 0) + 1
-            for (path, fname), count in filename_count.items():
-                if count > 1:
-                    logging.error(f"[ERROR] Duplicate filename in {filename}: {fname} (PATH: {path}) appears {count} times")
-                    duplicate_found = True
+            seen = set()
+            duplicates = set()
+            for row in read_csv_rows(f):
+                if len(row) == 6:
+                    path = row[4].strip()
+                    fname = row[5].strip()
+                    key = (path, fname)
+                    if fname:
+                        if key in seen:
+                            duplicates.add(key)
+                        else:
+                            seen.add(key)
+            for path, fname in duplicates:
+                logging.error(
+                    f"[ERROR] Duplicate filename in {filename}: {fname} (PATH: {path}) appears more than once"
+                )
+                duplicate_found = True
     return 1 if duplicate_found else 0
+
 
 # Check for files in SOUNDS that are not in CSV files
 def checkFilesInSoundsNotInCSV() -> int:
-    logging.info("SOUNDS: Checking for files in SOUNDS not referenced in any CSV file ...")
+    logging.info(
+        "SOUNDS: Checking for files in SOUNDS not referenced in any CSV file ..."
+    )
     # Collect all filenames referenced in CSVs
     referenced_files = set()
     for filename in os.listdir(csv_directory):
         f = os.path.join(csv_directory, filename)
         if os.path.isfile(f) and filename.endswith(".csv"):
-            with open(f, "r") as csvfile:
-                reader = csv.reader(csvfile)
-                next(reader, None)  # Skip header
-                for row in reader:
-                    if len(row) == 6:
-                        fname = row[5].strip()
-                        if fname:
-                            referenced_files.add(fname)
+            for row in read_csv_rows(f):
+                if len(row) == 6:
+                    fname = row[5].strip()
+                    if fname:
+                        referenced_files.add(fname)
     # Walk SOUNDS and check for unreferenced files
     unreferenced_found = False
     for dirpath, dirnames, filenames in os.walk(sound_directory):
@@ -64,9 +76,11 @@ def checkFilesInSoundsNotInCSV() -> int:
             dirnames[:] = []  # Prevent os.walk from descending into subdirs
             continue
         for fn in filenames:
-            if fn.lower().endswith('.wav'):
+            if fn.lower().endswith(".wav"):
                 if fn not in referenced_files:
-                    logging.error(f"[ERROR] Unreferenced sound file: {os.path.join(dirpath, fn)}")
+                    logging.error(
+                        f"[ERROR] Unreferenced sound file: {os.path.join(dirpath, fn)}"
+                    )
                     unreferenced_found = True
     return 1 if unreferenced_found else 0
 
@@ -107,17 +121,15 @@ def checkFilenameLengthsInCSV() -> int:
             continue
         f = os.path.join(csv_directory, filename)
         if os.path.isfile(f) and filename.endswith(".csv"):
-            with open(f, "r") as csvfile:
-                reader = csv.reader(csvfile)
-                reader = ((field.strip().strip('"') for field in row) for row in reader)  # Strip spaces and quotes
-                next(reader)  # Skip the header row
-                for row in reader:
-                    row = list(row)  # Convert generator to list
-                    if len(row) == 6:
-                        filename_in_csv = row[5].strip()  # Ensure filename is stripped
-                        if (len(os.path.splitext(filename_in_csv)[0]) > 8):
-                            logging.error(f"[ERROR] {filename}: Filename too long - {filename_in_csv}")
-                            invalid_filename_found = True
+            for row in read_csv_rows(f):
+                row = [field.strip().strip('"') for field in row]
+                if len(row) == 6:
+                    filename_in_csv = row[5].strip()
+                    if len(os.path.splitext(filename_in_csv)[0]) > 8:
+                        logging.error(
+                            f"[ERROR] {filename}: Filename too long - {filename_in_csv}"
+                        )
+                        invalid_filename_found = True
     return 1 if invalid_filename_found else 0
 
 
@@ -128,7 +140,7 @@ def checkFilenameLengths() -> int:
         for fn in filenames:
             path = os.path.join(dirpath, fn)
             # Only check .wav files
-            if not fn.lower().endswith('.wav'):
+            if not fn.lower().endswith(".wav"):
                 continue
             # Don't check SCRIPTS length - not ours to manage
             if path.split(os.path.sep)[2] == "SCRIPTS":
@@ -146,7 +158,7 @@ def checkNoZeroByteFiles() -> int:
     for root, dirs, files in os.walk(sound_directory):
         path = root.split(os.sep)
         for fn in files:
-            if not fn.lower().endswith('.wav'):
+            if not fn.lower().endswith(".wav"):
                 continue
             path = os.path.join(root, fn)
             if os.stat(path).st_size == 0:
@@ -187,7 +199,9 @@ def checkForDuplicateStringID() -> int:
         if os.path.isfile(f):
             with open(f, "rt") as csvfile:
                 reader = csv.reader(csvfile, delimiter=",", quotechar='"')
-                reader = ((field.strip() for field in row) for row in reader)  # Strip spaces
+                reader = (
+                    (field.strip() for field in row) for row in reader
+                )  # Strip spaces
                 line_count = 0
                 StringID_count = {}
                 for row in reader:
@@ -219,7 +233,6 @@ def checkCSVNewline() -> int:
                     logging.error(f"[ERROR] {filename}: Missing newline at end of file")
                     missing_newline = True
     return 1 if missing_newline else 0
-
 
 
 if __name__ == "__main__":
