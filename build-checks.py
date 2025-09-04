@@ -8,6 +8,16 @@ import sys
 import logging
 
 
+# Optional: Use colorama for colored terminal output if available
+try:
+    from colorama import Fore, Style, init as colorama_init
+    colorama_init()
+    ERROR_COLOR = Fore.RED + Style.BRIGHT
+    RESET_COLOR = Style.RESET_ALL
+except ImportError:
+    ERROR_COLOR = ""
+    RESET_COLOR = ""
+
 EX_OK = 0
 EX_DATAERR = 65
 
@@ -48,7 +58,7 @@ def checkDuplicateFilenamesInCSV() -> int:
         for path, fname in duplicates:
             display_path = path if path else "[root]"
             logging.error(
-                f"[ERROR] Duplicate filename in {f.name}: {fname} (PATH: {display_path}) appears more than once"
+                f"{ERROR_COLOR}[ERROR] Duplicate filename in {f.name}: {fname} (PATH: {display_path}) appears more than once{RESET_COLOR}"
             )
             duplicate_found = True
     return 1 if duplicate_found else 0
@@ -74,7 +84,7 @@ def checkFilesInSoundsNotInCSV() -> int:
             continue
         for fn_path in dirpath.glob("*.wav"):
             if fn_path.name not in referenced_files:
-                logging.error(f"[ERROR] Unreferenced sound file: {fn_path}")
+                logging.error(f"{ERROR_COLOR}[ERROR] Unreferenced sound file: {fn_path}{RESET_COLOR}")
                 unreferenced_found = True
     return 1 if unreferenced_found else 0
 
@@ -90,7 +100,7 @@ def checkCSVcolumnCount() -> int:
             try:
                 header = list(next(reader))  # Read header row and convert to list
             except StopIteration:
-                logging.error(f"[ERROR] {f.name}: Empty CSV file")
+                logging.error(f"{ERROR_COLOR}[ERROR] {f.name}: Empty CSV file{RESET_COLOR}")
                 missing_csv_field = True
                 continue
 
@@ -99,7 +109,7 @@ def checkCSVcolumnCount() -> int:
             # Check for minimum required columns
             if expected_columns < 6:
                 logging.error(
-                    f"[ERROR] {f.name}: CSV header has only {expected_columns} columns (minimum 6 required)"
+                    f"{ERROR_COLOR}[ERROR] {f.name}: CSV header has only {expected_columns} columns (minimum 6 required)"
                 )
                 missing_csv_field = True
                 continue
@@ -108,7 +118,7 @@ def checkCSVcolumnCount() -> int:
                 row = list(row)
                 if len(row) != expected_columns:
                     logging.error(
-                        f"[ERROR] {f.name}: Expected {expected_columns} columns but got {len(row)} - {row}"
+                        f"{ERROR_COLOR}[ERROR] {f.name}: Expected {expected_columns} columns but got {len(row)} - {row}{RESET_COLOR}"
                     )
                     missing_csv_field = True
                     continue
@@ -129,7 +139,7 @@ def checkFilenameLengthsInCSV() -> int:
                 filename_in_csv = row[5].strip()
                 if len(Path(filename_in_csv).stem) > 8:
                     logging.error(
-                        f"[ERROR] {f.name}: Filename too long - {filename_in_csv}"
+                        f"{ERROR_COLOR}[ERROR] {f.name}: Filename too long - {filename_in_csv}{RESET_COLOR}"
                     )
                     invalid_filename_found = True
     return 1 if invalid_filename_found else 0
@@ -144,7 +154,7 @@ def checkFilenameLengths() -> int:
         if len(parts) > 2 and parts[2] == "SCRIPTS":
             continue
         elif len(file_path.stem) > 8:
-            logging.error(f"[ERROR] Filename too long: {file_path}")
+            logging.error(f"{ERROR_COLOR}[ERROR] Filename too long: {file_path}{RESET_COLOR}")
             invalid_filename_found = True
 
     return 1 if invalid_filename_found else 0
@@ -156,7 +166,7 @@ def checkNoZeroByteFiles() -> int:
     zero_byte_file_found = False
     for file_path in sound_directory.rglob("*.wav"):
         if file_path.stat().st_size == 0:
-            logging.error(f"[ERROR] Zero byte file: {file_path}")
+            logging.error(f"{ERROR_COLOR}[ERROR] Zero byte file: {file_path}{RESET_COLOR}")
             zero_byte_file_found = True
 
     return 1 if zero_byte_file_found else 0
@@ -170,7 +180,7 @@ def validateSoundsJson() -> int:
         try:
             json.load(f)
         except ValueError as err:
-            logging.error(f"[ERROR] JSON not valid: {str(err)}")
+            logging.error(f"{ERROR_COLOR}[ERROR] JSON not valid: {str(err)}{RESET_COLOR}")
             invalid_json_found = True
 
     return 1 if invalid_json_found else 0
@@ -196,7 +206,7 @@ def checkForDuplicateStringID() -> int:
                 else:
                     StringID = row[0]
                     if StringID in StringID_count.keys():
-                        logging.error(f"[ERROR] {f}: {StringID} is duplicated")
+                        logging.error(f"{ERROR_COLOR}[ERROR] {f}: {StringID} is duplicated{RESET_COLOR}")
                         StringID_count[StringID] = StringID_count[StringID] + 1
                         duplicate_found = True
                     else:
@@ -213,7 +223,7 @@ def checkCSVNewline() -> int:
         with open(f, "r") as file:
             lines = file.readlines()
             if lines and not lines[-1].endswith("\n"):
-                logging.error(f"[ERROR] {f.name}: Missing newline at end of file")
+                logging.error(f"{ERROR_COLOR}[ERROR] {f.name}: Missing newline at end of file{RESET_COLOR}")
                 missing_newline = True
     return 1 if missing_newline else 0
 
