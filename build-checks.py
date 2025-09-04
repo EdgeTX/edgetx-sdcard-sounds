@@ -1,18 +1,24 @@
 #!/usr/bin/env python3
 
+
 import csv
 import json
 import os
 import sys
+import logging
+
 
 csv_directory: str = "voices"
 sound_directory: str = "SOUNDS"
 IGNORE_FILE: str = ".skip_checkFilesInSoundsNotInCSV"
 
+# Configure logging
+logging.basicConfig(level=logging.INFO, format="%(message)s")
+
 
 # Check for duplicate filenames in CSV files
 def checkDuplicateFilenamesInCSV() -> int:
-    print("VOICES: Checking for duplicate filenames in CSV files ...")
+    logging.info("VOICES: Checking for duplicate filenames in CSV files ...")
     duplicate_found = False
     for filename in os.listdir(csv_directory):
         f = os.path.join(csv_directory, filename)
@@ -30,13 +36,13 @@ def checkDuplicateFilenamesInCSV() -> int:
                             filename_count[key] = filename_count.get(key, 0) + 1
             for (path, fname), count in filename_count.items():
                 if count > 1:
-                    print(f"Duplicate filename in {filename}: {fname} (PATH: {path}) appears {count} times")
+                    logging.error(f"[ERROR] Duplicate filename in {filename}: {fname} (PATH: {path}) appears {count} times")
                     duplicate_found = True
     return 1 if duplicate_found else 0
 
 # Check for files in SOUNDS that are not in CSV files
 def checkFilesInSoundsNotInCSV() -> int:
-    print("SOUNDS: Checking for files in SOUNDS not referenced in any CSV file ...")
+    logging.info("SOUNDS: Checking for files in SOUNDS not referenced in any CSV file ...")
     # Collect all filenames referenced in CSVs
     referenced_files = set()
     for filename in os.listdir(csv_directory):
@@ -60,13 +66,13 @@ def checkFilesInSoundsNotInCSV() -> int:
         for fn in filenames:
             if fn.lower().endswith('.wav'):
                 if fn not in referenced_files:
-                    print(f"Unreferenced sound file: {os.path.join(dirpath, fn)}")
+                    logging.error(f"[ERROR] Unreferenced sound file: {os.path.join(dirpath, fn)}")
                     unreferenced_found = True
     return 1 if unreferenced_found else 0
 
 
 def checkCSVcolumnCount() -> int:
-    print("VOICES: Checking CSV files for missing fields ...")
+    logging.info("VOICES: Checking CSV files for missing fields ...")
     missing_csv_field = False
     for filename in os.listdir(csv_directory):
         f = os.path.join(csv_directory, filename)
@@ -86,7 +92,7 @@ def checkCSVcolumnCount() -> int:
                 for row in reader:
                         row = list(row)  # Convert generator to list
                         if not len(row) == expected_columns:
-                            print(f"{filename}: Insufficient columns of data - {row}")
+                            logging.error(f"[ERROR] {filename}: Insufficient columns of data - {row}")
                             missing_csv_field = True
                             continue
 
@@ -94,7 +100,7 @@ def checkCSVcolumnCount() -> int:
 
 
 def checkFilenameLengthsInCSV() -> int:
-    print("VOICES: Checking filename lengths in CSV files ...")
+    logging.info("VOICES: Checking filename lengths in CSV files ...")
     invalid_filename_found = False
     for filename in os.listdir(csv_directory):
         if filename.endswith("_scripts.csv"):
@@ -110,13 +116,13 @@ def checkFilenameLengthsInCSV() -> int:
                     if len(row) == 6:
                         filename_in_csv = row[5].strip()  # Ensure filename is stripped
                         if (len(os.path.splitext(filename_in_csv)[0]) > 8):
-                            print(f"{filename}: Filename too long - {filename_in_csv}")
+                            logging.error(f"[ERROR] {filename}: Filename too long - {filename_in_csv}")
                             invalid_filename_found = True
     return 1 if invalid_filename_found else 0
 
 
 def checkFilenameLengths() -> int:
-    print("SOUNDS: Checking file name lengths ...")
+    logging.info("SOUNDS: Checking file name lengths ...")
     invalid_filename_found = False
     for dirpath, dirnames, filenames in os.walk(sound_directory):
         for fn in filenames:
@@ -128,14 +134,14 @@ def checkFilenameLengths() -> int:
             if path.split(os.path.sep)[2] == "SCRIPTS":
                 continue
             elif len(os.path.splitext(fn)[0]) > 8:
-                print(f"Filename too long: {path}")
+                logging.error(f"[ERROR] Filename too long: {path}")
                 invalid_filename_found = True
 
     return 1 if invalid_filename_found else 0
 
 
 def checkNoZeroByteFiles() -> int:
-    print("SOUNDS: Checking for zero byte sound files ...")
+    logging.info("SOUNDS: Checking for zero byte sound files ...")
     zero_byte_file_found = False
     for root, dirs, files in os.walk(sound_directory):
         path = root.split(os.sep)
@@ -144,27 +150,27 @@ def checkNoZeroByteFiles() -> int:
                 continue
             path = os.path.join(root, fn)
             if os.stat(path).st_size == 0:
-                print(f"Zero byte file: {path}")
+                logging.error(f"[ERROR] Zero byte file: {path}")
                 zero_byte_file_found = True
 
     return 1 if zero_byte_file_found else 0
 
 
 def validateSoundsJson() -> int:
-    print("SOUNDS: Validating sounds.json ...")
+    logging.info("SOUNDS: Validating sounds.json ...")
     invalid_json_found = False
     with open("sounds.json") as f:
         try:
             json.load(f)
         except ValueError as err:
-            print(f"JSON not valid: {str(err)}")
+            logging.error(f"[ERROR] JSON not valid: {str(err)}")
             invalid_json_found = True
 
     return 1 if invalid_json_found else 0
 
 
 def checkForDuplicateStringID() -> int:
-    print("VOICES: Check for duplicate StringIDs ...")
+    logging.info("VOICES: Check for duplicate StringIDs ...")
     duplicate_found = False
     pathName = os.path.join(os.getcwd(), csv_directory)
 
@@ -192,7 +198,7 @@ def checkForDuplicateStringID() -> int:
                     else:
                         StringID = row[0]
                         if StringID in StringID_count.keys():
-                            print(f"{f}: {StringID} is duplicated")
+                            logging.error(f"[ERROR] {f}: {StringID} is duplicated")
                             StringID_count[StringID] = StringID_count[StringID] + 1
                             duplicate_found = True
                         else:
@@ -202,7 +208,7 @@ def checkForDuplicateStringID() -> int:
 
 
 def checkCSVNewline() -> int:
-    print("VOICES: Checking CSV files for newline at the end of file ...")
+    logging.info("VOICES: Checking CSV files for newline at the end of file ...")
     missing_newline = False
     for filename in os.listdir(csv_directory):
         f = os.path.join(csv_directory, filename)
@@ -210,7 +216,7 @@ def checkCSVNewline() -> int:
             with open(f, "r") as file:
                 lines = file.readlines()
                 if lines and not lines[-1].endswith("\n"):
-                    print(f"{filename}: Missing newline at end of file")
+                    logging.error(f"[ERROR] {filename}: Missing newline at end of file")
                     missing_newline = True
     return 1 if missing_newline else 0
 
