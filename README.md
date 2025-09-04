@@ -99,13 +99,17 @@ done
 
 #### Automated way
 
-`sudo apt update`
-`sudo apt install libportaudio2 portaudio19-dev libasound-dev -y`
-`pip install elevenlabs python-dotenv`
+```
+sudo apt update
+sudo apt install libportaudio2 portaudio19-dev libasound-dev -y
+pip install elevenlabs python-dotenv
+```
 
-If You dont have venv
-`python3 -m venv .venv`
-`source .venv/bin/activate`
+If You don't have venv
+```
+python3 -m venv .venv
+source .venv/bin/activate
+```
 
 Optionally add Your languages to array:
 ```
