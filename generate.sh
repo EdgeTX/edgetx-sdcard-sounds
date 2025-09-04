@@ -59,6 +59,7 @@ voices=(
     "./voices/it-IT_scripts.csv it-IT-ElsaNeural it/SCRIPTS"
     "./voices/ja-JP.csv ja-JP-NanamiNeural jp"
     "./voices/ja-JP_scripts.csv ja-JP-NanamiNeural jp/SCRIPTS"
+    "./voices/pl-PL.csv pl-PL-AgnieszkaNeural pl"
     "./voices/pt-PT.csv pt-BR-FranciscaNeural pt"
     "./voices/ru-RU.csv ru-RU-SvetlanaNeural ru"
     "./voices/sv-SE.csv sv-SE-SofieNeural se --pitch 'dn10%' --rate '0.9'"

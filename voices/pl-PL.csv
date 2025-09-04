@@ -1,113 +1,113 @@
 String ID,Source text,Translation,Context,Path,Filename
-1,0,0,,SYSTEM,0000.wav
-2,1,1,,SYSTEM,0001.wav
-3,2,2,,SYSTEM,0002.wav
-4,3,3,,SYSTEM,0003.wav
-5,4,4,,SYSTEM,0004.wav
-6,5,5,,SYSTEM,0005.wav
-7,6,6,,SYSTEM,0006.wav
-8,7,7,,SYSTEM,0007.wav
-9,8,8,,SYSTEM,0008.wav
-10,9,9,,SYSTEM,0009.wav
-11,10,10,,SYSTEM,0010.wav
-12,11,11,,SYSTEM,0011.wav
-13,12,12,,SYSTEM,0012.wav
-14,13,13,,SYSTEM,0013.wav
-15,14,14,,SYSTEM,0014.wav
-16,15,15,,SYSTEM,0015.wav
-17,16,16,,SYSTEM,0016.wav
-18,17,17,,SYSTEM,0017.wav
-19,18,18,,SYSTEM,0018.wav
-20,19,19,,SYSTEM,0019.wav
-21,20,20,,SYSTEM,0020.wav
-22,21,21,,SYSTEM,0021.wav
-23,22,22,,SYSTEM,0022.wav
-24,23,23,,SYSTEM,0023.wav
-25,24,24,,SYSTEM,0024.wav
-26,25,25,,SYSTEM,0025.wav
-27,26,26,,SYSTEM,0026.wav
-28,27,27,,SYSTEM,0027.wav
-29,28,28,,SYSTEM,0028.wav
-30,29,29,,SYSTEM,0029.wav
-31,30,30,,SYSTEM,0030.wav
-32,31,31,,SYSTEM,0031.wav
-33,32,32,,SYSTEM,0032.wav
-34,33,33,,SYSTEM,0033.wav
-35,34,34,,SYSTEM,0034.wav
-36,35,35,,SYSTEM,0035.wav
-37,36,36,,SYSTEM,0036.wav
-38,37,37,,SYSTEM,0037.wav
-39,38,38,,SYSTEM,0038.wav
-40,39,39,,SYSTEM,0039.wav
-41,40,40,,SYSTEM,0040.wav
-42,41,41,,SYSTEM,0041.wav
-43,42,42,,SYSTEM,0042.wav
-44,43,43,,SYSTEM,0043.wav
-45,44,44,,SYSTEM,0044.wav
-46,45,45,,SYSTEM,0045.wav
-47,46,46,,SYSTEM,0046.wav
-48,47,47,,SYSTEM,0047.wav
-49,48,48,,SYSTEM,0048.wav
-50,49,49,,SYSTEM,0049.wav
-51,50,50,,SYSTEM,0050.wav
-52,51,51,,SYSTEM,0051.wav
-53,52,52,,SYSTEM,0052.wav
-54,53,53,,SYSTEM,0053.wav
-55,54,54,,SYSTEM,0054.wav
-56,55,55,,SYSTEM,0055.wav
-57,56,56,,SYSTEM,0056.wav
-58,57,57,,SYSTEM,0057.wav
-59,58,58,,SYSTEM,0058.wav
-60,59,59,,SYSTEM,0059.wav
-61,60,60,,SYSTEM,0060.wav
-62,61,61,,SYSTEM,0061.wav
-63,62,62,,SYSTEM,0062.wav
-64,63,63,,SYSTEM,0063.wav
-65,64,64,,SYSTEM,0064.wav
-66,65,65,,SYSTEM,0065.wav
-67,66,66,,SYSTEM,0066.wav
-68,67,67,,SYSTEM,0067.wav
-69,68,68,,SYSTEM,0068.wav
-70,69,69,,SYSTEM,0069.wav
-71,70,70,,SYSTEM,0070.wav
-72,71,71,,SYSTEM,0071.wav
-73,72,72,,SYSTEM,0072.wav
-74,73,73,,SYSTEM,0073.wav
-75,74,74,,SYSTEM,0074.wav
-76,75,75,,SYSTEM,0075.wav
-77,76,76,,SYSTEM,0076.wav
-78,77,77,,SYSTEM,0077.wav
-79,78,78,,SYSTEM,0078.wav
-80,79,79,,SYSTEM,0079.wav
-81,80,80,,SYSTEM,0080.wav
-82,81,81,,SYSTEM,0081.wav
-83,82,82,,SYSTEM,0082.wav
-84,83,83,,SYSTEM,0083.wav
-85,84,84,,SYSTEM,0084.wav
-86,85,85,,SYSTEM,0085.wav
-87,86,86,,SYSTEM,0086.wav
-88,87,87,,SYSTEM,0087.wav
-89,88,88,,SYSTEM,0088.wav
-90,89,89,,SYSTEM,0089.wav
-91,90,90,,SYSTEM,0090.wav
-92,91,91,,SYSTEM,0091.wav
-93,92,92,,SYSTEM,0092.wav
-94,93,93,,SYSTEM,0093.wav
-95,94,94,,SYSTEM,0094.wav
-96,95,95,,SYSTEM,0095.wav
-97,96,96,,SYSTEM,0096.wav
-98,97,97,,SYSTEM,0097.wav
-99,98,98,,SYSTEM,0098.wav
-100,99,99,,SYSTEM,0099.wav
-101,100,100,,SYSTEM,0100.wav
-102,200,200,,SYSTEM,0101.wav
-103,300,300,,SYSTEM,0102.wav
-104,400,400,,SYSTEM,0103.wav
-105,500,500,,SYSTEM,0104.wav
-106,600,600,,SYSTEM,0105.wav
-107,700,700,,SYSTEM,0106.wav
-108,800,800,,SYSTEM,0107.wav
-109,900,900,,SYSTEM,0108.wav
+1,0,zero,,SYSTEM,0000.wav
+2,1,jeden,,SYSTEM,0001.wav
+3,2,dwa,,SYSTEM,0002.wav
+4,3,trzy,,SYSTEM,0003.wav
+5,4,cztery,,SYSTEM,0004.wav
+6,5,pięć,,SYSTEM,0005.wav
+7,6,sześć,,SYSTEM,0006.wav
+8,7,siedem,,SYSTEM,0007.wav
+9,8,osiem,,SYSTEM,0008.wav
+10,9,dziewięć,,SYSTEM,0009.wav
+11,10,dziesięć,,SYSTEM,0010.wav
+12,11,jedenaście,,SYSTEM,0011.wav
+13,12,dwanaście,,SYSTEM,0012.wav
+14,13,trzynaście,,SYSTEM,0013.wav
+15,14,czternaście,,SYSTEM,0014.wav
+16,15,piętnaście,,SYSTEM,0015.wav
+17,16,szesnaście,,SYSTEM,0016.wav
+18,17,siedemnaście,,SYSTEM,0017.wav
+19,18,osiemnaście,,SYSTEM,0018.wav
+20,19,dziewiętnaście,,SYSTEM,0019.wav
+21,20,dwadzieścia,,SYSTEM,0020.wav
+22,21,dwadzieścia jeden,,SYSTEM,0021.wav
+23,22,dwadzieścia dwa,,SYSTEM,0022.wav
+24,23,dwadzieścia trzy,,SYSTEM,0023.wav
+25,24,dwadzieścia cztery,,SYSTEM,0024.wav
+26,25,dwadzieścia pięć,,SYSTEM,0025.wav
+27,26,dwadzieścia sześć,,SYSTEM,0026.wav
+28,27,dwadzieścia siedem,,SYSTEM,0027.wav
+29,28,dwadzieścia osiem,,SYSTEM,0028.wav
+30,29,dwadzieścia dziewięć,,SYSTEM,0029.wav
+31,30,trzydzieści,,SYSTEM,0030.wav
+32,31,trzydzieści jeden,,SYSTEM,0031.wav
+33,32,trzydzieści dwa,,SYSTEM,0032.wav
+34,33,trzydzieści trzy,,SYSTEM,0033.wav
+35,34,trzydzieści cztery,,SYSTEM,0034.wav
+36,35,trzydzieści pięć,,SYSTEM,0035.wav
+37,36,trzydzieści sześć,,SYSTEM,0036.wav
+38,37,trzydzieści siedem,,SYSTEM,0037.wav
+39,38,trzydzieści osiem,,SYSTEM,0038.wav
+40,39,trzydzieści dziewięć,,SYSTEM,0039.wav
+41,40,czterdzieści,,SYSTEM,0040.wav
+42,41,czterdzieści jeden,,SYSTEM,0041.wav
+43,42,czterdzieści dwa,,SYSTEM,0042.wav
+44,43,czterdzieści trzy,,SYSTEM,0043.wav
+45,44,czterdzieści cztery,,SYSTEM,0044.wav
+46,45,czterdzieści pięć,,SYSTEM,0045.wav
+47,46,czterdzieści sześć,,SYSTEM,0046.wav
+48,47,czterdzieści siedem,,SYSTEM,0047.wav
+49,48,czterdzieści osiem,,SYSTEM,0048.wav
+50,49,czterdzieści dziewięć,,SYSTEM,0049.wav
+51,50,pięćdziesiąt,,SYSTEM,0050.wav
+52,51,pięćdziesiąt jeden,,SYSTEM,0051.wav
+53,52,pięćdziesiąt dwa,,SYSTEM,0052.wav
+54,53,pięćdziesiąt trzy,,SYSTEM,0053.wav
+55,54,pięćdziesiąt cztery,,SYSTEM,0054.wav
+56,55,pięćdziesiąt pięć,,SYSTEM,0055.wav
+57,56,pięćdziesiąt sześć,,SYSTEM,0056.wav
+58,57,pięćdziesiąt siedem,,SYSTEM,0057.wav
+59,58,pięćdziesiąt osiem,,SYSTEM,0058.wav
+60,59,pięćdziesiąt dziewięć,,SYSTEM,0059.wav
+61,60,sześćdziesiąt,,SYSTEM,0060.wav
+62,61,sześćdziesiąt jeden,,SYSTEM,0061.wav
+63,62,sześćdziesiąt dwa,,SYSTEM,0062.wav
+64,63,sześćdziesiąt trzy,,SYSTEM,0063.wav
+65,64,sześćdziesiąt cztery,,SYSTEM,0064.wav
+66,65,sześćdziesiąt pięć,,SYSTEM,0065.wav
+67,66,sześćdziesiąt sześć,,SYSTEM,0066.wav
+68,67,sześćdziesiąt siedem,,SYSTEM,0067.wav
+69,68,sześćdziesiąt osiem,,SYSTEM,0068.wav
+70,69,sześćdziesiąt dziewięć,,SYSTEM,0069.wav
+71,70,siedemdziesiąt,,SYSTEM,0070.wav
+72,71,siedemdziesiąt jeden,,SYSTEM,0071.wav
+73,72,siedemdziesiąt dwa,,SYSTEM,0072.wav
+74,73,siedemdziesiąt trzy,,SYSTEM,0073.wav
+75,74,siedemdziesiąt cztery,,SYSTEM,0074.wav
+76,75,siedemdziesiąt pięć,,SYSTEM,0075.wav
+77,76,siedemdziesiąt sześć,,SYSTEM,0076.wav
+78,77,siedemdziesiąt siedem,,SYSTEM,0077.wav
+79,78,siedemdziesiąt osiem,,SYSTEM,0078.wav
+80,79,siedemdziesiąt dziewięć,,SYSTEM,0079.wav
+81,80,osiemdziesiąt,,SYSTEM,0080.wav
+82,81,osiemdziesiąt jeden,,SYSTEM,0081.wav
+83,82,osiemdziesiąt dwa,,SYSTEM,0082.wav
+84,83,osiemdziesiąt trzy,,SYSTEM,0083.wav
+85,84,osiemdziesiąt cztery,,SYSTEM,0084.wav
+86,85,osiemdziesiąt pięć,,SYSTEM,0085.wav
+87,86,osiemdziesiąt sześć,,SYSTEM,0086.wav
+88,87,osiemdziesiąt siedem,,SYSTEM,0087.wav
+89,88,osiemdziesiąt osiem,,SYSTEM,0088.wav
+90,89,osiemdziesiąt dziewięć,,SYSTEM,0089.wav
+91,90,dziewięćdziesiąt,,SYSTEM,0090.wav
+92,91,dziewięćdziesiąt jeden,,SYSTEM,0091.wav
+93,92,dziewięćdziesiąt dwa,,SYSTEM,0092.wav
+94,93,dziewięćdziesiąt trzy,,SYSTEM,0093.wav
+95,94,dziewięćdziesiąt cztery,,SYSTEM,0094.wav
+96,95,dziewięćdziesiąt pięć,,SYSTEM,0095.wav
+97,96,dziewięćdziesiąt sześć,,SYSTEM,0096.wav
+98,97,dziewięćdziesiąt siedem,,SYSTEM,0097.wav
+99,98,dziewięćdziesiąt osiem,,SYSTEM,0098.wav
+100,99,dziewięćdziesiąt dziewięć,,SYSTEM,0099.wav
+101,100,sto,,SYSTEM,0100.wav
+102,200,dwieście,,SYSTEM,0101.wav
+103,300,trzysta,,SYSTEM,0102.wav
+104,400,czterysta,,SYSTEM,0103.wav
+105,500,pięćset,,SYSTEM,0104.wav
+106,600,sześćset,,SYSTEM,0105.wav
+107,700,siedemset,,SYSTEM,0106.wav
+108,800,osiemset,,SYSTEM,0107.wav
+109,900,dziewięćset,,SYSTEM,0108.wav
 110,thousand,tysiąc,,SYSTEM,0109.wav
 111,and,i,,SYSTEM,0110.wav
 112,minus,minus,,SYSTEM,0111.wav
@@ -148,8 +148,8 @@ String ID,Source text,Translation,Context,Path,Filename
 147,DB,dibi,,SYSTEM,db1.wav
 148,RPM,RPM,,SYSTEM,rpm0.wav
 149,RPM,RPM,,SYSTEM,rpm1.wav
-150,G,G,,SYSTEM,g0.wav
-151,G,G,,SYSTEM,g1.wav
+150,G,gie,,SYSTEM,g0.wav
+151,G,gie,,SYSTEM,g1.wav
 152,degree,stopień,,SYSTEM,degree0.wav
 153,degrees,stopni ,,SYSTEM,degree1.wav
 154,radian,radian,,SYSTEM,rad0.wav
@@ -196,7 +196,7 @@ String ID,Source text,Translation,Context,Path,Filename
 195,Welcome to EdgeTX,witaj w edgetx,,SYSTEM,hello.wav
 196,RF signal low,słaby sygnał radiowy,,SYSTEM,rssi_org.wav
 197,RF signal critical,sygnał radiowy krytyczny,,SYSTEM,rssi_red.wav
-198,radio antenna defective,zesputa antena nadajnika,,SYSTEM,swr_red.wav
+198,radio antenna defective,zepsuta antena nadajnika,,SYSTEM,swr_red.wav
 199,telemetry lost,telemetria utracona,,SYSTEM,telemko.wav
 200,telemetry recovered,telemetria odzyskana,,SYSTEM,telemok.wav
 201,Trainer connected,trener połączony,,SYSTEM,trainco.wav
@@ -208,7 +208,7 @@ String ID,Source text,Translation,Context,Path,Filename
 207,receiver still connected,odbiornik nadal podłączony,,SYSTEM,modelpwr.wav
 208,armed,uzbrojony,,,armed.wav
 209,disarmed,rozbrojony,,,disarm.wav
-210,throttle cut,odciecie przepustnicy,,,thrcut.wav
+210,throttle cut,odcięcie przepustnicy,,,thrcut.wav
 211,throttle active,przepustnica aktywna,,,thract.wav
 212,gear up,podwozie w górze,plane,,gearup.wav
 213,gear down,podwozie w dole,plane,,geardn.wav
@@ -228,10 +228,10 @@ String ID,Source text,Translation,Context,Path,Filename
 227,RF signal critical,sygnał radiowy krytyczny,rc-link,,sigcrt.wav
 228,LQ,LQ,rc-link,,lq.wav
 229,RF mode,tryb radiowy,rc-link,,rfmode.wav
-230,high speed mode active,tryb wysokiej prędkosci aktywny,rc-link,,spdmod.wav
+230,high speed mode active,tryb wysokiej prędkości aktywny,rc-link,,spdmod.wav
 231,thermal mode on,tryb termiczny włączony,,,thmmod.wav
 232,normal mode on,tryb normalny włączony,,,nrmmod.wav
-233,landing mode on,tryb ladowania włączony,,,lnding.wav
+233,landing mode on,tryb lądowania włączony,,,lnding.wav
 234,acro mode on,tryb akro włączony,,,acro.wav
 235,flight mode one,tryb lotu jeden,,,fm-1.wav
 236,flight mode two,tryb lotu dwa,,,fm-2.wav
@@ -244,9 +244,9 @@ String ID,Source text,Translation,Context,Path,Filename
 243,vario on,wario włączony,,,vrion.wav
 244,vario off,wario wyłączony,,,vrioff.wav
 245,flight mode power,tryb lotu – moc,,,fm-pwr.wav
-246,flight mode land,tryb lotu – ladowanie,,,fm-lnd.wav
+246,flight mode land,tryb lotu – lądowanie,,,fm-lnd.wav
 247,flight mode float,tryb lotu – pływanie,,,fm-flt.wav
-248,flight mode speed,tryb lotu – predkość,,,fm-spd.wav
+248,flight mode speed,tryb lotu – prędkość,,,fm-spd.wav
 249,flight mode fast,tryb lotu – szybko,,,fm-fst.wav
 250,flight mode normal,tryb lotu – normalny,,,fm-nrm.wav
 251,flight mode cruise,tryb lotu – rejs,,,fm-crs.wav
@@ -259,7 +259,7 @@ String ID,Source text,Translation,Context,Path,Filename
 258,flight mode thermal right,tryb lotu – termiczny prawy,,,fm-thr.wav
 259,flight mode stabilize,tryb lotu – stabilizacja,,,fm-stb.wav
 260,flight mode horizon,tryb lotu – poziomy,,,fm-hor.wav
-261,flight mode angle,tryb lotu – katowy,,,fm-ang.wav
+261,flight mode angle,tryb lotu – kątowy,,,fm-ang.wav
 262,flight mode idle up 1,tryb lotu – idle 1,,,fm-id1.wav
 263,flight mode idle up 2,tryb lotu – idle 2,,,fm-id2.wav
 264,low rate,współczynnik niski,,,ratlow.wav
@@ -302,7 +302,7 @@ String ID,Source text,Translation,Context,Path,Filename
 301,wheelbrakes off,"wheelbrakes,off",plane,,whlbrf.wav
 302,manual mode,tryb manualny,,,manmod.wav
 303,acro mode,tryb akro,,,acrmod.wav
-304,angle mode,tryb katowy,,,angmod.wav
+304,angle mode,tryb kątowy,,,angmod.wav
 305,horizon mode,tryb poziomy,,,hznmod.wav
 306,launch mode,tryb startowy,,,lncmod.wav
 307,air mode,tryb powietrzny,,,airmod.wav
@@ -312,13 +312,13 @@ String ID,Source text,Translation,Context,Path,Filename
 311,navigation altitude hold,Nawigacja – trzymaj wysokość,autopilot,,navalh.wav
 312,navigation position hold,Nawigacja – trzymaj pozycję,autopilot,,navpos.wav
 313,navigation return to home,Nawigacja – powrót do domu,autopilot,,navrth.wav
-314,navigation waypoint,Nawigacja – punkt posredni,autopilot,,navwp.wav
+314,navigation waypoint,Nawigacja – punkt pośredni,autopilot,,navwp.wav
 315,cruise,rejs,autopilot,,cruise.wav
 316,course hold,trzymaj kurs,autopilot,,crshld.wav
 317,altitude hold,trzymaj wysokość,autopilot,,althld.wav
 318,position hold,trzymaj pozycję,autopilot,,poshld.wav
 319,return to home,powrót do domu,autopilot,,rth.wav
-320,waypoint,punkt posredni,autopilot,,waypnt.wav
+320,waypoint,punkt pośredni,autopilot,,waypnt.wav
 321,manual,manual,,,manual.wav
 322,auto,auto,,,auto.wav
 323,OSD,OSD,video,,osd.wav
@@ -329,8 +329,8 @@ String ID,Source text,Translation,Context,Path,Filename
 328,stabilizer off,stabilizacja wyłączona,,,sxrsof.wav
 329,stabilizer on,stabilizacja włączona,,,sxrstb.wav
 330,wind rejection mode,tryb odrzucenia wiatru,,,sxrwr.wav
-331,turtle mode on,tryb żułwia – włączony,multicopter,,turton.wav
-332,turtle mode off,tryb żułwia – wyłączony,multicopter,,turtof.wav
+331,turtle mode on,tryb żółwia – włączony,multicopter,,turton.wav
+332,turtle mode off,tryb żółwia – wyłączony,multicopter,,turtof.wav
 333,flip,flip,,,flip.wav
 334,autorotation,autorotacja,heli,,auro.wav
 335,failsafe active,Failsafe aktywny,,,fsact.wav
@@ -373,7 +373,7 @@ String ID,Source text,Translation,Context,Path,Filename
 372,stop,stop,,,stop.wav
 373,lights on,światła włączone,,,lghton.wav
 374,lights off,światła wyłączone,,,lghtof.wav
-375,buzzer off,brzeczyk wyłączony,,,buzoff.wav
+375,buzzer off,brzęczyk wyłączony,,,buzoff.wav
 376,dynamic TX power,Dynamiczna moc TX,rc-link,,dyntxp.wav
 377,maximum TX power,Maksymalna moc TX,rc-link,,maxtxp.wav
 378,throttle hold,Przepustnica – wstrzymana,plane/heli,,thrhld.wav
@@ -402,7 +402,7 @@ String ID,Source text,Translation,Context,Path,Filename
 401,position hold active,Utrzymywanie pozycji - aktywne,autopilot,,poshon.wav
 402,position hold off,Utrzymywanie pozycji – wyłączone,autopilot,,poshof.wav
 403,altitude hold active,Utrzymywanie wysokości – aktywne,autopilot,,althon.wav
-404,altitude hold off,utrzymywanie wysokosci – wyłączone,autopilot,,althof.wav
+404,altitude hold off,utrzymywanie wysokości – wyłączone,autopilot,,althof.wav
 405,loiter,loiter,autopilot,,loiter.wav
 406,safety on,bezpieczeństwo włączone,,,sftyon.wav
 407,safety off,bezpieczeństwo wyłączone,,,sftyof.wav
@@ -429,7 +429,7 @@ String ID,Source text,Translation,Context,Path,Filename
 428,home reset,punkt domowy zresetowany,,,homrst.wav
 429,GPS,GPS,,,gps.wav
 430,GPS on,GPS włączony,,,gpson.wav
-431,GPS off,GPS wyłaczony,,,gpsoff.wav
+431,GPS off,GPS wyłączony,,,gpsoff.wav
 432,VTX Frequency R1,VTX częstotliwość R1,video,,vtxfr1.wav
 433,VTX Frequency R2,VTX częstotliwość R2,video,,vtxfr2.wav
 434,VTX Frequency R3,VTX częstotliwość R3,video,,vtxfr3.wav
@@ -446,9 +446,9 @@ String ID,Source text,Translation,Context,Path,Filename
 445,Camera change mode,Kamera – zmiana trybu,camera,,cmode.wav
 446,Camera start,Kamera – start,camera,,cstart.wav
 447,Camera stop,Kamera – stop,camera,,cstop.wav
-448,Recording start,nagrywanie rozpoczete,,,recsrt.wav
+448,Recording start,nagrywanie rozpoczęte,,,recsrt.wav
 449,Recording stop,nagrywanie zatrzymane,,,recstp.wav
-450,Start recording,nagrywanie rozpoczete,,,strtrc.wav
+450,Start recording,nagrywanie rozpoczęte,,,strtrc.wav
 451,Stop recording,nagrywanie zatrzymane,,,stoprc.wav
 452,DBM,dibiem,,SYSTEM,dbm0.wav
 453,DBM,dibiem,,SYSTEM,dbm1.wav
@@ -456,9 +456,9 @@ String ID,Source text,Translation,Context,Path,Filename
 455,kilometers,kilometrów,,SYSTEM,km1.wav
 456,Reverse Thrust,ciąg wsteczny,plane,,revthr.wav
 457,Reverse Thrust On,ciąg wsteczny włączony,plane,,revon.wav
-458,Reverse Thrust Off,ciąg wsteczny wyłaczony,plane,,revoff.wav
-459,Reverse Thrust Idle,ciag wsteczny bieg jałowy,plane,,revid.wav
-460,Forward Thrust,ciag do przodu,plane,,revfwd.wav
+458,Reverse Thrust Off,ciąg wsteczny wyłączony,plane,,revoff.wav
+459,Reverse Thrust Idle,ciąg wsteczny bieg jałowy,plane,,revid.wav
+460,Forward Thrust,ciąg do przodu,plane,,revfwd.wav
 461,telemetry connected,telemetria podłączona,,SYSTEM,telemco.wav
 462,level mode,tryb poziomu,flight controller,,lvlmod.wav
 463,diffs locked,dyferencjał zablokowany,car,,difloc.wav
@@ -482,17 +482,17 @@ String ID,Source text,Translation,Context,Path,Filename
 481,Crab Steer,sterowanie krabowe,car,,str-cr.wav
 482,Motor armed,silnik uzbrojony,soaretx,,motarm.wav
 483,Power,moc,soaretx,,power.wav
-484,Speed,predkość,soaretx,,speed.wav
+484,Speed,prędkość,soaretx,,speed.wav
 485,Thermal,termika,soaretx,,therml.wav
-486,Front wheel drive,przedni naped,car,,fwd.wav
-487,Rear wheel drive,tylny naped,car,,rwd.wav
-488,All wheel drive,naped wszystkich kół,car,,awd.wav
+486,Front wheel drive,przedni napęd,car,,fwd.wav
+487,Rear wheel drive,tylny napęd,car,,rwd.wav
+488,All wheel drive,napęd wszystkich kół,car,,awd.wav
 489,Throttle enabled,przepustnica włączona,car,,thren.wav
-490,Throttle disabled,przepustnica wyłaczona,car,,thrdis.wav
+490,Throttle disabled,przepustnica wyłączona,car,,thrdis.wav
 491,Winch enabled,Winch enabled,car,,wchen.wav
 492,Winch disabled,Winch disabled,car,,wchdis.wav
 493,Drift mode on,tryb driftu włączony,car,,drifon.wav
-494,Drift mode off,tryb driftu wyłaczony,car,,drifof.wav
+494,Drift mode off,tryb driftu wyłączony,car,,drifof.wav
 495,Gyro enabled,żyroskop włączony,,,gyroon.wav
 496,Gyro disabled,żyroskop wyłączony,,,gyroof.wav
 497,Launch control active,kontrola startu aktywna,,,launch.wav
@@ -503,21 +503,21 @@ String ID,Source text,Translation,Context,Path,Filename
 503,Motor overheating,przegrzanie silnika,,,mothot.wav
 504,Drift Mode Enabled,tryb driftu włączony,,,drifen.wav
 505,Drift Mode Disabled,tryb driftu wyłączony,,,drifdb.wav
-506,Screenshot,zżut ekranu,,,screns.wav
+506,Screenshot,zrzut ekranu,,,screns.wav
 507,Cell,cela,,,cell.wav
 508,Transmitter Battery Low,niski poziom baterii nadajnika,,,txbatl.wav
 509,Left,lewo,,,left.wav
 510,Right,prawo,,,right.wav
 511,Shift,przesuniecie,,,shift.wav
-512,Stability Control On,kontrola stabilnosci włączona,,,sbcton.wav
-513,Stability Control Off,kontrola stabilnosci wyłączona,,,sbctof.wav
-514,Stability Control Enabled,kontrola stabilnosci włączona,,,sbcten.wav
-515,Stability Control Disabled,kontrola stabilnosci wyłączona,,,sbctdb.wav
+512,Stability Control On,kontrola stabilności włączona,,,sbcton.wav
+513,Stability Control Off,kontrola stabilności wyłączona,,,sbctof.wav
+514,Stability Control Enabled,kontrola stabilności włączona,,,sbcten.wav
+515,Stability Control Disabled,kontrola stabilności wyłączona,,,sbctdb.wav
 516,Thermal Warning,ostrzeżenie termiczne,,,thmwrn.wav
 517,Servo Overload,przeciążenie serwa,,,srvovl.wav
 518,BEC Overload,przeciążenie zasilania BEC,,,becovl.wav
-519,Stability Control,kontrola stabilnosci,,,sbct.wav
-520,Stability Control - Standard,kontrola stabilnosci – standard,,,sbctst.wav
+519,Stability Control,kontrola stabilności,,,sbct.wav
+520,Stability Control - Standard,kontrola stabilności – standard,,,sbctst.wav
 521,Gyro,żyroskop,,,gyro.wav
 522,Low,nisko,,,low.wav
 523,Medium,średnio,,,medium.wav
@@ -527,13 +527,13 @@ String ID,Source text,Translation,Context,Path,Filename
 527,Race Mode,tryb wyścigu,car,,racemd.wav
 528,Chill Mode,tryb spokojny,car,,chilmd.wav
 529,Trainer Mode,tryb trenera,car,,trnmd.wav
-530,Speed Mode,tryb predkosci,car,,spdmd.wav
+530,Speed Mode,tryb prędkości,car,,spdmd.wav
 531,City Mode,tryb miejski,car,,citymd.wav
 532,Cruise Mode,tryb rejsu,car,,crusmd.wav
 533,Flaps Middle,klapy w środku,plane,,flapmd.wav
 534,Flaps Full,pełne klapy,plane,,flapfl.wav
 535,Motor On,silnik włączony,,,moton.wav
-536,Motor Off,silnik wyłaczony,,,motoff.wav
+536,Motor Off,silnik wyłączony,,,motoff.wav
 537,Motor Idle,Silnik – bieg jałowy,,,motidl.wav
 538,Autorotation,autorotacja,heli,,autor.wav
 539,Rescue On,ratunek włączony,,,reson.wav
@@ -551,7 +551,7 @@ String ID,Source text,Translation,Context,Path,Filename
 551,Drag brake Medium,hamulec oporowy średni,Car,,dbrkmd.wav
 552,Drag brake High,hamulec oporowy wysoki,Car,,dbrkhi.wav
 553,Snapflap On,Snapflap włączony,Plane,,snapfon.wav
-554,Snapflap Off,Snapflap wyłaczony,Plane,,snapfof.wav
+554,Snapflap Off,Snapflap wyłączony,Plane,,snapfof.wav
 555,Snapflap Low,Snapflap niski,Plane,,snapflo.wav
 556,Snapflap High,Snapflap wysoki,Plane,,snapfhi.wav
 557,Auto tune,Auto strojenie,Plane,,autotun.wav

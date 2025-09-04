@@ -97,7 +97,19 @@ for f in *.mp3; do
 done
 ```
 
+#### Automated way
 
+`sudo apt update`
+`sudo apt install libportaudio2 portaudio19-dev libasound-dev -y`
+`pip install elevenlabs`
+
+# jeśli jeszcze nie masz venv
+python3 -m venv .venv
+source .venv/bin/activate   # aktywacja środowiska
+
+# instalacja biblioteki
+pip install elevenlabs
+pip install python-dotenv
 
 
 ## Voices
