@@ -101,16 +101,22 @@ done
 
 `sudo apt update`
 `sudo apt install libportaudio2 portaudio19-dev libasound-dev -y`
-`pip install elevenlabs`
+`pip install elevenlabs python-dotenv`
 
-# jeśli jeszcze nie masz venv
-python3 -m venv .venv
-source .venv/bin/activate   # aktywacja środowiska
+If You dont have venv
+`python3 -m venv .venv`
+`source .venv/bin/activate`
 
-# instalacja biblioteki
-pip install elevenlabs
-pip install python-dotenv
+Optionally add Your languages to array:
+```
+languages = [
+    ("voices/pl-PL.csv", "EXAVITQu4vr4xnSDxMaL", "pl"),
+    # Add other languages here
+]
+```
 
+And finally run script to generate all the files. Script is smart and skips already generated files to don't use tokens from ElevenLabs.
+`ython3 generate-elevenlabs.py`
 
 ## Voices
 
