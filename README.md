@@ -71,7 +71,7 @@ The Korean voice pack provides full support for native Korean speakers using Edg
 
 ### Polish (pl-PL)
 
-Files are generated using [ElevenLabs](https://elevenlabs.io/app/speech-synthesis/text-to-speech) voice synthesis. 
+Files are generated using [ElevenLabs](https://elevenlabs.io/app/speech-synthesis/text-to-speech) voice synthesis. There are 10k tokens available for free.
 
 Voice: Sarah 
 
@@ -80,39 +80,45 @@ ElevenMultilingual v2.
 #### One file at a time
 
 Ubuntu commands to prepare wav file from mp3:
+
 - Normal way: 
-```
-ffmpeg -i ElevenLabs_2025-09-03T16_24_21_Sarah_pre_sp100_s50_sb75_se0_b_m2.mp3 -ar 32000 -ac 1 -sample_fmt s16 engstp.wav
-```
+  
+  ```bash
+  ffmpeg -i ElevenLabs_2025-09-03T16_24_21_Sarah_pre_sp100_s50_sb75_se0_b_m2.mp3 -ar 32000 -ac 1 -sample_fmt s16 engstp.wav
+  ```
 
 - To cut out words added for correct accent (0.5sec from beginning): 
-```
-ffmpeg -ss 0.5 -i ElevenLabs_2025-09-03T16_24_21_Sarah_pre_sp100_s50_sb75_se0_b_m2.mp3 -ar 32000 -ac 1 -sample_fmt s16 engstp.wav
-```
+  
+  ```bash
+  ffmpeg -ss 0.5 -i ElevenLabs_2025-09-03T16_24_21_Sarah_pre_sp100_s50_sb75_se0_b_m2.mp3 -ar 32000 -ac 1 -sample_fmt s16 engstp.wav
+  ```
 
 - Many files at once from the same folder: 
-```
-for f in *.mp3; do
+  
+  ```bash
+  for f in *.mp3; do
   ffmpeg -i "$f" -ar 32000 -ac 1 -sample_fmt s16 "${f%.mp3}.wav"
-done
-```
+  done
+  ```
 
 #### Automated way
 
-```
+```bash
 sudo apt update
 sudo apt install libportaudio2 portaudio19-dev libasound-dev -y
 pip install elevenlabs python-dotenv
 ```
 
 If You don't have venv
-```
+
+```bash
 python3 -m venv .venv
 source .venv/bin/activate
 ```
 
 Optionally add Your languages to array:
-```
+
+```bash
 languages = [
     ("voices/pl-PL.csv", "EXAVITQu4vr4xnSDxMaL", "pl"),
     # Add other languages here
@@ -120,8 +126,9 @@ languages = [
 ```
 
 And finally run script to generate all the files. Script is smart and skips already generated files to don't use tokens from ElevenLabs.
-```
-python3 generate-elevenlabs.py
+
+```bash
+python3 voice-gen-elevenlabs.py
 ```
 
 ## Voices
@@ -198,4 +205,3 @@ After you have installed SPX, you will also need to [create a Microsoft Azure ac
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md)
-

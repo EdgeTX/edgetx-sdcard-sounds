@@ -68,8 +68,10 @@ for csv_file, voice_name, output_dir in languages:
 
 
             # Conversion MP# -> WAV using ffmpeg command
+            skip = row.get("Skip") or "0.0"
             ffmpeg_cmd = [
                 "ffmpeg",
+                "-ss", skip, # skip beginning in words that can be interpreted in a wrong lanuage
                 "-y",  # overwrite existing file
                 "-i", output_mp3,
                 "-ar", "32000",   # sample rate 32 kHz
