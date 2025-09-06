@@ -86,3 +86,7 @@ glados_voices=(
 for glados_voice in "${glados_voices[@]}"; do
     eval "uv run ./voice-gen-glados.py ${glados_voice}" || exit 1
 done
+
+
+# ElevenLabs (single run, internal config)
+uv run ./voice-gen-elevenlabs.py || exit 1
