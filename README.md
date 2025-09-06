@@ -116,6 +116,14 @@ python3 -m venv .venv
 source .venv/bin/activate
 ```
 
+Set API key environment variable:
+
+```bash
+export ELEVENLABS_API_KEY="<API_KEY>"
+```
+
+
+
 Optionally add Your languages to array:
 
 ```bash
