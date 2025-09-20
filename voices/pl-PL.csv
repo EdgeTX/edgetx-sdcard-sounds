@@ -191,7 +191,7 @@ String ID,Source text,Translation,Context,Path,Filename,Skip
 190,transmitter battery low,niski poziom baterii nadajnika,,SYSTEM,lowbatt.wav,
 191,inactivity alarm,alarm: nieaktywność,,SYSTEM,inactiv.wav,
 192,throttle warning,ostrzeżenie: przepustnica,,SYSTEM,thralert.wav,
-193,switch warning,ostrzeżenie: przełącznik,,SYSTEM,swalert.wav,
+193,switch warning,ostrzeżenie: przełącznik.,,SYSTEM,swalert.wav,
 194,bad eeprom,nieprawidłowy eprom,,SYSTEM,eebad.wav,
 195,Welcome to EdgeTX,witaj w edgetx,,SYSTEM,hello.wav,
 196,RF signal low,słaby sygnał radiowy,,SYSTEM,rssi_org.wav,
