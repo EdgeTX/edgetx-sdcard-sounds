@@ -109,7 +109,7 @@ sudo apt install libportaudio2 portaudio19-dev libasound-dev -y
 pip install elevenlabs python-dotenv
 ```
 
-If You don't have venv
+If you don't have venv configured or enabled:
 
 ```bash
 python3 -m venv .venv
@@ -122,9 +122,7 @@ Set API key environment variable:
 export ELEVENLABS_API_KEY="<API_KEY>"
 ```
 
-
-
-Optionally add Your languages to array:
+Optionally add your languages to array:
 
 ```bash
 languages = [
@@ -133,7 +131,7 @@ languages = [
 ]
 ```
 
-And finally run script to generate all the files. Script is smart and skips already generated files to don't use tokens from ElevenLabs.
+And finally run script to generate all the files. Script is smart and skips already generated files to not use tokens from ElevenLabs.
 
 ```bash
 python3 voice-gen-elevenlabs.py
