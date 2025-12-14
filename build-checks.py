@@ -20,9 +20,18 @@ def checkCSVcolumnCount():
         if os.path.isfile(f) and filename.endswith(".csv"):
             reader = csv.reader(open(f, "r"))
             reader = ((field.strip() for field in row) for row in reader)  # Strip spaces
+            header = list(next(reader))  # Read header row and convert to list
+            expected_columns = len(header)
+            
+            # Check for minimum required columns
+            if expected_columns < 6:
+                print(f"{filename}: CSV header has only {expected_columns} columns (minimum 6 required)")
+                missing_csv_field = True
+                continue
+            
             for row in reader:
                 row = list(row)  # Convert generator to list
-                if not len(row) == 6:
+                if not len(row) == expected_columns:
                     print(f"{filename}: Insufficient columns of data - {row}")
                     missing_csv_field = True
                     continue

@@ -16,6 +16,7 @@ The currently supported languages are:
 - Italian
 - Japanese
 - Korean
+- Polish
 - Portuguese
 - Russian
 - Spanish
@@ -67,6 +68,74 @@ The Korean voice pack provides full support for native Korean speakers using Edg
   - `voices/ko-KR_scripts.csv` — numeric and special script terms
 - This voice pack was personally developed and contributed by [@siyeongjang](https://github.com/siyeongjang), a Korean RC enthusiast, to improve accessibility and user experience for Korean-speaking pilots.
 - Feedback or improvement suggestions are welcome. Please feel free to open an issue or leave a comment in the Pull Request.
+
+### Polish (pl-PL)
+
+Files are generated using [ElevenLabs](https://elevenlabs.io/app/speech-synthesis/text-to-speech) voice synthesis. There are 10k tokens available for free.
+
+Voice: Sarah 
+
+ElevenMultilingual v2.
+
+#### One file at a time
+
+Ubuntu commands to prepare wav file from mp3:
+
+- Normal way: 
+  
+  ```bash
+  ffmpeg -i ElevenLabs_2025-09-03T16_24_21_Sarah_pre_sp100_s50_sb75_se0_b_m2.mp3 -ar 32000 -ac 1 -sample_fmt s16 engstp.wav
+  ```
+
+- To cut out words added for correct accent (0.5sec from beginning): 
+  
+  ```bash
+  ffmpeg -ss 0.5 -i ElevenLabs_2025-09-03T16_24_21_Sarah_pre_sp100_s50_sb75_se0_b_m2.mp3 -ar 32000 -ac 1 -sample_fmt s16 engstp.wav
+  ```
+
+- Many files at once from the same folder: 
+  
+  ```bash
+  for f in *.mp3; do
+  ffmpeg -i "$f" -ar 32000 -ac 1 -sample_fmt s16 "${f%.mp3}.wav"
+  done
+  ```
+
+#### Automated way
+
+```bash
+sudo apt update
+sudo apt install libportaudio2 portaudio19-dev libasound-dev -y
+pip install elevenlabs python-dotenv
+```
+
+If you don't have venv configured or enabled:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+Set API key environment variable:
+
+```bash
+export ELEVENLABS_API_KEY="<API_KEY>"
+```
+
+Optionally add your languages to array:
+
+```bash
+languages = [
+    ("voices/pl-PL.csv", "EXAVITQu4vr4xnSDxMaL", "pl"),
+    # Add other languages here
+]
+```
+
+And finally run script to generate all the files. Script is smart and skips already generated files to not use tokens from ElevenLabs.
+
+```bash
+python3 voice-gen-elevenlabs.py
+```
 
 ## Voices
 
