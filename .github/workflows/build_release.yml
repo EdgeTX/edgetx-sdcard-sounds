@@ -45,7 +45,7 @@ jobs:
 
       - name: Auto Release to Latest
         uses: crowbarmaster/GH-Automatic-Releases@latest
-        if: github.event_name != 'pull_request'
+        if: github.event_name != 'pull_request' && !startsWith(github.event.ref, 'refs/tags/v')
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           title: "Latest"
