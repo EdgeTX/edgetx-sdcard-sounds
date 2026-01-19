@@ -7,6 +7,19 @@ import tempfile
 import time
 import urllib.parse
 import urllib.request
+from pathlib import Path
+
+from rich.console import Console, Group
+from rich.live import Live
+from rich.progress import (
+    BarColumn,
+    Progress,
+    TaskProgressColumn,
+    TextColumn,
+    TimeElapsedColumn,
+    TimeRemainingColumn,
+)
+from rich.text import Text
 
 
 def init_argparse() -> argparse.ArgumentParser:
@@ -85,6 +98,18 @@ def main() -> None:
     outdir = ""
     delay_time = args.delay
 
+    in_ci = os.environ.get("GITHUB_ACTIONS", "").lower() == "true"
+
+    csv_path = Path(csv_file).resolve()
+    voices_root = Path(__file__).resolve().parent / "voices"
+
+    all_csvs = sorted(voices_root.glob("*.csv")) if voices_root.exists() else []
+    if not all_csvs:
+        all_csvs = sorted(csv_path.parent.glob("*.csv"))
+
+    total_files = len(all_csvs) if all_csvs else 1
+    processed_files = next((idx + 1 for idx, f in enumerate(all_csvs) if f.resolve() == csv_path), 1)
+
     if not os.path.isfile(csv_file):
         print("Error: voice file not found")
         sys.exit(1)
@@ -95,18 +120,58 @@ def main() -> None:
         reader = ((field.strip().strip('"') for field in row) for row in reader)  # Strip spaces and quotes
         csv_rows = sum(1 for row in reader)
 
-    # Process CSV file
-    with open(csv_file, 'rt') as csvfile:
+    # Drop header row from progress count if present
+    csv_rows = max(csv_rows - 1, 0)
+
+    console = Console(force_terminal=not in_ci, no_color=in_ci)
+    progress = Progress(
+        TextColumn("[bold blue]{task.description}"),
+        TextColumn("{task.fields[status]}", justify="left"),
+        BarColumn(bar_width=None),
+        TaskProgressColumn(),
+        TimeElapsedColumn(),
+        TimeRemainingColumn(),
+        console=console,
+        transient=False,
+        expand=True,
+    )
+
+    class StatusLine:
+        def __init__(self) -> None:
+            self.message = ""
+
+        def update(self, message: str) -> None:
+            self.message = message
+
+        def __rich_console__(self, console, options):
+            yield Text(self.message)
+
+    status_line = StatusLine()
+    layout = Group(status_line, progress)
+
+    # Process CSV file with progress bar
+    with open(csv_file, 'rt') as csvfile, Live(layout, console=console, refresh_per_second=10, transient=False):
         reader = csv.reader(csvfile, delimiter=',', quotechar='"')
         reader = ((field.strip().strip('"') for field in row) for row in reader)  # Strip spaces and quotes
-        line_count = 0
-        for row in reader:
-            row = list(row)  # Convert the generator to a list
-            if line_count == 0:
-                # print(f'Column names are {", ".join(row)}')
-                line_count += 1
-                csv_rows -= 1
+        task_id = progress.add_task("Synthesizing", total=csv_rows or None, status="")
+
+        def report(msg: str) -> None:
+            if in_ci:
+                progress.console.print(msg)
             else:
+                status_line.update(msg)
+                progress.refresh()
+
+        line_count = 0
+        processed_count = 0
+
+        try:
+            for row in reader:
+                row = list(row)  # Convert the generator to a list
+                if line_count == 0:
+                    # absorb header row
+                    line_count += 1
+                    continue
                 if row[4] is None or row[4] == "":
                     outdir = os.path.join(basedir, "SOUNDS", langdir)
                 else:
@@ -122,12 +187,15 @@ def main() -> None:
                     os.makedirs(outdir)
 
                 if text is None or text == "":
-                    print(
+                    report(
                         f'[{line_count}/{csv_rows}] Skipping as no text to translate')
+                    progress.update(task_id, advance=1)
+                    processed_count += 1
+                    line_count += 1
                     continue
 
                 if not os.path.isfile(outfile):
-                    print(
+                    report(
                         f'[{line_count}/{csv_rows}] Translate "{en_text}" to "{text}", save as "{outdir}{os.sep}{filename}".')
 
                     fetch_sample(text, tmpfile_fd, delay_time)
@@ -135,12 +203,21 @@ def main() -> None:
                     os.unlink(tmpfile)
 
                 else:
-                    print(
+                    report(
                         f'[{line_count}/{csv_rows}] Skipping "{filename}" as already exists.')
 
+                progress.update(task_id, advance=1)
+                processed_count += 1
                 line_count += 1
+        except KeyboardInterrupt:
+            report(
+                f"Interrupted. Processed {processed_files}/{total_files} files; {processed_count}/{csv_rows} entries in current file."
+            )
+            progress.update(task_id, completed=processed_count)
+            raise SystemExit(1)
 
-        print(f'Finished processing {csv_rows} entries from "{csv_file}" using {os.path.basename(__file__)}.')
+        report(
+            f'Finished processing {processed_files}/{total_files} files ({processed_count}/{csv_rows} entries) from "{csv_file}" using {os.path.basename(__file__)}.')
 
 
 if __name__ == "__main__":
