@@ -44,22 +44,26 @@ def checkDuplicateFilenamesInCSV() -> int:
     logging.info("VOICES: Checking for duplicate filenames in CSV files ...")
     duplicate_found = False
     for f in csv_directory.glob("*.csv"):
-        seen = set()
+        seen: dict[tuple[str, str], list[str]] = {}
         duplicates = set()
         for row in read_csv_rows(str(f)):
-            if len(row) == 6:
+            if len(row) >= 6:
+                string_id = row[0].strip() if row[0] else ""
                 path = row[4].strip()
                 fname = row[5].strip()
                 key = (path, fname)
                 if fname:
                     if key in seen:
+                        seen[key].append(string_id)
                         duplicates.add(key)
                     else:
-                        seen.add(key)
+                        seen[key] = [string_id]
         for path, fname in duplicates:
             display_path = path if path else "[root]"
+            string_ids = ", ".join(filter(None, seen.get((path, fname), [])))
+            id_info = f" (StringIDs: {string_ids})" if string_ids else ""
             logging.error(
-                f"{ERROR_COLOR}[ERROR] Duplicate filename in {f.name}: {fname} (PATH: {display_path}) appears more than once{RESET_COLOR}"
+                f"{ERROR_COLOR}[ERROR] Duplicate filename in {f.name}: {fname} (PATH: {display_path}) appears more than once{id_info}{RESET_COLOR}"
             )
             duplicate_found = True
     return 1 if duplicate_found else 0
