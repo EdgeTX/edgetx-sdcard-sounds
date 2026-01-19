@@ -6,4 +6,7 @@ requires-python = ">=3.8"
 dependencies = [
     "azure-cognitiveservices-speech==1.44.0",
     "ffmpeg-normalize",
+    "rich",
+    "elevenlabs",
+    "python-dotenv",
 ]
