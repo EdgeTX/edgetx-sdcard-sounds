@@ -1,565 +1,566 @@
-String ID,Source text,Translation,Context,Path,Filename,Skip
-1,0,zero,,SYSTEM,0000.wav,
-2,1,jeden,,SYSTEM,0001.wav,
-3,2,dwa,,SYSTEM,0002.wav,
-4,3,trzy,,SYSTEM,0003.wav,
-5,4,cztery,,SYSTEM,0004.wav,
-6,5,pięć,,SYSTEM,0005.wav,
-7,6,sześć,,SYSTEM,0006.wav,
-8,7,siedem,,SYSTEM,0007.wav,
-9,8,osiem,,SYSTEM,0008.wav,
-10,9,dziewięć,,SYSTEM,0009.wav,
-11,10,dziesięć,,SYSTEM,0010.wav,
-12,11,jedenaście,,SYSTEM,0011.wav,
-13,12,dwanaście,,SYSTEM,0012.wav,
-14,13,trzynaście,,SYSTEM,0013.wav,
-15,14,czternaście,,SYSTEM,0014.wav,
-16,15,piętnaście,,SYSTEM,0015.wav,
-17,16,szesnaście,,SYSTEM,0016.wav,
-18,17,siedemnaście,,SYSTEM,0017.wav,
-19,18,osiemnaście,,SYSTEM,0018.wav,
-20,19,dziewiętnaście,,SYSTEM,0019.wav,
-21,20,dwadzieścia,,SYSTEM,0020.wav,
-22,21,dwadzieścia jeden,,SYSTEM,0021.wav,
-23,22,dwadzieścia dwa,,SYSTEM,0022.wav,
-24,23,dwadzieścia trzy,,SYSTEM,0023.wav,
-25,24,dwadzieścia cztery,,SYSTEM,0024.wav,
-26,25,dwadzieścia pięć,,SYSTEM,0025.wav,
-27,26,dwadzieścia sześć,,SYSTEM,0026.wav,
-28,27,dwadzieścia siedem,,SYSTEM,0027.wav,
-29,28,dwadzieścia osiem,,SYSTEM,0028.wav,
-30,29,dwadzieścia dziewięć,,SYSTEM,0029.wav,
-31,30,trzydzieści,,SYSTEM,0030.wav,
-32,31,trzydzieści jeden,,SYSTEM,0031.wav,
-33,32,trzydzieści dwa,,SYSTEM,0032.wav,
-34,33,trzydzieści trzy,,SYSTEM,0033.wav,
-35,34,trzydzieści cztery,,SYSTEM,0034.wav,
-36,35,trzydzieści pięć,,SYSTEM,0035.wav,
-37,36,trzydzieści sześć,,SYSTEM,0036.wav,
-38,37,trzydzieści siedem,,SYSTEM,0037.wav,
-39,38,trzydzieści osiem,,SYSTEM,0038.wav,
-40,39,trzydzieści dziewięć,,SYSTEM,0039.wav,
-41,40,czterdzieści,,SYSTEM,0040.wav,
-42,41,czterdzieści jeden,,SYSTEM,0041.wav,
-43,42,czterdzieści dwa,,SYSTEM,0042.wav,
-44,43,czterdzieści trzy,,SYSTEM,0043.wav,
-45,44,czterdzieści cztery,,SYSTEM,0044.wav,
-46,45,czterdzieści pięć,,SYSTEM,0045.wav,
-47,46,czterdzieści sześć,,SYSTEM,0046.wav,
-48,47,czterdzieści siedem,,SYSTEM,0047.wav,
-49,48,czterdzieści osiem,,SYSTEM,0048.wav,
-50,49,czterdzieści dziewięć,,SYSTEM,0049.wav,
-51,50,pięćdziesiąt,,SYSTEM,0050.wav,
-52,51,pięćdziesiąt jeden,,SYSTEM,0051.wav,
-53,52,pięćdziesiąt dwa,,SYSTEM,0052.wav,
-54,53,pięćdziesiąt trzy,,SYSTEM,0053.wav,
-55,54,pięćdziesiąt cztery,,SYSTEM,0054.wav,
-56,55,pięćdziesiąt pięć,,SYSTEM,0055.wav,
-57,56,pięćdziesiąt sześć,,SYSTEM,0056.wav,
-58,57,pięćdziesiąt siedem,,SYSTEM,0057.wav,
-59,58,pięćdziesiąt osiem,,SYSTEM,0058.wav,
-60,59,pięćdziesiąt dziewięć,,SYSTEM,0059.wav,
-61,60,sześćdziesiąt,,SYSTEM,0060.wav,
-62,61,sześćdziesiąt jeden,,SYSTEM,0061.wav,
-63,62,sześćdziesiąt dwa,,SYSTEM,0062.wav,
-64,63,sześćdziesiąt trzy,,SYSTEM,0063.wav,
-65,64,sześćdziesiąt cztery,,SYSTEM,0064.wav,
-66,65,sześćdziesiąt pięć,,SYSTEM,0065.wav,
-67,66,sześćdziesiąt sześć,,SYSTEM,0066.wav,
-68,67,sześćdziesiąt siedem,,SYSTEM,0067.wav,
-69,68,sześćdziesiąt osiem,,SYSTEM,0068.wav,
-70,69,sześćdziesiąt dziewięć,,SYSTEM,0069.wav,
-71,70,siedemdziesiąt,,SYSTEM,0070.wav,
-72,71,siedemdziesiąt jeden,,SYSTEM,0071.wav,
-73,72,siedemdziesiąt dwa,,SYSTEM,0072.wav,
-74,73,siedemdziesiąt trzy,,SYSTEM,0073.wav,
-75,74,siedemdziesiąt cztery,,SYSTEM,0074.wav,
-76,75,siedemdziesiąt pięć,,SYSTEM,0075.wav,
-77,76,siedemdziesiąt sześć,,SYSTEM,0076.wav,
-78,77,siedemdziesiąt siedem,,SYSTEM,0077.wav,
-79,78,siedemdziesiąt osiem,,SYSTEM,0078.wav,
-80,79,siedemdziesiąt dziewięć,,SYSTEM,0079.wav,
-81,80,osiemdziesiąt,,SYSTEM,0080.wav,
-82,81,osiemdziesiąt jeden,,SYSTEM,0081.wav,
-83,82,osiemdziesiąt dwa,,SYSTEM,0082.wav,
-84,83,osiemdziesiąt trzy,,SYSTEM,0083.wav,
-85,84,osiemdziesiąt cztery,,SYSTEM,0084.wav,
-86,85,osiemdziesiąt pięć,,SYSTEM,0085.wav,
-87,86,osiemdziesiąt sześć,,SYSTEM,0086.wav,
-88,87,osiemdziesiąt siedem,,SYSTEM,0087.wav,
-89,88,osiemdziesiąt osiem,,SYSTEM,0088.wav,
-90,89,osiemdziesiąt dziewięć,,SYSTEM,0089.wav,
-91,90,dziewięćdziesiąt,,SYSTEM,0090.wav,
-92,91,dziewięćdziesiąt jeden,,SYSTEM,0091.wav,
-93,92,dziewięćdziesiąt dwa,,SYSTEM,0092.wav,
-94,93,dziewięćdziesiąt trzy,,SYSTEM,0093.wav,
-95,94,dziewięćdziesiąt cztery,,SYSTEM,0094.wav,
-96,95,dziewięćdziesiąt pięć,,SYSTEM,0095.wav,
-97,96,dziewięćdziesiąt sześć,,SYSTEM,0096.wav,
-98,97,dziewięćdziesiąt siedem,,SYSTEM,0097.wav,
-99,98,dziewięćdziesiąt osiem,,SYSTEM,0098.wav,
-100,99,dziewięćdziesiąt dziewięć,,SYSTEM,0099.wav,
-101,100,sto,,SYSTEM,0100.wav,
-102,200,dwieście,,SYSTEM,0101.wav,
-103,300,trzysta,,SYSTEM,0102.wav,
-104,400,czterysta,,SYSTEM,0103.wav,
-105,500,pięćset,,SYSTEM,0104.wav,
-106,600,sześćset,,SYSTEM,0105.wav,
-107,700,siedemset,,SYSTEM,0106.wav,
-108,800,osiemset,,SYSTEM,0107.wav,
-109,900,dziewięćset,,SYSTEM,0108.wav,
-110,thousand,tysiąc,,SYSTEM,0109.wav,
-111,and,i,,SYSTEM,0110.wav,
-112,minus,minus,,SYSTEM,0111.wav,
-113,point,kropka,,SYSTEM,0112.wav,
-114,volt,woltów,,SYSTEM,volt0.wav,
-115,volts,woltów,,SYSTEM,volt1.wav,
-116,amp,amper,,SYSTEM,amp0.wav,
-117,amps,amper,,SYSTEM,amp1.wav,
-118,milliamp,miliamper,,SYSTEM,mamp0.wav,
-119,milliamps,miliamper,,SYSTEM,mamp1.wav,
-120,knot,węzłów,,SYSTEM,knot0.wav,
-121,knots,węzłów,,SYSTEM,knot1.wav,
-122,meter per second,metrów na sekundę,,SYSTEM,mps0.wav,
-123,meters per second,metrów na sekundę,,SYSTEM,mps1.wav,
-124,foot per second,stóp na sekundę,,SYSTEM,fps0.wav,
-125,feet per second,stóp na sekundę,,SYSTEM,fps1.wav,
-126,kilometer per hour,kilometrów na godzinę,,SYSTEM,kph0.wav,
-127,kilometers per hour,kilometrów na godzinę,,SYSTEM,kph1.wav,
-128,mile per hour,mil na godzinę,,SYSTEM,mph0.wav,
-129,miles per hour,mil na godzinę,,SYSTEM,mph1.wav,
-130,meter,metr,,SYSTEM,meter0.wav,
-131,meters,metrów,,SYSTEM,meter1.wav,
-132,foot,stopa,,SYSTEM,foot0.wav,
-133,feet,stóp,,SYSTEM,foot1.wav,
-134,degree celsius,stopni celsjusza,,SYSTEM,celsius0.wav,
-135,degrees celsius,stopni celsjusza,,SYSTEM,celsius1.wav,
-136,degree fahrenheit,stopni farenhajta,,SYSTEM,fahr0.wav,
-137,degrees fahrenheit,stopni farenhajta,,SYSTEM,fahr1.wav,
-138,percent,procent,,SYSTEM,percent0.wav,
-139,percent,procent,,SYSTEM,percent1.wav,
-140,milliamp-hour,miliamperogodzina,,SYSTEM,mamph0.wav,
-141,milliamp-hours,miliamperogodzin,,SYSTEM,mamph1.wav,
-142,watt,wat,,SYSTEM,watt0.wav,
-143,watts,watów,,SYSTEM,watt1.wav,
-144,milli-watt,miliwat,,SYSTEM,mwatt0.wav,
-145,milli-watts,miliwatów,,SYSTEM,mwatt1.wav,
-146,DB,dibi,,SYSTEM,db0.wav,
-147,DB,dibi,,SYSTEM,db1.wav,
-148,RPM,RPM,,SYSTEM,rpm0.wav,
-149,RPM,RPM,,SYSTEM,rpm1.wav,
-150,G,gie,,SYSTEM,g0.wav,
-151,G,gie,,SYSTEM,g1.wav,
-152,degree,stopień,,SYSTEM,degree0.wav,
-153,degrees,stopni ,,SYSTEM,degree1.wav,
-154,radian,radian,,SYSTEM,rad0.wav,
-155,radians,radianów,,SYSTEM,rad1.wav,
-156,milliliter,mililitr,,SYSTEM,ml0.wav,
-157,milliliters,mililitrów,,SYSTEM,ml1.wav,
-158,fluid ounce,uncja płynu,,SYSTEM,founce0.wav,
-159,fluid ounces,uncji płynu,,SYSTEM,founce1.wav,
-160,milliliter per minute,milimetr na minutę,,SYSTEM,mlpm0.wav,
-161,milliliters per minute,milimetrów na minutę,,SYSTEM,mlpm1.wav,
-162,hertz,herc,,SYSTEM,hertz0.wav,
-163,hertz,herców,,SYSTEM,hertz1.wav,
-164,millisecond,milisekunda,,SYSTEM,ms0.wav,
-165,milliseconds,milisekund,,SYSTEM,ms1.wav,
-166,microsecond,mikrosekunda,,SYSTEM,us0.wav,
-167,microseconds,mikrosekund,,SYSTEM,us1.wav,
-168,hour,godzina,,SYSTEM,hour0.wav,
-169,hours,godzin,,SYSTEM,hour1.wav,
-170,minute,Polska minuta,,SYSTEM,minute0.wav,0.5
-171,minutes,Polskie minuty,,SYSTEM,minute1.wav,0.6
-172,second,sekunda,,SYSTEM,second0.wav,
-173,seconds,sekundy,,SYSTEM,second1.wav,
-174,point zero,kropka zero,,SYSTEM,0167.wav,
-175,point one,kropka jeden,,SYSTEM,0168.wav,
-176,point two,kropka dwa,,SYSTEM,0169.wav,
-177,point three,kropka trzy,,SYSTEM,0170.wav,
-178,point four,kropka cztery,,SYSTEM,0171.wav,
-179,point five,kropka pięć,,SYSTEM,0172.wav,
-180,point six,kropka sześć,,SYSTEM,0173.wav,
-181,point seven,kropka siedem,,SYSTEM,0174.wav,
-182,point eight,kropka osiem,,SYSTEM,0175.wav,
-183,point nine,kropka dziewięć,,SYSTEM,0176.wav,
-184,trim center,trymer w środku,,SYSTEM,midtrim.wav,
-185,maximum trim reached,trymer w maksimum,,SYSTEM,maxtrim.wav,
-186,minimum trim reached,trymer w minimum,,SYSTEM,mintrim.wav,
-187,timer 1 elapsed,tajmer jeden – minął,,SYSTEM,timovr1.wav,
-188,timer 2 elapsed,tajmer dwa – minął,,SYSTEM,timovr2.wav,
-189,timer 3 elapsed,tajmer trzy – minął,,SYSTEM,timovr3.wav,
-190,transmitter battery low,niski poziom baterii nadajnika,,SYSTEM,lowbatt.wav,
-191,inactivity alarm,alarm: nieaktywność,,SYSTEM,inactiv.wav,
-192,throttle warning,ostrzeżenie: przepustnica,,SYSTEM,thralert.wav,
-193,switch warning,ostrzeżenie: przełącznik.,,SYSTEM,swalert.wav,
-194,bad eeprom,nieprawidłowy eprom,,SYSTEM,eebad.wav,
-195,Welcome to EdgeTX,witaj w edgetx,,SYSTEM,hello.wav,
-196,RF signal low,słaby sygnał radiowy,,SYSTEM,rssi_org.wav,
-197,RF signal critical,sygnał radiowy krytyczny,,SYSTEM,rssi_red.wav,
-198,radio antenna defective,zepsuta antena nadajnika,,SYSTEM,swr_red.wav,
-199,telemetry lost,telemetria utracona,,SYSTEM,telemko.wav,
-200,telemetry recovered,telemetria odzyskana,,SYSTEM,telemok.wav,
-201,Trainer connected,trener połączony,,SYSTEM,trainco.wav,
-202,trainer signal lost,sygnał trenera utracony,,SYSTEM,trainko.wav,
-203,trainer signal recovered,sygnał trenera odzyskany,,SYSTEM,trainok.wav,
-204,sensor lost,czujnik utracony,,SYSTEM,sensorko.wav,
-205,servo overload,przeciążenie serwa,,SYSTEM,servoko.wav,
-206,power overload,przeciążenie mocy,,SYSTEM,rxko.wav,
-207,receiver still connected,odbiornik nadal podłączony,,SYSTEM,modelpwr.wav,
-208,armed,uzbrojony,,,armed.wav,
-209,disarmed,rozbrojony,,,disarm.wav,
-210,throttle cut,odcięcie przepustnicy,,,thrcut.wav,
-211,throttle active,przepustnica aktywna,,,thract.wav,
-212,gear up,podwozie w górze,plane,,gearup.wav,
-213,gear down,podwozie w dole,plane,,geardn.wav,
-214,flaps up,klapy w górze,plane,,flapup.wav,
-215,flaps down,klapy w dole,plane,,flapdn.wav,
-216,spoiler up,spoiler w górze,,,splrup.wav,
-217,spoiler down,spoiler w dole,,,splrdn.wav,
-218,trainer on,trener włączony,,,trnon.wav,
-219,trainer off,trener wyłączony,,,trnoff.wav,
-220,engine off,silnik wyłączony,,,engoff.wav,
-221,too high,zbyt wysoko,,,tohigh.wav,
-222,too low,zbyt nisko,,,tolow.wav,
-223,low battery,niski poziom baterii,,,lowbat.wav,
-224,crow on,crow włączony,,,crowon.wav,
-225,crow off,crow wyłączony,,,crowof.wav,
-226,RF signal low,słaby sygnał radiowy,rc-link,,siglow.wav,
-227,RF signal critical,sygnał radiowy krytyczny,rc-link,,sigcrt.wav,
-228,LQ,LQ,rc-link,,lq.wav,
-229,RF mode,tryb radiowy,rc-link,,rfmode.wav,
-230,high speed mode active,tryb wysokiej prędkości aktywny,rc-link,,spdmod.wav,
-231,thermal mode on,tryb termiczny włączony,,,thmmod.wav,
-232,normal mode on,tryb normalny włączony,,,nrmmod.wav,
-233,landing mode on,tryb lądowania włączony,,,lnding.wav,
-234,acro mode on,tryb akro włączony,,,acro.wav,
-235,flight mode one,tryb lotu jeden,,,fm-1.wav,
-236,flight mode two,tryb lotu dwa,,,fm-2.wav,
-237,flight mode three,tryb lotu trzy,,,fm-3.wav,
-238,flight mode four,tryb lotu cztery,,,fm-4.wav,
-239,flight mode five,tryb lotu pięć,,,fm-5.wav,
-240,flight mode six,tryb lotu sześć,,,fm-6.wav,
-241,flight mode seven,tryb lotu siedem,,,fm-7.wav,
-242,flight mode eight,tryb lotu osiem,,,fm-8.wav,
-243,vario on,wario włączony,,,vrion.wav,
-244,vario off,wario wyłączony,,,vrioff.wav,
-245,flight mode power,tryb lotu – moc,,,fm-pwr.wav,
-246,flight mode land,tryb lotu – lądowanie,,,fm-lnd.wav,
-247,flight mode float,tryb lotu – pływanie,,,fm-flt.wav,
-248,flight mode speed,tryb lotu – prędkość,,,fm-spd.wav,
-249,flight mode fast,tryb lotu – szybko,,,fm-fst.wav,
-250,flight mode normal,tryb lotu – normalny,,,fm-nrm.wav,
-251,flight mode cruise,tryb lotu – rejs,,,fm-crs.wav,
-252,flight mode acro,tryb lotu – akro,,,fm-acr.wav,
-253,flight mode race,tryb lotu – wyścig,,,fm-rce.wav,
-254,flight mode launch,tryb lotu – start,,,fm-lch.wav,
-255,flight mode ping,tryb lotu – ping,,,fm-png.wav,
-256,flight mode thermal,tryb lotu – termiczny,,,fm-thm.wav,
-257,flight mode thermal left,tryb lotu – termiczny lewy,,,fm-thl.wav,
-258,flight mode thermal right,tryb lotu – termiczny prawy,,,fm-thr.wav,
-259,flight mode stabilize,tryb lotu – stabilizacja,,,fm-stb.wav,
-260,flight mode horizon,tryb lotu – poziomy,,,fm-hor.wav,
-261,flight mode angle,tryb lotu – kątowy,,,fm-ang.wav,
-262,flight mode idle up 1,tryb lotu – idle 1,,,fm-id1.wav,
-263,flight mode idle up 2,tryb lotu – idle 2,,,fm-id2.wav,
-264,low rate,współczynnik niski,,,ratlow.wav,
-265,medium rate,współczynnik średni,,,ratmed.wav,
-266,high rate,współczynnik wysoki,,,rathi.wav,
-267,take off,start,,,takeof.wav,
-268,sport,sport,,,sport.wav,
-269,pattern,wzór,,,pattrn.wav,
-270,3D,3D,,,3d.wav,
-271,landing,lądowanie,,,landin.wav,
-272,idle up 1,idle up 1,,,idleu1.wav,
-273,idle up 2,idle up 2,,,idleu2.wav,
-274,normal mode,tryb normalny,,,normod.wav,
-275,bank 0,bank 0,,,bank-0.wav,
-276,bank 1,bank 1,,,bank-1.wav,
-277,bank 2,bank 2,,,bank-2.wav,
-278,bank 3,bank 3,,,bank-3.wav,
-279,heading lock,blokada orientacji,,,headlo.wav,
-280,rate mode,tryb współczynnika,,,ratmod.wav,
-281,3D Mode,tryb 3d,,,3d-mod.wav,
-282,stabilize mode,tryb stabilizacji,,,stabmo.wav,
-283,on,włączony,,,on.wav,
-284,off,wyłączony,,,off.wav,
-285,buzzer active,brzęczyk aktywny,,,buzact.wav,
-286,crash-flip active,crash-flip aktywny,multicopter,,crfact.wav,
-287,blackbox active,Czarna skrzynka aktywna,,,blkact.wav,
-288,pre-arm active,pre-arm aktywny,,,preact.wav,
-289,stable mode,tryb stabilny,,,stbmod.wav,
-290,brakes on,hamulce włączone,plane,,brakon.wav,
-291,brakes off,hamulce wyłączone,plane,,brakof.wav,
-292,butterfly on,motyl włączony,,,btfon.wav,
-293,butterfly off,motyl wyłączony,,,btfoff.wav,
-294,flaps one,klapy jeden,plane,,flp1.wav,
-295,flaps two,klapy dwa,plane,,flp2.wav,
-296,flaps three,klapy trzy,plane,,flp3.wav,
-297,flaps four,klapy cztery,plane,,flp4.wav,
-298,flaps five,klapy pięć,plane,,flp5.wav,
-299,wingsweep,machnięcie skrzydłem,plane,,wngswp.wav,
-300,wheelbrakes on,"wheelbrakes,on",plane,,whlbro.wav,
-301,wheelbrakes off,"wheelbrakes,off",plane,,whlbrf.wav,
-302,manual mode,tryb manualny,,,manmod.wav,
-303,acro mode,tryb akro,,,acrmod.wav,
-304,angle mode,tryb kątowy,,,angmod.wav,
-305,horizon mode,tryb poziomy,,,hznmod.wav,
-306,launch mode,tryb startowy,,,lncmod.wav,
-307,air mode,tryb powietrzny,,,airmod.wav,
-308,pit mode,tryb pit,,,pitmod.wav,
-309,navigation cruise,nawigacja – rejs,autopilot,,navcrs.wav,
-310,navigation course hold,nawigacja – trzymaj kurs,autopilot,,navcsh.wav,
-311,navigation altitude hold,Nawigacja – trzymaj wysokość,autopilot,,navalh.wav,
-312,navigation position hold,Nawigacja – trzymaj pozycję,autopilot,,navpos.wav,
-313,navigation return to home,Nawigacja – powrót do domu,autopilot,,navrth.wav,
-314,navigation waypoint,Nawigacja – punkt pośredni,autopilot,,navwp.wav,
-315,cruise,rejs,autopilot,,cruise.wav,
-316,course hold,trzymaj kurs,autopilot,,crshld.wav,
-317,altitude hold,trzymaj wysokość,autopilot,,althld.wav,
-318,position hold,trzymaj pozycję,autopilot,,poshld.wav,
-319,return to home,powrót do domu,autopilot,,rth.wav,
-320,waypoint,punkt pośredni,autopilot,,waypnt.wav,
-321,manual,manual,,,manual.wav,
-322,auto,auto,,,auto.wav,
-323,OSD,OSD,video,,osd.wav,
-324,OSD profile,Profil OSD,video,,osdprf.wav,
-325,attitude hold mode,tryb utrzymania pozycji,autopilot,,sxrahd.wav,
-326,manual mode,tryb manualny,,,sxrman.wav,
-327,stabilizer mode,tryb stabilizacji,,,sxrsmd.wav,
-328,stabilizer off,stabilizacja wyłączona,,,sxrsof.wav,
-329,stabilizer on,stabilizacja włączona,,,sxrstb.wav,
-330,wind rejection mode,tryb odrzucenia wiatru,,,sxrwr.wav,
-331,turtle mode on,tryb żółwia – włączony,multicopter,,turton.wav,
-332,turtle mode off,tryb żółwia – wyłączony,multicopter,,turtof.wav,
-333,flip,flip,,,flip.wav,
-334,autorotation,autorotacja,heli,,auro.wav,
-335,failsafe active,Failsafe aktywny,,,fsact.wav,
-336,failsafe off,Failsafe wyłączony,,,fsoff.wav,
-337,OSD Profile 1,OSD Profil 1,video,,osd1.wav,
-338,OSD Profile 2,OSD Profil 2,video,,osd2.wav,
-339,OSD Profile 3,OSD Profil 3,video,,osd3.wav,
-340,rate profile 1,współczynnik profil 1,,,rates1.wav,
-341,rate profile 2,współczynnik profil 2,,,rates2.wav,
-342,rate profile 3,współczynnik profil 3,,,rates3.wav,
-343,rate profile 4,współczynnik profil 4,,,rates4.wav,
-344,rate profile 5,współczynnik profil 5,,,rates5.wav,
-345,rate profile 6,współczynnik profil 6,,,rates6.wav,
-346,stick commands disabled,drążki nieaktywne,,,scmdof.wav,
-347,stick commands enabled,drążki aktywne,,,scmdon.wav,
-348,telemetry,telemetria,,,telem.wav,
-349,telemetry logging on,logowanie telemetrii włączone,,,tlogon.wav,
-350,telemetry logging off,logowanie telemetrii wyłączone,,,tlogof.wav,
-351,VTX,VTX,video,,vtx.wav,
-352,VTX on,VTX włączony,video,,vtxon.wav,
-353,VTX off,VTX wyłączony,video,,vtxoff.wav,
-354,VTX 25 milliwatts,VTX 25 milliwatów,video,,vtx25.wav,
-355,VTX 50 milliwatts,VTX 50 milliwatów,video,,vtx50.wav,
-356,VTX 100 milliwatts,VTX 100 milliwatów,video,,vtx100.wav,
-357,VTX 200 milliwatts,VTX 200 milliwatów,video,,vtx200.wav,
-358,VTX 300 milliwatts,VTX 300 milliwatów,video,,vtx300.wav,
-359,VTX 400 milliwatts,VTX 400 milliwatów,video,,vtx400.wav,
-360,VTX 500 milliwatts,VTX 500 milliwatów,video,,vtx500.wav,
-361,VTX 600 milliwatts,VTX 600 milliwatów,video,,vtx600.wav,
-362,VTX 700 milliwatts,VTX 700 milliwatów,video,,vtx700.wav,
-363,VTX 800 milliwatts,VTX 800 milliwatów,video,,vtx800.wav,
-364,VTX 900 milliwatts,VTX 900 milliwatów,video,,vtx900.wav,
-365,VTX Pit Mode,VTX tryb Pit,video,,vtxpm.wav,
-366,VTX Race Mode,VTX tryb wyścigu,video,,vtxrm.wav,
-367,VTX 1 watt,VTX 1 wat,video,,vtx1w.wav,
-368,VTX 2 watts,VTX 2 waty,video,,vtx2w.wav,
-369,VTX 4 watts,VTX 4 waty,video,,vtx4w.wav,
-370,critical low battery,Krytyczny poziom baterii,,,clobat.wav,
-371,start,start,,,start.wav,
-372,stop,stop,,,stop.wav,
-373,lights on,światła włączone,,,lghton.wav,
-374,lights off,światła wyłączone,,,lghtof.wav,
-375,buzzer off,brzęczyk wyłączony,,,buzoff.wav,
-376,dynamic TX power,Dynamiczna moc TX,rc-link,,dyntxp.wav,
-377,maximum TX power,Maksymalna moc TX,rc-link,,maxtxp.wav,
-378,throttle hold,Przepustnica – wstrzymana,plane/heli,,thrhld.wav,
-379,throttle idle,Przepustnica – bieg jałowy,plane/heli,,thridl.wav,
-380,throttle release,Przepustnica – odpuszczona,plane/heli,,thrrel.wav,
-381,negative pitch allowed,Negatywne kąty dozwolone,heli,,negpon.wav,
-382,negative pitch disallowed,negatywne katy niedozwolone,heli,,negpof.wav,
-383,autolaunch started,autostart uruchomiony,autopilot,,alnch.wav,
-384,rescue mode active,tryb ratowania aktywny,autopilot,,rscmon.wav,
-385,rescue mode off,tryb ratowania wyłączony,autopilot,,rscmof.wav,
-386,headfree mode active,tryb headfree aktywny,multicopter,,hdfmon.wav,
-387,headfree mode off,tryb head free wyłączony,multicopter,,hdfmof.wav,
-388,heading adjust,dostosowanie orientacji,multicopter,,hdadj.wav,
-389,FPV angle mix active,FPV angle mix active,multicopter,,agmxon.wav,
-390,FPV angle mix off,FPV angle mix off,multicopter,,agmxof.wav,
-391,air mode on,tryb powietrzny włączony,,,airmon.wav,
-392,air mode off,tryb powietrzny wyłączony,,,airmof.wav,
-393,OSD on,OSD włączone,video,,osdon.wav,
-394,OSD off,OSD wyłączone,video,,osdoff.wav,
-395,return to home started,Powrót do domu – rozpoczęty,autopilot,,rthstr.wav,
-396,return to home stopped,Powrót do domu - zatrzymany,autopilot,,rthstp.wav,
-397,waypoint navigation started,nawigacja po punktach – rozpoczęta,autopilot,,wpnstr.wav,
-398,waypoint navigation stopped,nawigacja po punktach – zatrzymana,autopilot,,wpnstp.wav,
-399,course hold active,utrzymywanie kursu – aktywne,autopilot,,crshon.wav,
-400,course hold off,Utrzymywanie kursu – wyłączone,autopilot,,crshof.wav,
-401,position hold active,Utrzymywanie pozycji - aktywne,autopilot,,poshon.wav,
-402,position hold off,Utrzymywanie pozycji – wyłączone,autopilot,,poshof.wav,
-403,altitude hold active,Utrzymywanie wysokości – aktywne,autopilot,,althon.wav,
-404,altitude hold off,utrzymywanie wysokości – wyłączone,autopilot,,althof.wav,
-405,loiter,loiter,autopilot,,loiter.wav,
-406,safety on,bezpieczeństwo włączone,,,sftyon.wav,
-407,safety off,bezpieczeństwo wyłączone,,,sftyof.wav,
-408,SAFE on,"SAFE,on",plane,,safeon.wav,
-409,SAFE off,"SAFE,off",plane,,safeof.wav,
-410,flight envelope protection active,flight envelope protection active,plane,,fepact.wav,
-411,flight envelope protection off,flight envelope protection off,plane,,fepoff.wav,
-412,timer 1 reset,tajmer jeden – zresetowany,,,timrs1.wav,
-413,timer 2 reset,tajmer dwa – zresetowany,,,timrs2.wav,
-414,timer 3 reset,tajmer trzy – zresetowany,,,timrs3.wav,
-415,expo 1,expo 1,,,expo1.wav,
-416,expo 2,expo 2,,,expo2.wav,
-417,expo 3,expo 3,,,expo3.wav,
-418,active,aktywny,,,active.wav,
-419,deactivated,nieaktywny,,,deact.wav,
-420,enabled,włączony,,,enabl.wav,
-421,disabled,wyłączony,,,disabl.wav,
-422,good,dobry,,,good.wav,
-423,bad,zły,,,bad.wav,
-424,normal,normalny,,,normal.wav,
-425,warning,ostrzeżenie,,,warnng.wav,
-426,danger,niebezpieczeństwo,,,danger.wav,
-427,ready to fly,gotowy do lotu,,,ready.wav,
-428,home reset,punkt domowy zresetowany,,,homrst.wav,
-429,GPS,GPS,,,gps.wav,
-430,GPS on,GPS włączony,,,gpson.wav,
-431,GPS off,GPS wyłączony,,,gpsoff.wav,
-432,VTX Frequency R1,VTX częstotliwość R1,video,,vtxfr1.wav,
-433,VTX Frequency R2,VTX częstotliwość R2,video,,vtxfr2.wav,
-434,VTX Frequency R3,VTX częstotliwość R3,video,,vtxfr3.wav,
-435,VTX Frequency R4,VTX częstotliwość R4,video,,vtxfr4.wav,
-436,VTX Frequency R5,VTX częstotliwość R5,video,,vtxfr5.wav,
-437,VTX Frequency R6,VTX częstotliwość R6,video,,vtxfr6.wav,
-438,VTX Frequency R7,VTX częstotliwość R7,video,,vtxfr7.wav,
-439,VTX Frequency R8,VTX częstotliwość R8,video,,vtxfr8.wav,
-440,VTX Maximum Power,VTX moc maksymalna,video,,vtxmax.wav,
-441,blackbox erase,czarna skrzynka wymazana,,,blkers.wav,
-442,acro trainer mode,tryb akro trenera,,,actnmd.wav,
-443,Camera wifi button,Kamera – przycisk wifi,camera,,cwifi.wav,
-444,Camera power button,Kamera – przycisk zasilania,camera,,cpower.wav,
-445,Camera change mode,Kamera – zmiana trybu,camera,,cmode.wav,
-446,Camera start,Kamera – start,camera,,cstart.wav,
-447,Camera stop,Kamera – stop,camera,,cstop.wav,
-448,Recording start,nagrywanie rozpoczęte,,,recsrt.wav,
-449,Recording stop,nagrywanie zatrzymane,,,recstp.wav,
-450,Start recording,nagrywanie rozpoczęte,,,strtrc.wav,
-451,Stop recording,nagrywanie zatrzymane,,,stoprc.wav,
-452,DBM,dibiem,,SYSTEM,dbm0.wav,
-453,DBM,dibiem,,SYSTEM,dbm1.wav,
-454,kilometer,kilometr,,SYSTEM,km0.wav,
-455,kilometers,kilometrów,,SYSTEM,km1.wav,
-456,Reverse Thrust,ciąg wsteczny,plane,,revthr.wav,
-457,Reverse Thrust On,ciąg wsteczny włączony,plane,,revon.wav,
-458,Reverse Thrust Off,ciąg wsteczny wyłączony,plane,,revoff.wav,
-459,Reverse Thrust Idle,ciąg wsteczny bieg jałowy,plane,,revid.wav,
-460,Forward Thrust,ciąg do przodu,plane,,revfwd.wav,
-461,telemetry connected,telemetria podłączona,,SYSTEM,telemco.wav,
-462,level mode,tryb poziomu,flight controller,,lvlmod.wav,
-463,diffs locked,dyferencjał zablokowany,car,,difloc.wav,
-464,diffs unlocked,dyferencjał odblokowany,car,,difulc.wav,
-465,engine start,start silnika,car,,engsrt.wav,
-466,engine stop,zatrzymanie silnika,car,,engstp.wav,
-467,engine on,włączenie silnika,car,,engon.wav,
-468,Turn signals on,kierunkowskazy włączone,car,,turnon.wav,
-469,Turn signals off,kierunkowskazy wyłączone,car,,turnof.wav,
-470,High gear,wysoki bieg,car,,highgr.wav,
-471,Low gear,niski bieg,car,,lowgr.wav,
-472,Dig mode,tryb dig,car,,digmod.wav,
-473,Two wheel drive,napęd dwóch kół,car,,2wd.wav,
-474,Four wheel drive,napęd czterech kół,car,,4wd.wav,
-475,Winch in,Winch in,car,,wchin.wav,
-476,Winch out,Winch out,car,,wchout.wav,
-477,Front Steer,Przednie sterowanie,car,,str-f.wav,
-478,Rear Steer,tylne sterowanie,car,,str-r.wav,
-479,Four Wheel Steer,sterowanie czterech kół,car,,str-4w.wav,
-480,Mirror Steer,lustrzane sterowanie,car,,str-mr.wav,
-481,Crab Steer,sterowanie krabowe,car,,str-cr.wav,
-482,Motor armed,silnik uzbrojony,soaretx,,motarm.wav,
-483,Power,moc,soaretx,,power.wav,
-484,Speed,prędkość,soaretx,,speed.wav,
-485,Thermal,termika,soaretx,,therml.wav,
-486,Front wheel drive,przedni napęd,car,,fwd.wav,
-487,Rear wheel drive,tylny napęd,car,,rwd.wav,
-488,All wheel drive,napęd wszystkich kół,car,,awd.wav,
-489,Throttle enabled,przepustnica włączona,car,,thren.wav,
-490,Throttle disabled,przepustnica wyłączona,car,,thrdis.wav,
-491,Winch enabled,Winch enabled,car,,wchen.wav,
-492,Winch disabled,Winch disabled,car,,wchdis.wav,
-493,Drift mode on,tryb driftu włączony,car,,drifon.wav,
-494,Drift mode off,tryb driftu wyłączony,car,,drifof.wav,
-495,Gyro enabled,żyroskop włączony,,,gyroon.wav,
-496,Gyro disabled,żyroskop wyłączony,,,gyroof.wav,
-497,Launch control active,kontrola startu aktywna,,,launch.wav,
-498,Wet mode enabled,tryb mokry włączony,,,wetmde.wav,
-500,Max gyro,maksymalny żyroskop,,,maxgyr.wav,
-501,Max assistance,maksymalne wspomaganie,,,maxast.wav,
-502,Overheating,przegrzanie,,,overht.wav,
-503,Motor overheating,przegrzanie silnika,,,mothot.wav,
-504,Drift Mode Enabled,tryb driftu włączony,,,drifen.wav,
-505,Drift Mode Disabled,tryb driftu wyłączony,,,drifdb.wav,
-506,Screenshot,zrzut ekranu,,,screns.wav,
-507,Cell,cela,,,cell.wav,
-508,Transmitter Battery Low,niski poziom baterii nadajnika,,,txbatl.wav,
-509,Left,lewo,,,left.wav,
-510,Right,prawo,,,right.wav,
-511,Shift,przesuniecie,,,shift.wav,
-512,Stability Control On,kontrola stabilności włączona,,,sbcton.wav,
-513,Stability Control Off,kontrola stabilności wyłączona,,,sbctof.wav,
-514,Stability Control Enabled,kontrola stabilności włączona,,,sbcten.wav,
-515,Stability Control Disabled,kontrola stabilności wyłączona,,,sbctdb.wav,
-516,Thermal Warning,ostrzeżenie termiczne,,,thmwrn.wav,
-517,Servo Overload,przeciążenie serwa,,,srvovl.wav,
-518,BEC Overload,przeciążenie zasilania BEC,,,becovl.wav,
-519,Stability Control,kontrola stabilności,,,sbct.wav,
-520,Stability Control - Standard,kontrola stabilności – standard,,,sbctst.wav,
-521,Gyro,żyroskop,,,gyro.wav,
-522,Low,nisko,,,low.wav,
-523,Medium,średnio,,,medium.wav,
-524,High,wysoko,,,high.wav,
-525,Standard,Standard,,,stanrd.wav,
-526,Bash Mode,tryb bash,car,,bashmd.wav,
-527,Race Mode,tryb wyścigu,car,,racemd.wav,
-528,Chill Mode,tryb spokojny,car,,chilmd.wav,
-529,Trainer Mode,tryb trenera,car,,trnmd.wav,
-530,Speed Mode,tryb prędkości,car,,spdmd.wav,
-531,City Mode,tryb miejski,car,,citymd.wav,
-532,Cruise Mode,tryb rejsu,car,,crusmd.wav,
-533,Flaps Middle,klapy w środku,plane,,flapmd.wav,
-534,Flaps Full,pełne klapy,plane,,flapfl.wav,
-535,Motor On,silnik włączony,,,moton.wav,
-536,Motor Off,silnik wyłączony,,,motoff.wav,
-537,Motor Idle,Silnik – bieg jałowy,,,motidl.wav,
-538,Autorotation,autorotacja,heli,,autor.wav,
-539,Rescue On,ratunek włączony,,,reson.wav,
-540,High Temperature,wysoka temperatura,,,htemp.wav,
-541,High Vibration,silne wibracje,,,hvibr.wav,
-542,Glow On,świecenie włączone,,,glwon.wav,
-543,Glow Off,świecenie wyłączone,,,glwoff.wav,
-544,Glow Activated,świecenie aktywowane,,,glwact.wav,
-545,Glow Deactivated,świecenie dezaktywowane,,,glwdea.wav,
-546,Track Mode,tryb torowy,Car,,trkmd.wav,
-547,Drag brake,hamulec oporowy,Car,,dbrk.wav,
-548,Drag brake on,hamulec oporowy włączony,Car,,dbrkon.wav,
-549,Drag brake off,hamulec oporowy wyłączony,Car,,dbrkof.wav,
-550,Drag brake Low,hamulec oporowy niski,Car,,dbrklw.wav,
-551,Drag brake Medium,hamulec oporowy średni,Car,,dbrkmd.wav,
-552,Drag brake High,hamulec oporowy wysoki,Car,,dbrkhi.wav,
-553,Snapflap On,Snapflap włączony,Plane,,snapfon.wav,
-554,Snapflap Off,Snapflap wyłączony,Plane,,snapfof.wav,
-555,Snapflap Low,Snapflap niski,Plane,,snapflo.wav,
-556,Snapflap High,Snapflap wysoki,Plane,,snapfhi.wav,
-557,Auto tune,Auto strojenie,Plane,,autotun.wav,
-558,Auto level trim,Automatyczny trim poziomu,Plane,,alvltrim.wav,
-559,Servo auto trim,automatyczny trim serwa,Plane,,srvatrim.wav,
-560,open,otwórz,,,open.wav,
-561,close,zamknij,,,close.wav,
-562,locked,zablokowany,,,locked.wav,
-563,unlocked,odblokowany,,,unlckd.wav,
-564,canopy,kabinka,,,canopy.wav,
-565,bind,bindowanie,,,bind.wav,
+"String ID","Source text","Translation","Context","Path","Filename"
+"String ID","Source text","Translation","Context","Path","Filename","Skip"
+"1","0","zero","","SYSTEM","0000.wav",""
+"2","1","jeden","","SYSTEM","0001.wav",""
+"3","2","dwa","","SYSTEM","0002.wav",""
+"4","3","trzy","","SYSTEM","0003.wav",""
+"5","4","cztery","","SYSTEM","0004.wav",""
+"6","5","pięć","","SYSTEM","0005.wav",""
+"7","6","sześć","","SYSTEM","0006.wav",""
+"8","7","siedem","","SYSTEM","0007.wav",""
+"9","8","osiem","","SYSTEM","0008.wav",""
+"10","9","dziewięć","","SYSTEM","0009.wav",""
+"11","10","dziesięć","","SYSTEM","0010.wav",""
+"12","11","jedenaście","","SYSTEM","0011.wav",""
+"13","12","dwanaście","","SYSTEM","0012.wav",""
+"14","13","trzynaście","","SYSTEM","0013.wav",""
+"15","14","czternaście","","SYSTEM","0014.wav",""
+"16","15","piętnaście","","SYSTEM","0015.wav",""
+"17","16","szesnaście","","SYSTEM","0016.wav",""
+"18","17","siedemnaście","","SYSTEM","0017.wav",""
+"19","18","osiemnaście","","SYSTEM","0018.wav",""
+"20","19","dziewiętnaście","","SYSTEM","0019.wav",""
+"21","20","dwadzieścia","","SYSTEM","0020.wav",""
+"22","21","dwadzieścia jeden","","SYSTEM","0021.wav",""
+"23","22","dwadzieścia dwa","","SYSTEM","0022.wav",""
+"24","23","dwadzieścia trzy","","SYSTEM","0023.wav",""
+"25","24","dwadzieścia cztery","","SYSTEM","0024.wav",""
+"26","25","dwadzieścia pięć","","SYSTEM","0025.wav",""
+"27","26","dwadzieścia sześć","","SYSTEM","0026.wav",""
+"28","27","dwadzieścia siedem","","SYSTEM","0027.wav",""
+"29","28","dwadzieścia osiem","","SYSTEM","0028.wav",""
+"30","29","dwadzieścia dziewięć","","SYSTEM","0029.wav",""
+"31","30","trzydzieści","","SYSTEM","0030.wav",""
+"32","31","trzydzieści jeden","","SYSTEM","0031.wav",""
+"33","32","trzydzieści dwa","","SYSTEM","0032.wav",""
+"34","33","trzydzieści trzy","","SYSTEM","0033.wav",""
+"35","34","trzydzieści cztery","","SYSTEM","0034.wav",""
+"36","35","trzydzieści pięć","","SYSTEM","0035.wav",""
+"37","36","trzydzieści sześć","","SYSTEM","0036.wav",""
+"38","37","trzydzieści siedem","","SYSTEM","0037.wav",""
+"39","38","trzydzieści osiem","","SYSTEM","0038.wav",""
+"40","39","trzydzieści dziewięć","","SYSTEM","0039.wav",""
+"41","40","czterdzieści","","SYSTEM","0040.wav",""
+"42","41","czterdzieści jeden","","SYSTEM","0041.wav",""
+"43","42","czterdzieści dwa","","SYSTEM","0042.wav",""
+"44","43","czterdzieści trzy","","SYSTEM","0043.wav",""
+"45","44","czterdzieści cztery","","SYSTEM","0044.wav",""
+"46","45","czterdzieści pięć","","SYSTEM","0045.wav",""
+"47","46","czterdzieści sześć","","SYSTEM","0046.wav",""
+"48","47","czterdzieści siedem","","SYSTEM","0047.wav",""
+"49","48","czterdzieści osiem","","SYSTEM","0048.wav",""
+"50","49","czterdzieści dziewięć","","SYSTEM","0049.wav",""
+"51","50","pięćdziesiąt","","SYSTEM","0050.wav",""
+"52","51","pięćdziesiąt jeden","","SYSTEM","0051.wav",""
+"53","52","pięćdziesiąt dwa","","SYSTEM","0052.wav",""
+"54","53","pięćdziesiąt trzy","","SYSTEM","0053.wav",""
+"55","54","pięćdziesiąt cztery","","SYSTEM","0054.wav",""
+"56","55","pięćdziesiąt pięć","","SYSTEM","0055.wav",""
+"57","56","pięćdziesiąt sześć","","SYSTEM","0056.wav",""
+"58","57","pięćdziesiąt siedem","","SYSTEM","0057.wav",""
+"59","58","pięćdziesiąt osiem","","SYSTEM","0058.wav",""
+"60","59","pięćdziesiąt dziewięć","","SYSTEM","0059.wav",""
+"61","60","sześćdziesiąt","","SYSTEM","0060.wav",""
+"62","61","sześćdziesiąt jeden","","SYSTEM","0061.wav",""
+"63","62","sześćdziesiąt dwa","","SYSTEM","0062.wav",""
+"64","63","sześćdziesiąt trzy","","SYSTEM","0063.wav",""
+"65","64","sześćdziesiąt cztery","","SYSTEM","0064.wav",""
+"66","65","sześćdziesiąt pięć","","SYSTEM","0065.wav",""
+"67","66","sześćdziesiąt sześć","","SYSTEM","0066.wav",""
+"68","67","sześćdziesiąt siedem","","SYSTEM","0067.wav",""
+"69","68","sześćdziesiąt osiem","","SYSTEM","0068.wav",""
+"70","69","sześćdziesiąt dziewięć","","SYSTEM","0069.wav",""
+"71","70","siedemdziesiąt","","SYSTEM","0070.wav",""
+"72","71","siedemdziesiąt jeden","","SYSTEM","0071.wav",""
+"73","72","siedemdziesiąt dwa","","SYSTEM","0072.wav",""
+"74","73","siedemdziesiąt trzy","","SYSTEM","0073.wav",""
+"75","74","siedemdziesiąt cztery","","SYSTEM","0074.wav",""
+"76","75","siedemdziesiąt pięć","","SYSTEM","0075.wav",""
+"77","76","siedemdziesiąt sześć","","SYSTEM","0076.wav",""
+"78","77","siedemdziesiąt siedem","","SYSTEM","0077.wav",""
+"79","78","siedemdziesiąt osiem","","SYSTEM","0078.wav",""
+"80","79","siedemdziesiąt dziewięć","","SYSTEM","0079.wav",""
+"81","80","osiemdziesiąt","","SYSTEM","0080.wav",""
+"82","81","osiemdziesiąt jeden","","SYSTEM","0081.wav",""
+"83","82","osiemdziesiąt dwa","","SYSTEM","0082.wav",""
+"84","83","osiemdziesiąt trzy","","SYSTEM","0083.wav",""
+"85","84","osiemdziesiąt cztery","","SYSTEM","0084.wav",""
+"86","85","osiemdziesiąt pięć","","SYSTEM","0085.wav",""
+"87","86","osiemdziesiąt sześć","","SYSTEM","0086.wav",""
+"88","87","osiemdziesiąt siedem","","SYSTEM","0087.wav",""
+"89","88","osiemdziesiąt osiem","","SYSTEM","0088.wav",""
+"90","89","osiemdziesiąt dziewięć","","SYSTEM","0089.wav",""
+"91","90","dziewięćdziesiąt","","SYSTEM","0090.wav",""
+"92","91","dziewięćdziesiąt jeden","","SYSTEM","0091.wav",""
+"93","92","dziewięćdziesiąt dwa","","SYSTEM","0092.wav",""
+"94","93","dziewięćdziesiąt trzy","","SYSTEM","0093.wav",""
+"95","94","dziewięćdziesiąt cztery","","SYSTEM","0094.wav",""
+"96","95","dziewięćdziesiąt pięć","","SYSTEM","0095.wav",""
+"97","96","dziewięćdziesiąt sześć","","SYSTEM","0096.wav",""
+"98","97","dziewięćdziesiąt siedem","","SYSTEM","0097.wav",""
+"99","98","dziewięćdziesiąt osiem","","SYSTEM","0098.wav",""
+"100","99","dziewięćdziesiąt dziewięć","","SYSTEM","0099.wav",""
+"101","100","sto","","SYSTEM","0100.wav",""
+"102","200","dwieście","","SYSTEM","0101.wav",""
+"103","300","trzysta","","SYSTEM","0102.wav",""
+"104","400","czterysta","","SYSTEM","0103.wav",""
+"105","500","pięćset","","SYSTEM","0104.wav",""
+"106","600","sześćset","","SYSTEM","0105.wav",""
+"107","700","siedemset","","SYSTEM","0106.wav",""
+"108","800","osiemset","","SYSTEM","0107.wav",""
+"109","900","dziewięćset","","SYSTEM","0108.wav",""
+"110","thousand","tysiąc","","SYSTEM","0109.wav",""
+"111","and","i","","SYSTEM","0110.wav",""
+"112","minus","minus","","SYSTEM","0111.wav",""
+"113","point","kropka","","SYSTEM","0112.wav",""
+"114","volt","woltów","","SYSTEM","volt0.wav",""
+"115","volts","woltów","","SYSTEM","volt1.wav",""
+"116","amp","amper","","SYSTEM","amp0.wav",""
+"117","amps","amper","","SYSTEM","amp1.wav",""
+"118","milliamp","miliamper","","SYSTEM","mamp0.wav",""
+"119","milliamps","miliamper","","SYSTEM","mamp1.wav",""
+"120","knot","węzłów","","SYSTEM","knot0.wav",""
+"121","knots","węzłów","","SYSTEM","knot1.wav",""
+"122","meter per second","metrów na sekundę","","SYSTEM","mps0.wav",""
+"123","meters per second","metrów na sekundę","","SYSTEM","mps1.wav",""
+"124","foot per second","stóp na sekundę","","SYSTEM","fps0.wav",""
+"125","feet per second","stóp na sekundę","","SYSTEM","fps1.wav",""
+"126","kilometer per hour","kilometrów na godzinę","","SYSTEM","kph0.wav",""
+"127","kilometers per hour","kilometrów na godzinę","","SYSTEM","kph1.wav",""
+"128","mile per hour","mil na godzinę","","SYSTEM","mph0.wav",""
+"129","miles per hour","mil na godzinę","","SYSTEM","mph1.wav",""
+"130","meter","metr","","SYSTEM","meter0.wav",""
+"131","meters","metrów","","SYSTEM","meter1.wav",""
+"132","foot","stopa","","SYSTEM","foot0.wav",""
+"133","feet","stóp","","SYSTEM","foot1.wav",""
+"134","degree celsius","stopni celsjusza","","SYSTEM","celsius0.wav",""
+"135","degrees celsius","stopni celsjusza","","SYSTEM","celsius1.wav",""
+"136","degree fahrenheit","stopni farenhajta","","SYSTEM","fahr0.wav",""
+"137","degrees fahrenheit","stopni farenhajta","","SYSTEM","fahr1.wav",""
+"138","percent","procent","","SYSTEM","percent0.wav",""
+"139","percent","procent","","SYSTEM","percent1.wav",""
+"140","milliamp-hour","miliamperogodzina","","SYSTEM","mamph0.wav",""
+"141","milliamp-hours","miliamperogodzin","","SYSTEM","mamph1.wav",""
+"142","watt","wat","","SYSTEM","watt0.wav",""
+"143","watts","watów","","SYSTEM","watt1.wav",""
+"144","milli-watt","miliwat","","SYSTEM","mwatt0.wav",""
+"145","milli-watts","miliwatów","","SYSTEM","mwatt1.wav",""
+"146","DB","dibi","","SYSTEM","db0.wav",""
+"147","DB","dibi","","SYSTEM","db1.wav",""
+"148","RPM","RPM","","SYSTEM","rpm0.wav",""
+"149","RPM","RPM","","SYSTEM","rpm1.wav",""
+"150","G","gie","","SYSTEM","g0.wav",""
+"151","G","gie","","SYSTEM","g1.wav",""
+"152","degree","stopień","","SYSTEM","degree0.wav",""
+"153","degrees","stopni ","","SYSTEM","degree1.wav",""
+"154","radian","radian","","SYSTEM","rad0.wav",""
+"155","radians","radianów","","SYSTEM","rad1.wav",""
+"156","milliliter","mililitr","","SYSTEM","ml0.wav",""
+"157","milliliters","mililitrów","","SYSTEM","ml1.wav",""
+"158","fluid ounce","uncja płynu","","SYSTEM","founce0.wav",""
+"159","fluid ounces","uncji płynu","","SYSTEM","founce1.wav",""
+"160","milliliter per minute","milimetr na minutę","","SYSTEM","mlpm0.wav",""
+"161","milliliters per minute","milimetrów na minutę","","SYSTEM","mlpm1.wav",""
+"162","hertz","herc","","SYSTEM","hertz0.wav",""
+"163","hertz","herców","","SYSTEM","hertz1.wav",""
+"164","millisecond","milisekunda","","SYSTEM","ms0.wav",""
+"165","milliseconds","milisekund","","SYSTEM","ms1.wav",""
+"166","microsecond","mikrosekunda","","SYSTEM","us0.wav",""
+"167","microseconds","mikrosekund","","SYSTEM","us1.wav",""
+"168","hour","godzina","","SYSTEM","hour0.wav",""
+"169","hours","godzin","","SYSTEM","hour1.wav",""
+"170","minute","Polska minuta","","SYSTEM","minute0.wav","0.5"
+"171","minutes","Polskie minuty","","SYSTEM","minute1.wav","0.6"
+"172","second","sekunda","","SYSTEM","second0.wav",""
+"173","seconds","sekundy","","SYSTEM","second1.wav",""
+"174","point zero","kropka zero","","SYSTEM","0167.wav",""
+"175","point one","kropka jeden","","SYSTEM","0168.wav",""
+"176","point two","kropka dwa","","SYSTEM","0169.wav",""
+"177","point three","kropka trzy","","SYSTEM","0170.wav",""
+"178","point four","kropka cztery","","SYSTEM","0171.wav",""
+"179","point five","kropka pięć","","SYSTEM","0172.wav",""
+"180","point six","kropka sześć","","SYSTEM","0173.wav",""
+"181","point seven","kropka siedem","","SYSTEM","0174.wav",""
+"182","point eight","kropka osiem","","SYSTEM","0175.wav",""
+"183","point nine","kropka dziewięć","","SYSTEM","0176.wav",""
+"184","trim center","trymer w środku","","SYSTEM","midtrim.wav",""
+"185","maximum trim reached","trymer w maksimum","","SYSTEM","maxtrim.wav",""
+"186","minimum trim reached","trymer w minimum","","SYSTEM","mintrim.wav",""
+"187","timer 1 elapsed","tajmer jeden – minął","","SYSTEM","timovr1.wav",""
+"188","timer 2 elapsed","tajmer dwa – minął","","SYSTEM","timovr2.wav",""
+"189","timer 3 elapsed","tajmer trzy – minął","","SYSTEM","timovr3.wav",""
+"190","transmitter battery low","niski poziom baterii nadajnika","","SYSTEM","lowbatt.wav",""
+"191","inactivity alarm","alarm: nieaktywność","","SYSTEM","inactiv.wav",""
+"192","throttle warning","ostrzeżenie: przepustnica","","SYSTEM","thralert.wav",""
+"193","switch warning","ostrzeżenie: przełącznik.","","SYSTEM","swalert.wav",""
+"194","bad eeprom","nieprawidłowy eprom","","SYSTEM","eebad.wav",""
+"195","Welcome to EdgeTX","witaj w edgetx","","SYSTEM","hello.wav",""
+"196","RF signal low","słaby sygnał radiowy","","SYSTEM","rssi_org.wav",""
+"197","RF signal critical","sygnał radiowy krytyczny","","SYSTEM","rssi_red.wav",""
+"198","radio antenna defective","zepsuta antena nadajnika","","SYSTEM","swr_red.wav",""
+"199","telemetry lost","telemetria utracona","","SYSTEM","telemko.wav",""
+"200","telemetry recovered","telemetria odzyskana","","SYSTEM","telemok.wav",""
+"201","Trainer connected","trener połączony","","SYSTEM","trainco.wav",""
+"202","trainer signal lost","sygnał trenera utracony","","SYSTEM","trainko.wav",""
+"203","trainer signal recovered","sygnał trenera odzyskany","","SYSTEM","trainok.wav",""
+"204","sensor lost","czujnik utracony","","SYSTEM","sensorko.wav",""
+"205","servo overload","przeciążenie serwa","","SYSTEM","servoko.wav",""
+"206","power overload","przeciążenie mocy","","SYSTEM","rxko.wav",""
+"207","receiver still connected","odbiornik nadal podłączony","","SYSTEM","modelpwr.wav",""
+"208","armed","uzbrojony","","","armed.wav",""
+"209","disarmed","rozbrojony","","","disarm.wav",""
+"210","throttle cut","odcięcie przepustnicy","","","thrcut.wav",""
+"211","throttle active","przepustnica aktywna","","","thract.wav",""
+"212","gear up","podwozie w górze","plane","","gearup.wav",""
+"213","gear down","podwozie w dole","plane","","geardn.wav",""
+"214","flaps up","klapy w górze","plane","","flapup.wav",""
+"215","flaps down","klapy w dole","plane","","flapdn.wav",""
+"216","spoiler up","spoiler w górze","","","splrup.wav",""
+"217","spoiler down","spoiler w dole","","","splrdn.wav",""
+"218","trainer on","trener włączony","","","trnon.wav",""
+"219","trainer off","trener wyłączony","","","trnoff.wav",""
+"220","engine off","silnik wyłączony","","","engoff.wav",""
+"221","too high","zbyt wysoko","","","tohigh.wav",""
+"222","too low","zbyt nisko","","","tolow.wav",""
+"223","low battery","niski poziom baterii","","","lowbat.wav",""
+"224","crow on","crow włączony","","","crowon.wav",""
+"225","crow off","crow wyłączony","","","crowof.wav",""
+"226","RF signal low","słaby sygnał radiowy","rc-link","","siglow.wav",""
+"227","RF signal critical","sygnał radiowy krytyczny","rc-link","","sigcrt.wav",""
+"228","LQ","LQ","rc-link","","lq.wav",""
+"229","RF mode","tryb radiowy","rc-link","","rfmode.wav",""
+"230","high speed mode active","tryb wysokiej prędkości aktywny","rc-link","","spdmod.wav",""
+"231","thermal mode on","tryb termiczny włączony","","","thmmod.wav",""
+"232","normal mode on","tryb normalny włączony","","","nrmmod.wav",""
+"233","landing mode on","tryb lądowania włączony","","","lnding.wav",""
+"234","acro mode on","tryb akro włączony","","","acro.wav",""
+"235","flight mode one","tryb lotu jeden","","","fm-1.wav",""
+"236","flight mode two","tryb lotu dwa","","","fm-2.wav",""
+"237","flight mode three","tryb lotu trzy","","","fm-3.wav",""
+"238","flight mode four","tryb lotu cztery","","","fm-4.wav",""
+"239","flight mode five","tryb lotu pięć","","","fm-5.wav",""
+"240","flight mode six","tryb lotu sześć","","","fm-6.wav",""
+"241","flight mode seven","tryb lotu siedem","","","fm-7.wav",""
+"242","flight mode eight","tryb lotu osiem","","","fm-8.wav",""
+"243","vario on","wario włączony","","","vrion.wav",""
+"244","vario off","wario wyłączony","","","vrioff.wav",""
+"245","flight mode power","tryb lotu – moc","","","fm-pwr.wav",""
+"246","flight mode land","tryb lotu – lądowanie","","","fm-lnd.wav",""
+"247","flight mode float","tryb lotu – pływanie","","","fm-flt.wav",""
+"248","flight mode speed","tryb lotu – prędkość","","","fm-spd.wav",""
+"249","flight mode fast","tryb lotu – szybko","","","fm-fst.wav",""
+"250","flight mode normal","tryb lotu – normalny","","","fm-nrm.wav",""
+"251","flight mode cruise","tryb lotu – rejs","","","fm-crs.wav",""
+"252","flight mode acro","tryb lotu – akro","","","fm-acr.wav",""
+"253","flight mode race","tryb lotu – wyścig","","","fm-rce.wav",""
+"254","flight mode launch","tryb lotu – start","","","fm-lch.wav",""
+"255","flight mode ping","tryb lotu – ping","","","fm-png.wav",""
+"256","flight mode thermal","tryb lotu – termiczny","","","fm-thm.wav",""
+"257","flight mode thermal left","tryb lotu – termiczny lewy","","","fm-thl.wav",""
+"258","flight mode thermal right","tryb lotu – termiczny prawy","","","fm-thr.wav",""
+"259","flight mode stabilize","tryb lotu – stabilizacja","","","fm-stb.wav",""
+"260","flight mode horizon","tryb lotu – poziomy","","","fm-hor.wav",""
+"261","flight mode angle","tryb lotu – kątowy","","","fm-ang.wav",""
+"262","flight mode idle up 1","tryb lotu – idle 1","","","fm-id1.wav",""
+"263","flight mode idle up 2","tryb lotu – idle 2","","","fm-id2.wav",""
+"264","low rate","współczynnik niski","","","ratlow.wav",""
+"265","medium rate","współczynnik średni","","","ratmed.wav",""
+"266","high rate","współczynnik wysoki","","","rathi.wav",""
+"267","take off","start","","","takeof.wav",""
+"268","sport","sport","","","sport.wav",""
+"269","pattern","wzór","","","pattrn.wav",""
+"270","3D","3D","","","3d.wav",""
+"271","landing","lądowanie","","","landin.wav",""
+"272","idle up 1","idle up 1","","","idleu1.wav",""
+"273","idle up 2","idle up 2","","","idleu2.wav",""
+"274","normal mode","tryb normalny","","","normod.wav",""
+"275","bank 0","bank 0","","","bank-0.wav",""
+"276","bank 1","bank 1","","","bank-1.wav",""
+"277","bank 2","bank 2","","","bank-2.wav",""
+"278","bank 3","bank 3","","","bank-3.wav",""
+"279","heading lock","blokada orientacji","","","headlo.wav",""
+"280","rate mode","tryb współczynnika","","","ratmod.wav",""
+"281","3D Mode","tryb 3d","","","3d-mod.wav",""
+"282","stabilize mode","tryb stabilizacji","","","stabmo.wav",""
+"283","on","włączony","","","on.wav",""
+"284","off","wyłączony","","","off.wav",""
+"285","buzzer active","brzęczyk aktywny","","","buzact.wav",""
+"286","crash-flip active","crash-flip aktywny","multicopter","","crfact.wav",""
+"287","blackbox active","Czarna skrzynka aktywna","","","blkact.wav",""
+"288","pre-arm active","pre-arm aktywny","","","preact.wav",""
+"289","stable mode","tryb stabilny","","","stbmod.wav",""
+"290","brakes on","hamulce włączone","plane","","brakon.wav",""
+"291","brakes off","hamulce wyłączone","plane","","brakof.wav",""
+"292","butterfly on","motyl włączony","","","btfon.wav",""
+"293","butterfly off","motyl wyłączony","","","btfoff.wav",""
+"294","flaps one","klapy jeden","plane","","flp1.wav",""
+"295","flaps two","klapy dwa","plane","","flp2.wav",""
+"296","flaps three","klapy trzy","plane","","flp3.wav",""
+"297","flaps four","klapy cztery","plane","","flp4.wav",""
+"298","flaps five","klapy pięć","plane","","flp5.wav",""
+"299","wingsweep","machnięcie skrzydłem","plane","","wngswp.wav",""
+"300","wheelbrakes on","wheelbrakes,on","plane","","whlbro.wav",""
+"301","wheelbrakes off","wheelbrakes,off","plane","","whlbrf.wav",""
+"302","manual mode","tryb manualny","","","manmod.wav",""
+"303","acro mode","tryb akro","","","acrmod.wav",""
+"304","angle mode","tryb kątowy","","","angmod.wav",""
+"305","horizon mode","tryb poziomy","","","hznmod.wav",""
+"306","launch mode","tryb startowy","","","lncmod.wav",""
+"307","air mode","tryb powietrzny","","","airmod.wav",""
+"308","pit mode","tryb pit","","","pitmod.wav",""
+"309","navigation cruise","nawigacja – rejs","autopilot","","navcrs.wav",""
+"310","navigation course hold","nawigacja – trzymaj kurs","autopilot","","navcsh.wav",""
+"311","navigation altitude hold","Nawigacja – trzymaj wysokość","autopilot","","navalh.wav",""
+"312","navigation position hold","Nawigacja – trzymaj pozycję","autopilot","","navpos.wav",""
+"313","navigation return to home","Nawigacja – powrót do domu","autopilot","","navrth.wav",""
+"314","navigation waypoint","Nawigacja – punkt pośredni","autopilot","","navwp.wav",""
+"315","cruise","rejs","autopilot","","cruise.wav",""
+"316","course hold","trzymaj kurs","autopilot","","crshld.wav",""
+"317","altitude hold","trzymaj wysokość","autopilot","","althld.wav",""
+"318","position hold","trzymaj pozycję","autopilot","","poshld.wav",""
+"319","return to home","powrót do domu","autopilot","","rth.wav",""
+"320","waypoint","punkt pośredni","autopilot","","waypnt.wav",""
+"321","manual","manual","","","manual.wav",""
+"322","auto","auto","","","auto.wav",""
+"323","OSD","OSD","video","","osd.wav",""
+"324","OSD profile","Profil OSD","video","","osdprf.wav",""
+"325","attitude hold mode","tryb utrzymania pozycji","autopilot","","sxrahd.wav",""
+"326","manual mode","tryb manualny","","","sxrman.wav",""
+"327","stabilizer mode","tryb stabilizacji","","","sxrsmd.wav",""
+"328","stabilizer off","stabilizacja wyłączona","","","sxrsof.wav",""
+"329","stabilizer on","stabilizacja włączona","","","sxrstb.wav",""
+"330","wind rejection mode","tryb odrzucenia wiatru","","","sxrwr.wav",""
+"331","turtle mode on","tryb żółwia – włączony","multicopter","","turton.wav",""
+"332","turtle mode off","tryb żółwia – wyłączony","multicopter","","turtof.wav",""
+"333","flip","flip","","","flip.wav",""
+"334","autorotation","autorotacja","heli","","auro.wav",""
+"335","failsafe active","Failsafe aktywny","","","fsact.wav",""
+"336","failsafe off","Failsafe wyłączony","","","fsoff.wav",""
+"337","OSD Profile 1","OSD Profil 1","video","","osd1.wav",""
+"338","OSD Profile 2","OSD Profil 2","video","","osd2.wav",""
+"339","OSD Profile 3","OSD Profil 3","video","","osd3.wav",""
+"340","rate profile 1","współczynnik profil 1","","","rates1.wav",""
+"341","rate profile 2","współczynnik profil 2","","","rates2.wav",""
+"342","rate profile 3","współczynnik profil 3","","","rates3.wav",""
+"343","rate profile 4","współczynnik profil 4","","","rates4.wav",""
+"344","rate profile 5","współczynnik profil 5","","","rates5.wav",""
+"345","rate profile 6","współczynnik profil 6","","","rates6.wav",""
+"346","stick commands disabled","drążki nieaktywne","","","scmdof.wav",""
+"347","stick commands enabled","drążki aktywne","","","scmdon.wav",""
+"348","telemetry","telemetria","","","telem.wav",""
+"349","telemetry logging on","logowanie telemetrii włączone","","","tlogon.wav",""
+"350","telemetry logging off","logowanie telemetrii wyłączone","","","tlogof.wav",""
+"351","VTX","VTX","video","","vtx.wav",""
+"352","VTX on","VTX włączony","video","","vtxon.wav",""
+"353","VTX off","VTX wyłączony","video","","vtxoff.wav",""
+"354","VTX 25 milliwatts","VTX 25 milliwatów","video","","vtx25.wav",""
+"355","VTX 50 milliwatts","VTX 50 milliwatów","video","","vtx50.wav",""
+"356","VTX 100 milliwatts","VTX 100 milliwatów","video","","vtx100.wav",""
+"357","VTX 200 milliwatts","VTX 200 milliwatów","video","","vtx200.wav",""
+"358","VTX 300 milliwatts","VTX 300 milliwatów","video","","vtx300.wav",""
+"359","VTX 400 milliwatts","VTX 400 milliwatów","video","","vtx400.wav",""
+"360","VTX 500 milliwatts","VTX 500 milliwatów","video","","vtx500.wav",""
+"361","VTX 600 milliwatts","VTX 600 milliwatów","video","","vtx600.wav",""
+"362","VTX 700 milliwatts","VTX 700 milliwatów","video","","vtx700.wav",""
+"363","VTX 800 milliwatts","VTX 800 milliwatów","video","","vtx800.wav",""
+"364","VTX 900 milliwatts","VTX 900 milliwatów","video","","vtx900.wav",""
+"365","VTX Pit Mode","VTX tryb Pit","video","","vtxpm.wav",""
+"366","VTX Race Mode","VTX tryb wyścigu","video","","vtxrm.wav",""
+"367","VTX 1 watt","VTX 1 wat","video","","vtx1w.wav",""
+"368","VTX 2 watts","VTX 2 waty","video","","vtx2w.wav",""
+"369","VTX 4 watts","VTX 4 waty","video","","vtx4w.wav",""
+"370","critical low battery","Krytyczny poziom baterii","","","clobat.wav",""
+"371","start","start","","","start.wav",""
+"372","stop","stop","","","stop.wav",""
+"373","lights on","światła włączone","","","lghton.wav",""
+"374","lights off","światła wyłączone","","","lghtof.wav",""
+"375","buzzer off","brzęczyk wyłączony","","","buzoff.wav",""
+"376","dynamic TX power","Dynamiczna moc TX","rc-link","","dyntxp.wav",""
+"377","maximum TX power","Maksymalna moc TX","rc-link","","maxtxp.wav",""
+"378","throttle hold","Przepustnica – wstrzymana","plane/heli","","thrhld.wav",""
+"379","throttle idle","Przepustnica – bieg jałowy","plane/heli","","thridl.wav",""
+"380","throttle release","Przepustnica – odpuszczona","plane/heli","","thrrel.wav",""
+"381","negative pitch allowed","Negatywne kąty dozwolone","heli","","negpon.wav",""
+"382","negative pitch disallowed","negatywne katy niedozwolone","heli","","negpof.wav",""
+"383","autolaunch started","autostart uruchomiony","autopilot","","alnch.wav",""
+"384","rescue mode active","tryb ratowania aktywny","autopilot","","rscmon.wav",""
+"385","rescue mode off","tryb ratowania wyłączony","autopilot","","rscmof.wav",""
+"386","headfree mode active","tryb headfree aktywny","multicopter","","hdfmon.wav",""
+"387","headfree mode off","tryb head free wyłączony","multicopter","","hdfmof.wav",""
+"388","heading adjust","dostosowanie orientacji","multicopter","","hdadj.wav",""
+"389","FPV angle mix active","FPV angle mix active","multicopter","","agmxon.wav",""
+"390","FPV angle mix off","FPV angle mix off","multicopter","","agmxof.wav",""
+"391","air mode on","tryb powietrzny włączony","","","airmon.wav",""
+"392","air mode off","tryb powietrzny wyłączony","","","airmof.wav",""
+"393","OSD on","OSD włączone","video","","osdon.wav",""
+"394","OSD off","OSD wyłączone","video","","osdoff.wav",""
+"395","return to home started","Powrót do domu – rozpoczęty","autopilot","","rthstr.wav",""
+"396","return to home stopped","Powrót do domu - zatrzymany","autopilot","","rthstp.wav",""
+"397","waypoint navigation started","nawigacja po punktach – rozpoczęta","autopilot","","wpnstr.wav",""
+"398","waypoint navigation stopped","nawigacja po punktach – zatrzymana","autopilot","","wpnstp.wav",""
+"399","course hold active","utrzymywanie kursu – aktywne","autopilot","","crshon.wav",""
+"400","course hold off","Utrzymywanie kursu – wyłączone","autopilot","","crshof.wav",""
+"401","position hold active","Utrzymywanie pozycji - aktywne","autopilot","","poshon.wav",""
+"402","position hold off","Utrzymywanie pozycji – wyłączone","autopilot","","poshof.wav",""
+"403","altitude hold active","Utrzymywanie wysokości – aktywne","autopilot","","althon.wav",""
+"404","altitude hold off","utrzymywanie wysokości – wyłączone","autopilot","","althof.wav",""
+"405","loiter","loiter","autopilot","","loiter.wav",""
+"406","safety on","bezpieczeństwo włączone","","","sftyon.wav",""
+"407","safety off","bezpieczeństwo wyłączone","","","sftyof.wav",""
+"408","SAFE on","SAFE,on","plane","","safeon.wav",""
+"409","SAFE off","SAFE,off","plane","","safeof.wav",""
+"410","flight envelope protection active","flight envelope protection active","plane","","fepact.wav",""
+"411","flight envelope protection off","flight envelope protection off","plane","","fepoff.wav",""
+"412","timer 1 reset","tajmer jeden – zresetowany","","","timrs1.wav",""
+"413","timer 2 reset","tajmer dwa – zresetowany","","","timrs2.wav",""
+"414","timer 3 reset","tajmer trzy – zresetowany","","","timrs3.wav",""
+"415","expo 1","expo 1","","","expo1.wav",""
+"416","expo 2","expo 2","","","expo2.wav",""
+"417","expo 3","expo 3","","","expo3.wav",""
+"418","active","aktywny","","","active.wav",""
+"419","deactivated","nieaktywny","","","deact.wav",""
+"420","enabled","włączony","","","enabl.wav",""
+"421","disabled","wyłączony","","","disabl.wav",""
+"422","good","dobry","","","good.wav",""
+"423","bad","zły","","","bad.wav",""
+"424","normal","normalny","","","normal.wav",""
+"425","warning","ostrzeżenie","","","warnng.wav",""
+"426","danger","niebezpieczeństwo","","","danger.wav",""
+"427","ready to fly","gotowy do lotu","","","ready.wav",""
+"428","home reset","punkt domowy zresetowany","","","homrst.wav",""
+"429","GPS","GPS","","","gps.wav",""
+"430","GPS on","GPS włączony","","","gpson.wav",""
+"431","GPS off","GPS wyłączony","","","gpsoff.wav",""
+"432","VTX Frequency R1","VTX częstotliwość R1","video","","vtxfr1.wav",""
+"433","VTX Frequency R2","VTX częstotliwość R2","video","","vtxfr2.wav",""
+"434","VTX Frequency R3","VTX częstotliwość R3","video","","vtxfr3.wav",""
+"435","VTX Frequency R4","VTX częstotliwość R4","video","","vtxfr4.wav",""
+"436","VTX Frequency R5","VTX częstotliwość R5","video","","vtxfr5.wav",""
+"437","VTX Frequency R6","VTX częstotliwość R6","video","","vtxfr6.wav",""
+"438","VTX Frequency R7","VTX częstotliwość R7","video","","vtxfr7.wav",""
+"439","VTX Frequency R8","VTX częstotliwość R8","video","","vtxfr8.wav",""
+"440","VTX Maximum Power","VTX moc maksymalna","video","","vtxmax.wav",""
+"441","blackbox erase","czarna skrzynka wymazana","","","blkers.wav",""
+"442","acro trainer mode","tryb akro trenera","","","actnmd.wav",""
+"443","Camera wifi button","Kamera – przycisk wifi","camera","","cwifi.wav",""
+"444","Camera power button","Kamera – przycisk zasilania","camera","","cpower.wav",""
+"445","Camera change mode","Kamera – zmiana trybu","camera","","cmode.wav",""
+"446","Camera start","Kamera – start","camera","","cstart.wav",""
+"447","Camera stop","Kamera – stop","camera","","cstop.wav",""
+"448","Recording start","nagrywanie rozpoczęte","","","recsrt.wav",""
+"449","Recording stop","nagrywanie zatrzymane","","","recstp.wav",""
+"450","Start recording","nagrywanie rozpoczęte","","","strtrc.wav",""
+"451","Stop recording","nagrywanie zatrzymane","","","stoprc.wav",""
+"452","DBM","dibiem","","SYSTEM","dbm0.wav",""
+"453","DBM","dibiem","","SYSTEM","dbm1.wav",""
+"454","kilometer","kilometr","","SYSTEM","km0.wav",""
+"455","kilometers","kilometrów","","SYSTEM","km1.wav",""
+"456","Reverse Thrust","ciąg wsteczny","plane","","revthr.wav",""
+"457","Reverse Thrust On","ciąg wsteczny włączony","plane","","revon.wav",""
+"458","Reverse Thrust Off","ciąg wsteczny wyłączony","plane","","revoff.wav",""
+"459","Reverse Thrust Idle","ciąg wsteczny bieg jałowy","plane","","revid.wav",""
+"460","Forward Thrust","ciąg do przodu","plane","","revfwd.wav",""
+"461","telemetry connected","telemetria podłączona","","SYSTEM","telemco.wav",""
+"462","level mode","tryb poziomu","flight controller","","lvlmod.wav",""
+"463","diffs locked","dyferencjał zablokowany","car","","difloc.wav",""
+"464","diffs unlocked","dyferencjał odblokowany","car","","difulc.wav",""
+"465","engine start","start silnika","car","","engsrt.wav",""
+"466","engine stop","zatrzymanie silnika","car","","engstp.wav",""
+"467","engine on","włączenie silnika","car","","engon.wav",""
+"468","Turn signals on","kierunkowskazy włączone","car","","turnon.wav",""
+"469","Turn signals off","kierunkowskazy wyłączone","car","","turnof.wav",""
+"470","High gear","wysoki bieg","car","","highgr.wav",""
+"471","Low gear","niski bieg","car","","lowgr.wav",""
+"472","Dig mode","tryb dig","car","","digmod.wav",""
+"473","Two wheel drive","napęd dwóch kół","car","","2wd.wav",""
+"474","Four wheel drive","napęd czterech kół","car","","4wd.wav",""
+"475","Winch in","Winch in","car","","wchin.wav",""
+"476","Winch out","Winch out","car","","wchout.wav",""
+"477","Front Steer","Przednie sterowanie","car","","str-f.wav",""
+"478","Rear Steer","tylne sterowanie","car","","str-r.wav",""
+"479","Four Wheel Steer","sterowanie czterech kół","car","","str-4w.wav",""
+"480","Mirror Steer","lustrzane sterowanie","car","","str-mr.wav",""
+"481","Crab Steer","sterowanie krabowe","car","","str-cr.wav",""
+"482","Motor armed","silnik uzbrojony","soaretx","","motarm.wav",""
+"483","Power","moc","soaretx","","power.wav",""
+"484","Speed","prędkość","soaretx","","speed.wav",""
+"485","Thermal","termika","soaretx","","therml.wav",""
+"486","Front wheel drive","przedni napęd","car","","fwd.wav",""
+"487","Rear wheel drive","tylny napęd","car","","rwd.wav",""
+"488","All wheel drive","napęd wszystkich kół","car","","awd.wav",""
+"489","Throttle enabled","przepustnica włączona","car","","thren.wav",""
+"490","Throttle disabled","przepustnica wyłączona","car","","thrdis.wav",""
+"491","Winch enabled","Winch enabled","car","","wchen.wav",""
+"492","Winch disabled","Winch disabled","car","","wchdis.wav",""
+"493","Drift mode on","tryb driftu włączony","car","","drifon.wav",""
+"494","Drift mode off","tryb driftu wyłączony","car","","drifof.wav",""
+"495","Gyro enabled","żyroskop włączony","","","gyroon.wav",""
+"496","Gyro disabled","żyroskop wyłączony","","","gyroof.wav",""
+"497","Launch control active","kontrola startu aktywna","","","launch.wav",""
+"498","Wet mode enabled","tryb mokry włączony","","","wetmde.wav",""
+"500","Max gyro","maksymalny żyroskop","","","maxgyr.wav",""
+"501","Max assistance","maksymalne wspomaganie","","","maxast.wav",""
+"502","Overheating","przegrzanie","","","overht.wav",""
+"503","Motor overheating","przegrzanie silnika","","","mothot.wav",""
+"504","Drift Mode Enabled","tryb driftu włączony","","","drifen.wav",""
+"505","Drift Mode Disabled","tryb driftu wyłączony","","","drifdb.wav",""
+"506","Screenshot","zrzut ekranu","","","screns.wav",""
+"507","Cell","cela","","","cell.wav",""
+"508","Transmitter Battery Low","niski poziom baterii nadajnika","","","txbatl.wav",""
+"509","Left","lewo","","","left.wav",""
+"510","Right","prawo","","","right.wav",""
+"511","Shift","przesuniecie","","","shift.wav",""
+"512","Stability Control On","kontrola stabilności włączona","","","sbcton.wav",""
+"513","Stability Control Off","kontrola stabilności wyłączona","","","sbctof.wav",""
+"514","Stability Control Enabled","kontrola stabilności włączona","","","sbcten.wav",""
+"515","Stability Control Disabled","kontrola stabilności wyłączona","","","sbctdb.wav",""
+"516","Thermal Warning","ostrzeżenie termiczne","","","thmwrn.wav",""
+"517","Servo Overload","przeciążenie serwa","","","srvovl.wav",""
+"518","BEC Overload","przeciążenie zasilania BEC","","","becovl.wav",""
+"519","Stability Control","kontrola stabilności","","","sbct.wav",""
+"520","Stability Control - Standard","kontrola stabilności – standard","","","sbctst.wav",""
+"521","Gyro","żyroskop","","","gyro.wav",""
+"522","Low","nisko","","","low.wav",""
+"523","Medium","średnio","","","medium.wav",""
+"524","High","wysoko","","","high.wav",""
+"525","Standard","Standard","","","stanrd.wav",""
+"526","Bash Mode","tryb bash","car","","bashmd.wav",""
+"527","Race Mode","tryb wyścigu","car","","racemd.wav",""
+"528","Chill Mode","tryb spokojny","car","","chilmd.wav",""
+"529","Trainer Mode","tryb trenera","car","","trnmd.wav",""
+"530","Speed Mode","tryb prędkości","car","","spdmd.wav",""
+"531","City Mode","tryb miejski","car","","citymd.wav",""
+"532","Cruise Mode","tryb rejsu","car","","crusmd.wav",""
+"533","Flaps Middle","klapy w środku","plane","","flapmd.wav",""
+"534","Flaps Full","pełne klapy","plane","","flapfl.wav",""
+"535","Motor On","silnik włączony","","","moton.wav",""
+"536","Motor Off","silnik wyłączony","","","motoff.wav",""
+"537","Motor Idle","Silnik – bieg jałowy","","","motidl.wav",""
+"538","Autorotation","autorotacja","heli","","autor.wav",""
+"539","Rescue On","ratunek włączony","","","reson.wav",""
+"540","High Temperature","wysoka temperatura","","","htemp.wav",""
+"541","High Vibration","silne wibracje","","","hvibr.wav",""
+"542","Glow On","świecenie włączone","","","glwon.wav",""
+"543","Glow Off","świecenie wyłączone","","","glwoff.wav",""
+"544","Glow Activated","świecenie aktywowane","","","glwact.wav",""
+"545","Glow Deactivated","świecenie dezaktywowane","","","glwdea.wav",""
+"546","Track Mode","tryb torowy","Car","","trkmd.wav",""
+"547","Drag brake","hamulec oporowy","Car","","dbrk.wav",""
+"548","Drag brake on","hamulec oporowy włączony","Car","","dbrkon.wav",""
+"549","Drag brake off","hamulec oporowy wyłączony","Car","","dbrkof.wav",""
+"550","Drag brake Low","hamulec oporowy niski","Car","","dbrklw.wav",""
+"551","Drag brake Medium","hamulec oporowy średni","Car","","dbrkmd.wav",""
+"552","Drag brake High","hamulec oporowy wysoki","Car","","dbrkhi.wav",""
+"553","Snapflap On","Snapflap włączony","Plane","","snapfon.wav",""
+"554","Snapflap Off","Snapflap wyłączony","Plane","","snapfof.wav",""
+"555","Snapflap Low","Snapflap niski","Plane","","snapflo.wav",""
+"556","Snapflap High","Snapflap wysoki","Plane","","snapfhi.wav",""
+"557","Auto tune","Auto strojenie","Plane","","autotun.wav",""
+"558","Auto level trim","Automatyczny trim poziomu","Plane","","alvltrim.wav",""
+"559","Servo auto trim","automatyczny trim serwa","Plane","","srvatrim.wav",""
+"560","open","otwórz","","","open.wav",""
+"561","close","zamknij","","","close.wav",""
+"562","locked","zablokowany","","","locked.wav",""
+"563","unlocked","odblokowany","","","unlckd.wav",""
+"564","canopy","kabinka","","","canopy.wav",""
+"565","bind","bindowanie","","","bind.wav",""
