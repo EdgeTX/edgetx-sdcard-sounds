@@ -516,7 +516,7 @@
 "516","Thermal Warning","Termikvarning","","","thmwrn.wav"
 "517","Servo Overload","Servo överansträngt","","","srvovl.wav"
 "518","BEC Overload","Beck överansträngd","","","becovl.wav"
-"519","Stability Control","Stabilitetskontroll ","","","sbct.wav"
+"519","Stability Control","Stabilitetskontroll","","","sbct.wav"
 "520","Stability Control - Standard","Stabilitetskontroll - standard","","","sbctst.wav"
 "521","Gyro","Gyro","","","gyro.wav"
 "522","Low","Låg","","","low.wav"
