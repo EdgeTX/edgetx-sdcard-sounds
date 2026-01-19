@@ -3,23 +3,29 @@ import csv
 import sys
 from pathlib import Path
 
-# Default directory to process when no args provided
-DEFAULT_DIR = Path('voices')
+# Find voices directory relative to script location
+SCRIPT_DIR = Path(__file__).resolve().parent
+DEFAULT_DIR = SCRIPT_DIR.parent / "voices"
 
-HEADER = ["String ID","Source text","Translation","Context","Path","Filename"]
+# Header with 6 required fields and 1 optional field (Skip)
+HEADER_REQUIRED = ["String ID", "Source text", "Translation", "Context", "Path", "Filename"]
+HEADER_FULL = ["String ID", "Source text", "Translation", "Context", "Path", "Filename", "Skip"]
 
 
 def fix_file(path: Path):
     rows = []
+    has_skip_field = False
     try:
         with path.open('r', newline='', encoding='utf-8') as f:
             reader = csv.reader(f)
             for idx, row in enumerate(reader, start=1):
-                # Keep rows that have 6 or 7 fields (7th is optional)
+                # Keep rows that have 6 or 7 fields (7th is optional Skip)
                 if len(row) in (6, 7):
                     rows.append(row)
+                    if len(row) == 7:
+                        has_skip_field = True
                 else:
-                    # Skip stray/unquoted or malformed lines
+                    # Skip rows with fewer fields than expected
                     # print(f"Skipping malformed line {idx} in {path}: {row}")
                     pass
     except FileNotFoundError:
@@ -30,14 +36,26 @@ def fix_file(path: Path):
         print(f"No valid rows found in {path}")
         return 2
 
+    expected_header = HEADER_FULL if has_skip_field else HEADER_REQUIRED
+
     # Ensure header is present and correct at top
-    if rows[0] != HEADER:
+    if rows[0] != expected_header:
         # If current first row looks like header but unquoted, normalize
-        if [c.strip() for c in rows[0]] == [c.strip().strip('"') for c in HEADER]:
-            rows[0] = HEADER
+        normalized = [c.strip().strip('"') for c in rows[0]]
+        if normalized == HEADER_REQUIRED or normalized == HEADER_FULL:
+            rows[0] = expected_header
         else:
             # Prepend a clean header
-            rows.insert(0, HEADER)
+            rows.insert(0, expected_header)
+
+    # Ensure all rows have consistent field count
+    for i in range(1, len(rows)):
+        if len(rows[i]) < len(expected_header):
+            # Pad with empty string for missing 7th field
+            rows[i].extend([''] * (len(expected_header) - len(rows[i])))
+        elif len(rows[i]) > len(expected_header):
+            # Trim to expected length
+            rows[i] = rows[i][:len(expected_header)]
 
     # Deduplicate rows (exact match)
     seen = set()

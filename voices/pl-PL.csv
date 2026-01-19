@@ -1,4 +1,3 @@
-"String ID","Source text","Translation","Context","Path","Filename"
 "String ID","Source text","Translation","Context","Path","Filename","Skip"
 "1","0","zero","","SYSTEM","0000.wav",""
 "2","1","jeden","","SYSTEM","0001.wav",""
