@@ -7,7 +7,6 @@ import json
 import sys
 import logging
 
-
 # Optional: Use colorama for colored terminal output if available
 try:
     from colorama import Fore, Style, init as colorama_init
@@ -94,37 +93,34 @@ def checkFilesInSoundsNotInCSV() -> int:
 
 def checkCSVcolumnCount() -> int:
     """Check that all CSV files have the expected number of columns."""
-    logging.info("VOICES: Checking CSV files for missing fields ...")
+    logging.info("VOICES: Checking CSV files for correct field count ...")
     missing_csv_field = False
     for f in csv_directory.glob("*.csv"):
         with open(f, "rt") as csvfile:
             reader = csv.reader(csvfile)
-            reader = ((field.strip() for field in row) for row in reader)  # Strip spaces
             try:
-                header = list(next(reader))  # Read header row and convert to list
+                header = next(reader)
+                expected_columns = len(header)
             except StopIteration:
                 logging.error(f"{ERROR_COLOR}[ERROR] {f.name}: Empty CSV file{RESET_COLOR}")
                 missing_csv_field = True
                 continue
 
-            expected_columns = len(header)
-
             # Check for minimum required columns
             if expected_columns < 6:
                 logging.error(
-                    f"{ERROR_COLOR}[ERROR] {f.name}: CSV header has only {expected_columns} columns (minimum 6 required)"
+                    f"{ERROR_COLOR}[ERROR] {f.name}: CSV header has only {expected_columns} columns (minimum 6 required){RESET_COLOR}"
                 )
                 missing_csv_field = True
                 continue
 
-            for row in reader:
-                row = list(row)
+            # Check each row has the correct number of columns
+            for row_num, row in enumerate(reader, 2):
                 if len(row) != expected_columns:
                     logging.error(
-                        f"{ERROR_COLOR}[ERROR] {f.name}: Expected {expected_columns} columns but got {len(row)} - {row}{RESET_COLOR}"
+                        f"{ERROR_COLOR}[ERROR] {f.name}:{row_num}: Expected {expected_columns} columns but got {len(row)}{RESET_COLOR}"
                     )
                     missing_csv_field = True
-                    continue
 
     return 1 if missing_csv_field else 0
 
@@ -192,21 +188,15 @@ def checkForDuplicateStringID() -> int:
     logging.info("VOICES: Check for duplicate StringIDs ...")
     duplicate_found = False
     for f in csv_directory.glob("*.csv"):
+        StringID_count = {}
         with open(f, "rt") as csvfile:
             reader = csv.reader(csvfile, delimiter=",", quotechar='"')
-            reader = ((field.strip() for field in row) for row in reader)  # Strip spaces
-            line_count = 0
-            StringID_count = {}
+            next(reader, None)  # Skip header
             for row in reader:
-                row = list(row)  # Convert generator to list
-                if line_count == 0:
-                    # absorb header row
-                    line_count += 1
-                else:
-                    StringID = row[0]
-                    if StringID in StringID_count.keys():
-                        logging.error(f"{ERROR_COLOR}[ERROR] {f}: {StringID} is duplicated{RESET_COLOR}")
-                        StringID_count[StringID] = StringID_count[StringID] + 1
+                if row:
+                    StringID = row[0].strip()
+                    if StringID in StringID_count:
+                        logging.error(f"{ERROR_COLOR}[ERROR] {f.name}: {StringID} is duplicated{RESET_COLOR}")
                         duplicate_found = True
                     else:
                         StringID_count[StringID] = 1
@@ -227,8 +217,78 @@ def checkCSVNewline() -> int:
     return 1 if missing_newline else 0
 
 
+def checkCSVFormatting() -> int:
+    """Check that all CSV files are properly formatted with every field quoted."""
+    logging.info("VOICES: Checking CSV files are properly formatted ...")
+    formatting_error = False
+    for f in csv_directory.glob("*.csv"):
+        with open(f, "r") as file:
+            # Read raw file to check quoting
+            for line_num, line in enumerate(file, 1):
+                line = line.rstrip('\n\r')
+                if not line:  # Skip empty lines
+                    continue
+                
+                # Check that every field is quoted: must start with quote
+                if not line.startswith('"'):
+                    logging.error(f"{ERROR_COLOR}[ERROR] {f.name}:{line_num}: Line does not start with quote - all fields must be quoted{RESET_COLOR}")
+                    formatting_error = True
+                    continue
+                
+                # Use csv module to parse the line and verify structure
+                try:
+                    reader = csv.reader([line])
+                    row = next(reader)
+                    
+                    # Verify each field in the raw line is actually quoted
+                    # by checking the original line format
+                    in_quote = False
+                    i = 0
+                    field_quotes = 0  # Count opening quotes for fields
+                    
+                    while i < len(line):
+                        if line[i] == '"':
+                            if not in_quote:
+                                # Check this quote starts a field (at position 0 or after comma)
+                                if i > 0 and line[i-1] != ',':
+                                    logging.error(f"{ERROR_COLOR}[ERROR] {f.name}:{line_num}: Unquoted content before quote at position {i+1}{RESET_COLOR}")
+                                    formatting_error = True
+                                    break
+                                in_quote = True
+                                field_quotes += 1
+                            else:
+                                # Check if this closes the field or is escaped
+                                if i + 1 < len(line) and line[i + 1] == '"':
+                                    i += 1  # Skip escaped quote
+                                else:
+                                    in_quote = False
+                                    # Next must be comma or end of line
+                                    if i + 1 < len(line) and line[i + 1] != ',':
+                                        logging.error(f"{ERROR_COLOR}[ERROR] {f.name}:{line_num}: Unquoted content after quote at position {i+1}{RESET_COLOR}")
+                                        formatting_error = True
+                                        break
+                        elif not in_quote and line[i] != ',':
+                            # Unquoted character outside quotes
+                            logging.error(f"{ERROR_COLOR}[ERROR] {f.name}:{line_num}: Unquoted field content at position {i+1}{RESET_COLOR}")
+                            formatting_error = True
+                            break
+                        
+                        i += 1
+                    
+                    if in_quote:
+                        logging.error(f"{ERROR_COLOR}[ERROR] {f.name}:{line_num}: Unclosed quote{RESET_COLOR}")
+                        formatting_error = True
+                
+                except Exception as e:
+                    logging.error(f"{ERROR_COLOR}[ERROR] {f.name}:{line_num}: Failed to parse CSV - {str(e)}{RESET_COLOR}")
+                    formatting_error = True
+    
+    return 1 if formatting_error else 0
+
+
 if __name__ == "__main__":
     error_count = 0
+    error_count += checkCSVFormatting()
     error_count += checkCSVcolumnCount()
     error_count += checkFilenameLengthsInCSV()
     error_count += checkFilenameLengths()
