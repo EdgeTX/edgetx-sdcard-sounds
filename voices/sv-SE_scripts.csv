@@ -174,3 +174,7 @@
 "173","Smart RTL deactivated","Smart RTL inaktiverad","Msg-Hash","YAAPU","3025044912.wav"
 "174","GPS home acquired","GPS hem erhållen","Msg-Hash","YAAPU","3956583920.wav"
 "175","GPS home acquired","GPS hem erhållen","Msg-Hash","YAAPU","1309405592.wav"
+"176","Auto Tune","Auto tjoun","","INAV","autotn.wav"
+"177","Auto Level Trim","Auto Level Trimm","","INAV","autolm.wav"
+"178","Soaring","Seglar","","INAV","soarng.wav"
+"179","Beeper","Tuta","","INAV","beeper.wav"
