@@ -218,72 +218,25 @@ def checkCSVNewline() -> int:
 
 
 def checkCSVFormatting() -> int:
-    """Check that all CSV files are properly formatted with every field quoted."""
-    logging.info("VOICES: Checking CSV files are properly formatted ...")
-    formatting_error = False
+    """Check that CSV files can be parsed by Python's CSV reader (standard RFC 4180)."""
+    logging.info("VOICES: Checking CSV files can be parsed ...")
+    parsing_error = False
     for f in csv_directory.glob("*.csv"):
-        with open(f, "r") as file:
-            # Read raw file to check quoting
-            for line_num, line in enumerate(file, 1):
-                line = line.rstrip('\n\r')
-                if not line:  # Skip empty lines
-                    continue
-                
-                # Check that every field is quoted: must start with quote
-                if not line.startswith('"'):
-                    logging.error(f"{ERROR_COLOR}[ERROR] {f.name}:{line_num}: Line does not start with quote - all fields must be quoted{RESET_COLOR}")
-                    formatting_error = True
-                    continue
-                
-                # Use csv module to parse the line and verify structure
-                try:
-                    reader = csv.reader([line])
-                    row = next(reader)
-                    
-                    # Verify each field in the raw line is actually quoted
-                    # by checking the original line format
-                    in_quote = False
-                    i = 0
-                    field_quotes = 0  # Count opening quotes for fields
-                    
-                    while i < len(line):
-                        if line[i] == '"':
-                            if not in_quote:
-                                # Check this quote starts a field (at position 0 or after comma)
-                                if i > 0 and line[i-1] != ',':
-                                    logging.error(f"{ERROR_COLOR}[ERROR] {f.name}:{line_num}: Unquoted content before quote at position {i+1}{RESET_COLOR}")
-                                    formatting_error = True
-                                    break
-                                in_quote = True
-                                field_quotes += 1
-                            else:
-                                # Check if this closes the field or is escaped
-                                if i + 1 < len(line) and line[i + 1] == '"':
-                                    i += 1  # Skip escaped quote
-                                else:
-                                    in_quote = False
-                                    # Next must be comma or end of line
-                                    if i + 1 < len(line) and line[i + 1] != ',':
-                                        logging.error(f"{ERROR_COLOR}[ERROR] {f.name}:{line_num}: Unquoted content after quote at position {i+1}{RESET_COLOR}")
-                                        formatting_error = True
-                                        break
-                        elif not in_quote and line[i] != ',':
-                            # Unquoted character outside quotes
-                            logging.error(f"{ERROR_COLOR}[ERROR] {f.name}:{line_num}: Unquoted field content at position {i+1}{RESET_COLOR}")
-                            formatting_error = True
-                            break
-                        
-                        i += 1
-                    
-                    if in_quote:
-                        logging.error(f"{ERROR_COLOR}[ERROR] {f.name}:{line_num}: Unclosed quote{RESET_COLOR}")
-                        formatting_error = True
-                
-                except Exception as e:
-                    logging.error(f"{ERROR_COLOR}[ERROR] {f.name}:{line_num}: Failed to parse CSV - {str(e)}{RESET_COLOR}")
-                    formatting_error = True
-    
-    return 1 if formatting_error else 0
+        reader = None
+        try:
+            with open(f, "r", newline="") as file:
+                reader = csv.reader(file, delimiter=",", quotechar='"')
+                for _ in reader:
+                    # Iteration will raise csv.Error on malformed CSV
+                    pass
+        except csv.Error as err:
+            line_num = getattr(reader, "line_num", "?") if reader else "?"
+            logging.error(
+                f"{ERROR_COLOR}[ERROR] {f.name}:{line_num}: CSV parse error - {err}{RESET_COLOR}"
+            )
+            parsing_error = True
+
+    return 1 if parsing_error else 0
 
 
 if __name__ == "__main__":
