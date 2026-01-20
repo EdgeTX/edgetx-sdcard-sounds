@@ -25,46 +25,42 @@ from rich.text import Text
 def init_argparse() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         usage="%(prog)s [FILE] [LANGDIR] [-s DELAY]",
-        description="Generate voice packs from CSV list using https://glados.c-net.org/"
+        description="Generate voice packs from CSV list using https://glados.c-net.org/",
     )
 
     parser.add_argument(
-        "-v", "--version", action="version",
-        version=f"{parser.prog} version 1.0.0"
+        "-v", "--version", action="version", version=f"{parser.prog} version 1.0.0"
     )
 
-    parser.add_argument('file',
-                        type=str,
-                        help="CSV Translation file"
-                        )
+    parser.add_argument("file", type=str, help="CSV Translation file")
 
-    parser.add_argument('langdir',
-                        type=str,
-                        help="Language subfolder"
-                        )
+    parser.add_argument("langdir", type=str, help="Language subfolder")
 
-    parser.add_argument('-s',
-                        '--delay',
-                        type=int,
-                        help="Sleep time (in seconds) between processing each translation",
-                        required=False,
-                        default=3
-                        )
+    parser.add_argument(
+        "-s",
+        "--delay",
+        type=int,
+        help="Sleep time (in seconds) between processing each translation",
+        required=False,
+        default=3,
+    )
 
     return parser
+
 
 def try_fetch_sample(req: urllib.request.Request, outfile_fd):
     with urllib.request.urlopen(req) as response:
         if response.status == 200:
             content = response.read()
 
-            if content[0:4] == b'RIFF' and content[8:12] == b'WAVE':
-                with os.fdopen(outfile_fd, 'wb') as out:
+            if content[0:4] == b"RIFF" and content[8:12] == b"WAVE":
+                with os.fdopen(outfile_fd, "wb") as out:
                     out.write(content)
                 return
             else:
                 raise ValueError("Content returned isn't a WAV file!")
         raise ValueError(f"Speech synthesis failed with status code: {response.status}")
+
 
 def fetch_sample(text: str, outfile_fd, delay_time: int):
     query = urllib.parse.urlencode({"text": text})
@@ -81,8 +77,10 @@ def fetch_sample(text: str, outfile_fd, delay_time: int):
         finally:
             time.sleep(delay_time)
 
+
 def process_sample(infile: str, outfile: str):
-    os.system(f'ffmpeg -loglevel warning -i {infile} -ar 32000 {outfile}')
+    os.system(f"ffmpeg -loglevel warning -i {infile} -ar 32000 {outfile}")
+
 
 def main() -> None:
     parser = init_argparse()
@@ -94,8 +92,8 @@ def main() -> None:
     csv_file = args.file
     csv_rows = 0
     langdir = args.langdir
-    basedir = os.path.dirname(os.path.abspath(__file__))
-    outdir = ""
+    basedir = Path(__file__).resolve().parent
+    outdir = Path()
     delay_time = args.delay
 
     in_ci = os.environ.get("GITHUB_ACTIONS", "").lower() == "true"
@@ -108,7 +106,9 @@ def main() -> None:
         all_csvs = sorted(csv_path.parent.glob("*.csv"))
 
     total_files = len(all_csvs) if all_csvs else 1
-    processed_files = next((idx + 1 for idx, f in enumerate(all_csvs) if f.resolve() == csv_path), 1)
+    processed_files = next(
+        (idx + 1 for idx, f in enumerate(all_csvs) if f.resolve() == csv_path), 1
+    )
 
     if not os.path.isfile(csv_file):
         print("Error: voice file not found")
@@ -117,7 +117,7 @@ def main() -> None:
     # Get number of rows in CSV file
     with open(csv_file) as csvfile:
         reader = csv.reader(csvfile, delimiter=",")
-        reader = ((field.strip().strip('"') for field in row) for row in reader)  # Strip spaces and quotes
+        reader = ((field.strip() for field in row) for row in reader)  # Strip spaces
         csv_rows = sum(1 for row in reader)
 
     # Drop header row from progress count if present
@@ -150,9 +150,11 @@ def main() -> None:
     layout = Group(status_line, progress)
 
     # Process CSV file with progress bar
-    with open(csv_file, 'rt') as csvfile, Live(layout, console=console, refresh_per_second=10, transient=False):
-        reader = csv.reader(csvfile, delimiter=',', quotechar='"')
-        reader = ((field.strip().strip('"') for field in row) for row in reader)  # Strip spaces and quotes
+    with open(csv_file, "rt") as csvfile, Live(
+        layout, console=console, refresh_per_second=10, transient=False
+    ):
+        reader = csv.reader(csvfile, delimiter=",", quotechar='"')
+        reader = ((field.strip() for field in row) for row in reader)  # Strip spaces
         task_id = progress.add_task("Synthesizing", total=csv_rows or None, status="")
 
         def report(msg: str) -> None:
@@ -166,49 +168,75 @@ def main() -> None:
         processed_count = 0
 
         try:
+            fail_streak = 0
             for row in reader:
                 row = list(row)  # Convert the generator to a list
-                if line_count == 0:
+                line_count += 1
+                if line_count == 1:
                     # absorb header row
-                    line_count += 1
                     continue
-                if row[4] is None or row[4] == "":
-                    outdir = os.path.join(basedir, "SOUNDS", langdir)
-                else:
-                    outdir = os.path.join(basedir, "SOUNDS", langdir, row[4])
-                en_text = row[1]
-                text = row[2]
-                filename = row[5]
-                outfile = os.path.join(outdir, filename)
+                try:
+                    path_part = row[4] if len(row) > 4 else ""
+                    outdir = (
+                        basedir / "SOUNDS" / langdir / path_part
+                        if path_part
+                        else basedir / "SOUNDS" / langdir
+                    )
+                    en_text = row[1] if len(row) > 1 else ""
+                    text = row[2] if len(row) > 2 else ""
+                    filename = row[5] if len(row) > 5 else ""
+                    outfile = outdir / filename if filename else None
 
-                tmpfile_fd, tmpfile = tempfile.mkstemp()
+                    if not filename:
+                        report(
+                            f"[{line_count}/{csv_rows}] Skipping row with no filename"
+                        )
+                        progress.update(task_id, advance=1)
+                        processed_count += 1
+                        continue
 
-                if not os.path.exists(outdir):
-                    os.makedirs(outdir)
+                    tmpfile_fd, tmpfile = tempfile.mkstemp()
 
-                if text is None or text == "":
-                    report(
-                        f'[{line_count}/{csv_rows}] Skipping as no text to translate')
+                    outdir.mkdir(parents=True, exist_ok=True)
+
+                    if not text:
+                        report(
+                            f"[{line_count}/{csv_rows}] Skipping as no text to translate"
+                        )
+                        progress.update(task_id, advance=1)
+                        processed_count += 1
+                        os.close(tmpfile_fd)
+                        os.unlink(tmpfile)
+                        continue
+
+                    if not outfile.exists():
+                        report(
+                            f'[{line_count}/{csv_rows}] Translate "{en_text}" to "{text}", save as "{outfile}".'
+                        )
+
+                        fetch_sample(text, tmpfile_fd, delay_time)
+                        process_sample(tmpfile, str(outfile))
+                        os.unlink(tmpfile)
+
+                    else:
+                        report(
+                            f'[{line_count}/{csv_rows}] Skipping "{filename}" as already exists.'
+                        )
+                        os.close(tmpfile_fd)
+                        os.unlink(tmpfile)
+
                     progress.update(task_id, advance=1)
                     processed_count += 1
-                    line_count += 1
+                    fail_streak = 0
+                except Exception as e:
+                    report(f"[{line_count}/{csv_rows}] Error processing row: {e}")
+                    progress.update(task_id, advance=1)
+                    processed_count += 1
+                    fail_streak += 1
+                    if fail_streak >= 3:
+                        report("Aborting after 3 consecutive failures")
+                        raise SystemExit(1)
                     continue
-
-                if not os.path.isfile(outfile):
-                    report(
-                        f'[{line_count}/{csv_rows}] Translate "{en_text}" to "{text}", save as "{outdir}{os.sep}{filename}".')
-
-                    fetch_sample(text, tmpfile_fd, delay_time)
-                    process_sample(tmpfile, outfile)
-                    os.unlink(tmpfile)
-
-                else:
-                    report(
-                        f'[{line_count}/{csv_rows}] Skipping "{filename}" as already exists.')
-
-                progress.update(task_id, advance=1)
-                processed_count += 1
-                line_count += 1
         except KeyboardInterrupt:
             report(
                 f"Interrupted. Processed {processed_files}/{total_files} files; {processed_count}/{csv_rows} entries in current file."
@@ -217,7 +245,8 @@ def main() -> None:
             raise SystemExit(1)
 
         report(
-            f'Finished processing {processed_files}/{total_files} files ({processed_count}/{csv_rows} entries) from "{csv_file}" using {os.path.basename(__file__)}.')
+            f'Finished processing {processed_files}/{total_files} files ({processed_count}/{csv_rows} entries) from "{csv_file}" using {os.path.basename(__file__)}.'
+        )
 
 
 if __name__ == "__main__":
