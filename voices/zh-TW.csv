@@ -1,556 +1,556 @@
-"String ID","Source text","Translation","Context","Path","Filename"
-"1","0","0","","SYSTEM","0000.wav"
-"2","1","1","","SYSTEM","0001.wav"
-"3","2","2","","SYSTEM","0002.wav"
-"4","3","3","","SYSTEM","0003.wav"
-"5","4","4","","SYSTEM","0004.wav"
-"6","5","5","","SYSTEM","0005.wav"
-"7","6","6","","SYSTEM","0006.wav"
-"8","7","7","","SYSTEM","0007.wav"
-"9","8","8","","SYSTEM","0008.wav"
-"10","9","9","","SYSTEM","0009.wav"
-"11","10","10","","SYSTEM","0010.wav"
-"12","11","11","","SYSTEM","0011.wav"
-"13","12","12","","SYSTEM","0012.wav"
-"14","13","13","","SYSTEM","0013.wav"
-"15","14","14","","SYSTEM","0014.wav"
-"16","15","15","","SYSTEM","0015.wav"
-"17","16","16","","SYSTEM","0016.wav"
-"18","17","17","","SYSTEM","0017.wav"
-"19","18","18","","SYSTEM","0018.wav"
-"20","19","19","","SYSTEM","0019.wav"
-"21","20","20","","SYSTEM","0020.wav"
-"22","21","21","","SYSTEM","0021.wav"
-"23","22","22","","SYSTEM","0022.wav"
-"24","23","23","","SYSTEM","0023.wav"
-"25","24","24","","SYSTEM","0024.wav"
-"26","25","25","","SYSTEM","0025.wav"
-"27","26","26","","SYSTEM","0026.wav"
-"28","27","27","","SYSTEM","0027.wav"
-"29","28","28","","SYSTEM","0028.wav"
-"30","29","29","","SYSTEM","0029.wav"
-"31","30","30","","SYSTEM","0030.wav"
-"32","31","31","","SYSTEM","0031.wav"
-"33","32","32","","SYSTEM","0032.wav"
-"34","33","33","","SYSTEM","0033.wav"
-"35","34","34","","SYSTEM","0034.wav"
-"36","35","35","","SYSTEM","0035.wav"
-"37","36","36","","SYSTEM","0036.wav"
-"38","37","37","","SYSTEM","0037.wav"
-"39","38","38","","SYSTEM","0038.wav"
-"40","39","39","","SYSTEM","0039.wav"
-"41","40","40","","SYSTEM","0040.wav"
-"42","41","41","","SYSTEM","0041.wav"
-"43","42","42","","SYSTEM","0042.wav"
-"44","43","43","","SYSTEM","0043.wav"
-"45","44","44","","SYSTEM","0044.wav"
-"46","45","45","","SYSTEM","0045.wav"
-"47","46","46","","SYSTEM","0046.wav"
-"48","47","47","","SYSTEM","0047.wav"
-"49","48","48","","SYSTEM","0048.wav"
-"50","49","49","","SYSTEM","0049.wav"
-"51","50","50","","SYSTEM","0050.wav"
-"52","51","51","","SYSTEM","0051.wav"
-"53","52","52","","SYSTEM","0052.wav"
-"54","53","53","","SYSTEM","0053.wav"
-"55","54","54","","SYSTEM","0054.wav"
-"56","55","55","","SYSTEM","0055.wav"
-"57","56","56","","SYSTEM","0056.wav"
-"58","57","57","","SYSTEM","0057.wav"
-"59","58","58","","SYSTEM","0058.wav"
-"60","59","59","","SYSTEM","0059.wav"
-"61","60","60","","SYSTEM","0060.wav"
-"62","61","61","","SYSTEM","0061.wav"
-"63","62","62","","SYSTEM","0062.wav"
-"64","63","63","","SYSTEM","0063.wav"
-"65","64","64","","SYSTEM","0064.wav"
-"66","65","65","","SYSTEM","0065.wav"
-"67","66","66","","SYSTEM","0066.wav"
-"68","67","67","","SYSTEM","0067.wav"
-"69","68","68","","SYSTEM","0068.wav"
-"70","69","69","","SYSTEM","0069.wav"
-"71","70","70","","SYSTEM","0070.wav"
-"72","71","71","","SYSTEM","0071.wav"
-"73","72","72","","SYSTEM","0072.wav"
-"74","73","73","","SYSTEM","0073.wav"
-"75","74","74","","SYSTEM","0074.wav"
-"76","75","75","","SYSTEM","0075.wav"
-"77","76","76","","SYSTEM","0076.wav"
-"78","77","77","","SYSTEM","0077.wav"
-"79","78","78","","SYSTEM","0078.wav"
-"80","79","79","","SYSTEM","0079.wav"
-"81","80","80","","SYSTEM","0080.wav"
-"82","81","81","","SYSTEM","0081.wav"
-"83","82","82","","SYSTEM","0082.wav"
-"84","83","83","","SYSTEM","0083.wav"
-"85","84","84","","SYSTEM","0084.wav"
-"86","85","85","","SYSTEM","0085.wav"
-"87","86","86","","SYSTEM","0086.wav"
-"88","87","87","","SYSTEM","0087.wav"
-"89","88","88","","SYSTEM","0088.wav"
-"90","89","89","","SYSTEM","0089.wav"
-"91","90","90","","SYSTEM","0090.wav"
-"92","91","91","","SYSTEM","0091.wav"
-"93","92","92","","SYSTEM","0092.wav"
-"94","93","93","","SYSTEM","0093.wav"
-"95","94","94","","SYSTEM","0094.wav"
-"96","95","95","","SYSTEM","0095.wav"
-"97","96","96","","SYSTEM","0096.wav"
-"98","97","97","","SYSTEM","0097.wav"
-"99","98","98","","SYSTEM","0098.wav"
-"100","99","99","","SYSTEM","0099.wav"
-"101","100","100","","SYSTEM","0100.wav"
-"102","200","200","","SYSTEM","0101.wav"
-"103","300","300","","SYSTEM","0102.wav"
-"104","400","400","","SYSTEM","0103.wav"
-"105","500","500","","SYSTEM","0104.wav"
-"106","600","600","","SYSTEM","0105.wav"
-"107","700","700","","SYSTEM","0106.wav"
-"108","800","800","","SYSTEM","0107.wav"
-"109","900","900","","SYSTEM","0108.wav"
-"110","thousand","千","","SYSTEM","0109.wav"
-"111","and","和","","SYSTEM","0110.wav"
-"112","minus","負","","SYSTEM","0111.wav"
-"113","point","點","","SYSTEM","0112.wav"
-"114","volt","伏","","SYSTEM","volt0.wav"
-"115","volts","伏","","SYSTEM","volt1.wav"
-"116","amp","安","","SYSTEM","amp0.wav"
-"117","amps","安","","SYSTEM","amp1.wav"
-"118","milliamp","毫安培","","SYSTEM","mamp0.wav"
-"119","milliamps","毫安培","","SYSTEM","mamp1.wav"
-"120","knot","節","","SYSTEM","knot0.wav"
-"121","knots","節","","SYSTEM","knot1.wav"
-"122","meter per second","米每秒","","SYSTEM","mps0.wav"
-"123","meters per second","米每秒","","SYSTEM","mps1.wav"
-"124","foot per second","英尺每秒","","SYSTEM","fps0.wav"
-"125","feet per second","英尺每秒","","SYSTEM","fps1.wav"
-"126","kilometer per hour","公里每小時","","SYSTEM","kph0.wav"
-"127","kilometers per hour","公里每小時","","SYSTEM","kph1.wav"
-"128","mile per hour","英里每小時","","SYSTEM","mph0.wav"
-"129","miles per hour","英里每小時","","SYSTEM","mph1.wav"
-"130","meter","米","","SYSTEM","meter0.wav"
-"131","meters","米","","SYSTEM","meter1.wav"
-"132","foot","英尺","","SYSTEM","foot0.wav"
-"133","feet","英尺","","SYSTEM","foot1.wav"
-"134","degree celsius","攝氏度","","SYSTEM","celsius0.wav"
-"135","degrees celsius","攝氏度","","SYSTEM","celsius1.wav"
-"136","degree fahrenheit","華氏度","","SYSTEM","fahr0.wav"
-"137","degrees fahrenheit","華氏度","","SYSTEM","fahr1.wav"
-"138","percent","百分比","","SYSTEM","percent0.wav"
-"139","percent","百分比","","SYSTEM","percent1.wav"
-"140","milliamp-hour","毫安培時","","SYSTEM","mamph0.wav"
-"141","milliamp-hours","毫安培時","","SYSTEM","mamph1.wav"
-"142","watt","瓦","","SYSTEM","watt0.wav"
-"143","watts","瓦","","SYSTEM","watt1.wav"
-"144","milli-watt","毫瓦","","SYSTEM","mwatt0.wav"
-"145","milli-watts","毫瓦","","SYSTEM","mwatt1.wav"
-"146","DB","DB","","SYSTEM","db0.wav"
-"147","DB","DB","","SYSTEM","db1.wav"
-"148","RPM","轉速","","SYSTEM","rpm0.wav"
-"149","RPM","轉速","","SYSTEM","rpm1.wav"
-"150","G","克","","SYSTEM","g0.wav"
-"151","G","克","","SYSTEM","g1.wav"
-"152","degree","度","","SYSTEM","degree0.wav"
-"153","degrees","度","","SYSTEM","degree1.wav"
-"154","radian","弧度","","SYSTEM","rad0.wav"
-"155","radians","弧度","","SYSTEM","rad1.wav"
-"156","milliliter","毫升","","SYSTEM","ml0.wav"
-"157","milliliters","毫升","","SYSTEM","ml1.wav"
-"158","fluid ounce","盎司","","SYSTEM","founce0.wav"
-"159","fluid ounces","盎司","","SYSTEM","founce1.wav"
-"160","milliliter per minute","毫升每分鐘","","SYSTEM","mlpm0.wav"
-"161","milliliters per minute","毫升每分鐘","","SYSTEM","mlpm1.wav"
-"162","hertz","赫茲","","SYSTEM","hertz0.wav"
-"163","hertz","赫茲","","SYSTEM","hertz1.wav"
-"164","millisecond","毫秒","","SYSTEM","ms0.wav"
-"165","milliseconds","毫秒","","SYSTEM","ms1.wav"
-"166","microsecond","微秒","","SYSTEM","us0.wav"
-"167","microseconds","微秒","","SYSTEM","us1.wav"
-"168","hour","小時","","SYSTEM","hour0.wav"
-"169","hours","小時","","SYSTEM","hour1.wav"
-"170","minute","分鐘","","SYSTEM","minute0.wav"
-"171","minutes","分鐘","","SYSTEM","minute1.wav"
-"172","second","秒","","SYSTEM","second0.wav"
-"173","seconds","秒","","SYSTEM","second1.wav"
-"174","point zero","點零","","SYSTEM","0167.wav"
-"175","point one","點一","","SYSTEM","0168.wav"
-"176","point two","點二","","SYSTEM","0169.wav"
-"177","point three","點三","","SYSTEM","0170.wav"
-"178","point four","點四","","SYSTEM","0171.wav"
-"179","point five","點五","","SYSTEM","0172.wav"
-"180","point six","點六","","SYSTEM","0173.wav"
-"181","point seven","點七","","SYSTEM","0174.wav"
-"182","point eight","點八","","SYSTEM","0175.wav"
-"183","point nine","點九","","SYSTEM","0176.wav"
-"184","trim center","微調中點","","SYSTEM","midtrim.wav"
-"185","maximum trim reached","微調最大","","SYSTEM","maxtrim.wav"
-"186","minimum trim reached","微調最小","","SYSTEM","mintrim.wav"
-"187","timer 1 elapsed","一號計時器已超時","","SYSTEM","timovr1.wav"
-"188","timer 2 elapsed","二號計時器已超時","","SYSTEM","timovr2.wav"
-"189","timer 3 elapsed","三號計時器已超時","","SYSTEM","timovr3.wav"
-"190","transmitter battery low","遙控器電壓偏低","","SYSTEM","lowbatt.wav"
-"191","inactivity alarm","警告,長時間無操作","","SYSTEM","inactiv.wav"
-"192","throttle warning","警告,油門搖桿不在最低","","SYSTEM","thralert.wav"
-"193","switch warning","警告,開關不在初始位置","","SYSTEM","swalert.wav"
-"194","bad eeprom","警告,存儲錯誤","","SYSTEM","eebad.wav"
-"195","Welcome to EdgeTX","歡迎使用Edge TX","","SYSTEM","hello.wav"
-"196","RF signal low","射頻信號偏弱","","SYSTEM","rssi_org.wav"
-"197","RF signal critical","射頻信號太弱","","SYSTEM","rssi_red.wav"
-"198","radio antenna defective","天線故障","","SYSTEM","swr_red.wav"
-"199","telemetry lost","遙測中斷","","SYSTEM","telemko.wav"
-"200","telemetry recovered","遙測恢復","","SYSTEM","telemok.wav"
-"201","Trainer connected","教練已連接","","SYSTEM","trainco.wav"
-"202","trainer signal lost","教練信號中斷","","SYSTEM","trainko.wav"
-"203","trainer signal recovered","教練信號恢復","","SYSTEM","trainok.wav"
-"204","sensor lost","感測器中斷","","SYSTEM","sensorko.wav"
-"205","servo overload","伺服機超載","","SYSTEM","servoko.wav"
-"206","power overload","功率超載","","SYSTEM","rxko.wav"
-"207","receiver still connected","接收機未關閉","","SYSTEM","modelpwr.wav"
-"208","armed","已解鎖","","","armed.wav"
-"209","disarmed","已鎖定","","","disarm.wav"
-"210","throttle cut","關斷油門","","","thrcut.wav"
-"211","throttle active","開啟油門","","","thract.wav"
-"212","gear up","收起起落架","plane","","gearup.wav"
-"213","gear down","放下起落架","plane","","geardn.wav"
-"214","flaps up","收起襟翼","plane","","flapup.wav"
-"215","flaps down","放下襟翼","plane","","flapdn.wav"
-"216","spoiler up","收起擾流板","","","splrup.wav"
-"217","spoiler down","放下擾流板","","","splrdn.wav"
-"218","trainer on","開啟教練功能","","","trnon.wav"
-"219","trainer off","關閉教練功能","","","trnoff.wav"
-"220","engine off","關閉引擎","","","engoff.wav"
-"221","too high","太高","","","tohigh.wav"
-"222","too low","太低","","","tolow.wav"
-"223","low battery","電池電壓偏低","","","lowbat.wav"
-"224","crow on","開啟升降提示音","","","crowon.wav"
-"225","crow off","關閉升降提示音","","","crowof.wav"
-"226","RF signal low","射頻信號偏弱","rc-link","","siglow.wav"
-"227","RF signal critical","射頻信號太弱","rc-link","","sigcrt.wav"
-"228","LQ","連接品質","rc-link","","lq.wav"
-"229","RF mode","射頻模式","rc-link","","rfmode.wav"
-"230","high speed mode active","啟動高速模式","rc-link","","spdmod.wav"
-"231","thermal mode on","開啟熱氣流模式","","","thmmod.wav"
-"232","normal mode on","開啟正常模式","","","nrmmod.wav"
-"233","landing mode on","開啟降落模式","","","lnding.wav"
-"234","acro mode on","開啟特技模式","","","acro.wav"
-"235","flight mode one","飛行模式1","","","fm-1.wav"
-"236","flight mode two","飛行模式2","","","fm-2.wav"
-"237","flight mode three","飛行模式3","","","fm-3.wav"
-"238","flight mode four","飛行模式4","","","fm-4.wav"
-"239","flight mode five","飛行模式5","","","fm-5.wav"
-"240","flight mode six","飛行模式6","","","fm-6.wav"
-"241","flight mode seven","飛行模式7","","","fm-7.wav"
-"242","flight mode eight","飛行模式8","","","fm-8.wav"
-"243","vario on","開啟升降儀","","","vrion.wav"
-"244","vario off","關閉升降儀","","","vrioff.wav"
-"245","flight mode power","動力模式","","","fm-pwr.wav"
-"246","flight mode land","降落模式","","","fm-lnd.wav"
-"247","flight mode float","懸停模式","","","fm-flt.wav"
-"248","flight mode speed","高速模式","","","fm-spd.wav"
-"249","flight mode fast","快速模式","","","fm-fst.wav"
-"250","flight mode normal","正常模式","","","fm-nrm.wav"
-"251","flight mode cruise","巡航模式","","","fm-crs.wav"
-"252","flight mode acro","手動模式","","","fm-acr.wav"
-"253","flight mode race","競速模式","","","fm-rce.wav"
-"254","flight mode launch","拋飛模式","","","fm-lch.wav"
-"255","flight mode ping","平飛模式","","","fm-png.wav"
-"256","flight mode thermal","熱氣流模式","","","fm-thm.wav"
-"257","flight mode thermal left","左側熱氣流模式","","","fm-thl.wav"
-"258","flight mode thermal right","右側熱氣流模式","","","fm-thr.wav"
-"259","flight mode stabilize","防抖模式","","","fm-stb.wav"
-"260","flight mode horizon","半自穩模式","","","fm-hor.wav"
-"261","flight mode angle","自穩模式","","","fm-ang.wav"
-"262","flight mode idle up 1","特技一擋","","","fm-id1.wav"
-"263","flight mode idle up 2","特技二擋","","","fm-id2.wav"
-"264","low rate","較低比率","","","ratlow.wav"
-"265","medium rate","中等比率","","","ratmed.wav"
-"266","high rate","較高比率","","","rathi.wav"
-"267","take off","起飛","","","takeof.wav"
-"268","sport","運動","","","sport.wav"
-"269","pattern","模式","","","pattrn.wav"
-"270","3D","3D","","","3d.wav"
-"271","landing","降落","","","landin.wav"
-"272","idle up 1","特技一擋","","","idleu1.wav"
-"273","idle up 2","特技二擋","","","idleu2.wav"
-"274","normal mode","正常模式","","","normod.wav"
-"275","bank 0","分組0","","","bank-0.wav"
-"276","bank 1","分組1","","","bank-1.wav"
-"277","bank 2","分組2","","","bank-2.wav"
-"278","bank 3","分組3","","","bank-3.wav"
-"279","heading lock","鎖定航向","","","headlo.wav"
-"280","rate mode","手動模式","","","ratmod.wav"
-"281","3D Mode","3D模式","","","3d-mod.wav"
-"282","stabilize mode","穩定模式","","","stabmo.wav"
-"283","on","開","","","on.wav"
-"284","off","關","","","off.wav"
-"285","buzzer active","啟動蜂鳴器","","","buzact.wav"
-"286","crash-flip active","反烏龜模式","multicopter","","crfact.wav"
-"287","blackbox active","啟動黑盒子","","","blkact.wav"
-"288","pre-arm active","啟動預解鎖","","","preact.wav"
-"289","stable mode","穩定模式","","","stbmod.wav"
-"290","brakes on","開啟煞車","plane","","brakon.wav"
-"291","brakes off","關閉煞車","plane","","brakof.wav"
-"292","butterfly on","開啟蝴蝶煞","","","btfon.wav"
-"293","butterfly off","關閉蝴蝶煞","","","btfoff.wav"
-"294","flaps one","襟翼1","plane","","flp1.wav"
-"295","flaps two","襟翼2","plane","","flp2.wav"
-"296","flaps three","襟翼3","plane","","flp3.wav"
-"297","flaps four","襟翼4","plane","","flp4.wav"
-"298","flaps five","襟翼5","plane","","flp5.wav"
-"299","wingsweep","掠翼","plane","","wngswp.wav"
-"300","wheelbrakes on","啟動輪煞車","plane","","whlbro.wav"
-"301","wheelbrakes off","關閉輪煞車","plane","","whlbrf.wav"
-"302","manual mode","手動模式","","","manmod.wav"
-"303","acro mode","特技模式","","","acrmod.wav"
-"304","angle mode","自穩模式","","","angmod.wav"
-"305","horizon mode","半自穩模式","","","hznmod.wav"
-"306","launch mode","發射模式","","","lncmod.wav"
-"307","air mode","空中模式","","","airmod.wav"
-"308","pit mode","維修站模式","","","pitmod.wav"
-"309","navigation cruise","導航巡航","autopilot","","navcrs.wav"
-"310","navigation course hold","導航巡航鎖定","autopilot","","navcsh.wav"
-"311","navigation altitude hold","導航定高","autopilot","","navalh.wav"
-"312","navigation position hold","導航定點","autopilot","","navpos.wav"
-"313","navigation return to home","導航返航","autopilot","","navrth.wav"
-"314","navigation waypoint","導航航點","autopilot","","navwp.wav"
-"315","cruise","巡航","autopilot","","cruise.wav"
-"316","course hold","巡航鎖定","autopilot","","crshld.wav"
-"317","altitude hold","定高","autopilot","","althld.wav"
-"318","position hold","定點","autopilot","","poshld.wav"
-"319","return to home","返航","autopilot","","rth.wav"
-"320","waypoint","航點","autopilot","","waypnt.wav"
-"321","manual","手動","","","manual.wav"
-"322","auto","自動","","","auto.wav"
-"323","OSD","OSD","video","","osd.wav"
-"324","OSD profile","OSD設定檔","video","","osdprf.wav"
-"325","attitude hold mode","定高模式","autopilot","","sxrahd.wav"
-"326","manual mode","手動模式","","","sxrman.wav"
-"327","stabilizer mode","防抖模式","","","sxrsmd.wav"
-"328","stabilizer off","關閉防抖","","","sxrsof.wav"
-"329","stabilizer on","開啟防抖","","","sxrstb.wav"
-"330","wind rejection mode","抗風模式","","","sxrwr.wav"
-"331","turtle mode on","開啟烏龜模式","multicopter","","turton.wav"
-"332","turtle mode off","關閉烏龜模式","multicopter","","turtof.wav"
-"333","flip","翻滾","","","flip.wav"
-"334","autorotation","熄火降落","heli","","auro.wav"
-"335","failsafe active","啟動失控保護","","","fsact.wav"
-"336","failsafe off","關閉失控保護","","","fsoff.wav"
-"337","OSD Profile 1","OSD設定檔1","video","","osd1.wav"
-"338","OSD Profile 2","OSD設定檔2","video","","osd2.wav"
-"339","OSD Profile 3","OSD設定檔3","video","","osd3.wav"
-"340","rate profile 1","速率設定檔1","","","rates1.wav"
-"341","rate profile 2","速率設定檔2","","","rates2.wav"
-"342","rate profile 3","速率設定檔3","","","rates3.wav"
-"343","rate profile 4","速率設定檔4","","","rates4.wav"
-"344","rate profile 5","速率設定檔5","","","rates5.wav"
-"345","rate profile 6","速率設定檔6","","","rates6.wav"
-"346","stick commands disabled","搖桿指令已停用","","","scmdof.wav"
-"347","stick commands enabled","搖桿指令已啟用","","","scmdon.wav"
-"348","telemetry","遙測","","","telem.wav"
-"349","telemetry logging on","開啟遙測記錄","","","tlogon.wav"
-"350","telemetry logging off","關閉遙測記錄","","","tlogof.wav"
-"351","VTX","VTX","video","","vtx.wav"
-"352","VTX on","開啟VTX","video","","vtxon.wav"
-"353","VTX off","關閉VTX","video","","vtxoff.wav"
-"354","VTX 25 milliwatts","VTX 25毫瓦","video","","vtx25.wav"
-"355","VTX 50 milliwatts","VTX 50毫瓦","video","","vtx50.wav"
-"356","VTX 100 milliwatts","VTX 100毫瓦","video","","vtx100.wav"
-"357","VTX 200 milliwatts","VTX 200毫瓦","video","","vtx200.wav"
-"358","VTX 300 milliwatts","VTX 300毫瓦","video","","vtx300.wav"
-"359","VTX 400 milliwatts","VTX 400毫瓦","video","","vtx400.wav"
-"360","VTX 500 milliwatts","VTX 500毫瓦","video","","vtx500.wav"
-"361","VTX 600 milliwatts","VTX 600毫瓦","video","","vtx600.wav"
-"362","VTX 700 milliwatts","VTX 700毫瓦","video","","vtx700.wav"
-"363","VTX 800 milliwatts","VTX 800毫瓦","video","","vtx800.wav"
-"364","VTX 900 milliwatts","VTX 900毫瓦","video","","vtx900.wav"
-"365","VTX Pit Mode","VTX維修模式","video","","vtxpm.wav"
-"366","VTX Race Mode","VTX競賽模式","video","","vtxrm.wav"
-"367","VTX 1 watt","VTX 1瓦特","video","","vtx1w.wav"
-"368","VTX 2 watts","VTX 2瓦特","video","","vtx2w.wav"
-"369","VTX 4 watts","VTX 4瓦特","video","","vtx4w.wav"
-"370","critical low battery","電池電壓太低","","","clobat.wav"
-"371","start","啟動","","","start.wav"
-"372","stop","停止","","","stop.wav"
-"373","lights on","開啟燈光","","","lghton.wav"
-"374","lights off","關閉燈光","","","lghtof.wav"
-"375","buzzer off","關閉蜂鳴器","","","buzoff.wav"
-"376","dynamic TX power","動態發射功率","rc-link","","dyntxp.wav"
-"377","maximum TX power","最大發射功率","rc-link","","maxtxp.wav"
-"378","throttle hold","油門鎖定","plane/heli","","thrhld.wav"
-"379","throttle idle","油門怠速","plane/heli","","thridl.wav"
-"380","throttle release","解除油門鎖定","plane/heli","","thrrel.wav"
-"381","negative pitch allowed","允許負螺距","heli","","negpon.wav"
-"382","negative pitch disallowed","禁止負螺距","heli","","negpof.wav"
-"383","autolaunch started","自動起飛已啟動","autopilot","","alnch.wav"
-"384","rescue mode active","啟用救援模式","autopilot","","rscmon.wav"
-"385","rescue mode off","關閉救援模式","autopilot","","rscmof.wav"
-"386","headfree mode active","啟用無頭模式","multicopter","","hdfmon.wav"
-"387","headfree mode off","關閉無頭模式","multicopter","","hdfmof.wav"
-"388","heading adjust","航向調整","multicopter","","hdadj.wav"
-"389","FPV angle mix active","啟用FPV角度混合","multicopter","","agmxon.wav"
-"390","FPV angle mix off","關閉FPV角度混合","multicopter","","agmxof.wav"
-"391","air mode on","開啟空中模式","","","airmon.wav"
-"392","air mode off","關閉空中模式","","","airmof.wav"
-"393","OSD on","開啟OSD","video","","osdon.wav"
-"394","OSD off","關閉OSD","video","","osdoff.wav"
-"395","return to home started","啟動返航","autopilot","","rthstr.wav"
-"396","return to home stopped","停止返航","autopilot","","rthstp.wav"
-"397","waypoint navigation started","啟動航點導航","autopilot","","wpnstr.wav"
-"398","waypoint navigation stopped","停止航點導航","autopilot","","wpnstp.wav"
-"399","course hold active","啟用航向保持","autopilot","","crshon.wav"
-"400","course hold off","關閉航向保持","autopilot","","crshof.wav"
-"401","position hold active","啟用位置保持","autopilot","","poshon.wav"
-"402","position hold off","關閉位置保持","autopilot","","poshof.wav"
-"403","altitude hold active","啟用高度保持","autopilot","","althon.wav"
-"404","altitude hold off","關閉高度保持","autopilot","","althof.wav"
-"405","loiter","盤旋","autopilot","","loiter.wav"
-"406","safety on","開啟安全鎖","","","sftyon.wav"
-"407","safety off","關閉安全鎖","","","sftyof.wav"
-"408","SAFE on","開啟SAFE模式","plane","","safeon.wav"
-"409","SAFE off","關閉SAFE模式","plane","","safeof.wav"
-"410","flight envelope protection active","飛行包絡保護啟用","plane","","fepact.wav"
-"411","flight envelope protection off","飛行包絡保護關閉","plane","","fepoff.wav"
-"412","timer 1 reset","重置計時器1","","","timrs1.wav"
-"413","timer 2 reset","重置計時器2","","","timrs2.wav"
-"414","timer 3 reset","重置計時器3","","","timrs3.wav"
-"415","expo 1","指數曲線1","","","expo1.wav"
-"416","expo 2","指數曲線2","","","expo2.wav"
-"417","expo 3","指數曲線3","","","expo3.wav"
-"418","active","啟動","","","active.wav"
-"419","deactivated","已停用","","","deact.wav"
-"420","enabled","已啟用","","","enabl.wav"
-"421","disabled","已停用","","","disabl.wav"
-"422","good","良好","","","good.wav"
-"423","bad","不良","","","bad.wav"
-"424","normal","正常","","","normal.wav"
-"425","warning","警告","","","warnng.wav"
-"426","danger","危險","","","danger.wav"
-"427","ready to fly","準備飛行","","","ready.wav"
-"428","home reset","返航點重置","","","homrst.wav"
-"429","GPS","GPS","","","gps.wav"
-"430","GPS on","開啟GPS","","","gpson.wav"
-"431","GPS off","關閉GPS","","","gpsoff.wav"
-"432","VTX Frequency R1","VTX頻率R1","video","","vtxfr1.wav"
-"433","VTX Frequency R2","VTX頻率R2","video","","vtxfr2.wav"
-"434","VTX Frequency R3","VTX頻率R3","video","","vtxfr3.wav"
-"435","VTX Frequency R4","VTX頻率R4","video","","vtxfr4.wav"
-"436","VTX Frequency R5","VTX頻率R5","video","","vtxfr5.wav"
-"437","VTX Frequency R6","VTX頻率R6","video","","vtxfr6.wav"
-"438","VTX Frequency R7","VTX頻率R7","video","","vtxfr7.wav"
-"439","VTX Frequency R8","VTX頻率R8","video","","vtxfr8.wav"
-"440","VTX Maximum Power","VTX最大功率","video","","vtxmax.wav"
-"441","blackbox erase","清除黑盒子","","","blkers.wav"
-"442","acro trainer mode","特技訓練模式","","","actnmd.wav"
-"443","Camera wifi button","鏡頭Wi-Fi按鈕","camera","","cwifi.wav"
-"444","Camera power button","鏡頭電源按鈕","camera","","cpower.wav"
-"445","Camera change mode","切換鏡頭模式","camera","","cmode.wav"
-"446","Camera start","啟動鏡頭","camera","","cstart.wav"
-"447","Camera stop","關閉鏡頭","camera","","cstop.wav"
-"448","Recording start","錄影開始","","","recsrt.wav"
-"449","Recording stop","錄影停止","","","recstp.wav"
-"450","Start recording","開始錄影","","","strtrc.wav"
-"451","Stop recording","停止錄影","","","stoprc.wav"
-"452","DBM","DBM","","SYSTEM","dbm0.wav"
-"453","DBM","DBM","","SYSTEM","dbm1.wav"
-"454","kilometer","公里","","SYSTEM","km0.wav"
-"455","kilometers","公里","","SYSTEM","km1.wav"
-"456","Reverse Thrust","反向推力","plane","","revthr.wav"
-"457","Reverse Thrust On","開啟反向推力","plane","","revon.wav"
-"458","Reverse Thrust Off","關閉反向推力","plane","","revoff.wav"
-"459","Reverse Thrust Idle","反向推力怠速","plane","","revid.wav"
-"460","Forward Thrust","正向推力","plane","","revfwd.wav"
-"461","telemetry connected","遙測已連接","","SYSTEM","telemco.wav"
-"462","level mode","穩定模式","flight controller","","lvlmod.wav"
-"463","diffs locked","差速鎖定","car","","difloc.wav"
-"464","diffs unlocked","解除差速鎖定","car","","difulc.wav"
-"465","engine start","引擎啟動","car","","engsrt.wav"
-"466","engine stop","引擎熄火","car","","engstp.wav"
-"467","engine on","引擎開啟","car","","engon.wav"
-"468","Turn signals on","方向燈開啟","car","","turnon.wav"
-"469","Turn signals off","方向燈關閉","car","","turnof.wav"
-"470","High gear","高速檔","car","","highgr.wav"
-"471","Low gear","低速檔","car","","lowgr.wav"
-"472","Dig mode","Dig模式","car","","digmod.wav"
-"473","Two wheel drive","二輪驅動","car","","2wd.wav"
-"474","Four wheel drive","四輪驅動","car","","4wd.wav"
-"475","Winch in","絞盤收線","car","","wchin.wav"
-"476","Winch out","絞盤放線","car","","wchout.wav"
-"477","Front Steer","前輪轉向","car","","str-f.wav"
-"478","Rear Steer","後輪轉向","car","","str-r.wav"
-"479","Four Wheel Steer","四輪轉向","car","","str-4w.wav"
-"480","Mirror Steer","鏡像轉向","car","","str-mr.wav"
-"481","Crab Steer","螃蟹轉向","car","","str-cr.wav"
-"482","Motor armed","馬達解鎖","soaretx","","motarm.wav"
-"483","Power","動力","soaretx","","power.wav"
-"484","Speed","速度","soaretx","","speed.wav"
-"485","Thermal","溫度","soaretx","","therml.wav"
-"486","Front wheel drive","前輪驅動","car","","fwd.wav"
-"487","Rear wheel drive","後輪驅動","car","","rwd.wav"
-"488","All wheel drive","四輪驅動","car","","awd.wav"
-"489","Throttle enabled","油門啟用","car","","thren.wav"
-"490","Throttle disabled","油門停用","car","","thrdis.wav"
-"491","Winch enabled","絞盤啟用","car","","wchen.wav"
-"492","Winch disabled","絞盤停用","car","","wchdis.wav"
-"493","Drift mode on","漂移模式開啟","car","","drifon.wav"
-"494","Drift mode off","漂移模式關閉","car","","drifof.wav"
-"495","Gyro enabled","陀螺儀啟用","","","gyroon.wav"
-"496","Gyro disabled","陀螺儀停用","","","gyroof.wav"
-"497","Launch control active","起飛控制啟動","","","launch.wav"
-"498","Wet mode enabled","濕滑模式啟用","","","wetmde.wav"
-"500","Max gyro","最大陀螺儀設定","","","maxgyr.wav"
-"501","Max assistance","最大輔助","","","maxast.wav"
-"502","Overheating","過熱","","","overht.wav"
-"503","Motor overheating","馬達過熱","","","mothot.wav"
-"504","Drift Mode Enabled","漂移模式啟用","","","drifen.wav"
-"505","Drift Mode Disabled","漂移模式停用","","","drifdb.wav"
-"506","Screenshot","截圖","","","screns.wav"
-"507","Cell","電芯","","","cell.wav"
-"508","Transmitter Battery Low","遙控器電壓偏低","","","txbatl.wav"
-"509","Left","左","","","left.wav"
-"510","Right","右","","","right.wav"
-"511","Shift","切換","","","shift.wav"
-"512","Stability Control On","穩定控制開啟","","","sbcton.wav"
-"513","Stability Control Off","穩定控制關閉","","","sbctof.wav"
-"514","Stability Control Enabled","穩定控制啟用","","","sbcten.wav"
-"515","Stability Control Disabled","穩定控制停用","","","sbctdb.wav"
-"516","Thermal Warning","溫度警告","","","thmwrn.wav"
-"517","Servo Overload","伺服機超載","","","srvovl.wav"
-"518","BEC Overload","BEC超載","","","becovl.wav"
-"519","Stability Control","穩定控制","","","sbct.wav"
-"520","Stability Control - Standard","穩定控制,標準","","","sbctst.wav"
-"521","Gyro","陀螺儀","","","gyro.wav"
-"522","Low","低","","","low.wav"
-"523","Medium","中","","","medium.wav"
-"524","High","高","","","high.wav"
-"525","Standard","標準","","","stanrd.wav"
-"526","Bash Mode","衝撞模式","car","","bashmd.wav"
-"527","Race Mode","競速模式","car","","racemd.wav"
-"528","Chill Mode","輕鬆模式","car","","chilmd.wav"
-"529","Trainer Mode","教練模式","car","","trnmd.wav"
-"530","Speed Mode","速度模式","car","","spdmd.wav"
-"531","City Mode","都市模式","car","","citymd.wav"
-"532","Cruise Mode","巡航模式","car","","crusmd.wav"
-"533","Flaps Middle","襟翼中段","plane","","flapmd.wav"
-"534","Flaps Full","襟翼全開","plane","","flapfl.wav"
-"535","Motor On","馬達啟動","","","moton.wav"
-"536","Motor Off","馬達關閉","","","motoff.wav"
-"537","Motor Idle","馬達怠速","","","motidl.wav"
-"538","Autorotation","熄火降落","heli","","autor.wav"
-"539","Rescue On","開啟救援模式","","","reson.wav"
-"540","High Temperature","高溫警告","","","htemp.wav"
-"541","High Vibration","高震動警告","","","hvibr.wav"
-"542","Glow On","開啟點火器","","","glwon.wav"
-"543","Glow Off","關閉點火器","","","glwoff.wav"
-"544","Glow Activated","點火器已啟動","","","glwact.wav"
-"545","Glow Deactivated","點火器已停止","","","glwdea.wav"
-"546","Track Mode","賽道模式","Car","","trkmd.wav"
-"547","Drag brake","拖煞","Car","","dbrk.wav"
-"548","Drag brake on","開啟拖煞","Car","","dbrkon.wav"
-"549","Drag brake off","關閉拖煞","Car","","dbrkof.wav"
-"550","Drag brake Low","拖煞低","Car","","dbrklw.wav"
-"551","Drag brake Medium","拖煞中","Car","","dbrkmd.wav"
-"552","Drag brake High","拖煞高","Car","","dbrkhi.wav"
-"553","Snapflap On","開啟升力輔助","Plane","","snapfon.wav"
-"554","Snapflap Off","關閉升力輔助","Plane","","snapfof.wav"
-"555","Snapflap Low","升力輔助低","Plane","","snapflo.wav"
-"556","Snapflap High","升力輔助高","Plane","","snapfhi.wav"
+String ID,Source text,Translation,Context,Path,Filename
+1,0,0,,SYSTEM,0000.wav
+2,1,1,,SYSTEM,0001.wav
+3,2,2,,SYSTEM,0002.wav
+4,3,3,,SYSTEM,0003.wav
+5,4,4,,SYSTEM,0004.wav
+6,5,5,,SYSTEM,0005.wav
+7,6,6,,SYSTEM,0006.wav
+8,7,7,,SYSTEM,0007.wav
+9,8,8,,SYSTEM,0008.wav
+10,9,9,,SYSTEM,0009.wav
+11,10,10,,SYSTEM,0010.wav
+12,11,11,,SYSTEM,0011.wav
+13,12,12,,SYSTEM,0012.wav
+14,13,13,,SYSTEM,0013.wav
+15,14,14,,SYSTEM,0014.wav
+16,15,15,,SYSTEM,0015.wav
+17,16,16,,SYSTEM,0016.wav
+18,17,17,,SYSTEM,0017.wav
+19,18,18,,SYSTEM,0018.wav
+20,19,19,,SYSTEM,0019.wav
+21,20,20,,SYSTEM,0020.wav
+22,21,21,,SYSTEM,0021.wav
+23,22,22,,SYSTEM,0022.wav
+24,23,23,,SYSTEM,0023.wav
+25,24,24,,SYSTEM,0024.wav
+26,25,25,,SYSTEM,0025.wav
+27,26,26,,SYSTEM,0026.wav
+28,27,27,,SYSTEM,0027.wav
+29,28,28,,SYSTEM,0028.wav
+30,29,29,,SYSTEM,0029.wav
+31,30,30,,SYSTEM,0030.wav
+32,31,31,,SYSTEM,0031.wav
+33,32,32,,SYSTEM,0032.wav
+34,33,33,,SYSTEM,0033.wav
+35,34,34,,SYSTEM,0034.wav
+36,35,35,,SYSTEM,0035.wav
+37,36,36,,SYSTEM,0036.wav
+38,37,37,,SYSTEM,0037.wav
+39,38,38,,SYSTEM,0038.wav
+40,39,39,,SYSTEM,0039.wav
+41,40,40,,SYSTEM,0040.wav
+42,41,41,,SYSTEM,0041.wav
+43,42,42,,SYSTEM,0042.wav
+44,43,43,,SYSTEM,0043.wav
+45,44,44,,SYSTEM,0044.wav
+46,45,45,,SYSTEM,0045.wav
+47,46,46,,SYSTEM,0046.wav
+48,47,47,,SYSTEM,0047.wav
+49,48,48,,SYSTEM,0048.wav
+50,49,49,,SYSTEM,0049.wav
+51,50,50,,SYSTEM,0050.wav
+52,51,51,,SYSTEM,0051.wav
+53,52,52,,SYSTEM,0052.wav
+54,53,53,,SYSTEM,0053.wav
+55,54,54,,SYSTEM,0054.wav
+56,55,55,,SYSTEM,0055.wav
+57,56,56,,SYSTEM,0056.wav
+58,57,57,,SYSTEM,0057.wav
+59,58,58,,SYSTEM,0058.wav
+60,59,59,,SYSTEM,0059.wav
+61,60,60,,SYSTEM,0060.wav
+62,61,61,,SYSTEM,0061.wav
+63,62,62,,SYSTEM,0062.wav
+64,63,63,,SYSTEM,0063.wav
+65,64,64,,SYSTEM,0064.wav
+66,65,65,,SYSTEM,0065.wav
+67,66,66,,SYSTEM,0066.wav
+68,67,67,,SYSTEM,0067.wav
+69,68,68,,SYSTEM,0068.wav
+70,69,69,,SYSTEM,0069.wav
+71,70,70,,SYSTEM,0070.wav
+72,71,71,,SYSTEM,0071.wav
+73,72,72,,SYSTEM,0072.wav
+74,73,73,,SYSTEM,0073.wav
+75,74,74,,SYSTEM,0074.wav
+76,75,75,,SYSTEM,0075.wav
+77,76,76,,SYSTEM,0076.wav
+78,77,77,,SYSTEM,0077.wav
+79,78,78,,SYSTEM,0078.wav
+80,79,79,,SYSTEM,0079.wav
+81,80,80,,SYSTEM,0080.wav
+82,81,81,,SYSTEM,0081.wav
+83,82,82,,SYSTEM,0082.wav
+84,83,83,,SYSTEM,0083.wav
+85,84,84,,SYSTEM,0084.wav
+86,85,85,,SYSTEM,0085.wav
+87,86,86,,SYSTEM,0086.wav
+88,87,87,,SYSTEM,0087.wav
+89,88,88,,SYSTEM,0088.wav
+90,89,89,,SYSTEM,0089.wav
+91,90,90,,SYSTEM,0090.wav
+92,91,91,,SYSTEM,0091.wav
+93,92,92,,SYSTEM,0092.wav
+94,93,93,,SYSTEM,0093.wav
+95,94,94,,SYSTEM,0094.wav
+96,95,95,,SYSTEM,0095.wav
+97,96,96,,SYSTEM,0096.wav
+98,97,97,,SYSTEM,0097.wav
+99,98,98,,SYSTEM,0098.wav
+100,99,99,,SYSTEM,0099.wav
+101,100,100,,SYSTEM,0100.wav
+102,200,200,,SYSTEM,0101.wav
+103,300,300,,SYSTEM,0102.wav
+104,400,400,,SYSTEM,0103.wav
+105,500,500,,SYSTEM,0104.wav
+106,600,600,,SYSTEM,0105.wav
+107,700,700,,SYSTEM,0106.wav
+108,800,800,,SYSTEM,0107.wav
+109,900,900,,SYSTEM,0108.wav
+110,thousand,千,,SYSTEM,0109.wav
+111,and,和,,SYSTEM,0110.wav
+112,minus,負,,SYSTEM,0111.wav
+113,point,點,,SYSTEM,0112.wav
+114,volt,伏,,SYSTEM,volt0.wav
+115,volts,伏,,SYSTEM,volt1.wav
+116,amp,安,,SYSTEM,amp0.wav
+117,amps,安,,SYSTEM,amp1.wav
+118,milliamp,毫安培,,SYSTEM,mamp0.wav
+119,milliamps,毫安培,,SYSTEM,mamp1.wav
+120,knot,節,,SYSTEM,knot0.wav
+121,knots,節,,SYSTEM,knot1.wav
+122,meter per second,米每秒,,SYSTEM,mps0.wav
+123,meters per second,米每秒,,SYSTEM,mps1.wav
+124,foot per second,英尺每秒,,SYSTEM,fps0.wav
+125,feet per second,英尺每秒,,SYSTEM,fps1.wav
+126,kilometer per hour,公里每小時,,SYSTEM,kph0.wav
+127,kilometers per hour,公里每小時,,SYSTEM,kph1.wav
+128,mile per hour,英里每小時,,SYSTEM,mph0.wav
+129,miles per hour,英里每小時,,SYSTEM,mph1.wav
+130,meter,米,,SYSTEM,meter0.wav
+131,meters,米,,SYSTEM,meter1.wav
+132,foot,英尺,,SYSTEM,foot0.wav
+133,feet,英尺,,SYSTEM,foot1.wav
+134,degree celsius,攝氏度,,SYSTEM,celsius0.wav
+135,degrees celsius,攝氏度,,SYSTEM,celsius1.wav
+136,degree fahrenheit,華氏度,,SYSTEM,fahr0.wav
+137,degrees fahrenheit,華氏度,,SYSTEM,fahr1.wav
+138,percent,百分比,,SYSTEM,percent0.wav
+139,percent,百分比,,SYSTEM,percent1.wav
+140,milliamp-hour,毫安培時,,SYSTEM,mamph0.wav
+141,milliamp-hours,毫安培時,,SYSTEM,mamph1.wav
+142,watt,瓦,,SYSTEM,watt0.wav
+143,watts,瓦,,SYSTEM,watt1.wav
+144,milli-watt,毫瓦,,SYSTEM,mwatt0.wav
+145,milli-watts,毫瓦,,SYSTEM,mwatt1.wav
+146,DB,DB,,SYSTEM,db0.wav
+147,DB,DB,,SYSTEM,db1.wav
+148,RPM,轉速,,SYSTEM,rpm0.wav
+149,RPM,轉速,,SYSTEM,rpm1.wav
+150,G,克,,SYSTEM,g0.wav
+151,G,克,,SYSTEM,g1.wav
+152,degree,度,,SYSTEM,degree0.wav
+153,degrees,度,,SYSTEM,degree1.wav
+154,radian,弧度,,SYSTEM,rad0.wav
+155,radians,弧度,,SYSTEM,rad1.wav
+156,milliliter,毫升,,SYSTEM,ml0.wav
+157,milliliters,毫升,,SYSTEM,ml1.wav
+158,fluid ounce,盎司,,SYSTEM,founce0.wav
+159,fluid ounces,盎司,,SYSTEM,founce1.wav
+160,milliliter per minute,毫升每分鐘,,SYSTEM,mlpm0.wav
+161,milliliters per minute,毫升每分鐘,,SYSTEM,mlpm1.wav
+162,hertz,赫茲,,SYSTEM,hertz0.wav
+163,hertz,赫茲,,SYSTEM,hertz1.wav
+164,millisecond,毫秒,,SYSTEM,ms0.wav
+165,milliseconds,毫秒,,SYSTEM,ms1.wav
+166,microsecond,微秒,,SYSTEM,us0.wav
+167,microseconds,微秒,,SYSTEM,us1.wav
+168,hour,小時,,SYSTEM,hour0.wav
+169,hours,小時,,SYSTEM,hour1.wav
+170,minute,分鐘,,SYSTEM,minute0.wav
+171,minutes,分鐘,,SYSTEM,minute1.wav
+172,second,秒,,SYSTEM,second0.wav
+173,seconds,秒,,SYSTEM,second1.wav
+174,point zero,點零,,SYSTEM,0167.wav
+175,point one,點一,,SYSTEM,0168.wav
+176,point two,點二,,SYSTEM,0169.wav
+177,point three,點三,,SYSTEM,0170.wav
+178,point four,點四,,SYSTEM,0171.wav
+179,point five,點五,,SYSTEM,0172.wav
+180,point six,點六,,SYSTEM,0173.wav
+181,point seven,點七,,SYSTEM,0174.wav
+182,point eight,點八,,SYSTEM,0175.wav
+183,point nine,點九,,SYSTEM,0176.wav
+184,trim center,微調中點,,SYSTEM,midtrim.wav
+185,maximum trim reached,微調最大,,SYSTEM,maxtrim.wav
+186,minimum trim reached,微調最小,,SYSTEM,mintrim.wav
+187,timer 1 elapsed,一號計時器已超時,,SYSTEM,timovr1.wav
+188,timer 2 elapsed,二號計時器已超時,,SYSTEM,timovr2.wav
+189,timer 3 elapsed,三號計時器已超時,,SYSTEM,timovr3.wav
+190,transmitter battery low,遙控器電壓偏低,,SYSTEM,lowbatt.wav
+191,inactivity alarm,"警告,長時間無操作",,SYSTEM,inactiv.wav
+192,throttle warning,"警告,油門搖桿不在最低",,SYSTEM,thralert.wav
+193,switch warning,"警告,開關不在初始位置",,SYSTEM,swalert.wav
+194,bad eeprom,"警告,存儲錯誤",,SYSTEM,eebad.wav
+195,Welcome to EdgeTX,歡迎使用Edge TX,,SYSTEM,hello.wav
+196,RF signal low,射頻信號偏弱,,SYSTEM,rssi_org.wav
+197,RF signal critical,射頻信號太弱,,SYSTEM,rssi_red.wav
+198,radio antenna defective,天線故障,,SYSTEM,swr_red.wav
+199,telemetry lost,遙測中斷,,SYSTEM,telemko.wav
+200,telemetry recovered,遙測恢復,,SYSTEM,telemok.wav
+201,Trainer connected,教練已連接,,SYSTEM,trainco.wav
+202,trainer signal lost,教練信號中斷,,SYSTEM,trainko.wav
+203,trainer signal recovered,教練信號恢復,,SYSTEM,trainok.wav
+204,sensor lost,感測器中斷,,SYSTEM,sensorko.wav
+205,servo overload,伺服機超載,,SYSTEM,servoko.wav
+206,power overload,功率超載,,SYSTEM,rxko.wav
+207,receiver still connected,接收機未關閉,,SYSTEM,modelpwr.wav
+208,armed,已解鎖,,,armed.wav
+209,disarmed,已鎖定,,,disarm.wav
+210,throttle cut,關斷油門,,,thrcut.wav
+211,throttle active,開啟油門,,,thract.wav
+212,gear up,收起起落架,plane,,gearup.wav
+213,gear down,放下起落架,plane,,geardn.wav
+214,flaps up,收起襟翼,plane,,flapup.wav
+215,flaps down,放下襟翼,plane,,flapdn.wav
+216,spoiler up,收起擾流板,,,splrup.wav
+217,spoiler down,放下擾流板,,,splrdn.wav
+218,trainer on,開啟教練功能,,,trnon.wav
+219,trainer off,關閉教練功能,,,trnoff.wav
+220,engine off,關閉引擎,,,engoff.wav
+221,too high,太高,,,tohigh.wav
+222,too low,太低,,,tolow.wav
+223,low battery,電池電壓偏低,,,lowbat.wav
+224,crow on,開啟升降提示音,,,crowon.wav
+225,crow off,關閉升降提示音,,,crowof.wav
+226,RF signal low,射頻信號偏弱,rc-link,,siglow.wav
+227,RF signal critical,射頻信號太弱,rc-link,,sigcrt.wav
+228,LQ,連接品質,rc-link,,lq.wav
+229,RF mode,射頻模式,rc-link,,rfmode.wav
+230,high speed mode active,啟動高速模式,rc-link,,spdmod.wav
+231,thermal mode on,開啟熱氣流模式,,,thmmod.wav
+232,normal mode on,開啟正常模式,,,nrmmod.wav
+233,landing mode on,開啟降落模式,,,lnding.wav
+234,acro mode on,開啟特技模式,,,acro.wav
+235,flight mode one,飛行模式1,,,fm-1.wav
+236,flight mode two,飛行模式2,,,fm-2.wav
+237,flight mode three,飛行模式3,,,fm-3.wav
+238,flight mode four,飛行模式4,,,fm-4.wav
+239,flight mode five,飛行模式5,,,fm-5.wav
+240,flight mode six,飛行模式6,,,fm-6.wav
+241,flight mode seven,飛行模式7,,,fm-7.wav
+242,flight mode eight,飛行模式8,,,fm-8.wav
+243,vario on,開啟升降儀,,,vrion.wav
+244,vario off,關閉升降儀,,,vrioff.wav
+245,flight mode power,動力模式,,,fm-pwr.wav
+246,flight mode land,降落模式,,,fm-lnd.wav
+247,flight mode float,懸停模式,,,fm-flt.wav
+248,flight mode speed,高速模式,,,fm-spd.wav
+249,flight mode fast,快速模式,,,fm-fst.wav
+250,flight mode normal,正常模式,,,fm-nrm.wav
+251,flight mode cruise,巡航模式,,,fm-crs.wav
+252,flight mode acro,手動模式,,,fm-acr.wav
+253,flight mode race,競速模式,,,fm-rce.wav
+254,flight mode launch,拋飛模式,,,fm-lch.wav
+255,flight mode ping,平飛模式,,,fm-png.wav
+256,flight mode thermal,熱氣流模式,,,fm-thm.wav
+257,flight mode thermal left,左側熱氣流模式,,,fm-thl.wav
+258,flight mode thermal right,右側熱氣流模式,,,fm-thr.wav
+259,flight mode stabilize,防抖模式,,,fm-stb.wav
+260,flight mode horizon,半自穩模式,,,fm-hor.wav
+261,flight mode angle,自穩模式,,,fm-ang.wav
+262,flight mode idle up 1,特技一擋,,,fm-id1.wav
+263,flight mode idle up 2,特技二擋,,,fm-id2.wav
+264,low rate,較低比率,,,ratlow.wav
+265,medium rate,中等比率,,,ratmed.wav
+266,high rate,較高比率,,,rathi.wav
+267,take off,起飛,,,takeof.wav
+268,sport,運動,,,sport.wav
+269,pattern,模式,,,pattrn.wav
+270,3D,3D,,,3d.wav
+271,landing,降落,,,landin.wav
+272,idle up 1,特技一擋,,,idleu1.wav
+273,idle up 2,特技二擋,,,idleu2.wav
+274,normal mode,正常模式,,,normod.wav
+275,bank 0,分組0,,,bank-0.wav
+276,bank 1,分組1,,,bank-1.wav
+277,bank 2,分組2,,,bank-2.wav
+278,bank 3,分組3,,,bank-3.wav
+279,heading lock,鎖定航向,,,headlo.wav
+280,rate mode,手動模式,,,ratmod.wav
+281,3D Mode,3D模式,,,3d-mod.wav
+282,stabilize mode,穩定模式,,,stabmo.wav
+283,on,開,,,on.wav
+284,off,關,,,off.wav
+285,buzzer active,啟動蜂鳴器,,,buzact.wav
+286,crash-flip active,反烏龜模式,multicopter,,crfact.wav
+287,blackbox active,啟動黑盒子,,,blkact.wav
+288,pre-arm active,啟動預解鎖,,,preact.wav
+289,stable mode,穩定模式,,,stbmod.wav
+290,brakes on,開啟煞車,plane,,brakon.wav
+291,brakes off,關閉煞車,plane,,brakof.wav
+292,butterfly on,開啟蝴蝶煞,,,btfon.wav
+293,butterfly off,關閉蝴蝶煞,,,btfoff.wav
+294,flaps one,襟翼1,plane,,flp1.wav
+295,flaps two,襟翼2,plane,,flp2.wav
+296,flaps three,襟翼3,plane,,flp3.wav
+297,flaps four,襟翼4,plane,,flp4.wav
+298,flaps five,襟翼5,plane,,flp5.wav
+299,wingsweep,掠翼,plane,,wngswp.wav
+300,wheelbrakes on,啟動輪煞車,plane,,whlbro.wav
+301,wheelbrakes off,關閉輪煞車,plane,,whlbrf.wav
+302,manual mode,手動模式,,,manmod.wav
+303,acro mode,特技模式,,,acrmod.wav
+304,angle mode,自穩模式,,,angmod.wav
+305,horizon mode,半自穩模式,,,hznmod.wav
+306,launch mode,發射模式,,,lncmod.wav
+307,air mode,空中模式,,,airmod.wav
+308,pit mode,維修站模式,,,pitmod.wav
+309,navigation cruise,導航巡航,autopilot,,navcrs.wav
+310,navigation course hold,導航巡航鎖定,autopilot,,navcsh.wav
+311,navigation altitude hold,導航定高,autopilot,,navalh.wav
+312,navigation position hold,導航定點,autopilot,,navpos.wav
+313,navigation return to home,導航返航,autopilot,,navrth.wav
+314,navigation waypoint,導航航點,autopilot,,navwp.wav
+315,cruise,巡航,autopilot,,cruise.wav
+316,course hold,巡航鎖定,autopilot,,crshld.wav
+317,altitude hold,定高,autopilot,,althld.wav
+318,position hold,定點,autopilot,,poshld.wav
+319,return to home,返航,autopilot,,rth.wav
+320,waypoint,航點,autopilot,,waypnt.wav
+321,manual,手動,,,manual.wav
+322,auto,自動,,,auto.wav
+323,OSD,OSD,video,,osd.wav
+324,OSD profile,OSD設定檔,video,,osdprf.wav
+325,attitude hold mode,定高模式,autopilot,,sxrahd.wav
+326,manual mode,手動模式,,,sxrman.wav
+327,stabilizer mode,防抖模式,,,sxrsmd.wav
+328,stabilizer off,關閉防抖,,,sxrsof.wav
+329,stabilizer on,開啟防抖,,,sxrstb.wav
+330,wind rejection mode,抗風模式,,,sxrwr.wav
+331,turtle mode on,開啟烏龜模式,multicopter,,turton.wav
+332,turtle mode off,關閉烏龜模式,multicopter,,turtof.wav
+333,flip,翻滾,,,flip.wav
+334,autorotation,熄火降落,heli,,auro.wav
+335,failsafe active,啟動失控保護,,,fsact.wav
+336,failsafe off,關閉失控保護,,,fsoff.wav
+337,OSD Profile 1,OSD設定檔1,video,,osd1.wav
+338,OSD Profile 2,OSD設定檔2,video,,osd2.wav
+339,OSD Profile 3,OSD設定檔3,video,,osd3.wav
+340,rate profile 1,速率設定檔1,,,rates1.wav
+341,rate profile 2,速率設定檔2,,,rates2.wav
+342,rate profile 3,速率設定檔3,,,rates3.wav
+343,rate profile 4,速率設定檔4,,,rates4.wav
+344,rate profile 5,速率設定檔5,,,rates5.wav
+345,rate profile 6,速率設定檔6,,,rates6.wav
+346,stick commands disabled,搖桿指令已停用,,,scmdof.wav
+347,stick commands enabled,搖桿指令已啟用,,,scmdon.wav
+348,telemetry,遙測,,,telem.wav
+349,telemetry logging on,開啟遙測記錄,,,tlogon.wav
+350,telemetry logging off,關閉遙測記錄,,,tlogof.wav
+351,VTX,VTX,video,,vtx.wav
+352,VTX on,開啟VTX,video,,vtxon.wav
+353,VTX off,關閉VTX,video,,vtxoff.wav
+354,VTX 25 milliwatts,VTX 25毫瓦,video,,vtx25.wav
+355,VTX 50 milliwatts,VTX 50毫瓦,video,,vtx50.wav
+356,VTX 100 milliwatts,VTX 100毫瓦,video,,vtx100.wav
+357,VTX 200 milliwatts,VTX 200毫瓦,video,,vtx200.wav
+358,VTX 300 milliwatts,VTX 300毫瓦,video,,vtx300.wav
+359,VTX 400 milliwatts,VTX 400毫瓦,video,,vtx400.wav
+360,VTX 500 milliwatts,VTX 500毫瓦,video,,vtx500.wav
+361,VTX 600 milliwatts,VTX 600毫瓦,video,,vtx600.wav
+362,VTX 700 milliwatts,VTX 700毫瓦,video,,vtx700.wav
+363,VTX 800 milliwatts,VTX 800毫瓦,video,,vtx800.wav
+364,VTX 900 milliwatts,VTX 900毫瓦,video,,vtx900.wav
+365,VTX Pit Mode,VTX維修模式,video,,vtxpm.wav
+366,VTX Race Mode,VTX競賽模式,video,,vtxrm.wav
+367,VTX 1 watt,VTX 1瓦特,video,,vtx1w.wav
+368,VTX 2 watts,VTX 2瓦特,video,,vtx2w.wav
+369,VTX 4 watts,VTX 4瓦特,video,,vtx4w.wav
+370,critical low battery,電池電壓太低,,,clobat.wav
+371,start,啟動,,,start.wav
+372,stop,停止,,,stop.wav
+373,lights on,開啟燈光,,,lghton.wav
+374,lights off,關閉燈光,,,lghtof.wav
+375,buzzer off,關閉蜂鳴器,,,buzoff.wav
+376,dynamic TX power,動態發射功率,rc-link,,dyntxp.wav
+377,maximum TX power,最大發射功率,rc-link,,maxtxp.wav
+378,throttle hold,油門鎖定,plane/heli,,thrhld.wav
+379,throttle idle,油門怠速,plane/heli,,thridl.wav
+380,throttle release,解除油門鎖定,plane/heli,,thrrel.wav
+381,negative pitch allowed,允許負螺距,heli,,negpon.wav
+382,negative pitch disallowed,禁止負螺距,heli,,negpof.wav
+383,autolaunch started,自動起飛已啟動,autopilot,,alnch.wav
+384,rescue mode active,啟用救援模式,autopilot,,rscmon.wav
+385,rescue mode off,關閉救援模式,autopilot,,rscmof.wav
+386,headfree mode active,啟用無頭模式,multicopter,,hdfmon.wav
+387,headfree mode off,關閉無頭模式,multicopter,,hdfmof.wav
+388,heading adjust,航向調整,multicopter,,hdadj.wav
+389,FPV angle mix active,啟用FPV角度混合,multicopter,,agmxon.wav
+390,FPV angle mix off,關閉FPV角度混合,multicopter,,agmxof.wav
+391,air mode on,開啟空中模式,,,airmon.wav
+392,air mode off,關閉空中模式,,,airmof.wav
+393,OSD on,開啟OSD,video,,osdon.wav
+394,OSD off,關閉OSD,video,,osdoff.wav
+395,return to home started,啟動返航,autopilot,,rthstr.wav
+396,return to home stopped,停止返航,autopilot,,rthstp.wav
+397,waypoint navigation started,啟動航點導航,autopilot,,wpnstr.wav
+398,waypoint navigation stopped,停止航點導航,autopilot,,wpnstp.wav
+399,course hold active,啟用航向保持,autopilot,,crshon.wav
+400,course hold off,關閉航向保持,autopilot,,crshof.wav
+401,position hold active,啟用位置保持,autopilot,,poshon.wav
+402,position hold off,關閉位置保持,autopilot,,poshof.wav
+403,altitude hold active,啟用高度保持,autopilot,,althon.wav
+404,altitude hold off,關閉高度保持,autopilot,,althof.wav
+405,loiter,盤旋,autopilot,,loiter.wav
+406,safety on,開啟安全鎖,,,sftyon.wav
+407,safety off,關閉安全鎖,,,sftyof.wav
+408,SAFE on,開啟SAFE模式,plane,,safeon.wav
+409,SAFE off,關閉SAFE模式,plane,,safeof.wav
+410,flight envelope protection active,飛行包絡保護啟用,plane,,fepact.wav
+411,flight envelope protection off,飛行包絡保護關閉,plane,,fepoff.wav
+412,timer 1 reset,重置計時器1,,,timrs1.wav
+413,timer 2 reset,重置計時器2,,,timrs2.wav
+414,timer 3 reset,重置計時器3,,,timrs3.wav
+415,expo 1,指數曲線1,,,expo1.wav
+416,expo 2,指數曲線2,,,expo2.wav
+417,expo 3,指數曲線3,,,expo3.wav
+418,active,啟動,,,active.wav
+419,deactivated,已停用,,,deact.wav
+420,enabled,已啟用,,,enabl.wav
+421,disabled,已停用,,,disabl.wav
+422,good,良好,,,good.wav
+423,bad,不良,,,bad.wav
+424,normal,正常,,,normal.wav
+425,warning,警告,,,warnng.wav
+426,danger,危險,,,danger.wav
+427,ready to fly,準備飛行,,,ready.wav
+428,home reset,返航點重置,,,homrst.wav
+429,GPS,GPS,,,gps.wav
+430,GPS on,開啟GPS,,,gpson.wav
+431,GPS off,關閉GPS,,,gpsoff.wav
+432,VTX Frequency R1,VTX頻率R1,video,,vtxfr1.wav
+433,VTX Frequency R2,VTX頻率R2,video,,vtxfr2.wav
+434,VTX Frequency R3,VTX頻率R3,video,,vtxfr3.wav
+435,VTX Frequency R4,VTX頻率R4,video,,vtxfr4.wav
+436,VTX Frequency R5,VTX頻率R5,video,,vtxfr5.wav
+437,VTX Frequency R6,VTX頻率R6,video,,vtxfr6.wav
+438,VTX Frequency R7,VTX頻率R7,video,,vtxfr7.wav
+439,VTX Frequency R8,VTX頻率R8,video,,vtxfr8.wav
+440,VTX Maximum Power,VTX最大功率,video,,vtxmax.wav
+441,blackbox erase,清除黑盒子,,,blkers.wav
+442,acro trainer mode,特技訓練模式,,,actnmd.wav
+443,Camera wifi button,鏡頭Wi-Fi按鈕,camera,,cwifi.wav
+444,Camera power button,鏡頭電源按鈕,camera,,cpower.wav
+445,Camera change mode,切換鏡頭模式,camera,,cmode.wav
+446,Camera start,啟動鏡頭,camera,,cstart.wav
+447,Camera stop,關閉鏡頭,camera,,cstop.wav
+448,Recording start,錄影開始,,,recsrt.wav
+449,Recording stop,錄影停止,,,recstp.wav
+450,Start recording,開始錄影,,,strtrc.wav
+451,Stop recording,停止錄影,,,stoprc.wav
+452,DBM,DBM,,SYSTEM,dbm0.wav
+453,DBM,DBM,,SYSTEM,dbm1.wav
+454,kilometer,公里,,SYSTEM,km0.wav
+455,kilometers,公里,,SYSTEM,km1.wav
+456,Reverse Thrust,反向推力,plane,,revthr.wav
+457,Reverse Thrust On,開啟反向推力,plane,,revon.wav
+458,Reverse Thrust Off,關閉反向推力,plane,,revoff.wav
+459,Reverse Thrust Idle,反向推力怠速,plane,,revid.wav
+460,Forward Thrust,正向推力,plane,,revfwd.wav
+461,telemetry connected,遙測已連接,,SYSTEM,telemco.wav
+462,level mode,穩定模式,flight controller,,lvlmod.wav
+463,diffs locked,差速鎖定,car,,difloc.wav
+464,diffs unlocked,解除差速鎖定,car,,difulc.wav
+465,engine start,引擎啟動,car,,engsrt.wav
+466,engine stop,引擎熄火,car,,engstp.wav
+467,engine on,引擎開啟,car,,engon.wav
+468,Turn signals on,方向燈開啟,car,,turnon.wav
+469,Turn signals off,方向燈關閉,car,,turnof.wav
+470,High gear,高速檔,car,,highgr.wav
+471,Low gear,低速檔,car,,lowgr.wav
+472,Dig mode,Dig模式,car,,digmod.wav
+473,Two wheel drive,二輪驅動,car,,2wd.wav
+474,Four wheel drive,四輪驅動,car,,4wd.wav
+475,Winch in,絞盤收線,car,,wchin.wav
+476,Winch out,絞盤放線,car,,wchout.wav
+477,Front Steer,前輪轉向,car,,str-f.wav
+478,Rear Steer,後輪轉向,car,,str-r.wav
+479,Four Wheel Steer,四輪轉向,car,,str-4w.wav
+480,Mirror Steer,鏡像轉向,car,,str-mr.wav
+481,Crab Steer,螃蟹轉向,car,,str-cr.wav
+482,Motor armed,馬達解鎖,soaretx,,motarm.wav
+483,Power,動力,soaretx,,power.wav
+484,Speed,速度,soaretx,,speed.wav
+485,Thermal,溫度,soaretx,,therml.wav
+486,Front wheel drive,前輪驅動,car,,fwd.wav
+487,Rear wheel drive,後輪驅動,car,,rwd.wav
+488,All wheel drive,四輪驅動,car,,awd.wav
+489,Throttle enabled,油門啟用,car,,thren.wav
+490,Throttle disabled,油門停用,car,,thrdis.wav
+491,Winch enabled,絞盤啟用,car,,wchen.wav
+492,Winch disabled,絞盤停用,car,,wchdis.wav
+493,Drift mode on,漂移模式開啟,car,,drifon.wav
+494,Drift mode off,漂移模式關閉,car,,drifof.wav
+495,Gyro enabled,陀螺儀啟用,,,gyroon.wav
+496,Gyro disabled,陀螺儀停用,,,gyroof.wav
+497,Launch control active,起飛控制啟動,,,launch.wav
+498,Wet mode enabled,濕滑模式啟用,,,wetmde.wav
+499,Max gyro,最大陀螺儀設定,,,maxgyr.wav
+500,Max assistance,最大輔助,,,maxast.wav
+501,Overheating,過熱,,,overht.wav
+502,Motor overheating,馬達過熱,,,mothot.wav
+503,Drift Mode Enabled,漂移模式啟用,,,drifen.wav
+504,Drift Mode Disabled,漂移模式停用,,,drifdb.wav
+505,Screenshot,截圖,,,screns.wav
+506,Cell,電芯,,,cell.wav
+507,Transmitter Battery Low,遙控器電壓偏低,,,txbatl.wav
+508,Left,左,,,left.wav
+509,Right,右,,,right.wav
+510,Shift,切換,,,shift.wav
+511,Stability Control On,穩定控制開啟,,,sbcton.wav
+512,Stability Control Off,穩定控制關閉,,,sbctof.wav
+513,Stability Control Enabled,穩定控制啟用,,,sbcten.wav
+514,Stability Control Disabled,穩定控制停用,,,sbctdb.wav
+515,Thermal Warning,溫度警告,,,thmwrn.wav
+516,Servo Overload,伺服機超載,,,srvovl.wav
+517,BEC Overload,BEC超載,,,becovl.wav
+518,Stability Control,穩定控制,,,sbct.wav
+519,Stability Control - Standard,"穩定控制,標準",,,sbctst.wav
+520,Gyro,陀螺儀,,,gyro.wav
+521,Low,低,,,low.wav
+522,Medium,中,,,medium.wav
+523,High,高,,,high.wav
+524,Standard,標準,,,stanrd.wav
+525,Bash Mode,衝撞模式,car,,bashmd.wav
+526,Race Mode,競速模式,car,,racemd.wav
+527,Chill Mode,輕鬆模式,car,,chilmd.wav
+528,Trainer Mode,教練模式,car,,trnmd.wav
+529,Speed Mode,速度模式,car,,spdmd.wav
+530,City Mode,都市模式,car,,citymd.wav
+531,Cruise Mode,巡航模式,car,,crusmd.wav
+532,Flaps Middle,襟翼中段,plane,,flapmd.wav
+533,Flaps Full,襟翼全開,plane,,flapfl.wav
+534,Motor On,馬達啟動,,,moton.wav
+535,Motor Off,馬達關閉,,,motoff.wav
+536,Motor Idle,馬達怠速,,,motidl.wav
+537,Autorotation,熄火降落,heli,,autor.wav
+538,Rescue On,開啟救援模式,,,reson.wav
+539,High Temperature,高溫警告,,,htemp.wav
+540,High Vibration,高震動警告,,,hvibr.wav
+541,Glow On,開啟點火器,,,glwon.wav
+542,Glow Off,關閉點火器,,,glwoff.wav
+543,Glow Activated,點火器已啟動,,,glwact.wav
+544,Glow Deactivated,點火器已停止,,,glwdea.wav
+545,Track Mode,賽道模式,Car,,trkmd.wav
+546,Drag brake,拖煞,Car,,dbrk.wav
+547,Drag brake on,開啟拖煞,Car,,dbrkon.wav
+548,Drag brake off,關閉拖煞,Car,,dbrkof.wav
+549,Drag brake Low,拖煞低,Car,,dbrklw.wav
+550,Drag brake Medium,拖煞中,Car,,dbrkmd.wav
+551,Drag brake High,拖煞高,Car,,dbrkhi.wav
+552,Snapflap On,開啟升力輔助,Plane,,snapfon.wav
+553,Snapflap Off,關閉升力輔助,Plane,,snapfof.wav
+554,Snapflap Low,升力輔助低,Plane,,snapflo.wav
+555,Snapflap High,升力輔助高,Plane,,snapfhi.wav
