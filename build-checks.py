@@ -23,7 +23,7 @@ EX_DATAERR = 65
 
 csv_directory: Path = Path("voices")
 sound_directory: Path = Path("SOUNDS")
-IGNORE_FILE: str = ".skip_checkFilesInSoundsNotInCSV"
+SKIP_SOUNDS_NOT_IN_CSV: str = ".skip_checkFilesInSoundsNotInCSV"
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format="%(message)s")
@@ -82,7 +82,7 @@ def checkFilesInSoundsNotInCSV() -> int:
     for dirpath in sound_directory.iterdir():
         if not dirpath.is_dir():
             continue
-        if (dirpath / IGNORE_FILE).exists():
+        if (dirpath / SKIP_SOUNDS_NOT_IN_CSV).exists():
             continue
         for fn_path in dirpath.glob("*.wav"):
             if fn_path.name not in referenced_files:
@@ -239,6 +239,62 @@ def checkCSVFormatting() -> int:
     return 1 if parsing_error else 0
 
 
+def checkSequentialStringIDs() -> int:
+    """Check that String IDs (first column) are sequential without gaps (for non-script CSV files)."""
+   
+    # CSV files where gaps should be warnings instead of errors
+    WARNING_ONLY_FILES = {"fr-FR.csv", "pt-PT.csv", "uk-UA.csv"}
+    
+    logging.info("VOICES: Checking for gaps in sequential String IDs ...")
+    gaps_found = False
+    for f in csv_directory.glob("*.csv"):
+        if f.name.endswith("_scripts.csv"):
+            continue
+
+        string_ids = []
+        row_numbers = {}  # Track which row each String ID appears on
+        with open(f, "rt") as csvfile:
+            reader = csv.reader(csvfile, delimiter=",", quotechar='"')
+            next(reader, None)  # Skip header
+            for row_num, row in enumerate(reader, start=2):  # Start at 2 (after header)
+                if row and row[0].strip():
+                    try:
+                        string_id = int(row[0].strip())
+                        string_ids.append(string_id)
+                        row_numbers[string_id] = row_num
+                    except ValueError:
+                        # Skip non-numeric String IDs
+                        pass
+
+        if not string_ids:
+            continue
+
+        # Determine if this file should produce warnings or errors
+        is_warning_only = f.name in WARNING_ONLY_FILES
+
+        # Sort and check for gaps
+        string_ids.sort()
+        for i in range(len(string_ids) - 1):
+            expected_next = string_ids[i] + 1
+            actual_next = string_ids[i + 1]
+            if actual_next != expected_next:
+                # Report all missing IDs in the gap
+                missing_ids = list(range(expected_next, actual_next))
+                missing_str = ", ".join(map(str, missing_ids))
+                
+                if is_warning_only:
+                    logging.warning(
+                        f"[WARNING] {f.name}: Gap in String IDs - missing ID(s) {missing_str} between row {row_numbers[string_ids[i]]} (ID {string_ids[i]}) and row {row_numbers[actual_next]} (ID {actual_next})"
+                    )
+                else:
+                    logging.error(
+                        f"{ERROR_COLOR}[ERROR] {f.name}: Gap in String IDs - missing ID(s) {missing_str} between row {row_numbers[string_ids[i]]} (ID {string_ids[i]}) and row {row_numbers[actual_next]} (ID {actual_next}){RESET_COLOR}"
+                    )
+                    gaps_found = True
+
+    return 1 if gaps_found else 0
+
+
 if __name__ == "__main__":
     error_count = 0
     error_count += checkCSVFormatting()
@@ -251,6 +307,7 @@ if __name__ == "__main__":
     error_count += checkCSVNewline()
     error_count += checkDuplicateFilenamesInCSV()
     error_count += checkFilesInSoundsNotInCSV()
+    error_count += checkSequentialStringIDs()
 
     if error_count > 0:
         sys.exit(EX_DATAERR)
