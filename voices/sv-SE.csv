@@ -543,3 +543,23 @@ String ID,Source text,Translation,Context,Path,Filename
 542,Glow Off,Glöd av,,,glwoff.wav
 543,Glow Activated,Glöd aktiverad,,,glwact.wav
 544,Glow Deactivated,Glöd inaktiverad,,,glwdea.wav
+545,Track Mode,Track Mode,Car,,trkmd.wav
+546,Drag brake,Drag brake,Car,,dbrk.wav
+547,Drag brake on,Drag brake on,Car,,dbrkon.wav
+548,Drag brake off,Drag brake off,Car,,dbrkof.wav
+549,Drag brake Low,Drag brake Low,Car,,dbrklw.wav
+550,Drag brake Medium,Drag brake Medium,Car,,dbrkmd.wav
+551,Drag brake High,Drag brake High,Car,,dbrkhi.wav
+552,Snapflap On,Snapflap On,Plane,,snapfon.wav
+553,Snapflap Off,Snapflap Off,Plane,,snapfof.wav
+554,Snapflap Low,Snapflap Low,Plane,,snapflo.wav
+555,Snapflap High,Snapflap High,Plane,,snapfhi.wav
+556,Auto tune,Auto tune,Plane,,autotun.wav
+557,Auto level trim,Auto level trim,Plane,,alvltrim.wav
+558,Servo auto trim,Servo auto trim,Plane,,srvatrim.wav
+559,open,open,,,open.wav
+560,close,close,,,close.wav
+561,locked,locked,,,locked.wav
+562,unlocked,unlocked,,,unlckd.wav
+563,canopy,canopy,,,canopy.wav
+564,bind,bind,,,bind.wav
