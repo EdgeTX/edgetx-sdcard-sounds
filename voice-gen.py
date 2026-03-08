@@ -92,8 +92,10 @@ def main() -> None:
 
     load_dotenv()
 
-    # Print which script is running and the file being processed
-    print(f"Running {os.path.basename(__file__)} to process file: {args.file}")
+    print(
+        f"Running {os.path.basename(__file__)} to process file: {args.file} "
+        f"(voice: {args.voice})"
+    )
 
     csv_file = args.file
     csv_rows = 0
