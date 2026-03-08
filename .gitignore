@@ -11,6 +11,7 @@ release/
 
 # Windows
 .Zone.Identifier
+desktop.ini
 
 # Python 
 .venv
