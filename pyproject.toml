@@ -2,11 +2,16 @@
 name = "edgetx-sdcard-sounds"
 version = "0.1.0"
 description = "EdgeTX SD card sounds generator"
-requires-python = ">=3.8"
+requires-python = ">=3.10"
 dependencies = [
     "azure-cognitiveservices-speech==1.44.0",
+    "colorama",
     "ffmpeg-normalize",
     "rich",
     "elevenlabs",
     "python-dotenv",
 ]
+
+[tool.ruff]
+# Allow lines to be as long as 120.
+line-length = 120
