@@ -16,9 +16,11 @@ on:
 jobs:
   package:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Install uv
-        uses: astral-sh/setup-uv@v4
+        uses: astral-sh/setup-uv@v7
         with:
           version: "latest"
 
@@ -27,7 +29,9 @@ jobs:
           sudo apt-get update && sudo apt-get install --yes --no-install-recommends ffmpeg
 
       - name: Check out the repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
 
       - name: Install Python dependencies
         run: uv sync
@@ -43,25 +47,39 @@ jobs:
         if: github.event_name != 'pull_request'
         run: ./release.sh
 
-      - name: Auto Release to Latest
-        uses: crowbarmaster/GH-Automatic-Releases@latest
+      - name: Update latest tag
+        if: github.event_name != 'pull_request' && !startsWith(github.event.ref, 'refs/tags/v')
+        run: |
+          git tag -f latest
+          git push -f origin latest
+
+      - name: Delete previous latest release
+        if: github.event_name != 'pull_request' && !startsWith(github.event.ref, 'refs/tags/v')
+        run: gh release delete latest --yes || true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Deploy latest prerelease
+        uses: softprops/action-gh-release@v2
         if: github.event_name != 'pull_request' && !startsWith(github.event.ref, 'refs/tags/v')
         with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          title: "Latest"
-          automatic_release_tag: "latest"
+          tag_name: latest
+          target_commitish: ${{ github.sha }}
           prerelease: true
+          name: Latest
+          generate_release_notes: true
           files: |
             release/edgetx-sdcard-sounds-*.zip
             sounds.json
 
       - name: Auto Create Draft Release
-        uses: crowbarmaster/GH-Automatic-Releases@latest
+        uses: softprops/action-gh-release@v2
         if: ${{ startsWith(github.event.ref, 'refs/tags/v') && github.event_name != 'pull_request' }}
         with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          tag_name: ${{ github.ref_name }}
           draft: true
           prerelease: false
+          generate_release_notes: true
           files: |
             release/edgetx-sdcard-sounds-*.zip
             sounds.json
