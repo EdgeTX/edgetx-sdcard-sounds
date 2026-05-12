@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 from typing import Iterator, List
 from pathlib import Path
+from functools import lru_cache
 
 import csv
 import json
+import shlex
 import sys
 import logging
 
@@ -91,6 +93,71 @@ def checkFilesInSoundsNotInCSV() -> int:
     return 1 if unreferenced_found else 0
 
 
+@lru_cache(maxsize=1)
+def getCSVOutputDirsFromGenerateScript() -> dict[str, set[str]]:
+    """Return the output directories configured for each CSV in generate.sh."""
+    csv_output_dirs: dict[str, set[str]] = {}
+    generate_script = Path("generate.sh")
+    if not generate_script.exists():
+        return csv_output_dirs
+
+    with open(generate_script, "rt") as script_file:
+        for raw_line in script_file:
+            line = raw_line.strip()
+            if not line.startswith('"./voices/') or not line.endswith('"'):
+                continue
+
+            try:
+                parts = shlex.split(line[1:-1])
+            except ValueError:
+                continue
+
+            if len(parts) < 3:
+                continue
+
+            csv_name = Path(parts[0]).name
+            outdir = Path(parts[2])
+            if outdir.name == "SCRIPTS":
+                outdir = outdir.parent
+            csv_output_dirs.setdefault(csv_name, set()).add(str(outdir))
+
+    return csv_output_dirs
+
+
+def checkCSVReferencedFilesExistInSounds() -> int:
+    """Check that all files referenced in CSV files exist in SOUNDS."""
+    logging.info("SOUNDS: Checking that CSV-referenced files exist in SOUNDS ...")
+    missing_found = False
+    csv_output_dirs = getCSVOutputDirsFromGenerateScript()
+    for f in csv_directory.glob("*.csv"):
+        candidate_dirs = csv_output_dirs.get(f.name, {f.stem[:2]})
+        scripts_suffix = Path("SCRIPTS") if f.name.endswith("_scripts.csv") else None
+        for row in read_csv_rows(str(f)):
+            if len(row) >= 6:
+                path = row[4].strip()
+                fname = row[5].strip()
+                translation = row[2].strip() if len(row) > 2 else ""
+                if fname:
+                    expected_paths = []
+                    for lang_dir in candidate_dirs:
+                        base_path = sound_directory / lang_dir
+                        if scripts_suffix is not None:
+                            base_path /= scripts_suffix
+                        expected_paths.append(base_path / path / fname if path else base_path / fname)
+                    if not any(expected_path.exists() for expected_path in expected_paths):
+                        expected_path = expected_paths[0]
+                        if translation:
+                            logging.error(
+                                f"{ERROR_COLOR}[ERROR] {f.name}: Referenced file not found in SOUNDS: {expected_path}{RESET_COLOR}"
+                            )
+                            missing_found = True
+                        else:
+                            logging.warning(
+                                f"[WARNING] {f.name}: No translation string; referenced file not found in SOUNDS: {expected_path}"
+                            )
+    return 1 if missing_found else 0
+
+
 def checkCSVcolumnCount() -> int:
     """Check that all CSV files have the expected number of columns."""
     logging.info("VOICES: Checking CSV files for correct field count ...")
@@ -133,7 +200,7 @@ def checkFilenameLengthsInCSV() -> int:
         if f.name.endswith("_scripts.csv"):
             continue
         for row in read_csv_rows(str(f)):
-            if len(row) == 6:
+            if len(row) >= 6:
                 filename_in_csv = row[5]
                 if len(Path(filename_in_csv).stem) > 8:
                     logging.error(f"{ERROR_COLOR}[ERROR] {f.name}: Filename too long - {filename_in_csv}{RESET_COLOR}")
@@ -325,6 +392,7 @@ if __name__ == "__main__":
     error_count += checkCSVNewline()
     error_count += checkDuplicateFilenamesInCSV()
     error_count += checkFilesInSoundsNotInCSV()
+    error_count += checkCSVReferencedFilesExistInSounds()
     error_count += checkSequentialStringIDs()
 
     if error_count > 0:
