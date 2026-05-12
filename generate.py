@@ -66,9 +66,15 @@ def remove_previous_logs() -> int:
     return removed
 
 
-def run_command(command: list[str], label: str) -> None:
+def run_command(command: list[str], label: str, progress: Progress | None = None) -> None:
     console.print(f"[cyan]{label}[/cyan]")
-    run_checked(command)
+    if progress is not None:
+        progress.stop()
+    try:
+        run_checked(command)
+    finally:
+        if progress is not None:
+            progress.start()
 
 
 def build_azure_command(csv_file: str, voice: str, langdir: str, pitch: str | None, rate: str | None) -> list[str]:
@@ -112,6 +118,7 @@ def main() -> int:
             run_command(
                 build_azure_command(job.csv_file, job.voice, job.langdir, job.pitch, job.rate),
                 f"Azure {job.langdir}: {job.csv_file} -> {job.voice}",
+                progress,
             )
             progress.advance(task_id)
 
@@ -120,11 +127,12 @@ def main() -> int:
             run_command(
                 ["uv", "run", "./voice-gen-glados.py", job.csv_file, job.langdir],
                 f"GLaDOS {job.langdir}: {job.csv_file}",
+                progress,
             )
             progress.advance(task_id)
 
         progress.update(task_id, description="ElevenLabs")
-        run_command(["uv", "run", "./voice-gen-elevenlabs.py"], "ElevenLabs")
+        run_command(["uv", "run", "./voice-gen-elevenlabs.py"], "ElevenLabs", progress)
         progress.advance(task_id)
 
     console.print("[green]Generation completed.[/green]")
