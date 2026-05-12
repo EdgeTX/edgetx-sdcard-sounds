@@ -95,6 +95,8 @@ def process_audio_files(ffmpeg_flags: list[str], ffmpeg_af_flags: str) -> int:
 
 def move_variant_directories() -> None:
     root_sounds_dir = RELEASE_DIR / "SOUNDS"
+    if not root_sounds_dir.is_dir():
+        raise FileNotFoundError(f"Expected directory not found: {root_sounds_dir}")
     for variant_dir in sorted(root_sounds_dir.iterdir()):
         if not variant_dir.is_dir():
             continue
