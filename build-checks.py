@@ -367,21 +367,25 @@ def checkSequentialStringIDs() -> int:
 
 
 if __name__ == "__main__":
-    error_count = 0
-    error_count += checkCSVFormatting()
-    error_count += checkCSVcolumnCount()
-    error_count += checkFilenameLengthsInCSV()
-    error_count += checkFilenameLengths()
-    error_count += checkNoZeroByteFiles()
-    error_count += validateSoundsJson()
-    error_count += checkForDuplicateStringID()
-    error_count += checkCSVNewline()
-    error_count += checkDuplicateFilenamesInCSV()
-    error_count += checkFilesInSoundsNotInCSV()
-    error_count += checkCSVReferencedFilesExistInSounds()
-    error_count += checkSequentialStringIDs()
+    try:
+        error_count = 0
+        error_count += checkCSVFormatting()
+        error_count += checkCSVcolumnCount()
+        error_count += checkFilenameLengthsInCSV()
+        error_count += checkFilenameLengths()
+        error_count += checkNoZeroByteFiles()
+        error_count += validateSoundsJson()
+        error_count += checkForDuplicateStringID()
+        error_count += checkCSVNewline()
+        error_count += checkDuplicateFilenamesInCSV()
+        error_count += checkFilesInSoundsNotInCSV()
+        error_count += checkCSVReferencedFilesExistInSounds()
+        error_count += checkSequentialStringIDs()
 
-    if error_count > 0:
-        sys.exit(EX_DATAERR)
-    else:
-        sys.exit(EX_OK)
+        if error_count > 0:
+            sys.exit(EX_DATAERR)
+        else:
+            sys.exit(EX_OK)
+    except KeyboardInterrupt:
+        logging.warning("Interrupted by user (Ctrl+C).")
+        sys.exit(130)

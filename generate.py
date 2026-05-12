@@ -25,6 +25,19 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 console = Console()
 
 
+def run_checked(command: list[str], *, quiet: bool = False) -> None:
+    kwargs: dict[str, object] = {"cwd": SCRIPT_DIR}
+    if quiet:
+        kwargs["stdout"] = subprocess.DEVNULL
+        kwargs["stderr"] = subprocess.DEVNULL
+
+    completed = subprocess.run(command, check=False, **kwargs)
+    if completed.returncode in (130, -2):
+        raise KeyboardInterrupt
+    if completed.returncode != 0:
+        raise subprocess.CalledProcessError(completed.returncode, command)
+
+
 def ensure_file_exists(path: Path) -> None:
     if not path.is_file():
         raise FileNotFoundError(f"Required file not found: {path}")
@@ -58,7 +71,7 @@ def remove_previous_logs() -> int:
 
 def run_command(command: list[str], label: str) -> None:
     console.print(f"[cyan]{label}[/cyan]")
-    subprocess.run(command, check=True, cwd=SCRIPT_DIR)
+    run_checked(command)
 
 
 def build_azure_command(csv_file: str, voice: str, langdir: str, pitch: str | None, rate: str | None) -> list[str]:
@@ -124,7 +137,13 @@ def main() -> int:
 if __name__ == "__main__":
     try:
         raise SystemExit(main())
+    except KeyboardInterrupt:
+        console.print("[yellow]Interrupted by user (Ctrl+C).[/yellow]")
+        raise SystemExit(130)
     except subprocess.CalledProcessError as exc:
+        if exc.returncode in (130, -2):
+            console.print("[yellow]Interrupted by user (Ctrl+C).[/yellow]")
+            raise SystemExit(130) from exc
         console.print(f"[red]Command failed with exit code {exc.returncode}.[/red]")
         raise SystemExit(exc.returncode) from exc
     except Exception as exc:

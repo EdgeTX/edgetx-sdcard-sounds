@@ -26,6 +26,19 @@ RELEASE_DIR = SCRIPT_DIR / "release"
 console = Console()
 
 
+def run_checked(command: list[str], *, quiet: bool = False) -> None:
+    kwargs: dict[str, object] = {"cwd": SCRIPT_DIR}
+    if quiet:
+        kwargs["stdout"] = subprocess.DEVNULL
+        kwargs["stderr"] = subprocess.DEVNULL
+
+    completed = subprocess.run(command, check=False, **kwargs)
+    if completed.returncode in (130, -2):
+        raise KeyboardInterrupt
+    if completed.returncode != 0:
+        raise subprocess.CalledProcessError(completed.returncode, command)
+
+
 def env_flags(name: str, default: str) -> list[str]:
     return shlex.split(os.environ.get(name, default))
 
@@ -58,7 +71,7 @@ def process_audio_files(ffmpeg_flags: list[str], ffmpeg_af_flags: str) -> int:
             output_file = RELEASE_DIR / source_file.relative_to(SOUNDS_DIR.parent)
             output_file.parent.mkdir(parents=True, exist_ok=True)
 
-            subprocess.run(
+            run_checked(
                 [
                     "ffmpeg",
                     *ffmpeg_flags,
@@ -67,11 +80,9 @@ def process_audio_files(ffmpeg_flags: list[str], ffmpeg_af_flags: str) -> int:
                     "-af",
                     ffmpeg_af_flags,
                     str(output_file),
-                ],
-                check=True,
-                cwd=SCRIPT_DIR,
+                ]
             )
-            subprocess.run(
+            run_checked(
                 [
                     "uv",
                     "run",
@@ -85,8 +96,7 @@ def process_audio_files(ffmpeg_flags: list[str], ffmpeg_af_flags: str) -> int:
                     "-t",
                     "0",
                 ],
-                check=True,
-                cwd=SCRIPT_DIR,
+                quiet=True,
             )
             progress.advance(task_id)
 
@@ -190,7 +200,13 @@ def main() -> int:
 if __name__ == "__main__":
     try:
         raise SystemExit(main())
+    except KeyboardInterrupt:
+        console.print("[yellow]Interrupted by user (Ctrl+C).[/yellow]")
+        raise SystemExit(130)
     except subprocess.CalledProcessError as exc:
+        if exc.returncode in (130, -2):
+            console.print("[yellow]Interrupted by user (Ctrl+C).[/yellow]")
+            raise SystemExit(130) from exc
         console.print(f"[red]Command failed with exit code {exc.returncode}.[/red]")
         raise SystemExit(exc.returncode) from exc
     except Exception as exc:
