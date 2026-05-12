@@ -78,8 +78,9 @@ def checkFilesInSoundsNotInCSV() -> int:
     for f in csv_directory.glob("*.csv"):
         for row in read_csv_rows(str(f)):
             if len(row) >= 6:
-                fname = row[5]
-                if fname:
+                path = row[4].strip()
+                fname = row[5].strip()
+                if fname and not path:
                     referenced_files.add(fname)
     unreferenced_found = False
     for dirpath in sound_directory.iterdir():
