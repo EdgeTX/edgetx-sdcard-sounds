@@ -5,9 +5,10 @@ from functools import lru_cache
 
 import csv
 import json
-import shlex
 import sys
 import logging
+
+from voice_generation_config import AZURE_VOICE_JOBS, GLADOS_VOICE_JOBS
 
 # Optional: Use colorama for colored terminal output if available
 try:
@@ -95,31 +96,15 @@ def checkFilesInSoundsNotInCSV() -> int:
 
 @lru_cache(maxsize=1)
 def getCSVOutputDirsFromGenerateScript() -> dict[str, set[str]]:
-    """Return the output directories configured for each CSV in generate.sh."""
+    """Return the output directories configured for each CSV in generate.py."""
     csv_output_dirs: dict[str, set[str]] = {}
-    generate_script = Path("generate.sh")
-    if not generate_script.exists():
-        return csv_output_dirs
 
-    with open(generate_script, "rt") as script_file:
-        for raw_line in script_file:
-            line = raw_line.strip()
-            if not line.startswith('"./voices/') or not line.endswith('"'):
-                continue
-
-            try:
-                parts = shlex.split(line[1:-1])
-            except ValueError:
-                continue
-
-            if len(parts) < 3:
-                continue
-
-            csv_name = Path(parts[0]).name
-            outdir = Path(parts[2])
-            if outdir.name == "SCRIPTS":
-                outdir = outdir.parent
-            csv_output_dirs.setdefault(csv_name, set()).add(str(outdir))
+    for job in (*AZURE_VOICE_JOBS, *GLADOS_VOICE_JOBS):
+        csv_name = job.csv_path.name
+        outdir = Path(job.langdir)
+        if outdir.name == "SCRIPTS":
+            outdir = outdir.parent
+        csv_output_dirs.setdefault(csv_name, set()).add(str(outdir))
 
     return csv_output_dirs
 

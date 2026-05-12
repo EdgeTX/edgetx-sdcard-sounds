@@ -45,7 +45,7 @@ jobs:
 
       - name: Build the release zip packages
         if: github.event_name != 'pull_request'
-        run: ./release.sh
+        run: uv run ./release.py
 
       - name: Update latest tag
         if: github.event_name != 'pull_request' && !startsWith(github.event.ref, 'refs/tags/v')

@@ -73,7 +73,7 @@ The Korean voice pack provides full support for native Korean speakers using Edg
 
 Files are generated using [ElevenLabs](https://elevenlabs.io/app/speech-synthesis/text-to-speech) voice synthesis. There are 10k tokens available for free.
 
-Voice: Sarah 
+Voice: Sarah
 
 ElevenMultilingual v2.
 
@@ -81,20 +81,20 @@ ElevenMultilingual v2.
 
 Ubuntu commands to prepare wav file from mp3:
 
-- Normal way: 
-  
+- Normal way:
+
   ```bash
   ffmpeg -i ElevenLabs_2025-09-03T16_24_21_Sarah_pre_sp100_s50_sb75_se0_b_m2.mp3 -ar 32000 -ac 1 -sample_fmt s16 engstp.wav
   ```
 
-- To cut out words added for correct accent (0.5sec from beginning): 
-  
+- To cut out words added for correct accent (0.5sec from beginning):
+
   ```bash
   ffmpeg -ss 0.5 -i ElevenLabs_2025-09-03T16_24_21_Sarah_pre_sp100_s50_sb75_se0_b_m2.mp3 -ar 32000 -ac 1 -sample_fmt s16 engstp.wav
   ```
 
-- Many files at once from the same folder: 
-  
+- Many files at once from the same folder:
+
   ```bash
   for f in *.mp3; do
   ffmpeg -i "$f" -ar 32000 -ac 1 -sample_fmt s16 "${f%.mp3}.wav"
@@ -166,7 +166,7 @@ And in the request body (raw) place your `ssml` (change the voice name according
 </speak>
 ```
 
-In order to tweak some parameters of voice generation (i.e. rate, pitch) refer to the [SSML markup documentation](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-synthesis-markup-voice) for values and the `generate.sh` script to see how they are applied. 
+In order to tweak some parameters of voice generation (i.e. rate, pitch) refer to the [SSML markup documentation](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-synthesis-markup-voice) for values and the `generate.py` script to see how they are applied.
 
 ## How to build yourself
 
@@ -192,6 +192,10 @@ dotnet tool install --global Microsoft.CognitiveServices.Speech.CLI
 ```
 
 After you have installed SPX, you will also need to [create a Microsoft Azure account](https://azure.microsoft.com/en-us/services/cognitive-services/speech-to-text/) if you don't have one already. There are both free and paid options, but the free one is sufficient for this purpose - it is just rate limited. After you have done that, [follow the quick start guide](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/spx-basics) to configure the required region and subscription keys.
+
+To generate the voice packs, run `uv run python generate.py`.
+
+To build the release archives, run `uv run python release.py`.
 
 ## Alternatives
 
