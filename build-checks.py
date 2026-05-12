@@ -220,7 +220,8 @@ def checkCSVNewline() -> int:
 
 
 def checkCSVFormatting() -> int:
-    """Check that CSV files can be parsed by Python's CSV reader (standard RFC 4180)."""
+    """Check that CSV files can be parsed by Python's CSV reader (standard RFC 4180)
+    and that path/filename fields contain no unexpected quotes or leading/trailing spaces."""
     logging.info("VOICES: Checking CSV files can be parsed ...")
     parsing_error = False
     for f in csv_directory.glob("*.csv"):
@@ -228,9 +229,24 @@ def checkCSVFormatting() -> int:
         try:
             with open(f, "r", newline="") as file:
                 reader = csv.reader(file, delimiter=",", quotechar='"')
-                for _ in reader:
-                    # Iteration will raise csv.Error on malformed CSV
-                    pass
+                next(reader, None)  # Skip header
+                for row_num, row in enumerate(reader, start=2):
+                    if len(row) < 6:
+                        continue
+                    for col_idx, col_name in [(4, "PATH"), (5, "FILENAME")]:
+                        field = row[col_idx]
+                        if field != field.strip():
+                            logging.error(
+                                f"{ERROR_COLOR}[ERROR] {f.name}:{row_num}: {col_name} field has "
+                                f"leading/trailing whitespace - {repr(field)}{RESET_COLOR}"
+                            )
+                            parsing_error = True
+                        if '"' in field:
+                            logging.error(
+                                f"{ERROR_COLOR}[ERROR] {f.name}:{row_num}: {col_name} field contains "
+                                f"unexpected quote character - {repr(field)}{RESET_COLOR}"
+                            )
+                            parsing_error = True
         except csv.Error as err:
             line_num = getattr(reader, "line_num", "?") if reader else "?"
             logging.error(
@@ -243,10 +259,10 @@ def checkCSVFormatting() -> int:
 
 def checkSequentialStringIDs() -> int:
     """Check that String IDs (first column) are sequential without gaps (for non-script CSV files)."""
-   
+
     # CSV files where gaps should be warnings instead of errors
     WARNING_ONLY_FILES = {"fr-FR.csv", "pt-PT.csv", "uk-UA.csv"}
-    
+
     logging.info("VOICES: Checking for gaps in sequential String IDs ...")
     gaps_found = False
     for f in csv_directory.glob("*.csv"):
@@ -283,7 +299,7 @@ def checkSequentialStringIDs() -> int:
                 # Report all missing IDs in the gap
                 missing_ids = list(range(expected_next, actual_next))
                 missing_str = ", ".join(map(str, missing_ids))
-                
+
                 if is_warning_only:
                     logging.warning(
                         f"[WARNING] {f.name}: Gap in String IDs - missing ID(s) {missing_str} between row {row_numbers[string_ids[i]]} (ID {string_ids[i]}) and row {row_numbers[actual_next]} (ID {actual_next})"
