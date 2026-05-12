@@ -47,9 +47,9 @@ def checkDuplicateFilenamesInCSV() -> int:
         duplicates = set()
         for row in read_csv_rows(str(f)):
             if len(row) >= 6:
-                string_id = row[0].strip() if row[0] else ""
-                path = row[4].strip()
-                fname = row[5].strip()
+                string_id = row[0] if row[0] else ""
+                path = row[4]
+                fname = row[5]
                 key = (path, fname)
                 if fname:
                     if key in seen:
@@ -75,7 +75,7 @@ def checkFilesInSoundsNotInCSV() -> int:
     for f in csv_directory.glob("*.csv"):
         for row in read_csv_rows(str(f)):
             if len(row) >= 6:
-                fname = row[5].strip()
+                fname = row[5]
                 if fname:
                     referenced_files.add(fname)
     unreferenced_found = False
@@ -134,7 +134,7 @@ def checkFilenameLengthsInCSV() -> int:
             continue
         for row in read_csv_rows(str(f)):
             if len(row) == 6:
-                filename_in_csv = row[5].strip()
+                filename_in_csv = row[5]
                 if len(Path(filename_in_csv).stem) > 8:
                     logging.error(f"{ERROR_COLOR}[ERROR] {f.name}: Filename too long - {filename_in_csv}{RESET_COLOR}")
                     invalid_filename_found = True
@@ -196,7 +196,7 @@ def checkForDuplicateStringID() -> int:
             next(reader, None)  # Skip header
             for row in reader:
                 if row:
-                    StringID = row[0].strip()
+                    StringID = row[0]
                     if StringID in StringID_count:
                         logging.error(f"{ERROR_COLOR}[ERROR] {f.name}: {StringID} is duplicated{RESET_COLOR}")
                         duplicate_found = True
@@ -275,9 +275,9 @@ def checkSequentialStringIDs() -> int:
             reader = csv.reader(csvfile, delimiter=",", quotechar='"')
             next(reader, None)  # Skip header
             for row_num, row in enumerate(reader, start=2):  # Start at 2 (after header)
-                if row and row[0].strip():
+                if row and row[0]:
                     try:
-                        string_id = int(row[0].strip())
+                        string_id = int(row[0])
                         string_ids.append(string_id)
                         row_numbers[string_id] = row_num
                     except ValueError:
