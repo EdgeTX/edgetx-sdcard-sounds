@@ -291,13 +291,13 @@ def checkCSVFormatting() -> int:
                         if field != field.strip():
                             logging.error(
                                 f"{ERROR_COLOR}[ERROR] {f.name}:{row_num}: {col_name} field has "
-                                f"leading/trailing whitespace - {repr(field)}{RESET_COLOR}"
+                                f"leading/trailing whitespace - {field!r}{RESET_COLOR}"
                             )
                             parsing_error = True
                         if '"' in field:
                             logging.error(
                                 f"{ERROR_COLOR}[ERROR] {f.name}:{row_num}: {col_name} field contains "
-                                f"unexpected quote character - {repr(field)}{RESET_COLOR}"
+                                f"unexpected quote character - {field!r}{RESET_COLOR}"
                             )
                             parsing_error = True
         except csv.Error as err:
