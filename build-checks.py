@@ -179,7 +179,7 @@ def validateSoundsJson() -> int:
         logging.error(f"{ERROR_COLOR}[ERROR] sounds.json not found{RESET_COLOR}")
         invalid_json_found = True
     except ValueError as err:
-        logging.error(f"{ERROR_COLOR}[ERROR] JSON not valid: {str(err)}{RESET_COLOR}")
+        logging.error(f"{ERROR_COLOR}[ERROR] JSON not valid: {err!s}{RESET_COLOR}")
         invalid_json_found = True
 
     return 1 if invalid_json_found else 0
