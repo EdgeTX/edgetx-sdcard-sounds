@@ -31,7 +31,7 @@ logging.basicConfig(level=logging.INFO, format="%(message)s")
 
 def read_csv_rows(filepath: str) -> Iterator[List[str]]:
     """Yield rows from a CSV file, skipping the header."""
-    with open(filepath, "r") as csvfile:
+    with open(filepath, "r", newline="") as csvfile:
         reader = csv.reader(csvfile)
         next(reader, None)  # Skip header
         for row in reader:
@@ -74,7 +74,7 @@ def checkFilesInSoundsNotInCSV() -> int:
     referenced_files = set()
     for f in csv_directory.glob("*.csv"):
         for row in read_csv_rows(str(f)):
-            if len(row) == 6:
+            if len(row) >= 6:
                 fname = row[5].strip()
                 if fname:
                     referenced_files.add(fname)
@@ -133,7 +133,6 @@ def checkFilenameLengthsInCSV() -> int:
         if f.name.endswith("_scripts.csv"):
             continue
         for row in read_csv_rows(str(f)):
-            row = [field.strip().strip('"') for field in row]
             if len(row) == 6:
                 filename_in_csv = row[5].strip()
                 if len(Path(filename_in_csv).stem) > 8:
