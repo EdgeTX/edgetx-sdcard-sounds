@@ -78,7 +78,7 @@ def run_command(command: list[str], label: str, progress: Progress | None = None
 
 
 def build_azure_command(csv_file: str, voice: str, langdir: str, pitch: str | None, rate: str | None) -> list[str]:
-    command = ["uv", "run", "./voice-gen.py", csv_file, voice, langdir]
+    command = ["uv", "run", "./voice-gen-azure.py", csv_file, voice, langdir]
     if pitch:
         command.extend(["--pitch", pitch])
     if rate:
@@ -90,7 +90,7 @@ def main() -> int:
     os.chdir(SCRIPT_DIR)
 
     ensure_ffmpeg_normalize_available()
-    ensure_file_exists(SCRIPT_DIR / "voice-gen.py")
+    ensure_file_exists(SCRIPT_DIR / "voice-gen-azure.py")
     ensure_file_exists(SCRIPT_DIR / "voice-gen-glados.py")
     ensure_file_exists(SCRIPT_DIR / "voice-gen-elevenlabs.py")
 
