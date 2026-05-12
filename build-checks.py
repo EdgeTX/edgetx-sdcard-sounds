@@ -173,12 +173,15 @@ def validateSoundsJson() -> int:
     """Validate the sounds.json file."""
     logging.info("SOUNDS: Validating sounds.json ...")
     invalid_json_found = False
-    with open("sounds.json") as f:
-        try:
+    try:
+        with open("sounds.json") as f:
             json.load(f)
-        except ValueError as err:
-            logging.error(f"{ERROR_COLOR}[ERROR] JSON not valid: {str(err)}{RESET_COLOR}")
-            invalid_json_found = True
+    except FileNotFoundError:
+        logging.error(f"{ERROR_COLOR}[ERROR] sounds.json not found{RESET_COLOR}")
+        invalid_json_found = True
+    except ValueError as err:
+        logging.error(f"{ERROR_COLOR}[ERROR] JSON not valid: {str(err)}{RESET_COLOR}")
+        invalid_json_found = True
 
     return 1 if invalid_json_found else 0
 
