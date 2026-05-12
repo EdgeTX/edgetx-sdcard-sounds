@@ -67,10 +67,10 @@ def fix_file(path: Path):
         seen.add(key)
         deduped.append(row)
 
-    # Write back with all fields quoted
+    # Write back using standard CSV quoting rules (minimal quoting)
     tmp = path.with_suffix('.tmp')
     with tmp.open('w', newline='', encoding='utf-8') as f:
-        writer = csv.writer(f, quoting=csv.QUOTE_ALL)
+        writer = csv.writer(f, quoting=csv.QUOTE_MINIMAL)
         for row in deduped:
             writer.writerow(row)
 

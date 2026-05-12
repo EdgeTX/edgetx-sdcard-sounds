@@ -82,8 +82,9 @@ def process_csv_file(
     print(f"\nProcessing file {csv_file}")
 
     csv_path = Path(csv_file)
-    with csv_path.open(newline="", encoding="utf-8") as f, Live(
-        layout, console=console, refresh_per_second=10, transient=False
+    with (
+        csv_path.open(newline="", encoding="utf-8") as f,
+        Live(layout, console=console, refresh_per_second=10, transient=False),
     ):
         reader = csv.DictReader(f)
         rows = list(reader)
@@ -105,9 +106,7 @@ def process_csv_file(
             for row in rows:
                 line_count += 1
                 try:
-                    if not row.get("Filename") or row.get("String ID", "").startswith(
-                        "#"
-                    ):
+                    if not row.get("Filename") or row.get("String ID", "").startswith("#"):
                         progress.update(task_id, advance=1)
                         processed_count += 1
                         continue
@@ -124,17 +123,13 @@ def process_csv_file(
 
                     # To save free tokens available on Elevenlabs - skip existing files to avoid double generating
                     if output_wav.exists():
-                        report(
-                            f'[{line_count}/{total_rows}] Skipping "{name}.wav" as already exists.'
-                        )
+                        report(f'[{line_count}/{total_rows}] Skipping "{name}.wav" as already exists.')
                         progress.update(task_id, advance=1)
                         processed_count += 1
                         fail_streak = 0
                         continue
 
-                    report(
-                        f"[{line_count}/{total_rows}] Generating MP3 file: {output_mp3} ..."
-                    )
+                    report(f"[{line_count}/{total_rows}] Generating MP3 file: {output_mp3} ...")
 
                     audio_generator = client.text_to_speech.convert(
                         text=tr,
