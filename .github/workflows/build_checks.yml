@@ -14,13 +14,13 @@ jobs:
   package:
     runs-on: ubuntu-latest
     steps:
-      - name: Install Python
-        uses: actions/setup-python@v6
-        with:
-          python-version: '3.8'
-
       - name: Check out the repo
         uses: actions/checkout@v6
 
+      - name: Install uv
+        uses: astral-sh/setup-uv@v8.1.0
+        with:
+          version: "latest"
+
       - name: Run build checks
-        run: ./build-checks.py
+        run: uv run ./build-checks.py
