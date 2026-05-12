@@ -28,9 +28,7 @@ def init_argparse() -> argparse.ArgumentParser:
         description="Generate voice packs from CSV list using https://glados.c-net.org/",
     )
 
-    parser.add_argument(
-        "-v", "--version", action="version", version=f"{parser.prog} version 1.0.0"
-    )
+    parser.add_argument("-v", "--version", action="version", version=f"{parser.prog} version 1.0.0")
 
     parser.add_argument("file", type=str, help="CSV Translation file")
 
@@ -106,9 +104,7 @@ def main() -> None:
         all_csvs = sorted(csv_path.parent.glob("*.csv"))
 
     total_files = len(all_csvs) if all_csvs else 1
-    processed_files = next(
-        (idx + 1 for idx, f in enumerate(all_csvs) if f.resolve() == csv_path), 1
-    )
+    processed_files = next((idx + 1 for idx, f in enumerate(all_csvs) if f.resolve() == csv_path), 1)
 
     if not os.path.isfile(csv_file):
         print("Error: voice file not found")
@@ -150,9 +146,7 @@ def main() -> None:
     layout = Group(status_line, progress)
 
     # Process CSV file with progress bar
-    with open(csv_file, "rt") as csvfile, Live(
-        layout, console=console, refresh_per_second=10, transient=False
-    ):
+    with open(csv_file, "rt") as csvfile, Live(layout, console=console, refresh_per_second=10, transient=False):
         reader = csv.reader(csvfile, delimiter=",", quotechar='"')
         reader = ((field.strip() for field in row) for row in reader)  # Strip spaces
         task_id = progress.add_task("Synthesizing", total=csv_rows or None, status="")
@@ -177,20 +171,14 @@ def main() -> None:
                     continue
                 try:
                     path_part = row[4] if len(row) > 4 else ""
-                    outdir = (
-                        basedir / "SOUNDS" / langdir / path_part
-                        if path_part
-                        else basedir / "SOUNDS" / langdir
-                    )
+                    outdir = basedir / "SOUNDS" / langdir / path_part if path_part else basedir / "SOUNDS" / langdir
                     en_text = row[1] if len(row) > 1 else ""
                     text = row[2] if len(row) > 2 else ""
                     filename = row[5] if len(row) > 5 else ""
                     outfile = outdir / filename if filename else None
 
                     if not filename:
-                        report(
-                            f"[{line_count}/{csv_rows}] Skipping row with no filename"
-                        )
+                        report(f"[{line_count}/{csv_rows}] Skipping row with no filename")
                         progress.update(task_id, advance=1)
                         processed_count += 1
                         continue
@@ -200,9 +188,7 @@ def main() -> None:
                     outdir.mkdir(parents=True, exist_ok=True)
 
                     if not text:
-                        report(
-                            f"[{line_count}/{csv_rows}] Skipping as no text to translate"
-                        )
+                        report(f"[{line_count}/{csv_rows}] Skipping as no text to translate")
                         progress.update(task_id, advance=1)
                         processed_count += 1
                         os.close(tmpfile_fd)
@@ -210,18 +196,14 @@ def main() -> None:
                         continue
 
                     if not outfile.exists():
-                        report(
-                            f'[{line_count}/{csv_rows}] Translate "{en_text}" to "{text}", save as "{outfile}".'
-                        )
+                        report(f'[{line_count}/{csv_rows}] Translate "{en_text}" to "{text}", save as "{outfile}".')
 
                         fetch_sample(text, tmpfile_fd, delay_time)
                         process_sample(tmpfile, str(outfile))
                         os.unlink(tmpfile)
 
                     else:
-                        report(
-                            f'[{line_count}/{csv_rows}] Skipping "{filename}" as already exists.'
-                        )
+                        report(f'[{line_count}/{csv_rows}] Skipping "{filename}" as already exists.')
                         os.close(tmpfile_fd)
                         os.unlink(tmpfile)
 

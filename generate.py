@@ -4,7 +4,6 @@ from __future__ import annotations
 import os
 import shutil
 import subprocess
-import sys
 from pathlib import Path
 
 from rich.console import Console
@@ -56,9 +55,7 @@ def ensure_ffmpeg_normalize_available() -> None:
             stderr=subprocess.DEVNULL,
         )
     except (FileNotFoundError, subprocess.CalledProcessError) as exc:
-        raise RuntimeError(
-            "ffmpeg-normalize not found in PATH or uv environment."
-        ) from exc
+        raise RuntimeError("ffmpeg-normalize not found in PATH or uv environment.") from exc
 
 
 def remove_previous_logs() -> int:

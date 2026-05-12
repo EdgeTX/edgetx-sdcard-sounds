@@ -40,9 +40,7 @@ def init_argparse() -> argparse.ArgumentParser:
         description="Generate voice packs from CSV list.",
     )
 
-    parser.add_argument(
-        "-v", "--version", action="version", version=f"{parser.prog} version 1.0.0"
-    )
+    parser.add_argument("-v", "--version", action="version", version=f"{parser.prog} version 1.0.0")
 
     parser.add_argument("file", type=str, help="CSV Translation file")
 
@@ -92,10 +90,7 @@ def main() -> None:
 
     load_dotenv()
 
-    print(
-        f"Running {os.path.basename(__file__)} to process file: {args.file} "
-        f"(voice: {args.voice})"
-    )
+    print(f"Running {os.path.basename(__file__)} to process file: {args.file} (voice: {args.voice})")
 
     csv_file = args.file
     csv_rows = 0
@@ -122,14 +117,10 @@ def main() -> None:
     service_region = os.environ.get("SERVICE_REGION")
 
     if not speech_key or not service_region:
-        print(
-            "ERROR: Please set COGNITIVE_SERVICE_API_KEY and SERVICE_REGION (env or .env file)."
-        )
+        print("ERROR: Please set COGNITIVE_SERVICE_API_KEY and SERVICE_REGION (env or .env file).")
         sys.exit(1)
 
-    speech_config = speechsdk.SpeechConfig(
-        subscription=speech_key, region=service_region
-    )
+    speech_config = speechsdk.SpeechConfig(subscription=speech_key, region=service_region)
 
     if not os.path.isfile(csv_file):
         print("Error: voice file not found")
@@ -154,9 +145,7 @@ def main() -> None:
         all_csvs = sorted(csv_path.parent.glob("*.csv"))
 
     total_files = len(all_csvs) if all_csvs else 1
-    processed_files = next(
-        (idx + 1 for idx, f in enumerate(all_csvs) if f.resolve() == csv_path), 1
-    )
+    processed_files = next((idx + 1 for idx, f in enumerate(all_csvs) if f.resolve() == csv_path), 1)
 
     console = Console(force_terminal=not in_ci, no_color=in_ci)
     progress = Progress(
@@ -185,9 +174,7 @@ def main() -> None:
     layout = Group(status_line, progress)
 
     # Process CSV file with progress bar
-    with open(csv_file, "rt") as csvfile, Live(
-        layout, console=console, refresh_per_second=10, transient=False
-    ):
+    with open(csv_file, "rt") as csvfile, Live(layout, console=console, refresh_per_second=10, transient=False):
         reader = csv.reader(csvfile, delimiter=",", quotechar='"')
         reader = ((field.strip() for field in row) for row in reader)  # Strip spaces
         task_id = progress.add_task("Synthesizing", total=csv_rows or None, status="")
@@ -213,19 +200,13 @@ def main() -> None:
 
                 try:
                     path_part = row[4] if len(row) > 4 else ""
-                    outdir = (
-                        basedir / "SOUNDS" / langdir / path_part
-                        if path_part
-                        else basedir / "SOUNDS" / langdir
-                    )
+                    outdir = basedir / "SOUNDS" / langdir / path_part if path_part else basedir / "SOUNDS" / langdir
                     en_text = row[1] if len(row) > 1 else ""
                     text = row[2] if len(row) > 2 else ""
                     filename = row[5] if len(row) > 5 else ""
 
                     if not filename:
-                        report(
-                            f"[{line_count}/{csv_rows}] Skipping row with no filename"
-                        )
+                        report(f"[{line_count}/{csv_rows}] Skipping row with no filename")
                         progress.update(task_id, advance=1)
                         processed_count += 1
                         continue
@@ -235,20 +216,14 @@ def main() -> None:
                     outdir.mkdir(parents=True, exist_ok=True)
 
                     if not text:
-                        report(
-                            f"[{line_count}/{csv_rows}] Skipping as no text to translate"
-                        )
+                        report(f"[{line_count}/{csv_rows}] Skipping as no text to translate")
                         progress.update(task_id, advance=1)
                         processed_count += 1
                         continue
 
                     if not outfile.exists():
-                        report(
-                            f'[{line_count}/{csv_rows}] Translate "{en_text}" to "{text}", save as "{outfile}".'
-                        )
-                        audio_config = speechsdk.audio.AudioOutputConfig(
-                            filename=str(outfile)
-                        )
+                        report(f'[{line_count}/{csv_rows}] Translate "{en_text}" to "{text}", save as "{outfile}".')
+                        audio_config = speechsdk.audio.AudioOutputConfig(filename=str(outfile))
                         synthesizer = speechsdk.SpeechSynthesizer(
                             speech_config=speech_config, audio_config=audio_config
                         )
@@ -265,16 +240,9 @@ def main() -> None:
                         # If failed, show error, remove empty/corrupt file and count a failure
                         if result.reason == speechsdk.ResultReason.Canceled:
                             cancellation_details = result.cancellation_details
-                            report(
-                                f"Speech synthesis canceled: {cancellation_details.reason}"
-                            )
-                            if (
-                                cancellation_details.reason
-                                == speechsdk.CancellationReason.Error
-                            ):
-                                report(
-                                    f"Error details: {cancellation_details.error_details}"
-                                )
+                            report(f"Speech synthesis canceled: {cancellation_details.reason}")
+                            if cancellation_details.reason == speechsdk.CancellationReason.Error:
+                                report(f"Error details: {cancellation_details.error_details}")
                             if outfile.exists():
                                 outfile.unlink()
                             fail_streak += 1
@@ -286,9 +254,7 @@ def main() -> None:
                         time.sleep(delay_time)
 
                     else:
-                        report(
-                            f'[{line_count}/{csv_rows}] Skipping "{filename}" as already exists.'
-                        )
+                        report(f'[{line_count}/{csv_rows}] Skipping "{filename}" as already exists.')
 
                     progress.update(task_id, advance=1)
                     processed_count += 1

@@ -191,9 +191,7 @@ def main() -> int:
     remove_root_sounds_dir()
     archive_count = create_release_archives(version)
 
-    console.print(
-        f"[green]Processed {processed_count} audio file(s) and created {archive_count} archive(s).[/green]"
-    )
+    console.print(f"[green]Processed {processed_count} audio file(s) and created {archive_count} archive(s).[/green]")
     return 0
 
 
