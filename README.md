@@ -4,6 +4,7 @@ This repository contains the files needed to generate the voice packages used in
 
 The currently supported languages are:
 
+- Bulgarian
 - Chinese Mandarin
 - Chinese Taiwan Mandarin
 - Chinese Hongkong Cantonese
@@ -54,6 +55,26 @@ Audio files for [iNav Lua Telemetry Flight Status](https://github.com/iNavFlight
 ##### YAAPU
 
 Audio files for [Yaapu Telemetry Script and Widget](https://github.com/yaapu/FrskyTelemetryScript). Copy the WAV files from `SOUNDS/<lang>/SCRIPTS/YAAPU/` to `SOUNDS/yaapu0/<lang>/` to overwrite the original audio files of the script.
+
+### Bulgarian (bg-BG)
+
+The Bulgarian voice pack provides complete Bulgarian voice announcements for
+EdgeTX radios.
+
+- Generated with **Google Cloud Text-to-Speech**, using the
+  **bg-BG-Chirp3-HD-Aoede** voice.
+- All 747 audio files were individually reviewed and manually edited for
+  pronunciation, wording, and unwanted internal silence.
+- Format: **16-bit PCM WAV**, mono, 32 kHz.
+- Files are located in `SOUNDS/bg`.
+- Indexed and mapped using:
+  - `voices/bg-BG.csv` — main system phrases
+  - `voices/bg-BG_scripts.csv` — Betaflight, iNav, Yaapu, and PX4 script phrases
+- Developed and contributed by [@cdmanbg](https://github.com/cdmanbg), a
+  Bulgarian RC enthusiast, for the Bulgarian EdgeTX community.
+
+Feedback and pronunciation corrections are welcome through the repository's
+issue tracker.
 
 ### Korean (ko-KR)
 
