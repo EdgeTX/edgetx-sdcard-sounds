@@ -23,7 +23,7 @@ jobs:
           version: "latest"
 
       - name: Run build checks
-        run: uv run ./build-checks.py
+        run: uv run ./build_checks.py
 
       - name: Run tests
         run: uv run pytest

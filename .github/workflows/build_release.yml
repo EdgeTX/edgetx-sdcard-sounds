@@ -37,7 +37,7 @@ jobs:
         run: uv sync
 
       - name: Run build checks
-        run: uv run ./build-checks.py
+        run: uv run ./build_checks.py
 
       - name: Set VERSION if tagged build
         if: startsWith(github.event.ref, 'refs/tags/v')
