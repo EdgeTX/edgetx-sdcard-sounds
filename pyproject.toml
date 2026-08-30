@@ -12,6 +12,12 @@ dependencies = [
     "python-dotenv",
 ]
 
+[dependency-groups]
+dev = ["pytest"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
 [tool.ruff]
 # Allow lines to be as long as 120.
 line-length = 120

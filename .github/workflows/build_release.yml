@@ -48,20 +48,20 @@ jobs:
         run: uv run ./release.py
 
       - name: Update latest tag
-        if: github.event_name != 'pull_request' && !startsWith(github.event.ref, 'refs/tags/v')
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && !startsWith(github.event.ref, 'refs/tags/v')
         run: |
           git tag -f latest
           git push -f origin latest
 
       - name: Delete previous latest release
-        if: github.event_name != 'pull_request' && !startsWith(github.event.ref, 'refs/tags/v')
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && !startsWith(github.event.ref, 'refs/tags/v')
         run: gh release delete latest --yes || true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Deploy latest prerelease
         uses: softprops/action-gh-release@v3
-        if: github.event_name != 'pull_request' && !startsWith(github.event.ref, 'refs/tags/v')
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && !startsWith(github.event.ref, 'refs/tags/v')
         with:
           tag_name: latest
           target_commitish: ${{ github.sha }}

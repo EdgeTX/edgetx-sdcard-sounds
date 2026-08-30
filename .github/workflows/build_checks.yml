@@ -24,3 +24,6 @@ jobs:
 
       - name: Run build checks
         run: uv run ./build-checks.py
+
+      - name: Run tests
+        run: uv run pytest

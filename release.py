@@ -5,6 +5,8 @@ import os
 import shlex
 import shutil
 import subprocess
+import sys
+import traceback
 import zipfile
 from pathlib import Path
 
@@ -26,6 +28,10 @@ RELEASE_DIR = SCRIPT_DIR / "release"
 IS_CI = bool(os.environ.get("CI"))
 # Rich only live-renders on a real terminal; force it on CI so progress bars stream.
 console = Console(force_terminal=True if IS_CI else None)
+# Resolve the venv's binary once instead of paying `uv run`'s overhead per file.
+FFMPEG_NORMALIZE = str(Path(sys.executable).parent / "ffmpeg-normalize")
+if not Path(FFMPEG_NORMALIZE).exists():
+    FFMPEG_NORMALIZE = shutil.which("ffmpeg-normalize") or "ffmpeg-normalize"
 
 
 def run_checked(command: list[str], *, quiet: bool = False) -> None:
@@ -87,9 +93,7 @@ def process_audio_files(ffmpeg_flags: list[str], ffmpeg_af_flags: str) -> int:
             )
             run_checked(
                 [
-                    "uv",
-                    "run",
-                    "ffmpeg-normalize",
+                    FFMPEG_NORMALIZE,
                     str(output_file),
                     "-o",
                     str(output_file),
@@ -126,9 +130,12 @@ def trim_variant_directories() -> None:
             continue
         current_lang_dir = variant_dir / "SOUNDS" / variant_dir.name
         target_lang_dir = variant_dir / "SOUNDS" / variant_dir.name[:2]
-        if current_lang_dir.exists() and current_lang_dir != target_lang_dir:
-            console.print(f"[cyan]{variant_dir.name} -> {target_lang_dir.name}[/cyan]")
-            current_lang_dir.rename(target_lang_dir)
+        if current_lang_dir == target_lang_dir:
+            continue
+        if not current_lang_dir.exists():
+            raise FileNotFoundError(f"Expected language folder not found after move: {current_lang_dir}")
+        console.print(f"[cyan]{variant_dir.name} -> {target_lang_dir.name}[/cyan]")
+        current_lang_dir.rename(target_lang_dir)
 
 
 def remove_root_sounds_dir() -> None:
@@ -153,10 +160,7 @@ def create_release_archives(version: str) -> int:
         for variant_dir in variant_dirs:
             sounds_root = variant_dir / "SOUNDS"
             if not sounds_root.is_dir():
-                progress.advance(task_id)
-                if IS_CI:
-                    progress.refresh()
-                continue
+                raise FileNotFoundError(f"Expected SOUNDS directory not found: {sounds_root}")
 
             progress.update(task_id, description=f"Zipping {variant_dir.name}")
             archive_path = RELEASE_DIR / f"edgetx-sdcard-sounds-{variant_dir.name}-{version}.zip"
@@ -218,5 +222,7 @@ if __name__ == "__main__":
         console.print(f"[red]Command failed with exit code {exc.returncode}.[/red]")
         raise SystemExit(exc.returncode) from exc
     except Exception as exc:
+        if IS_CI:
+            traceback.print_exc()
         console.print(f"[red]{exc}[/red]")
         raise SystemExit(1) from exc
