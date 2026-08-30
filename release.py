@@ -23,7 +23,8 @@ from rich.progress import (
 SCRIPT_DIR = Path(__file__).resolve().parent
 SOUNDS_DIR = SCRIPT_DIR / "SOUNDS"
 RELEASE_DIR = SCRIPT_DIR / "release"
-console = Console()
+# Rich only live-renders on a real terminal; force it on CI so progress bars stream.
+console = Console(force_terminal=True if os.environ.get("CI") else None)
 
 
 def run_checked(command: list[str], *, quiet: bool = False) -> None:
@@ -111,7 +112,7 @@ def move_variant_directories() -> None:
         if not variant_dir.is_dir():
             continue
         destination = RELEASE_DIR / variant_dir.name / "SOUNDS"
-        destination.parent.mkdir(parents=True, exist_ok=True)
+        destination.mkdir(parents=True, exist_ok=True)
         shutil.move(str(variant_dir), str(destination))
 
 
