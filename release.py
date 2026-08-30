@@ -23,8 +23,9 @@ from rich.progress import (
 SCRIPT_DIR = Path(__file__).resolve().parent
 SOUNDS_DIR = SCRIPT_DIR / "SOUNDS"
 RELEASE_DIR = SCRIPT_DIR / "release"
+IS_CI = bool(os.environ.get("CI"))
 # Rich only live-renders on a real terminal; force it on CI so progress bars stream.
-console = Console(force_terminal=True if os.environ.get("CI") else None)
+console = Console(force_terminal=True if IS_CI else None)
 
 
 def run_checked(command: list[str], *, quiet: bool = False) -> None:
@@ -65,6 +66,7 @@ def process_audio_files(ffmpeg_flags: list[str], ffmpeg_af_flags: str) -> int:
         TaskProgressColumn(),
         TimeElapsedColumn(),
         console=console,
+        auto_refresh=not IS_CI,
     ) as progress:
         task_id = progress.add_task("Processing audio", total=len(sound_files))
         for source_file in sound_files:
@@ -100,6 +102,8 @@ def process_audio_files(ffmpeg_flags: list[str], ffmpeg_af_flags: str) -> int:
                 quiet=True,
             )
             progress.advance(task_id)
+            if IS_CI:
+                progress.refresh()
 
     return len(sound_files)
 
@@ -143,12 +147,15 @@ def create_release_archives(version: str) -> int:
         TaskProgressColumn(),
         TimeElapsedColumn(),
         console=console,
+        auto_refresh=not IS_CI,
     ) as progress:
         task_id = progress.add_task("Creating archives", total=len(variant_dirs))
         for variant_dir in variant_dirs:
             sounds_root = variant_dir / "SOUNDS"
             if not sounds_root.is_dir():
                 progress.advance(task_id)
+                if IS_CI:
+                    progress.refresh()
                 continue
 
             progress.update(task_id, description=f"Zipping {variant_dir.name}")
@@ -159,6 +166,8 @@ def create_release_archives(version: str) -> int:
                         archive.write(file_path, arcname=file_path.relative_to(variant_dir))
             archive_count += 1
             progress.advance(task_id)
+            if IS_CI:
+                progress.refresh()
 
     return archive_count
 
