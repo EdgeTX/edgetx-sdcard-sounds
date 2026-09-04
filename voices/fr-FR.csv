@@ -233,3 +233,4 @@
 "285","buzzer active","Buzzer activé","","","buzact.wav"
 "287","blackbox active","Blackbox activée","","","blkact.wav"
 "308","pit mode","mode fosse","","","pitmod.wav"
+"309","low battery","Batterie faible","","","lowbat.wav"
