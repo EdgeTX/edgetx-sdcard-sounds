@@ -2,10 +2,7 @@
 
 # Install required packages
 echo "Installing required packages..."
-sudo apt-get update &> /dev/null && sudo apt-get install --no-install-recommends -y python3 python-is-python3 dotnet-sdk-8.0 ffmpeg git-lfs
-
-# Set up git-lfs (needed to fetch model weights for a local glados-tts checkout, see voice-gen-glados-local.py)
-git lfs install
+sudo apt-get update &> /dev/null && sudo apt-get install --no-install-recommends -y python3 python-is-python3 dotnet-sdk-8.0 ffmpeg
 
 # Install uv
 echo "Installing uv..."

@@ -8,22 +8,22 @@
 # ]
 # ///
 """
-Fourth experimental alternative to voice-gen-glados.py, for comparison
-against voice-gen-glados-local.py, voice-gen-glados-rvc.py and
-voice-gen-glados-sbv2.py.
-
-The other three scripts run a model locally. This one instead calls the
-hosted Fish Audio TTS API (https://fish.audio/) with a community-trained
-GLaDOS voice model, model id ee885900b0874d12b1c3439d1e56cc95:
+Generates the en_gb-glados voice pack, using the hosted Fish Audio TTS API
+(https://fish.audio/) with a community-trained GLaDOS voice model, model id
+ee885900b0874d12b1c3439d1e56cc95:
 
   https://fish.audio/m/ee885900b0874d12b1c3439d1e56cc95/
 
-No local model/GPU/dependency wrangling needed - just an API key - but it's
-a paid, rate-limited third-party service rather than something we control,
-same tradeoff the original hosted glados.c-net.org endpoint had.
+Replaces the original voice-gen-glados.py, which called the hosted
+https://glados.c-net.org/ endpoint - that had become unreliable and was
+producing badly truncated audio. A few local-model alternatives (glados-tts,
+Piper+RVC voice conversion, Style-Bert-VITS2) were also tried, but this
+hosted option produced the best results.
 
-Not wired into generate.py - run standalone and compare output quality and
-cost against the other voice-gen-glados-*.py scripts.
+No local model/GPU/dependency wrangling needed - just an API key - but it's
+a paid, rate-limited third-party service rather than something we control.
+Called from generate.py for the en_gb-glados voice pack; can also be run
+standalone.
 
 One-time setup:
 
