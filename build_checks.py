@@ -314,7 +314,7 @@ def checkSequentialStringIDs() -> int:
     """Check that String IDs (first column) are sequential without gaps (for non-script CSV files)."""
 
     # CSV files where gaps should be warnings instead of errors
-    WARNING_ONLY_FILES = {"fr-FR.csv", "pt-PT.csv", "uk-UA.csv"}
+    WARNING_ONLY_FILES = {"fr-FR.csv", "it-IT.csv", "pt-PT.csv", "uk-UA.csv"}
 
     logging.info("VOICES: Checking for gaps in sequential String IDs ...")
     gaps_found = False

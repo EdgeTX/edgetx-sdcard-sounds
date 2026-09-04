@@ -266,3 +266,6 @@
 "265","autorotation","","heli","","auro.wav"
 "266","Telemetry connected","Telemetria collegata","","SYSTEM","telemco.wav"
 "267","level mode","modalità livello","flight controller","","lvlmod.wav"
+"465","engine start","avviamento motore","car","","engsrt.wav"
+"466","engine stop","arresto motore","car","","engstp.wav"
+"467","engine on","motore acceso","car","","engon.wav"
