@@ -137,6 +137,19 @@ And finally run script to generate all the files. Script is smart and skips alre
 python3 voice-gen-elevenlabs.py
 ```
 
+### GLaDOS (en_gb-glados)
+
+The `en_gb-glados` voice pack is generated from `voices/en-GB.csv` by `voice-gen-glados-fishaudio.py`, using a community-trained GLaDOS voice model on the hosted [Fish Audio](https://fish.audio/) TTS API.
+
+- Voice model: [ee885900b0874d12b1c3439d1e56cc95](https://fish.audio/m/ee885900b0874d12b1c3439d1e56cc95/).
+- This replaced the previously-used hosted `https://glados.c-net.org/` endpoint, which had become unreliable and was producing badly truncated audio.
+- One-time setup:
+
+  1. Create an API key at <https://fish.audio/app/api-keys/>.
+  2. Set it in the environment, e.g. in a `.env` file in the repo root: `FISHAUDIO_API_KEY=your-key-here`.
+
+- Run standalone with `uv run ./voice-gen-glados-fishaudio.py voices/en-GB.csv en_gb-glados`, or via `uv run generate.py` as part of a full pack build. Note this calls a paid, rate-limited third-party API - it isn't free or unlimited like the other generators. A few other standalone options were trialed (R2D2FISH/glados-tts, Style-Bert-VITS2) but had their own audio issues. Fish Audio was the most realistic / reliable generator so far. 
+
 ## Voices
 
 All of the voices used in the EdgeTX voice packs have been picked from the [neural voices](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support?tabs=speechtotext#prebuilt-neural-voices) offered by Microsoft Azure text to speech service, in order to get as close as possible to human-like voices. If you want to see what voices are available, and try different phrases, [check out the online demo generator](https://azure.microsoft.com/en-us/services/cognitive-services/text-to-speech/#features). Using some recording software, you could even save your own phrases and use them in the voice packs.
