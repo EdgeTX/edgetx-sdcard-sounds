@@ -1,5 +1,11 @@
 [
   {
+    "language": "bg-BG",
+    "name": "Bulgarian Female",
+    "description": "Bulgarian Female Voice (Google TTS Chirp3-HD-Aoede)",
+    "directory": "bg"
+  },
+  {
     "language": "cs-CZ",
     "name": "Czech Female",
     "description": "Czech Female Voice (cs-CZ-Vlasta)",
