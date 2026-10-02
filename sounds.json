@@ -148,5 +148,11 @@
     "name": "Chinese Hongkong Female",
     "description": "Chinese Hongkong Female Voice",
     "directory": "hk"
+  },
+  {
+    "language": "ka-GE",
+    "name": "Georgian Female",
+    "description": "Georgian Female Voice",
+    "derectory": "ka"
   }
 ]
