@@ -29,6 +29,7 @@ class GladosVoiceJob:
 
 
 AZURE_VOICE_JOBS: tuple[AzureVoiceJob, ...] = (
+    AzureVoiceJob("./voices/ar-SA.csv", "ar-SA-ZariyahNeural", "ar"),
     AzureVoiceJob("./voices/cs-CZ.csv", "cs-CZ-VlastaNeural", "cz"),
     AzureVoiceJob("./voices/da_DK.csv", "da-DK-ChristelNeural", "da"),
     AzureVoiceJob("./voices/da_DK_scripts.csv", "da-DK-ChristelNeural", "da/SCRIPTS"),
