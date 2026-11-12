@@ -25,6 +25,7 @@ The currently supported languages are:
 
 The following languages are not yet supported:
 
+- Arabic (template only, translations needed; see [Arabic (ar-SA)](#arabic-ar-sa))
 - Dutch
 - Hungarian
 - Slovak
@@ -54,6 +55,17 @@ Audio files for [iNav Lua Telemetry Flight Status](https://github.com/iNavFlight
 ##### YAAPU
 
 Audio files for [Yaapu Telemetry Script and Widget](https://github.com/yaapu/FrskyTelemetryScript). Copy the WAV files from `SOUNDS/<lang>/SCRIPTS/YAAPU/` to `SOUNDS/yaapu0/<lang>/` to overwrite the original audio files of the script.
+
+### Arabic (ar-SA)
+
+`voices/ar-SA.csv` is a template: every row has its filename, the English source text and grammar notes, but the `Translation` column is still empty. No audio has been generated yet, so there is no `SOUNDS/ar` folder.
+
+- Arabic number grammar is handled by the firmware (`radio/src/translations/tts/tts_ar.cpp` in [EdgeTX/edgetx](https://github.com/EdgeTX/edgetx)), which defines which file is played when. The layout differs from English:
+  - `0000`-`0099` are the numbers 0-99 in the form used with **masculine** nouns, and `0200`-`0299` the form used with **feminine** nouns. Gender polarity for 3-10 is part of the recording (e.g. `0003` = ثلاثة, `0203` = ثلاث).
+  - `0109`-`0112` are the four forms of ألف (ألف, ألفان, آلاف, ألفًا).
+  - Each unit has 4 files: `<unit>0` singular, `<unit>1` dual, `<unit>2` plural (3-10) and `<unit>3` accusative singular (11-99).
+- The `Context` column of each row explains which form is needed. It also gives the gender the firmware assumes for each unit. If the Arabic noun you choose has the other gender, `tts_ar.cpp` must be updated to match.
+- Once the translations are filled in, `voice-gen-azure.py` generates `SOUNDS/ar` (voice `ar-SA-ZariyahNeural`). Rows with an empty translation are skipped.
 
 ### Korean (ko-KR)
 
