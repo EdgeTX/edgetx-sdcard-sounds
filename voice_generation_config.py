@@ -61,6 +61,8 @@ AZURE_VOICE_JOBS: tuple[AzureVoiceJob, ...] = (
     AzureVoiceJob("./voices/zh-CN.csv", "zh-CN-XiaoxiaoNeural", "cn"),
     AzureVoiceJob("./voices/zh-TW.csv", "zh-TW-HsiaoChenNeural", "tw"),
     AzureVoiceJob("./voices/zh-HK.csv", "zh-HK-HiuGaaiNeural", "hk", rate="0.9"),
+    AzureVoiceJob("./voices/ka-GE.csv", "ka-GE-EkaNeural", "ka"),
+    AzureVoiceJob("./voices/ka-GE_scripts.csv", "ka-GE-EkaNeural", "ka/SCRIPTS"),
 )
 
 
