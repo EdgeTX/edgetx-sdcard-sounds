@@ -372,7 +372,7 @@
 "371","Trainer connected","Trainer متصل","","SYSTEM","trainco.wav"
 "372","trainer signal lost","انقطعت إشارة Trainer","","SYSTEM","trainko.wav"
 "373","trainer signal recovered","رجعت إشارة Trainer","","SYSTEM","trainok.wav"
-"374","sensor lost","انقطع الحساس","","SYSTEM","sensorko.wav"
+"374","sensor lost","انقطع المستشعر","","SYSTEM","sensorko.wav"
 "375","servo overload","حمل زائد على السيرفو","","SYSTEM","servoko.wav"
 "376","power overload","حمل زائد على الطاقة","","SYSTEM","rxko.wav"
 "377","receiver still connected","الرسيفر ما زال متصلا","","SYSTEM","modelpwr.wav"
