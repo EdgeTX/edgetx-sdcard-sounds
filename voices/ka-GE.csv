@@ -513,7 +513,7 @@
 "512","Stability Control Off","სტაბილიზაციის კონტროლი გამორთულია","","","sbctof.wav"
 "513","Stability Control Enabled","სტაბილიზაციის კონტროლი გააქტიურებულია","","","sbcten.wav"
 "514","Stability Control Disabled","სტაბილიზაციის კონტროლი დეაქტივირებულია","","","sbctdb.wav"
-"515","Thermal Warning","თერმული გაცხელება","","","thmwm.wav"
+"515","Thermal Warning","თერმული გაცხელება","","","thmwrn.wav"
 "516","Servo Overload","სერვოს გადატვირთვა","","","srvovl.wav"
 "517","BEC Overload","კვების რეგულატორის გადატვირთვა","","","becovl.wav"
 "518","Stability Control","სტაბილიზაციის კონტროლი","","","sbct.wav"
