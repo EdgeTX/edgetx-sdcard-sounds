@@ -26,4 +26,6 @@ If you want to fix existing errors or contribute ideas or code, you are welcome 
 
 If you need guidance to navigate this repository or opening a pull request, please say so, we'll be happy to help you get started.
 
+[docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) describes the voice CSV format, how audio is generated and checked, and how releases are built. Note that for some languages the firmware decides which number and unit files exist and what form each must take, so check the `Context` column before changing those translations.
+
   [new-issue]: https://github.com/EdgeTX/edgetx-sdcard-sounds/issues/choose
