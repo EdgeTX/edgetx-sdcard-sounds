@@ -1,5 +1,11 @@
 [
   {
+    "language": "ar-SA",
+    "name": "Arabic Female",
+    "description": "Arabic Female Voice (ar-SA-ZariyahNeural)",
+    "directory": "ar"
+  },
+  {
     "language": "cs-CZ",
     "name": "Czech Female",
     "description": "Czech Female Voice (cs-CZ-Vlasta)",
