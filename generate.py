@@ -91,7 +91,7 @@ def main() -> int:
 
     ensure_ffmpeg_normalize_available()
     ensure_file_exists(SCRIPT_DIR / "voice-gen-azure.py")
-    ensure_file_exists(SCRIPT_DIR / "voice-gen-glados.py")
+    ensure_file_exists(SCRIPT_DIR / "voice-gen-glados-fishaudio.py")
     ensure_file_exists(SCRIPT_DIR / "voice-gen-elevenlabs.py")
 
     removed_logs = remove_previous_logs()
@@ -125,7 +125,7 @@ def main() -> int:
         for job in GLADOS_VOICE_JOBS:
             progress.update(task_id, description=f"GLaDOS: {job.langdir}")
             run_command(
-                ["uv", "run", "./voice-gen-glados.py", job.csv_file, job.langdir],
+                ["uv", "run", "./voice-gen-glados-fishaudio.py", job.csv_file, job.langdir],
                 f"GLaDOS {job.langdir}: {job.csv_file}",
                 progress,
             )
