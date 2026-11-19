@@ -61,13 +61,12 @@ Audio files for [Yaapu Telemetry Script and Widget](https://github.com/yaapu/Frs
 ### Arabic (ar-SA)
 
 - Generated with Azure Text-to-Speech, voice `ar-SA-ZariyahNeural`. Files are in `SOUNDS/ar`. Needs EdgeTX 3.0 or later.
-- Translations by [@GyroGhost](https://github.com/GyroGhost). Feedback and corrections are welcome; please open an issue.
+- Translations by [@GyroGhost](https://github.com/GyroGhost).
 
 ### Korean (ko-KR)
 
 - Generated with Google Cloud Text-to-Speech (Wavenet-B). Files are in `SOUNDS/ko`.
 - Developed and contributed by [@siyeongjang](https://github.com/siyeongjang), a Korean RC enthusiast, to improve accessibility and user experience for Korean-speaking pilots.
-- Feedback or improvement suggestions are welcome. Please feel free to open an issue.
 
 ### Polish (pl-PL)
 
