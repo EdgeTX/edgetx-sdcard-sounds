@@ -56,157 +56,22 @@ Audio files for [iNav Lua Telemetry Flight Status](https://github.com/iNavFlight
 
 Audio files for [Yaapu Telemetry Script and Widget](https://github.com/yaapu/FrskyTelemetryScript). Copy the WAV files from `SOUNDS/<lang>/SCRIPTS/YAAPU/` to `SOUNDS/yaapu0/<lang>/` to overwrite the original audio files of the script.
 
+## Voice pack notes
+
 ### Arabic (ar-SA)
 
-- Voice files were generated with Azure Text-to-Speech, voice `ar-SA-ZariyahNeural`, from `voices/ar-SA.csv`. Files are in `SOUNDS/ar`.
+- Generated with Azure Text-to-Speech, voice `ar-SA-ZariyahNeural`. Files are in `SOUNDS/ar`. Needs EdgeTX 3.0 or later.
 - Translations by [@GyroGhost](https://github.com/GyroGhost). Feedback and corrections are welcome; please open an issue.
-- Arabic number grammar is handled by the firmware (`radio/src/translations/tts/tts_ar.cpp` in [EdgeTX/edgetx](https://github.com/EdgeTX/edgetx), from EdgeTX 3.0), which decides which file is played when. The layout differs from English:
-  - `0000`-`0099` are the numbers 0-99 in the form used with **masculine** nouns, and `0200`-`0299` the form used with **feminine** nouns. Gender polarity for 3-10 is part of the recording (e.g. `0003` = ثلاثة, `0203` = ثلاث).
-  - `0109`-`0112` are the four forms of ألف (ألف, ألفان, آلاف, ألفًا).
-  - Each unit has 4 files: `<unit>0` singular, `<unit>1` dual, `<unit>2` plural (3-10) and `<unit>3` accusative singular (11-99).
-- The `Context` column of each row explains which form a file needs, and for units the gender the firmware assumes. If a unit's Arabic noun is changed to one of the other gender, `tts_ar.cpp` must be updated to match.
 
 ### Korean (ko-KR)
 
-The Korean voice pack provides full support for native Korean speakers using EdgeTX.
-
-- Voice files were generated using **Google Cloud Text-to-Speech (Wavenet-B)**.
-- Generation activity can be traced via the public [Google Cloud Logs Console](https://console.cloud.google.com/logs/query?project=tx16s-korean-ver).
-- Format: **16-bit PCM WAV**, Mono, 32kHz – fully compatible with EdgeTX audio requirements.
-- Files are located in: `SOUNDS/ko`
-- Indexed and mapped using:
-  - `voices/ko-KR.csv` — main system phrases
-  - `voices/ko-KR_scripts.csv` — numeric and special script terms
-- This voice pack was personally developed and contributed by [@siyeongjang](https://github.com/siyeongjang), a Korean RC enthusiast, to improve accessibility and user experience for Korean-speaking pilots.
-- Feedback or improvement suggestions are welcome. Please feel free to open an issue or leave a comment in the Pull Request.
+- Generated with Google Cloud Text-to-Speech (Wavenet-B). Files are in `SOUNDS/ko`.
+- Developed and contributed by [@siyeongjang](https://github.com/siyeongjang), a Korean RC enthusiast, to improve accessibility and user experience for Korean-speaking pilots.
+- Feedback or improvement suggestions are welcome. Please feel free to open an issue.
 
 ### Polish (pl-PL)
 
-Files are generated using [ElevenLabs](https://elevenlabs.io/app/speech-synthesis/text-to-speech) voice synthesis. There are 10k tokens available for free.
-
-Voice: Sarah
-
-ElevenMultilingual v2.
-
-#### One file at a time
-
-Ubuntu commands to prepare wav file from mp3:
-
-- Normal way:
-
-  ```bash
-  ffmpeg -i ElevenLabs_2025-09-03T16_24_21_Sarah_pre_sp100_s50_sb75_se0_b_m2.mp3 -ar 32000 -ac 1 -sample_fmt s16 engstp.wav
-  ```
-
-- To cut out words added for correct accent (0.5sec from beginning):
-
-  ```bash
-  ffmpeg -ss 0.5 -i ElevenLabs_2025-09-03T16_24_21_Sarah_pre_sp100_s50_sb75_se0_b_m2.mp3 -ar 32000 -ac 1 -sample_fmt s16 engstp.wav
-  ```
-
-- Many files at once from the same folder:
-
-  ```bash
-  for f in *.mp3; do
-  ffmpeg -i "$f" -ar 32000 -ac 1 -sample_fmt s16 "${f%.mp3}.wav"
-  done
-  ```
-
-#### Automated way
-
-```bash
-sudo apt update
-sudo apt install libportaudio2 portaudio19-dev libasound-dev -y
-pip install elevenlabs python-dotenv
-```
-
-If you don't have venv configured or enabled:
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-```
-
-Set API key environment variable:
-
-```bash
-export ELEVENLABS_API_KEY="<API_KEY>"
-```
-
-Optionally add your languages to array:
-
-```bash
-languages = [
-    ("voices/pl-PL.csv", "EXAVITQu4vr4xnSDxMaL", "pl"),
-    # Add other languages here
-]
-```
-
-And finally run script to generate all the files. Script is smart and skips already generated files to not use tokens from ElevenLabs.
-
-```bash
-python3 voice-gen-elevenlabs.py
-```
-
-## Voices
-
-All of the voices used in the EdgeTX voice packs have been picked from the [neural voices](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support?tabs=speechtotext#prebuilt-neural-voices) offered by Microsoft Azure text to speech service, in order to get as close as possible to human-like voices. If you want to see what voices are available, and try different phrases, [check out the online demo generator](https://azure.microsoft.com/en-us/services/cognitive-services/text-to-speech/#features). Using some recording software, you could even save your own phrases and use them in the voice packs.
-
-### Generating custom phrases
-
-If you have a [Azure Speech Services subscription](https://azure.microsoft.com/pricing/details/cognitive-services/speech-services/) (there is a free usage tier), phrases can be generated with `curl` or a `http` client like `postman`. After building a text to speech resource in `Azure` you can use it by `REST` calls (`http` requests).
-
-The request url is:
-`https://<YOUR_RESOURCE_REGION>.tts.speech.microsoft.com/cognitiveservices/v1`
-
-You should add the following headers to your request:
-
-```
-Ocp-Apim-Subscription-Key: <YOUR_RESOURCE_KEY>
-Content-Type: application/ssml+xml
-X-Microsoft-OutputFormat: riff-8khz-16bit-mono-pcm
-```
-
-**Note:** EdgeTX supports up to 32khz `.wav` file but in that range 8khz is the highest value supported by the conversion service. However, it is possible to select higher quality like `riff-48khz-16bit-mono-pcm` and convert to 32khz afterwards with another tool (i.e. `ffmpeg -i input.wav -ar 32000 output.wav`) if you want the best possible audio quality.
-
-And in the request body (raw) place your `ssml` (change the voice name according to your preference, the full list is [here](https://learn.microsoft.com/azure/cognitive-services/speech-service/language-support?tabs=stt-tts)):
-
-```
-<speak version='1.0' xml:lang='en-US'>
-    <voice xml:lang='en-US' xml:gender='Female' name='en-US-MichelleNeural'>YOUR_PHRASE_HERE</voice>
-</speak>
-```
-
-In order to tweak some parameters of voice generation (i.e. rate, pitch) refer to the [SSML markup documentation](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-synthesis-markup-voice) for values and the `generate.py` script to see how they are applied.
-
-## How to build yourself
-
-In order to generate the voice packages and do the release processing, you will need a Linux environment to run in.
-Ubuntu 18.04 is recommended as it is a LTS release. Newer versions and other flavours of Linux will most likely work also, but are not supported.
-
-You will also need to have `ffmpeg`, `spx` and `ffmpeg-normalize` packages installed.
-
-`ffmpeg` is used to clip any silence from the audio files. `ffmpeg-normalise` is used to normalise the audio files.
-`spx` is the tool that generates the audio files using Microsoft Azure Text to Speech processing.
-
-Installing SPX can be a little tricky, but can be installed as follows:
-
-```bash
-wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-sudo dpkg -i packages-microsoft-prod.deb
-sudo apt-get update; \
-  sudo apt-get install -y apt-transport-https && \
-  sudo apt-get update && \
-  sudo apt-get install -y dotnet-sdk-6.0
-
-dotnet tool install --global Microsoft.CognitiveServices.Speech.CLI
-```
-
-After you have installed SPX, you will also need to [create a Microsoft Azure account](https://azure.microsoft.com/en-us/services/cognitive-services/speech-to-text/) if you don't have one already. There are both free and paid options, but the free one is sufficient for this purpose - it is just rate limited. After you have done that, [follow the quick start guide](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/spx-basics) to configure the required region and subscription keys.
-
-To generate the voice packs, run `uv run python generate.py`.
-
-To build the release archives, run `uv run python release.py`.
+- Generated with [ElevenLabs](https://elevenlabs.io/) (voice Sarah, Multilingual v2). Files are in `SOUNDS/pl`.
 
 ## Alternatives
 
@@ -225,4 +90,4 @@ To build the release archives, run `uv run python release.py`.
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md)
+See [CONTRIBUTING.md](CONTRIBUTING.md). For how the voice packs are defined, generated and released, see [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md).
