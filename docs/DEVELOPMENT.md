@@ -50,12 +50,14 @@ The layout is defined by `tts_ar.cpp` (EdgeTX 3.0 and later):
 
 Most voice packs use Microsoft Azure neural voices.
 
-You need [uv](https://docs.astral.sh/uv/) and `ffmpeg`. The Python dependencies, including the Azure Speech SDK and `ffmpeg-normalize`, are installed by uv. You also need an [Azure Speech resource](https://azure.microsoft.com/pricing/details/cognitive-services/speech-services/) (there is a free tier), with its key and region in these environment variables:
+You need [uv](https://docs.astral.sh/uv/) and `ffmpeg`. The Python dependencies, including the Azure Speech SDK and `ffmpeg-normalize`, are installed by uv. You also need an [Azure Speech resource](https://azure.microsoft.com/pricing/details/cognitive-services/speech-services/) (there is a free tier), with its key and region. The simplest way to provide them is a `.env` file in the repository root, which the generation scripts load automatically and which is listed in `.gitignore` so it can't be committed by accident:
 
 ```bash
-export COGNITIVE_SERVICE_API_KEY="<your key>"
-export SERVICE_REGION="<your region>"
+COGNITIVE_SERVICE_API_KEY=<your key>
+SERVICE_REGION=<your region>
 ```
+
+Environment variables with the same names work too, and take precedence over `.env`.
 
 To generate every job listed in `voice_generation_config.py`:
 
@@ -149,7 +151,7 @@ python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-Set API key environment variable:
+Set the API key, either as `ELEVENLABS_API_KEY=<API_KEY>` in the `.env` file (see [Azure Text-to-Speech](#azure-text-to-speech)) or as an environment variable:
 
 ```bash
 export ELEVENLABS_API_KEY="<API_KEY>"
