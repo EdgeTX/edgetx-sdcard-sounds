@@ -71,6 +71,7 @@ Audio files for [Yaapu Telemetry Script and Widget](https://github.com/yaapu/Frs
 ### Polish (pl-PL)
 
 - Generated with [ElevenLabs](https://elevenlabs.io/) (voice Sarah, Multilingual v2). Files are in `SOUNDS/pl`.
+- Contributed by [@g0rd0n2007](https://github.com/g0rd0n2007) (#159).
 
 ## Alternatives
 
